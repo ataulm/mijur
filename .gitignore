@@ -1,0 +1,24 @@
+**/.classpath
+**/.project
+**.settings
+**/target
+**/bin
+**/gen
+.project
+release.properties
+project.properties
+local.properties
+**/project.properties
+target
+.DS_Store
+out
+.idea
+*.iml
+classes
+
+#gradle
+build
+.gradle
+
+# backup files end in tilde (edit)
+*.*~
