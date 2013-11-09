@@ -9,13 +9,6 @@ buildscript {
 
 apply plugin: 'android'
 
-repositories {
-    mavenCentral();
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots"
-    }
-}
-
 dependencies {
     compile project(':core')
     compile 'com.novoda.imageloader:imageloader-core:1.6.1-SNAPSHOT'
