@@ -4,3 +4,29 @@ dependencies {
     compile 'com.squareup.retrofit:retrofit:1.2.2'
 }
 
+task printProps << {
+    println apiClientId
+    println apiClientSecret
+}
+
+task generateSources {
+    outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/imgur/core")
+    outputs.dir outputDir
+    doFirst {
+        outputDir.exists() || outputDir.mkdirs()
+        
+        String API_CLIENT_ID = "public static final String API_CLIENT_ID = \"<your imgur api client id>\";\n"
+        String API_CLIENT_SECRET = "public static final String API_CLIENT_SECRET = \"<your imgur api client secret>\";\n"
+        
+        try {
+            API_CLIENT_ID = "public static final String API_CLIENT_ID = \"" + apiClientId + "\";\n"
+            API_CLIENT_SECRET = "public static final String API_CLIENT_SECRET = \"" + apiClientSecret + "\";\n"
+        } catch (Exception e) {
+            println "gradle.properties not set with API_CLIENT_KEY and/or API_CLIENT_ID. API calls will not work.";
+        }
+                
+        new File(outputDir, "ApiConstants.java").write("package uk.co.ataulm.imgur.core;\n\npublic class ApiConstants {\n" + "    " + API_CLIENT_ID + "    " + API_CLIENT_SECRET + "}")
+    }
+}
+
+compileJava.source generateSources.outputs.files, sourceSets.main.java
