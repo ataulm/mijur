@@ -4,11 +4,6 @@ dependencies {
     compile 'com.squareup.retrofit:retrofit:1.2.2'
 }
 
-task printProps << {
-    println apiClientId
-    println apiClientSecret
-}
-
 task generateSources {
     outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/imgur/core")
     outputs.dir outputDir
