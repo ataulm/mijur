@@ -1,4 +1,4 @@
-package uk.co.ataulm.mija.core;
+package uk.co.ataulm.mijur.core;
 
 import retrofit.http.GET;
 import retrofit.http.Path;

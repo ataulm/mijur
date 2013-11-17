@@ -6,7 +6,7 @@ dependencies {
 }
 
 task generateSources {
-    outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/mija/core")
+    outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/mijur/core/api")
     outputs.dir outputDir
     doFirst {
         outputDir.exists() || outputDir.mkdirs()
@@ -21,7 +21,7 @@ task generateSources {
             println "gradle.properties not set with apiClientId and/or apiClientSecret. API calls will not work.";
         }
                 
-        new File(outputDir, "ApiConstants.java").write("package uk.co.ataulm.mija.core.api;\n\npublic class ApiConstants {\n" + "    " + API_CLIENT_ID + "    " + API_CLIENT_SECRET + "}")
+        new File(outputDir, "ApiConstants.java").write("package uk.co.ataulm.mijur.core.api;\n\npublic class ApiConstants {\n" + "    " + API_CLIENT_ID + "    " + API_CLIENT_SECRET + "}")
     }
 }
 

@@ -1,4 +1,4 @@
-package uk.co.ataulm.mija.core.api;
+package uk.co.ataulm.mijur.core.api;
 
 import org.scribe.builder.ServiceBuilder;
 import org.scribe.builder.api.DefaultApi10a;
