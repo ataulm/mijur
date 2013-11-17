@@ -6,7 +6,7 @@ dependencies {
 }
 
 task generateSources {
-    outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/imgur/core")
+    outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/mija/core")
     outputs.dir outputDir
     doFirst {
         outputDir.exists() || outputDir.mkdirs()
