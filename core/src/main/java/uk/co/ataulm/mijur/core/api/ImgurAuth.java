@@ -5,22 +5,22 @@ import org.scribe.builder.api.DefaultApi10a;
 import org.scribe.model.Token;
 import org.scribe.oauth.OAuthService;
 
-public class ImgurApi extends DefaultApi10a {
+public class ImgurAuth extends DefaultApi10a {
     public static final String AUTHORISATION_URL = "https://api.imgur.com/oauth2/token";
 
-    private static ImgurApi api;
+    private static ImgurAuth imgurAuth;
 
     private final OAuthService service;
 
-    private ImgurApi(OAuthService service) {
+    private ImgurAuth(OAuthService service) {
         this.service = service;
     }
 
-    public static ImgurApi getInstance(OAuthService service) {
-        if (api != null) {
-            return api;
+    public static ImgurAuth getInstance(OAuthService service) {
+        if (imgurAuth == null) {
+            imgurAuth = new ImgurAuth(service);
         }
-        return new ImgurApi(service);
+        return imgurAuth;
     }
 
     @Override
@@ -38,7 +38,6 @@ public class ImgurApi extends DefaultApi10a {
     @Override
     public String getAuthorizationUrl(Token requestToken) {
         // TODO: add auth url
-        // requestToken.getToken();
         return null;
     }
 
@@ -55,12 +54,14 @@ public class ImgurApi extends DefaultApi10a {
         OAuthService service = new ServiceBuilder()
                 .apiKey(ApiConstants.API_CLIENT_ID)
                 .apiSecret(ApiConstants.API_CLIENT_SECRET)
-                .provider(ImgurApi.class)
+                .provider(ImgurAuth.class)
                 .build();
 
-        ImgurApi api = ImgurApi.getInstance(service);
+        ImgurAuth api = ImgurAuth.getInstance(service);
 
         Token requestToken = api.getRequestToken();
         String authorisationUrl = api.getAuthorizationUrl(requestToken);
+
+        // TODO: continue with the workflow
     }
 }
