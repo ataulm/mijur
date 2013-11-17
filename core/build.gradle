@@ -2,6 +2,7 @@ apply plugin: 'java'
 
 dependencies {
     compile 'com.squareup.retrofit:retrofit:1.2.2'
+    compile 'org.scribe:scribe:1.3.5'
 }
 
 task generateSources {
@@ -20,7 +21,7 @@ task generateSources {
             println "gradle.properties not set with apiClientId and/or apiClientSecret. API calls will not work.";
         }
                 
-        new File(outputDir, "ApiConstants.java").write("package uk.co.ataulm.imgur.core;\n\npublic class ApiConstants {\n" + "    " + API_CLIENT_ID + "    " + API_CLIENT_SECRET + "}")
+        new File(outputDir, "ApiConstants.java").write("package uk.co.ataulm.mija.core.api;\n\npublic class ApiConstants {\n" + "    " + API_CLIENT_ID + "    " + API_CLIENT_SECRET + "}")
     }
 }
 

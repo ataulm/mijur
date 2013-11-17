@@ -1,4 +1,4 @@
-package uk.co.ataulm.imgur.core.datamodel;
+package uk.co.ataulm.mija.core.datamodel;
 
 public class Image {
     String id;
