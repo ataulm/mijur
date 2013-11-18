@@ -1,4 +1,4 @@
-# mĭja
+# mĭjur
 An Android client for Imgur. I'm using this as a project to learn about REST, custom UI components in Android, as well as UX/UI design for the Android and mobile platform in general.
 
 I expect pull requests will be welcome after 1.0, but comments and crit are welcome and appreciated at any time.
