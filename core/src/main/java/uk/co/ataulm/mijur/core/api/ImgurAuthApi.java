@@ -1,34 +1,35 @@
 package uk.co.ataulm.mijur.core.api;
 
+import org.scribe.builder.ServiceBuilder;
 import org.scribe.builder.api.DefaultApi20;
-import org.scribe.model.OAuthConfig;
-import org.scribe.model.OAuthConstants;
-import org.scribe.model.OAuthRequest;
-import org.scribe.model.Response;
-import org.scribe.model.Token;
-import org.scribe.model.Verifier;
+import org.scribe.model.*;
 import org.scribe.oauth.OAuth20ServiceImpl;
 import org.scribe.oauth.OAuthService;
 
 /**
- * Until I can learn a bit more about using OAuth with Imgur, I followed this example:
+ * Until I can learn a bit more about using OAuth with Imgur, I followed Brian Hsu's example:
  * http://bone.twbbs.org.tw/blog/2013-05-08-ScribeImgUr3-English.html
  */
-public class ImgurAuth extends DefaultApi20 {
+public class ImgurAuthApi extends DefaultApi20 {
     private static final String AUTHORISATION_URL = "https://api.imgur.com/oauth2/authorize";
     private static final String ACCESS_TOKEN_URL = "https://api.imgur.com/oauth2/token";
-    private static final String OUT_OF_BAND_CALLBACK = "oob";
     private static final String AUTH_URL_PARAMETERS_PIN = "%s?client_id=%s&response_type=pin";
     private static final String AUTH_URL_PARAMETERS_CODE = "%s?client_id=%s&response_type=code";
+    private static final String OUT_OF_BAND_CALLBACK = "oob";
 
-    private static ImgurAuth imgurAuth;
+    private static ImgurAuthApi imgurAuth;
 
-    private ImgurAuth() {
+    private ImgurAuthApi() {
     }
 
-    public static ImgurAuth getInstance() {
+    @Override
+    public Verb getAccessTokenVerb() {
+        return Verb.POST;
+    }
+
+    public static ImgurAuthApi getInstance() {
         if (imgurAuth == null) {
-            imgurAuth = new ImgurAuth();
+            imgurAuth = new ImgurAuthApi();
         }
         return imgurAuth;
     }
@@ -46,11 +47,11 @@ public class ImgurAuth extends DefaultApi20 {
         return getAuthorisationUrlWithCodeResponse();
     }
 
-    private static String getAuthorisationUrlWithPinResponse() {
+    private String getAuthorisationUrlWithPinResponse() {
         return String.format(AUTH_URL_PARAMETERS_PIN, AUTHORISATION_URL, ApiConstants.API_CLIENT_ID);
     }
 
-    private static String getAuthorisationUrlWithCodeResponse() {
+    private String getAuthorisationUrlWithCodeResponse() {
         return String.format(AUTH_URL_PARAMETERS_CODE, AUTHORISATION_URL, ApiConstants.API_CLIENT_ID);
     }
 
@@ -67,12 +68,13 @@ public class ImgurAuth extends DefaultApi20 {
         static final String GRANT_TYPE = "grant_type";
         static final String GRANT_TYPE_PIN = "pin";
         static final String GRANT_TYPE_AUTH_CODE = "authorization_code";
-        public static final String HEADER_AUTH = "Authorization";
-        public static final String HEADER_BEARER_PREFIX = "Bearer ";
-        public static final String HEADER_CLIENT_ID_PREFIX = "Client-ID ";
+        static final String HEADER_AUTH = "Authorization";
+        static final String HEADER_BEARER_PREFIX = "Bearer ";
+        static final String HEADER_CLIENT_ID_PREFIX = "Client-ID ";
 
         DefaultApi20 api;
         OAuthConfig config;
+        OAuthRequest request;
 
         ImgurOAuthService(DefaultApi20 api, OAuthConfig config) {
             super(api, config);
@@ -80,7 +82,7 @@ public class ImgurAuth extends DefaultApi20 {
 
         @Override
         public Token getAccessToken(Token requestToken, Verifier verifier) {
-            OAuthRequest request = new OAuthRequest(
+            request = new OAuthRequest(
                     api.getAccessTokenVerb(),
                     api.getAccessTokenEndpoint()
             );
@@ -89,7 +91,7 @@ public class ImgurAuth extends DefaultApi20 {
             // parameters using Body parameter, query string will not work.
             request.addBodyParameter(OAuthConstants.CLIENT_ID, config.getApiKey());
             request.addBodyParameter(OAuthConstants.CLIENT_SECRET, config.getApiSecret());
-            configureRequestGrantType(verifier, request);
+            request = getRequestWithConfiguredGrantType(verifier);
 
             Response response = request.send();
 
@@ -105,12 +107,13 @@ public class ImgurAuth extends DefaultApi20 {
             }
         }
 
-        private void configureRequestGrantType(Verifier verifier, OAuthRequest request) {
+        private OAuthRequest getRequestWithConfiguredGrantType(Verifier verifier) {
             if (isOutOfBand(config)) {
                 request.addBodyParameter(GRANT_TYPE, GRANT_TYPE_PIN);
                 request.addBodyParameter(GRANT_TYPE_PIN, verifier.getValue());
             }
             request.addBodyParameter(GRANT_TYPE, GRANT_TYPE_AUTH_CODE);
+            return request;
         }
     }
 
@@ -122,11 +125,11 @@ public class ImgurAuth extends DefaultApi20 {
     public static void main(String... args) {
         final String protectedResourceUrl = "https://api.imgur.com/3/account/me/albums";
 
-        ImgurAuth imgurAuth = ImgurAuth.getInstance();
-//        imgurAuth.createService();
-//
-//        // Replace these with your own api key and secret (you'll need an read/write api key)
-//        OAuthService service = new ServiceBuilder().provider(ImgurAuth.class).apiKey(ApiConstants.API_CLIENT_ID).apiSecret(ApiConstants.API_CLIENT_SECRET).build();
+        ImgurAuthApi imgurAuthApi = ImgurAuthApi.getInstance();
+        OAuthService service = new ServiceBuilder().provider(ImgurAuthApi.class).apiKey(ApiConstants.API_CLIENT_ID).apiSecret(ApiConstants.API_CLIENT_SECRET).build();
+
+        String authUrl = service.getAuthorizationUrl(null);
+
 //        Scanner in = new Scanner(System.in);
 //
 //        System.out.println("=== ImgUr's OAuth Workflow ===");
