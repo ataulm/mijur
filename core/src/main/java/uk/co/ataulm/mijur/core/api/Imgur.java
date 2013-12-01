@@ -116,7 +116,7 @@ public class Imgur {
     public static void main(String... args) throws IOException {
         URL url = new URL("https://api.imgur.com/3/gallery/");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-        //Imgur.addAuthorisationHeadersTo(connection);
+        Imgur.addAuthorisationHeadersTo(connection);
 
         InputStream responseIn = connection.getInputStream();
         StringBuilder stringBuilder = new StringBuilder();
