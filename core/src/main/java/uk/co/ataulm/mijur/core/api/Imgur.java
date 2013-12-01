@@ -1,27 +1,33 @@
 package uk.co.ataulm.mijur.core.api;
 
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
 
 /**
  * Attempts OAuth 2.0 authentication without use of Scribe
  */
-public class ImgurAuth {
+public class Imgur {
+    private static final String AUTH_ENDPOINT = "https://api.imgur.com/oauth2/token";
     private static final String PROPERTY_KEY_AUTHORISATION = "Authorization";
     private static final String PROPERTY_VALUE_CLIENT_ID_PREFIX = "Client-ID ";
     private static final String PROPERTY_VALUE_BEARER_PREFIX = "Bearer ";
-    private static ImgurAuth imgurAuth;
+    private static Imgur imgurAuth;
 
     private String accessToken;
     private String refreshToken;
     private long tokenExpiry;
 
-    private ImgurAuth() {
+    private Imgur() {
     }
 
-    public static ImgurAuth getInstance() {
+    public static Imgur getInstance() {
         if (imgurAuth == null) {
-            imgurAuth = new ImgurAuth();
+            imgurAuth = new Imgur();
         }
         return imgurAuth;
     }
@@ -56,9 +62,9 @@ public class ImgurAuth {
      * User login is required for voting, uploads, messages, commenting and viewing private images.
      *
      * @param accessToken
-     * @return this ImgurAuth
+     * @return this Imgur
      */
-    public ImgurAuth withAccessToken(String accessToken) {
+    public Imgur withAccessToken(String accessToken) {
         this.accessToken = accessToken;
         return this;
     }
@@ -67,9 +73,9 @@ public class ImgurAuth {
      * Sets refresh token (used to retrieve new access tokens).
      *
      * @param refreshToken
-     * @return this ImgurAuth
+     * @return this Imgur
      */
-    public ImgurAuth withRefreshToken(String refreshToken) {
+    public Imgur withRefreshToken(String refreshToken) {
         this.refreshToken = refreshToken;
         return this;
     }
@@ -78,9 +84,9 @@ public class ImgurAuth {
      * Sets length of time (milliseconds) that access tokens are valid for.
      *
      * @param tokenExpiry
-     * @return this ImgurAuth
+     * @return this Imgur
      */
-    public ImgurAuth expiresIn(long tokenExpiry) {
+    public Imgur expiresIn(long tokenExpiry) {
         this.tokenExpiry = tokenExpiry;
         return this;
     }
@@ -105,5 +111,20 @@ public class ImgurAuth {
 
     private static boolean weCanUse(String string) {
         return string != null && string.length() > 0;
+    }
+
+    public static void main(String... args) throws IOException {
+        URL url = new URL("https://api.imgur.com/3/gallery/");
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        //Imgur.addAuthorisationHeadersTo(connection);
+
+        InputStream responseIn = connection.getInputStream();
+        StringBuilder stringBuilder = new StringBuilder();
+        Scanner scanner = new Scanner(responseIn);
+        while (scanner.hasNext()) {
+            stringBuilder.append(scanner.next());
+        }
+
+        System.out.println(stringBuilder.toString());
     }
 }
