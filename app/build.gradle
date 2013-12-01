@@ -11,7 +11,7 @@ apply plugin: 'android'
 
 dependencies {
     compile project(':core')
-    compile 'com.novoda.imageloader:imageloader-core:1.6.1-SNAPSHOT'
+    compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.android.support:support-v13:18.0.0'
 }
 
