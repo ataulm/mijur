@@ -1,10 +1,10 @@
 package uk.co.ataulm.mijur.core.api;
 
-import org.junit.Ignore;
-import org.junit.Test;
-
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import org.junit.Ignore;
+import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -16,8 +16,8 @@ public class ImgurShould {
 
     @Test
     public void retain_a_single_instance() throws Exception {
-        Imgur one = Imgur.get();
-        Imgur two = Imgur.get();
+        ImgurClient one = ImgurClient.get();
+        ImgurClient two = ImgurClient.get();
 
         assertThat(one == two, is(true));
     }
@@ -29,7 +29,7 @@ public class ImgurShould {
         URL authUrl = new URL(AUTHORISATION_ENDPOINT);
         HttpURLConnection connection = (HttpURLConnection) authUrl.openConnection();
 
-        Imgur.addAuthorisationHeadersTo(connection);
+        ImgurClient.addAuthorisationHeadersTo(connection);
 
         String expected = PROPERTY_VALUE_CLIENT_ID_PREFIX + ApiConstants.API_CLIENT_ID;
         String actual = connection.getRequestProperty(PROPERTY_KEY_AUTHORISATION);
