@@ -16,8 +16,8 @@ public class ImgurShould {
 
     @Test
     public void retain_a_single_instance() throws Exception {
-        Imgur one = Imgur.getInstance();
-        Imgur two = Imgur.getInstance();
+        Imgur one = Imgur.get();
+        Imgur two = Imgur.get();
 
         assertThat(one == two, is(true));
     }
