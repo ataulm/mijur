@@ -29,6 +29,6 @@ public class ImgurShould {
     public void fail_for_invalid_image_id() throws Exception {
         String invalidId = "gdfga";
 
-        ImageResponse image = Imgur.getImageWith(invalidId);
+        Imgur.getImageWith(invalidId);
     }
 }
