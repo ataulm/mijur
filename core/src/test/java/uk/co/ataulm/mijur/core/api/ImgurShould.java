@@ -2,6 +2,7 @@ package uk.co.ataulm.mijur.core.api;
 
 import org.junit.Test;
 
+import uk.co.ataulm.mijur.core.model.GalleryImage;
 import uk.co.ataulm.mijur.core.model.Image;
 
 import static org.junit.Assert.assertTrue;
@@ -31,5 +32,22 @@ public class ImgurShould {
 
         Imgur.getImageWith(invalidId);
     }
+
+    @Test
+    public void return_a_useable_gallery_image_model_for_a_valid_id() throws Exception {
+        String validId = "OUHDm";
+
+        GalleryImage image = Imgur.getGalleryImageWith(validId);
+
+        assertTrue(GalleryImage.isUseable(image));
+    }
+
+    @Test(expected = ImgurApiResourceNotFoundError.class)
+    public void fail_for_invalid_gallery_image_id() throws Exception {
+        String invalidId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
+
+        Imgur.getGalleryImageWith(invalidId);
+    }
+
 
 }

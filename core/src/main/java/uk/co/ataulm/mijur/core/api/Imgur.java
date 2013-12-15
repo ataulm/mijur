@@ -5,6 +5,7 @@ import java.net.HttpURLConnection;
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
+import uk.co.ataulm.mijur.core.model.GalleryImage;
 import uk.co.ataulm.mijur.core.model.Image;
 
 /**
@@ -46,6 +47,17 @@ public class Imgur {
     public static Image getImageWith(String id) {
         try {
             return instance().getImage(id).data;
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
+    public static GalleryImage getGalleryImageWith(String id) {
+        try {
+            return instance().getGalleryImage(id).data;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);
