@@ -2,6 +2,8 @@ package uk.co.ataulm.mijur.core.api;
 
 import org.junit.Test;
 
+import uk.co.ataulm.mijur.core.model.Image;
+
 import static org.junit.Assert.assertTrue;
 
 public class ImgurShould {
@@ -15,15 +17,15 @@ public class ImgurShould {
     }
 
     @Test
-    public void mark_image_response_as_successful_for_valid_image_id() throws Exception {
+    public void return_a_useable_image_model_for_a_valid_id() throws Exception {
         String validId = "E8PCXjm";
 
-        ImageResponse image = Imgur.getImageWith(validId);
+        Image image = Imgur.getImageWith(validId);
 
-        assertTrue(image.success);
+        assertTrue(Image.isUseable(image));
     }
 
-    @Test (expected = ImgurApiResourceNotFoundError.class)
+    @Test(expected = ImgurApiResourceNotFoundError.class)
     public void fail_for_invalid_image_id() throws Exception {
         String invalidId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
 

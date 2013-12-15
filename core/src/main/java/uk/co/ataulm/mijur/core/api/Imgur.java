@@ -1,16 +1,21 @@
 package uk.co.ataulm.mijur.core.api;
 
+import java.net.HttpURLConnection;
+
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
+import uk.co.ataulm.mijur.core.model.Image;
 
 /**
  * Attempts OAuth 2.0 authentication without use of Scribe
  */
 public class Imgur {
+
+    private static final String API_URL = "https://api.imgur.com/3";
     private static final String PROPERTY_KEY_AUTHORISATION = "Authorization";
     private static final String PROPERTY_VALUE_CLIENT_ID_PREFIX = "Client-ID ";
-    private static final String API_URL = "https://api.imgur.com/3";
+
     private static Imgur imgur;
     private static ImgurApi imgurApi;
 
@@ -19,13 +24,13 @@ public class Imgur {
 
     public static ImgurApi instance() {
         if (imgur == null) {
-            setupImgurClient();
+            imgur = new Imgur();
+            imgurApi = createNewImgurApiAdapter();
         }
         return imgurApi;
     }
 
-    private static void setupImgurClient() {
-        imgur = new Imgur();
+    private static ImgurApi createNewImgurApiAdapter() {
         RestAdapter adapter = new RestAdapter.Builder()
                 .setServer(API_URL)
                 .setRequestInterceptor(new RequestInterceptor() {
@@ -34,12 +39,13 @@ public class Imgur {
                         request.addHeader(PROPERTY_KEY_AUTHORISATION, PROPERTY_VALUE_CLIENT_ID_PREFIX + ApiConstants.API_CLIENT_ID);
                     }
                 }).build();
-        imgurApi = adapter.create(ImgurApi.class);
+
+        return adapter.create(ImgurApi.class);
     }
 
-    public static ImageResponse getImageWith(String id) {
+    public static Image getImageWith(String id) {
         try {
-            return instance().getImage(id);
+            return instance().getImage(id).data;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);
@@ -49,7 +55,7 @@ public class Imgur {
     }
 
     private static boolean isBadHttp(int status) {
-        return !(status >= 200 && status < 300);
+        return !(status >= HttpURLConnection.HTTP_OK && status < HttpURLConnection.HTTP_MOVED_PERM);
     }
 
 }
