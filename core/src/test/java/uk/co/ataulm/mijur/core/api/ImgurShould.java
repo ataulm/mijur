@@ -2,8 +2,6 @@ package uk.co.ataulm.mijur.core.api;
 
 import org.junit.Test;
 
-import retrofit.RetrofitError;
-
 import static org.junit.Assert.assertTrue;
 
 public class ImgurShould {
@@ -22,12 +20,12 @@ public class ImgurShould {
 
         ImageResponse image = Imgur.getImageWith(validId);
 
-        assertTrue(image.success == true);
+        assertTrue(image.success);
     }
 
-    @Test(expected = RetrofitError.class)
+    @Test (expected = ImgurApiResourceNotFoundError.class)
     public void fail_for_invalid_image_id() throws Exception {
-        String invalidId = "gdfga";
+        String invalidId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
 
         Imgur.getImageWith(invalidId);
     }
