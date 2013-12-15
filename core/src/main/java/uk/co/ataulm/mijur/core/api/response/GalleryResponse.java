@@ -2,13 +2,17 @@ package uk.co.ataulm.mijur.core.api.response;
 
 import java.util.List;
 
-import uk.co.ataulm.mijur.core.model.GalleryAlbum;
+import uk.co.ataulm.mijur.core.model.Gallery;
+import uk.co.ataulm.mijur.core.model.GalleryElement;
 
 public class GalleryResponse {
 
-    // this is a list of galleryalbums/galleryimages
-    public List<GalleryAlbum> data;
+    public List<GalleryElement> data;
     public boolean success;
     public int status;
+
+    public Gallery getData() {
+        return new Gallery(data);
+    }
 
 }

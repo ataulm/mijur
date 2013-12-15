@@ -2,7 +2,7 @@ package uk.co.ataulm.mijur.core.model;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryImage implements GalleryElement {
+public class GalleryImage {
 
     public String id;
     public String title;
@@ -26,7 +26,7 @@ public class GalleryImage implements GalleryElement {
     public boolean is_album;
 
     public static boolean isUseable(GalleryImage image) {
-        return  image != null
+        return image != null
                 && ImgurUtils.isNotEmpty(image.id)
                 && ImgurUtils.isNotEmpty(image.link)
                 && ImgurUtils.isNotEmpty(image.title)

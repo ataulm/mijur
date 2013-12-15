@@ -1,7 +1,6 @@
 package uk.co.ataulm.mijur.core.api;
 
 import java.net.HttpURLConnection;
-import java.util.List;
 
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
@@ -94,9 +93,11 @@ public class Imgur {
         Imgur.getGalleryWith("hot", "time", 1);
     }
 
-    public static List<GalleryAlbum> getGalleryWith(String section, String sort, int page) {
+    public static Gallery getGalleryWith(String section, String sort, int page) {
         try {
-            return instance().getGallery(section, sort, page).data;
+            Gallery gallery = instance().getGallery(section, sort, page).getData();
+            System.out.println("Gallery has count of: " + gallery.getCount());
+            return gallery;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);
