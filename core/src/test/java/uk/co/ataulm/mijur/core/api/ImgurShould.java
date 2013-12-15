@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import uk.co.ataulm.mijur.core.api.error.ImgurApiResourceNotFoundError;
 import uk.co.ataulm.mijur.core.model.Album;
+import uk.co.ataulm.mijur.core.model.GalleryAlbum;
 import uk.co.ataulm.mijur.core.model.GalleryImage;
 import uk.co.ataulm.mijur.core.model.Image;
 
@@ -62,8 +63,25 @@ public class ImgurShould {
 
     @Test (expected = ImgurApiResourceNotFoundError.class)
     public void fail_given_an_invalid_album_id() throws Exception {
-        String validId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
+        String invalidId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
 
-        Imgur.getAlbumWith(validId);
+        Imgur.getAlbumWith(invalidId);
     }
+
+    @Test
+    public void return_a_useable_gallery_album_model_given_a_valid_id() throws Exception {
+        String validId = "1S2u5";
+
+        GalleryAlbum album = Imgur.getGalleryAlbumWith(validId);
+
+        assertTrue(GalleryAlbum.isUseable(album));
+    }
+
+    @Test(expected = ImgurApiResourceNotFoundError.class)
+    public void fail_given_an_invalid_gallery_album_id() throws Exception {
+        String invalidId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
+
+        Imgur.getGalleryAlbumWith(invalidId);
+    }
+
 }

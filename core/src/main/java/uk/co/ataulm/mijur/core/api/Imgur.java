@@ -8,6 +8,7 @@ import retrofit.RetrofitError;
 import uk.co.ataulm.mijur.core.api.error.ImgurApiError;
 import uk.co.ataulm.mijur.core.api.error.ImgurApiResourceNotFoundError;
 import uk.co.ataulm.mijur.core.model.Album;
+import uk.co.ataulm.mijur.core.model.GalleryAlbum;
 import uk.co.ataulm.mijur.core.model.GalleryImage;
 import uk.co.ataulm.mijur.core.model.Image;
 
@@ -72,6 +73,17 @@ public class Imgur {
     public static Album getAlbumWith(String id) {
         try {
             return instance().getAlbum(id).data;
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
+    public static GalleryAlbum getGalleryAlbumWith(String id) {
+        try {
+            return instance().getGalleryAlbum(id).data;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);
