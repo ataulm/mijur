@@ -4,7 +4,7 @@ import java.util.List;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryAlbum {
+public class GalleryAlbum implements GalleryElement {
 
     public String id;
     public String title;

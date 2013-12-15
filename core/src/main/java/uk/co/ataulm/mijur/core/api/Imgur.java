@@ -1,16 +1,14 @@
 package uk.co.ataulm.mijur.core.api;
 
 import java.net.HttpURLConnection;
+import java.util.List;
 
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import uk.co.ataulm.mijur.core.api.error.ImgurApiError;
 import uk.co.ataulm.mijur.core.api.error.ImgurApiResourceNotFoundError;
-import uk.co.ataulm.mijur.core.model.Album;
-import uk.co.ataulm.mijur.core.model.GalleryAlbum;
-import uk.co.ataulm.mijur.core.model.GalleryImage;
-import uk.co.ataulm.mijur.core.model.Image;
+import uk.co.ataulm.mijur.core.model.*;
 
 /**
  * Attempts OAuth 2.0 authentication without use of Scribe
@@ -84,6 +82,21 @@ public class Imgur {
     public static GalleryAlbum getGalleryAlbumWith(String id) {
         try {
             return instance().getGalleryAlbum(id).data;
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
+    public static void main(String... args) {
+        Imgur.getGalleryWith("hot", "time", 1);
+    }
+
+    public static List<GalleryAlbum> getGalleryWith(String section, String sort, int page) {
+        try {
+            return instance().getGallery(section, sort, page).data;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);

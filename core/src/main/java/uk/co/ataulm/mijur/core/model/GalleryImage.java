@@ -2,7 +2,7 @@ package uk.co.ataulm.mijur.core.model;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryImage {
+public class GalleryImage implements GalleryElement {
 
     public String id;
     public String title;
