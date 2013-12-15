@@ -9,9 +9,6 @@ import uk.co.ataulm.mijur.core.api.error.ImgurApiError;
 import uk.co.ataulm.mijur.core.api.error.ImgurApiResourceNotFoundError;
 import uk.co.ataulm.mijur.core.model.*;
 
-/**
- * Attempts OAuth 2.0 authentication without use of Scribe
- */
 public class Imgur {
 
     private static final String API_URL = "https://api.imgur.com/3";
