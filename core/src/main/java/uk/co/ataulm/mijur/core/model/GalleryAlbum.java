@@ -4,23 +4,11 @@ import java.util.List;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryAlbum {
+public class GalleryAlbum extends GalleryElement {
 
-    public String id;
-    public String title;
-    public String description;
-    public long datetime;
     public String cover;
-    public String account_url;
     public String privacy;
     public String layout;
-    public int views;
-    public String link;
-    public int ups;
-    public int downs;
-    public int score;
-    public boolean is_album;
-    public String vote;
     public int images_count;
     public List<Image> images;
 

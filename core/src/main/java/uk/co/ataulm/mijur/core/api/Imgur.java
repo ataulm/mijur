@@ -45,6 +45,17 @@ public class Imgur {
         return adapter.create(ImgurApi.class);
     }
 
+    public static Gallery getGalleryWith(Gallery.Section section, Gallery.Sort sort, int page) {
+        try {
+            return instance().getGallery(section.toString(), sort.toString(), page).getData();
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
     public static Image getImageWith(String id) {
         try {
             return instance().getImage(id).data;
@@ -81,23 +92,6 @@ public class Imgur {
     public static GalleryAlbum getGalleryAlbumWith(String id) {
         try {
             return instance().getGalleryAlbum(id).data;
-        } catch (RetrofitError e) {
-            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
-                throw new ImgurApiResourceNotFoundError(e);
-            }
-            throw new ImgurApiError(e);
-        }
-    }
-
-    public static void main(String... args) {
-        Imgur.getGalleryWith("hot", "time", 1);
-    }
-
-    public static Gallery getGalleryWith(String section, String sort, int page) {
-        try {
-            Gallery gallery = instance().getGallery(section, sort, page).getData();
-            System.out.println("Gallery has count of: " + gallery.getCount());
-            return gallery;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);

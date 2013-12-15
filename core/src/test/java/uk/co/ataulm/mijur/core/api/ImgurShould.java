@@ -3,10 +3,7 @@ package uk.co.ataulm.mijur.core.api;
 import org.junit.Test;
 
 import uk.co.ataulm.mijur.core.api.error.ImgurApiResourceNotFoundError;
-import uk.co.ataulm.mijur.core.model.Album;
-import uk.co.ataulm.mijur.core.model.GalleryAlbum;
-import uk.co.ataulm.mijur.core.model.GalleryImage;
-import uk.co.ataulm.mijur.core.model.Image;
+import uk.co.ataulm.mijur.core.model.*;
 
 import static org.junit.Assert.assertTrue;
 
@@ -82,6 +79,13 @@ public class ImgurShould {
         String invalidId = "gerteqtwerterwhfrghdajfalksfwoirwfga";
 
         Imgur.getGalleryAlbumWith(invalidId);
+    }
+
+    @Test
+    public void return_a_useable_gallery_model_given_valid_parameters() throws Exception {
+        Gallery gallery = Imgur.getGalleryWith(Gallery.Section.TOP, Gallery.Sort.VIRAL, 1);
+
+        assertTrue(gallery.size() > 0);
     }
 
 }

@@ -2,28 +2,16 @@ package uk.co.ataulm.mijur.core.model;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryImage {
+public class GalleryImage extends GalleryElement {
 
-    public String id;
-    public String title;
-    public String description;
-    public long datetime;
     public String type;
     public boolean animated;
     public int width;
     public int height;
     public long size;
-    public int views;
     public long bandwidth;
     public String deletehash;
-    public String link;
-    public String vote;
     public String section;
-    public String account_url;
-    public int ups;
-    public int downs;
-    public int score;
-    public boolean is_album;
 
     public static boolean isUseable(GalleryImage image) {
         return image != null
