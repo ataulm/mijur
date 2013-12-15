@@ -3,6 +3,7 @@ package uk.co.ataulm.mijur.core.model;
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
 public class Image {
+
     public String id;
     public String title;
     public String description;

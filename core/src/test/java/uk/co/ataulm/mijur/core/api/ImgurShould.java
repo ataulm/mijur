@@ -31,4 +31,5 @@ public class ImgurShould {
 
         Imgur.getImageWith(invalidId);
     }
+
 }
