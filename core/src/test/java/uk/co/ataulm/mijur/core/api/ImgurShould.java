@@ -4,8 +4,7 @@ import org.junit.Test;
 
 import retrofit.RetrofitError;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class ImgurShould {
 
@@ -14,7 +13,7 @@ public class ImgurShould {
         ImgurApi one = Imgur.instance();
         ImgurApi two = Imgur.instance();
 
-        assertThat(one == two, is(true));
+        assertTrue(one == two);
     }
 
     @Test
@@ -23,7 +22,7 @@ public class ImgurShould {
 
         ImageResponse image = Imgur.getImageWith(validId);
 
-        assertThat(image.success, is(true));
+        assertTrue(image.success == true);
     }
 
     @Test(expected = RetrofitError.class)
