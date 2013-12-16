@@ -5,11 +5,10 @@ import java.net.HttpURLConnection;
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
-import uk.co.ataulm.mijur.core.model.Image;
+import uk.co.ataulm.mijur.core.api.error.ImgurApiError;
+import uk.co.ataulm.mijur.core.api.error.ImgurApiResourceNotFoundError;
+import uk.co.ataulm.mijur.core.model.*;
 
-/**
- * Attempts OAuth 2.0 authentication without use of Scribe
- */
 public class Imgur {
 
     private static final String API_URL = "https://api.imgur.com/3";
@@ -43,9 +42,53 @@ public class Imgur {
         return adapter.create(ImgurApi.class);
     }
 
+    public static Gallery getGalleryWith(Gallery.Section section, Gallery.Sort sort, int page) {
+        try {
+            return instance().getGallery(section.toString(), sort.toString(), page).getData();
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
     public static Image getImageWith(String id) {
         try {
             return instance().getImage(id).data;
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
+    public static GalleryImage getGalleryImageWith(String id) {
+        try {
+            return instance().getGalleryImage(id).data;
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
+    public static Album getAlbumWith(String id) {
+        try {
+            return instance().getAlbum(id).data;
+        } catch (RetrofitError e) {
+            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
+                throw new ImgurApiResourceNotFoundError(e);
+            }
+            throw new ImgurApiError(e);
+        }
+    }
+
+    public static GalleryAlbum getGalleryAlbumWith(String id) {
+        try {
+            return instance().getGalleryAlbum(id).data;
         } catch (RetrofitError e) {
             if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
                 throw new ImgurApiResourceNotFoundError(e);

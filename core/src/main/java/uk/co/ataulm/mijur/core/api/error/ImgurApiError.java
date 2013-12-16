@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur.core.api;
+package uk.co.ataulm.mijur.core.api.error;
 
 import retrofit.RetrofitError;
 
