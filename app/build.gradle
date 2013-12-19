@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
+        classpath 'com.android.tools.build:gradle:0.7.+'
     }
 }
 
@@ -11,6 +11,7 @@ apply plugin: 'android'
 
 dependencies {
     compile project(':core')
+    compile project(':etsygrid')
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.android.support:support-v13:18.0.0'
 }

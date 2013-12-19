@@ -3,6 +3,8 @@ package uk.co.ataulm.imgur.app;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.etsy.android.grid.StaggeredGridView;
+
 import uk.co.ataulm.imgur.R;
 
 public class Gallery extends Activity {

@@ -1,1 +1,1 @@
-include ':app', ':core', ':libs/etsygrid'
+include ':app', ':core', ':etsygrid'
