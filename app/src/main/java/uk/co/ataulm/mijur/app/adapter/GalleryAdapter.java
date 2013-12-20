@@ -1,17 +1,17 @@
 package uk.co.ataulm.mijur.app.adapter;
 
-import android.content.Context;
-import android.database.Cursor;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SimpleCursorAdapter;
 
-public class GalleryAdapter extends SimpleCursorAdapter {
+import uk.co.ataulm.imgur.R;
 
-    private static final int FLAGS_NOT_USED = 0;
+public class GalleryAdapter extends MijurListAdapter<GalleryItem> {
 
-    public GalleryAdapter(Context context, int layout, Cursor c, String[] from, int[] to) {
-        super(context, layout, c, from, to, FLAGS_NOT_USED);
+    private final GalleryItemListener listener;
+
+    public GalleryAdapter(GalleryItemListener listener) {
+        this.listener = listener;
     }
 
     @Override
@@ -20,18 +20,27 @@ public class GalleryAdapter extends SimpleCursorAdapter {
             convertView = createView(parent);
         }
 
-        updateView(convertView, position);
+        updateView((GalleryItemView) convertView, position);
 
         return convertView;
     }
 
     private View createView(ViewGroup parent) {
-        // TODO: create a new View
-        return null;
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+
+        return inflater.inflate(R.layout.gallery_item_view, null, false);
     }
 
-    private void updateView(View convertView, int position) {
-        // TODO: update the view's contents, based on its position
+    private void updateView(GalleryItemView view, int position) {
+        GalleryItem item = getItem(position);
+
+        view.updateWith(position, item, listener);
+    }
+
+    public interface GalleryItemListener {
+
+        void onGalleryItemClicked(String itemId);
+
     }
 
 }
