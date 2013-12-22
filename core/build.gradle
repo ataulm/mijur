@@ -7,25 +7,3 @@ dependencies {
     testCompile 'junit:junit:4.11'
     testCompile 'org.mockito:mockito-core:1.9.5'
 }
-
-task generateSources {
-    outputDir = file("$buildDir/../src/main/java/uk/co/ataulm/mijur/core/api")
-    outputs.dir outputDir
-    doFirst {
-        outputDir.exists() || outputDir.mkdirs()
-
-        String API_CLIENT_ID = "public static final String API_CLIENT_ID = \"<your imgur uk.co.ataulm.mijur.core.api client id>\";\n"
-        String API_CLIENT_SECRET = "public static final String API_CLIENT_SECRET = \"<your imgur uk.co.ataulm.mijur.core.api client secret>\";\n"
-
-        try {
-            API_CLIENT_ID = "public static final String API_CLIENT_ID = \"" + apiClientId + "\";\n"
-            API_CLIENT_SECRET = "public static final String API_CLIENT_SECRET = \"" + apiClientSecret + "\";\n"
-        } catch (Exception e) {
-            println "gradle.properties not set with apiClientId and/or apiClientSecret. API calls will not work.";
-        }
-
-        new File(outputDir, "ApiConstants.java").write("package uk.co.ataulm.mijur.core.api;\n\npublic class ApiConstants {\n" + "    " + API_CLIENT_ID + "    " + API_CLIENT_SECRET + "}")
-    }
-}
-
-compileJava.source generateSources.outputs.files, sourceSets.main.java

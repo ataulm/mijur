@@ -3,6 +3,8 @@ package uk.co.ataulm.mijur.app.gallery;
 import android.content.AsyncTaskLoader;
 import android.content.Context;
 
+import com.novoda.notils.logger.Novogger;
+
 import java.util.List;
 
 import uk.co.ataulm.mijur.core.api.Imgur;
@@ -27,13 +29,26 @@ class GalleryElementLoader extends AsyncTaskLoader<List<GalleryElement>> {
     }
 
     @Override
+    protected void onStartLoading() {
+        if (data != null) {
+            Novogger.d("onStartLoading, data not null");
+            deliverResult(data);
+        } else {
+            Novogger.d("onStartLoading, forceLoad()");
+            forceLoad();
+        }
+    }
+
+    @Override
     public List<GalleryElement> loadInBackground() {
         Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
+        Novogger.d("loadInBackground, gallery size: " + gallery.size());
         return gallery.elements;
     }
 
     @Override
     public void deliverResult(List<GalleryElement> data) {
+        Novogger.d("deliverResult, data:" + data.size());
         if (isReset()) {
             return;
         }
@@ -41,16 +56,11 @@ class GalleryElementLoader extends AsyncTaskLoader<List<GalleryElement>> {
         this.data = data;
 
         if (isStarted()) {
+            Novogger.d("deliverResult, isStarted");
             super.deliverResult(data);
         }
     }
 
-    @Override
-    protected void onStartLoading() {
-        if (data != null) {
-            deliverResult(data);
-        }
-    }
 
     @Override
     protected void onStopLoading() {
