@@ -1,9 +1,11 @@
-package uk.co.ataulm.mijur.app.adapter;
+package uk.co.ataulm.mijur.app.gallery;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
+
+import uk.co.ataulm.mijur.core.model.GalleryElement;
 
 public class GalleryItemView extends ImageView {
 
@@ -19,7 +21,7 @@ public class GalleryItemView extends ImageView {
         super(context, attrs, defStyle);
     }
 
-    public void updateWith(int position, final GalleryItem item, final GalleryAdapter.GalleryItemListener listener) {
+    void updateWith(int position, final GalleryElement item, final GalleryAdapter.GalleryItemListener listener) {
         // TODO: get the image using imageloader.load(url, this) instead of this background thing
         if (position % 2 == 0) {
             setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));

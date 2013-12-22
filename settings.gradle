@@ -1,1 +1,1 @@
-include ':app', ':core', ':etsygrid'
+include ':core', ':etsygrid', ':app'

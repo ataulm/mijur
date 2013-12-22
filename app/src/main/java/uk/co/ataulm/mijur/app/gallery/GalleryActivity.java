@@ -1,33 +1,39 @@
-package uk.co.ataulm.mijur.app;
+package uk.co.ataulm.mijur.app.gallery;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.Adapter;
+import android.widget.GridView;
 import android.widget.Toast;
 
-import com.etsy.android.grid.StaggeredGridView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.Novogger;
 
 import uk.co.ataulm.imgur.R;
-import uk.co.ataulm.mijur.app.adapter.GalleryAdapter;
+import uk.co.ataulm.mijur.app.MijurListAdapter;
+import uk.co.ataulm.mijur.core.model.Gallery;
+import uk.co.ataulm.mijur.core.model.GalleryElement;
 
-public class Gallery extends Activity implements GalleryAdapter.GalleryItemListener {
+public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
-    private StaggeredGridView grid;
-    private Adapter adapter;
+    private GridView grid;
+    private MijurListAdapter<GalleryElement> adapter;
+    private Gallery gallery;
+    private GalleryElement element;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
+
         adapter = new GalleryAdapter(this);
-        grid = Views.findById(this, R.id.grid);
         setupGrid();
+
+        getLoaderManager().initLoader(0, null, new GalleryLoaderCallbacks(this, adapter));
     }
 
     private void setupGrid() {
-
+        grid = Views.findById(this, R.id.grid);
+        grid.setAdapter(adapter);
     }
 
     @Override

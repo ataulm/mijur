@@ -1,16 +1,18 @@
-package uk.co.ataulm.mijur.app.adapter;
+package uk.co.ataulm.mijur.app.gallery;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import uk.co.ataulm.imgur.R;
+import uk.co.ataulm.mijur.app.MijurListAdapter;
+import uk.co.ataulm.mijur.core.model.GalleryElement;
 
-public class GalleryAdapter extends MijurListAdapter<GalleryItem> {
+class GalleryAdapter extends MijurListAdapter<GalleryElement> {
 
     private final GalleryItemListener listener;
 
-    public GalleryAdapter(GalleryItemListener listener) {
+    GalleryAdapter(GalleryItemListener listener) {
         this.listener = listener;
     }
 
@@ -32,12 +34,12 @@ public class GalleryAdapter extends MijurListAdapter<GalleryItem> {
     }
 
     private void updateView(GalleryItemView view, int position) {
-        GalleryItem item = getItem(position);
+        GalleryElement item = getItem(position);
 
         view.updateWith(position, item, listener);
     }
 
-    public interface GalleryItemListener {
+    interface GalleryItemListener {
 
         void onGalleryItemClicked(String itemId);
 

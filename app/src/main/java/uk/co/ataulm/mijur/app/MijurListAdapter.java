@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur.app.adapter;
+package uk.co.ataulm.mijur.app;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,16 +9,16 @@ import java.util.List;
 
 public abstract class MijurListAdapter<T> extends BaseAdapter {
 
-    private List<T> elements = Collections.emptyList();
+    private List<T> data = Collections.emptyList();
 
     @Override
     public int getCount() {
-        return elements.size();
+        return data.size();
     }
 
     @Override
     public T getItem(int position) {
-        return elements.get(position);
+        return data.get(position);
     }
 
     @Override
@@ -28,5 +28,10 @@ public abstract class MijurListAdapter<T> extends BaseAdapter {
 
     @Override
     public abstract View getView(int position, View convertView, ViewGroup parent);
+
+    public void swapData(List<T> data) {
+        this.data = data;
+        notifyDataSetChanged();
+    }
 
 }
