@@ -2,9 +2,9 @@ package uk.co.ataulm.mijur.app.gallery;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.GridView;
 import android.widget.Toast;
 
+import com.etsy.android.grid.StaggeredGridView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.Novogger;
 
@@ -15,7 +15,7 @@ import uk.co.ataulm.mijur.core.model.GalleryElement;
 
 public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
-    private GridView grid;
+    private StaggeredGridView grid;
     private MijurListAdapter<GalleryElement> adapter;
     private Gallery gallery;
     private GalleryElement element;

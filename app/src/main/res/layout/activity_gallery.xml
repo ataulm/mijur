@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.etsy.android.grid.StaggeredGridView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   android:id="@+id/grid"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:numColumns="3"
-  android:gravity="center"
-  android:stretchMode="columnWidth" />
+  app:item_margin="5dp"
+  app:column_count_portrait="3"
+  app:column_count_landscape="4"/>
