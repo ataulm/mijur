@@ -4,7 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import uk.co.ataulm.imgur.R;
+import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.app.MijurListAdapter;
 import uk.co.ataulm.mijur.core.model.GalleryElement;
 

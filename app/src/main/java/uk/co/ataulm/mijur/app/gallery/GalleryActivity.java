@@ -8,17 +8,14 @@ import com.etsy.android.grid.StaggeredGridView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.Novogger;
 
-import uk.co.ataulm.imgur.R;
+import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.app.MijurListAdapter;
-import uk.co.ataulm.mijur.core.model.Gallery;
 import uk.co.ataulm.mijur.core.model.GalleryElement;
 
 public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
     private StaggeredGridView grid;
     private MijurListAdapter<GalleryElement> adapter;
-    private Gallery gallery;
-    private GalleryElement element;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +29,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
     }
 
     private void setupGrid() {
-        grid = Views.findById(this, R.id.grid);
+        grid = Views.findById(this, R.id.gridview);
         grid.setAdapter(adapter);
     }
 
