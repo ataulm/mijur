@@ -5,6 +5,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.novoda.notils.logger.Novogger;
+
 import uk.co.ataulm.mijur.core.model.GalleryElement;
 
 public class GalleryItemView extends ImageView {
@@ -23,6 +25,7 @@ public class GalleryItemView extends ImageView {
 
     void updateWith(int position, final GalleryElement item, final GalleryAdapter.GalleryItemListener listener) {
         // TODO: get the image using imageloader.load(url, this) instead of this background thing
+        Novogger.d(String.format("updateWith called. position: %d, itemid :%s", position, item.id));
 
         if (position % 2 == 0) {
             setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
