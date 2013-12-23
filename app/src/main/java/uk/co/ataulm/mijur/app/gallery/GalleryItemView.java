@@ -10,6 +10,7 @@ import com.novoda.notils.logger.Novogger;
 
 import java.util.Random;
 
+import uk.co.ataulm.mijur.app.Matisse;
 import uk.co.ataulm.mijur.core.model.GalleryElement;
 
 public class GalleryItemView extends ImageView {
@@ -39,6 +40,7 @@ public class GalleryItemView extends ImageView {
         }
         setMinimumHeight((int) (150 + 100 * RANDOM.nextDouble()));
 
+        Matisse.load(item.link, this);
 
         setOnClickListener(new OnClickListener() {
             @Override
