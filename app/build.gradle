@@ -1,6 +1,12 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots"
+        }
+        maven {
+            url "https://github.com/novoda/public-mvn-repo/raw/master/releases"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.6.+'
@@ -11,6 +17,8 @@ apply plugin: 'android'
 
 dependencies {
     compile project(':core')
+    compile project(':etsygrid')
+    compile 'com.novoda:notils:2.1-SNAPSHOT'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.android.support:support-v13:18.0.0'
 }
