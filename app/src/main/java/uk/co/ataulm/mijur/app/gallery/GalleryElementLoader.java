@@ -2,9 +2,12 @@ package uk.co.ataulm.mijur.app.gallery;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 import com.novoda.notils.logger.Novogger;
 
+import java.util.Collections;
 import java.util.List;
 
 import uk.co.ataulm.mijur.core.api.Imgur;
@@ -41,9 +44,18 @@ class GalleryElementLoader extends AsyncTaskLoader<List<GalleryItem>> {
 
     @Override
     public List<GalleryItem> loadInBackground() {
-        Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
-        Novogger.d("loadInBackground, gallery size: " + gallery.size());
-        return gallery.elements;
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+        if (networkInfo != null && networkInfo.isConnected()) {
+            Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
+            Novogger.d("loadInBackground, gallery size: " + gallery.size());
+            return gallery.elements;
+        }
+
+        // TODO: fallback to cached gallery
+        return Collections.emptyList();
     }
 
     @Override
