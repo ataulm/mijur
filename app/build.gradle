@@ -18,6 +18,7 @@ apply plugin: 'android'
 dependencies {
     compile project(':core')
     compile project(':etsygrid')
+
     compile 'com.novoda:notils:2.1-SNAPSHOT'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.android.support:support-v13:18.0.0'
@@ -34,15 +35,34 @@ android {
         versionName "0.0.1"
     }
 
+    signingConfigs {
+        release {
+            storeFile file("mijur.keystore")
+            storePassword signingPassword
+            keyAlias signingKeyAlias
+            keyPassword signingPassword
+        }
+    }
+
     buildTypes {
+        // for different content provider
+        final String PROVIDER_AUTHORITY_DEBUG = ""
+        final String PROVIDER_AUTHORITY_RELEASE = ""
+
+
         debug {
             packageNameSuffix ".debug"
             versionNameSuffix "-debug"
+
+            buildConfig PROVIDER_AUTHORITY_DEBUG
         }
 
         release {
             debuggable false
             jniDebugBuild false
+            signingConfig signingConfigs.release
+
+            buildConfig PROVIDER_AUTHORITY_RELEASE
         }
-    }
+    }    
 }
