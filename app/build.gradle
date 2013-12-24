@@ -37,10 +37,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("mijur.keystore")
-            storePassword signingPassword
-            keyAlias signingKeyAlias
-            keyPassword signingPassword
+//            storeFile file("mijur.keystore")
+//            storePassword signingPassword
+//            keyAlias signingKeyAlias
+//            keyPassword signingPassword
         }
     } 
 
