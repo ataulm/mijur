@@ -11,7 +11,7 @@ import com.novoda.notils.logger.Novogger;
 import java.util.Random;
 
 import uk.co.ataulm.mijur.app.Matisse;
-import uk.co.ataulm.mijur.core.model.GalleryElement;
+import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 public class GalleryItemView extends ImageView {
 
@@ -28,26 +28,31 @@ public class GalleryItemView extends ImageView {
         super(context, attrs);
     }
 
-    void updateWith(int position, final GalleryElement item, final GalleryAdapter.GalleryItemListener listener) {
-        Novogger.d(String.format("updateWith called. position: %d, itemid :%s", position, item.id));
+    void updateWith(final int position, final GalleryItem item, final GalleryAdapter.GalleryItemListener listener) {
+        applyTemporaryDifferentiation(position);
 
         setHeightRatio(position);
+        Matisse.load(GalleryItem.getImageUrlFor(item), this);
 
+        setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onGalleryItemClicked(item);
+            }
+        });
+    }
+
+    /**
+     * This is just temporary to make it look interesting during development!
+     * @param position
+     */
+    private void applyTemporaryDifferentiation(int position) {
         if (position % 2 == 0) {
             setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
         } else {
             setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
         }
         setMinimumHeight((int) (150 + 100 * RANDOM.nextDouble()));
-
-        Matisse.load(item.link, this);
-
-        setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.onGalleryItemClicked(item.id);
-            }
-        });
     }
 
     @Override

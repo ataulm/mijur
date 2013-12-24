@@ -10,9 +10,9 @@ import com.novoda.notils.logger.Novogger;
 import java.util.List;
 
 import uk.co.ataulm.mijur.app.MijurListAdapter;
-import uk.co.ataulm.mijur.core.model.GalleryElement;
+import uk.co.ataulm.mijur.core.model.GalleryItem;
 
-class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<GalleryElement>> {
+class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<GalleryItem>> {
 
     private Context context;
     private MijurListAdapter adapter;
@@ -29,7 +29,7 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<Galle
     }
 
     @Override
-    public void onLoadFinished(Loader<List<GalleryElement>> loader, List<GalleryElement> data) {
+    public void onLoadFinished(Loader<List<GalleryItem>> loader, List<GalleryItem> data) {
         adapter.swapData(data);
         Novogger.d("adapter count: " + adapter.getCount());
     }

@@ -10,12 +10,12 @@ import com.novoda.notils.logger.Novogger;
 
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.app.MijurListAdapter;
-import uk.co.ataulm.mijur.core.model.GalleryElement;
+import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
     private StaggeredGridView grid;
-    private MijurListAdapter<GalleryElement> adapter;
+    private MijurListAdapter<GalleryItem> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
     }
 
     @Override
-    public void onGalleryItemClicked(String itemId) {
-        Novogger.v("Clicked:" + itemId);
-        Toast.makeText(this, "Clicked: " + itemId, Toast.LENGTH_SHORT).show();
+    public void onGalleryItemClicked(GalleryItem item) {
+        Novogger.v("Clicked:" + item.toString());
+        Toast.makeText(this, "Clicked: " + item.id, Toast.LENGTH_SHORT).show();
     }
 }
