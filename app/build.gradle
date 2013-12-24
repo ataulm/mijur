@@ -31,16 +31,16 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 19
-        versionCode 1519001
-        versionName "0.0.1"
+        versionCode 1519002
+        versionName "0.0.2"
     }
 
     signingConfigs {
         release {
-//            storeFile file("mijur.keystore")
-//            storePassword signingPassword
-//            keyAlias signingKeyAlias
-//            keyPassword signingPassword
+            storeFile file("mijur.keystore")
+            storePassword signingPassword
+            keyAlias signingKeyAlias
+            keyPassword signingPassword
         }
     } 
 
