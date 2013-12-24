@@ -34,16 +34,15 @@ android {
         versionCode 1519001
         versionName "0.0.1"
     }
-/*
+
     signingConfigs {
         release {
-            storeFile file("mijur.keystore")
-            storePassword signingPassword
-            keyAlias signingKeyAlias
-            keyPassword signingPassword
+//            storeFile file("mijur.keystore")
+//            storePassword signingPassword
+//            keyAlias signingKeyAlias
+//            keyPassword signingPassword
         }
     } 
-*/    
 
     buildTypes {
         // for different content provider
@@ -62,7 +61,7 @@ android {
             debuggable false
             jniDebugBuild false
         
-            // signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
 
             buildConfig PROVIDER_AUTHORITY_RELEASE
         }
