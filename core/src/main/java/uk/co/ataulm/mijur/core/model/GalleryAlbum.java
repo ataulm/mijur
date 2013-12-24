@@ -4,7 +4,7 @@ import java.util.List;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryAlbum extends GalleryElement {
+public class GalleryAlbum extends GalleryItem {
 
     public String cover;
     public String privacy;
