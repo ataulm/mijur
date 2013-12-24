@@ -6,12 +6,12 @@ public class Gallery {
 
     public final int albumCount;
     public final int imageCount;
-    public List<GalleryElement> elements;
+    public List<GalleryItem> elements;
 
-    public Gallery(List<GalleryElement> elements) {
+    public Gallery(List<GalleryItem> elements) {
         this.elements = elements;
         int count = 0;
-        for (GalleryElement element : elements) {
+        for (GalleryItem element : elements) {
             if (element.is_album) {
                 count++;
             }
@@ -20,7 +20,7 @@ public class Gallery {
         this.imageCount = elements.size() - albumCount;
     }
 
-    public List<GalleryElement> getValues() {
+    public List<GalleryItem> getValues() {
         return elements;
     }
 
@@ -41,7 +41,7 @@ public class Gallery {
         StringBuilder builder = new StringBuilder(getClass().getName());
         builder.append("{");
 
-        for (GalleryElement element : elements) {
+        for (GalleryItem element : elements) {
             builder.append(element.link).append(", ");
         }
 

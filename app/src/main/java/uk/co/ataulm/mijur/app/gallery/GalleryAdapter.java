@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.app.MijurListAdapter;
-import uk.co.ataulm.mijur.core.model.GalleryElement;
+import uk.co.ataulm.mijur.core.model.GalleryItem;
 
-class GalleryAdapter extends MijurListAdapter<GalleryElement> {
+class GalleryAdapter extends MijurListAdapter<GalleryItem> {
 
     private final GalleryItemListener listener;
 
@@ -34,14 +34,14 @@ class GalleryAdapter extends MijurListAdapter<GalleryElement> {
     }
 
     private void updateView(GalleryItemView view, int position) {
-        GalleryElement item = getItem(position);
+        GalleryItem item = getItem(position);
 
         view.updateWith(position, item, listener);
     }
 
     interface GalleryItemListener {
 
-        void onGalleryItemClicked(String itemId);
+        void onGalleryItemClicked(GalleryItem item);
 
     }
 

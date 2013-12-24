@@ -9,7 +9,7 @@ import java.util.List;
 
 import uk.co.ataulm.mijur.core.api.Imgur;
 import uk.co.ataulm.mijur.core.model.Gallery;
-import uk.co.ataulm.mijur.core.model.GalleryElement;
+import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 /**
  * GalleryElementLoader is used to retrieve a list of GalleryElements using the Imgur api.
@@ -18,14 +18,14 @@ import uk.co.ataulm.mijur.core.model.GalleryElement;
  * It may monitor for content changes later if and when a database is used (at which point this loader may be obsolete),
  * which could be used to cache "pages" of the Gallery (but not the images themselves).
  */
-class GalleryElementLoader extends AsyncTaskLoader<List<GalleryElement>> {
+class GalleryElementLoader extends AsyncTaskLoader<List<GalleryItem>> {
 
-    private List<GalleryElement> data;
+    private List<GalleryItem> data;
     private int page;
 
     public GalleryElementLoader(Context context) {
         super(context);
-        page = 1;
+        page = 0;
     }
 
     @Override
@@ -40,14 +40,14 @@ class GalleryElementLoader extends AsyncTaskLoader<List<GalleryElement>> {
     }
 
     @Override
-    public List<GalleryElement> loadInBackground() {
+    public List<GalleryItem> loadInBackground() {
         Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
         Novogger.d("loadInBackground, gallery size: " + gallery.size());
         return gallery.elements;
     }
 
     @Override
-    public void deliverResult(List<GalleryElement> data) {
+    public void deliverResult(List<GalleryItem> data) {
         Novogger.d("deliverResult, data:" + data.size());
         if (isReset()) {
             return;

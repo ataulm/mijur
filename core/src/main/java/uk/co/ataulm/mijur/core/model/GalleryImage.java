@@ -2,7 +2,7 @@ package uk.co.ataulm.mijur.core.model;
 
 import uk.co.ataulm.mijur.core.util.ImgurUtils;
 
-public class GalleryImage extends GalleryElement {
+public class GalleryImage extends GalleryItem {
 
     public String type;
     public boolean animated;
