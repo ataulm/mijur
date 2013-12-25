@@ -2,6 +2,9 @@ package uk.co.ataulm.mijur.app.gallery;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.etsy.android.grid.StaggeredGridView;
@@ -16,6 +19,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
 
     private StaggeredGridView grid;
     private MijurListAdapter<GalleryItem> adapter;
+    private GalleryLoaderCallbacks loaderCallbacks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +27,32 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         setContentView(R.layout.activity_gallery);
 
         adapter = new GalleryAdapter(this);
+        loaderCallbacks = new GalleryLoaderCallbacks(this, adapter);
         setupGrid();
 
-        getLoaderManager().initLoader(0, null, new GalleryLoaderCallbacks(this, adapter));
+        getLoaderManager().initLoader(0, null, loaderCallbacks);
     }
 
     private void setupGrid() {
         grid = Views.findById(this, R.id.gridview);
         grid.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.gallery, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_item_refresh:
+                getLoaderManager().restartLoader(0, null, loaderCallbacks);
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override

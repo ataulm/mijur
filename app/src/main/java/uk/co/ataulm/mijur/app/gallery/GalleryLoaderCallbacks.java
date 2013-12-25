@@ -4,6 +4,7 @@ import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Loader;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.novoda.notils.logger.Novogger;
 
@@ -31,6 +32,7 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<Galle
     @Override
     public void onLoadFinished(Loader<List<GalleryItem>> loader, List<GalleryItem> data) {
         adapter.swapData(data);
+        Toast.makeText(context, "Loaded most viral, newest first", Toast.LENGTH_SHORT).show();
         Novogger.d("adapter count: " + adapter.getCount());
     }
 

@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">mĭjur</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="thumbnail_suffix">t</string> <!-- http://api.imgur.com/models/gallery_image -->
     <string name="action_settings">Settings</string>
 
 </resources>

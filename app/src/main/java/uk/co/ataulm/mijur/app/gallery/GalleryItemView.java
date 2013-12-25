@@ -10,6 +10,7 @@ import com.novoda.notils.logger.Novogger;
 
 import java.util.Random;
 
+import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.app.Matisse;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
@@ -32,7 +33,9 @@ public class GalleryItemView extends ImageView {
         applyTemporaryDifferentiation(position);
 
         setHeightRatio(position);
-        Matisse.load(GalleryItem.getImageUrlFor(item), this);
+        String thumbnailSuffix = getResources().getString(R.string.thumbnail_suffix);
+        String imageUrl = GalleryItem.getThumbnailImageUrlFor(item, thumbnailSuffix);
+        Matisse.load(imageUrl, this);
 
         setOnClickListener(new OnClickListener() {
             @Override
