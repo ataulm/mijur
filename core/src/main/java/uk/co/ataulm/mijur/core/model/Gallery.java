@@ -6,7 +6,7 @@ public class Gallery {
 
     public final int albumCount;
     public final int imageCount;
-    public List<GalleryItem> elements;
+    public final List<GalleryItem> elements;
 
     public Gallery(List<GalleryItem> elements) {
         this.elements = elements;
@@ -20,20 +20,8 @@ public class Gallery {
         this.imageCount = elements.size() - albumCount;
     }
 
-    public List<GalleryItem> getValues() {
-        return elements;
-    }
-
     public int size() {
         return elements.size();
-    }
-
-    public int getAlbumCount() {
-        return albumCount;
-    }
-
-    public int getImageCount() {
-        return imageCount;
     }
 
     @Override

@@ -2,9 +2,7 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
-        maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots"
-        }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.6.+'
@@ -12,9 +10,7 @@ buildscript {
 }
 
 repositories {
-    maven {
-        url "https://github.com/novoda/public-mvn-repo/raw/master/releases"
-    }
+    maven { url 'https://github.com/novoda/public-mvn-repo/raw/master/releases' }
 }
 
 apply plugin: 'android'
@@ -22,7 +18,6 @@ apply plugin: 'android'
 dependencies {
     compile project(':core')
     compile project(':etsygrid')
-
     compile 'com.novoda:notils:2.1-SNAPSHOT'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.novoda:sqliteprovider-core:1.0.1-SNAPSHOT'
@@ -31,7 +26,7 @@ dependencies {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.0"
+    buildToolsVersion '19.0.0'
 
     defaultConfig {
         minSdkVersion 15

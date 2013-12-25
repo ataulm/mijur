@@ -1,15 +1,14 @@
 package uk.co.ataulm.mijur.core.model;
 
-/**
- * GalleryItem could be either a GalleryImage or GalleryAlbum.
- */
+import java.util.List;
+
 public class GalleryItem {
 
+    // both gallery album and gallery image
     public String id;
     public String title;
     public String description;
     public long datetime;
-    public String cover;
     public int views;
     public String link;
     public String vote;
@@ -18,6 +17,23 @@ public class GalleryItem {
     public int downs;
     public int score;
     public boolean is_album;
+
+    // gallery album
+    public String cover;
+    public String privacy;
+    public String layout;
+    public int images_count;
+    public List<Image> images;
+
+    // gallery image
+    public String type;
+    public boolean animated;
+    public int width;
+    public int height;
+    public long size;
+    public long bandwidth;
+    public String deletehash;
+    public String section;
 
     @Override
     public String toString() {

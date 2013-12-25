@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <uk.co.ataulm.mijur.app.gallery.GalleryItemView xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="100dp"
-  android:layout_height="100dp"
-  android:maxHeight="300dp"
-  android:scaleType="centerInside"
-  android:src="@drawable/ic_launcher"/>
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:scaleType="centerCrop" />
