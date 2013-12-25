@@ -1,14 +1,20 @@
 package uk.co.ataulm.mijur.app.gallery;
 
+import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.Random;
 
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.app.MijurListAdapter;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 class GalleryAdapter extends MijurListAdapter<GalleryItem> {
+
+    private static final Random RANDOM = new Random();
+    private static final SparseArray<Double> POSITION_HEIGHT_RATIOS = new SparseArray<Double>();
 
     private final GalleryItemListener listener;
 
@@ -35,8 +41,23 @@ class GalleryAdapter extends MijurListAdapter<GalleryItem> {
 
     private void updateView(GalleryItemView view, int position) {
         GalleryItem item = getItem(position);
+        view.setHeightRatio(calculateHeightRatio(position));
 
         view.updateWith(position, item, listener);
+    }
+
+    private double calculateHeightRatio(int position) {
+        double ratio = POSITION_HEIGHT_RATIOS.get(position, 0.0);
+        if (ratio == 0) {
+            ratio = getRandomHeightRatio();
+            POSITION_HEIGHT_RATIOS.append(position, ratio);
+        }
+        return ratio;
+    }
+
+    private double getRandomHeightRatio() {
+        // height will be 1.0 - 1.5 the width
+        return (RANDOM.nextDouble() / 2.0) + 1.0;
     }
 
     interface GalleryItemListener {
