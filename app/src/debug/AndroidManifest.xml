@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="uk.co.ataulm.mijur">
+
+  <application>
+    <provider
+      android:name="uk.co.ataulm.mijur.app.ContentProvider"
+      android:authorities="uk.co.ataulm.mijur.debug.ContentProvider"
+      android:exported="false" />
+  </application>
+</manifest>
