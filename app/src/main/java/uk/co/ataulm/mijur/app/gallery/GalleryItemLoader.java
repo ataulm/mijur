@@ -15,18 +15,18 @@ import uk.co.ataulm.mijur.core.model.Gallery;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 /**
- * GalleryElementLoader is used to retrieve a list of GalleryElements using the Imgur api.
+ * GalleryItemLoader is used to retrieve a list of GalleryItems using the Imgur api.
  * <p/>
  * It doesn't currently monitor for content changes because the data is not modified after it is retrieved.
  * It may monitor for content changes later if and when a database is used (at which point this loader may be obsolete),
  * which could be used to cache "pages" of the Gallery (but not the images themselves).
  */
-class GalleryElementLoader extends AsyncTaskLoader<List<GalleryItem>> {
+class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
 
     private List<GalleryItem> data;
     private int page;
 
-    public GalleryElementLoader(Context context) {
+    public GalleryItemLoader(Context context) {
         super(context);
         page = 0;
     }
@@ -50,6 +50,7 @@ class GalleryElementLoader extends AsyncTaskLoader<List<GalleryItem>> {
 
         if (networkInfo != null && networkInfo.isConnected()) {
             Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
+            GalleryItemPersister.persist(getContext().getContentResolver(), gallery.elements);
             Novogger.d("loadInBackground, gallery size: " + gallery.size());
             return gallery.elements;
         }

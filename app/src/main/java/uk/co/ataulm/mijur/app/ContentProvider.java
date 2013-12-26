@@ -18,10 +18,10 @@ public class ContentProvider extends SQLiteContentProviderImpl {
     }
 
     public enum GalleryItem {
-        id,                     // String, id of the image/album (unique primary key)
+        _id,                    // String, id of the image/album (unique primary key)
         title,                  // String, caption
         description,            // String, description
-        datetime,               // long, time submitted to gallery (epoch)
+        datetime,               // String, time submitted to gallery (1970-01-01T00:00:00Z)
         views,                  // int, number of views
         link,                   // String, url to image (direct), or album (webpage)
         account_url,            // String, username of uploader's account
@@ -39,6 +39,8 @@ public class ContentProvider extends SQLiteContentProviderImpl {
         size,                   // long, bytes
         bandwidth,              // long, bytes
         deletehash,             // String, if you're logged in as image owner
+        lastSynced              // String (1970-01-01T00:00:00Z)
+
     }
 
     /**

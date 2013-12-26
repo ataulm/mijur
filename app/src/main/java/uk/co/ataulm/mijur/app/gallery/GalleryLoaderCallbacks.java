@@ -26,7 +26,7 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<Galle
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
         Novogger.d("onCreateLoader.adapter count: " + adapter.getCount());
-        return new GalleryElementLoader(context);
+        return new GalleryItemLoader(context);
     }
 
     @Override
