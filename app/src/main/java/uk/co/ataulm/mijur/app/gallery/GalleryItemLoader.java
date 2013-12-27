@@ -34,29 +34,31 @@ class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
     @Override
     protected void onStartLoading() {
         if (data != null) {
-            Novogger.d("onStartLoading, data not null");
             deliverResult(data);
         } else {
-            Novogger.d("onStartLoading, forceLoad()");
             forceLoad();
         }
     }
 
     @Override
     public List<GalleryItem> loadInBackground() {
-        ConnectivityManager connectivityManager =
-                (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-        if (networkInfo != null && networkInfo.isConnected()) {
+        if (networkAvailable()) {
             Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
             GalleryItemPersister.persist(getContext().getContentResolver(), gallery.elements);
-            Novogger.d("loadInBackground, gallery SIZE_BYTES: " + gallery.size());
             return gallery.elements;
         }
 
         // TODO: fallback to cached gallery
         return Collections.emptyList();
+    }
+
+    private boolean networkAvailable() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+        return networkInfo != null && networkInfo.isConnected();
     }
 
     @Override
@@ -73,7 +75,6 @@ class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
             super.deliverResult(data);
         }
     }
-
 
     @Override
     protected void onStopLoading() {
