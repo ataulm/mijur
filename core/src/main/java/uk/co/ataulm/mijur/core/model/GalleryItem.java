@@ -2,6 +2,8 @@ package uk.co.ataulm.mijur.core.model;
 
 import java.util.List;
 
+import org.joda.time.DateTime;
+
 public class GalleryItem {
 
     private static final String BASE_URL = "http://i.imgur.com/";
@@ -37,6 +39,9 @@ public class GalleryItem {
     public long bandwidth;
     public String deletehash;
     public String section;
+
+    public DateTime firstSynced;
+    public DateTime lastSynced;
 
     @Override
     public String toString() {

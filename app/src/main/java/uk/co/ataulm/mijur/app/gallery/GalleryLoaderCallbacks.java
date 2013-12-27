@@ -3,22 +3,18 @@ package uk.co.ataulm.mijur.app.gallery;
 import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Loader;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.novoda.notils.logger.Novogger;
 
-import java.util.List;
-
-import uk.co.ataulm.mijur.app.MijurListAdapter;
-import uk.co.ataulm.mijur.core.model.GalleryItem;
-
-class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<GalleryItem>> {
+class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private Context context;
-    private MijurListAdapter adapter;
+    private GalleryAdapter adapter;
 
-    GalleryLoaderCallbacks(Context context, MijurListAdapter adapter) {
+    GalleryLoaderCallbacks(Context context, GalleryAdapter adapter) {
         this.context = context.getApplicationContext();
         this.adapter = adapter;
     }
@@ -26,12 +22,12 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks<List<Galle
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
         Novogger.d("onCreateLoader.adapter count: " + adapter.getCount());
-        return new GalleryItemLoader(context);
+        return new GalleryItemCursorLoader(context);
     }
 
     @Override
-    public void onLoadFinished(Loader<List<GalleryItem>> loader, List<GalleryItem> data) {
-        adapter.swapData(data);
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        adapter.changeCursor(data);
         Toast.makeText(context, "Loaded most viral, newest first", Toast.LENGTH_SHORT).show();
         Novogger.d("adapter count: " + adapter.getCount());
     }

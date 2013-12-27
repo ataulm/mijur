@@ -12,13 +12,12 @@ import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.Novogger;
 
 import uk.co.ataulm.mijur.R;
-import uk.co.ataulm.mijur.app.MijurListAdapter;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
     private StaggeredGridView grid;
-    private MijurListAdapter<GalleryItem> adapter;
+    private GalleryAdapter adapter;
     private GalleryLoaderCallbacks loaderCallbacks;
 
     @Override
@@ -26,7 +25,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        adapter = new GalleryAdapter(this);
+        adapter = new GalleryAdapter(getApplicationContext(), null, this);
         loaderCallbacks = new GalleryLoaderCallbacks(this, adapter);
         setupGrid();
 

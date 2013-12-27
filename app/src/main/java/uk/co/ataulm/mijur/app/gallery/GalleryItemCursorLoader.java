@@ -5,7 +5,6 @@ import android.content.CursorLoader;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.widget.Toast;
 
 import com.novoda.notils.logger.Novogger;
 
@@ -44,7 +43,6 @@ class GalleryItemCursorLoader extends CursorLoader {
     private void updateWithFreshData() {
         if (networkIsAvailable()) {
             Novogger.v("updateWithFreshData() | getting fresh data.");
-            Toast.makeText(getContext(), "Getting fresh data", Toast.LENGTH_SHORT).show();
             Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
             GalleryItemPersister.persist(getContext().getContentResolver(), gallery.elements);
         } else {
@@ -61,6 +59,7 @@ class GalleryItemCursorLoader extends CursorLoader {
     }
 
     private boolean isStale(Cursor cursor) {
+        cursor.moveToFirst();
         String lastSync = cursor.getString(cursor.getColumnIndex(Provider.GalleryItem.LAST_SYNCED_DATETIME.toString()));
         DateTime lastSyncedTime = new DateTime(lastSync);
         Interval interval = new Interval(lastSyncedTime, Instant.now());
