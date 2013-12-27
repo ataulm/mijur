@@ -1,23 +1,22 @@
 package uk.co.ataulm.mijur.core.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Gallery {
 
-    public final int albumCount;
-    public final int imageCount;
     public final List<GalleryItem> elements;
 
     public Gallery(List<GalleryItem> elements) {
         this.elements = elements;
-        int count = 0;
+        // currently, no support for albums or animated images
+        List<GalleryItem> toRemove = new ArrayList<GalleryItem>();
         for (GalleryItem element : elements) {
-            if (element.is_album) {
-                count++;
+            if (element.is_album || element.animated) {
+                toRemove.add(element);
             }
         }
-        this.albumCount = count;
-        this.imageCount = elements.size() - albumCount;
+        elements.removeAll(toRemove);
     }
 
     public int size() {
