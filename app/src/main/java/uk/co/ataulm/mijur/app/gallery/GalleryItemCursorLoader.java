@@ -5,6 +5,9 @@ import android.content.CursorLoader;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.widget.Toast;
+
+import com.novoda.notils.logger.Novogger;
 
 import org.joda.time.DateTime;
 import org.joda.time.Instant;
@@ -17,15 +20,15 @@ import uk.co.ataulm.mijur.core.model.Gallery;
 class GalleryItemCursorLoader extends CursorLoader {
 
     private static final int MINUTES_UNTIL_STALE = 60;
-    private int page;
     private static final String FALSE = "0";
+
+    private int page = 0;
 
     public GalleryItemCursorLoader(Context context) {
         super(context, Provider.Uris.GALLERY_ITEM.uri(), null,
                 Provider.GalleryItem.IS_ANIMATED + " = ? AND " + Provider.GalleryItem.IS_ALBUM + " = ?",
-                new String[] {FALSE, FALSE},
+                new String[]{FALSE, FALSE},
                 Provider.GalleryItem.SUBMISSION_DATETIME.toString());
-        page = 0;
     }
 
     @Override
@@ -39,13 +42,17 @@ class GalleryItemCursorLoader extends CursorLoader {
     }
 
     private void updateWithFreshData() {
-        if (networkAvailable()) {
+        if (networkIsAvailable()) {
+            Novogger.v("updateWithFreshData() | getting fresh data.");
+            Toast.makeText(getContext(), "Getting fresh data", Toast.LENGTH_SHORT).show();
             Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
             GalleryItemPersister.persist(getContext().getContentResolver(), gallery.elements);
+        } else {
+            Novogger.w("updateWithFreshData() | wanted fresh data, but no network.");
         }
     }
 
-    private boolean networkAvailable() {
+    private boolean networkIsAvailable() {
         ConnectivityManager connectivityManager =
                 (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -53,14 +60,18 @@ class GalleryItemCursorLoader extends CursorLoader {
         return networkInfo != null && networkInfo.isConnected();
     }
 
-
     private boolean isStale(Cursor cursor) {
         String lastSync = cursor.getString(cursor.getColumnIndex(Provider.GalleryItem.LAST_SYNCED_DATETIME.toString()));
         DateTime lastSyncedTime = new DateTime(lastSync);
         Interval interval = new Interval(lastSyncedTime, Instant.now());
-        if (interval.toDuration().getStandardMinutes() >= MINUTES_UNTIL_STALE) {
+        long minSinceLastSync = interval.toDuration().getStandardMinutes();
+
+        Novogger.d("isStale(Cursor) | min since lastsync: " + minSinceLastSync);
+
+        if (minSinceLastSync >= MINUTES_UNTIL_STALE) {
             return true;
         }
+
         return false;
     }
 
