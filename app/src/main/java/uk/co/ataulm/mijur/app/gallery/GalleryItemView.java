@@ -44,7 +44,7 @@ public class GalleryItemView extends ImageView {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         if (heightRatio > 0.0) {
-            // set the image views size
+            // set the IMAGE_ID PAGE_VIEWS SIZE_BYTES
             int width = MeasureSpec.getSize(widthMeasureSpec);
             int height = (int) (width * heightRatio);
             setMeasuredDimension(width, height);

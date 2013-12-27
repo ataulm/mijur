@@ -4,8 +4,8 @@
 
   <application>
     <provider
-      android:name="uk.co.ataulm.mijur.app.ContentProvider"
-      android:authorities="uk.co.ataulm.mijur.debug.ContentProvider"
+      android:name=".app.Provider"
+      android:authorities="uk.co.ataulm.mijur.debug.Provider"
       android:exported="false" />
   </application>
 </manifest>

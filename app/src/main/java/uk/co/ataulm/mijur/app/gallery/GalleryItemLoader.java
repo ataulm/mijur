@@ -51,7 +51,7 @@ class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
         if (networkInfo != null && networkInfo.isConnected()) {
             Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
             GalleryItemPersister.persist(getContext().getContentResolver(), gallery.elements);
-            Novogger.d("loadInBackground, gallery size: " + gallery.size());
+            Novogger.d("loadInBackground, gallery SIZE_BYTES: " + gallery.size());
             return gallery.elements;
         }
 

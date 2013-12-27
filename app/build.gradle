@@ -50,8 +50,8 @@ android {
     } 
 
     buildTypes {
-        final String PROVIDER_AUTHORITY_DEBUG = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.debug.ContentProvider\";\n";
-        final String PROVIDER_AUTHORITY_RELEASE = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.ContentProvider\";\n";
+        final String PROVIDER_AUTHORITY_DEBUG = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.debug.Provider\";\n";
+        final String PROVIDER_AUTHORITY_RELEASE = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.Provider\";\n";
 
         debug {
             packageNameSuffix ".debug"

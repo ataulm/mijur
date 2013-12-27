@@ -50,6 +50,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         switch (item.getItemId()) {
             case R.id.menu_item_refresh:
                 getLoaderManager().restartLoader(0, null, loaderCallbacks);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

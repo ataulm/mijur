@@ -56,7 +56,7 @@ class GalleryAdapter extends MijurListAdapter<GalleryItem> {
     }
 
     private double getRandomHeightRatio() {
-        // height will be 1.0 - 1.5 the width
+        // HEIGHT will be 1.0 - 1.5 the WIDTH
         return (RANDOM.nextDouble() / 2.0) + 1.0;
     }
 

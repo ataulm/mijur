@@ -2,6 +2,7 @@ package uk.co.ataulm.mijur.app.gallery;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.net.Uri;
 
 import java.util.ArrayList;
@@ -10,61 +11,73 @@ import java.util.List;
 import org.joda.time.DateTime;
 import org.joda.time.Instant;
 
-import uk.co.ataulm.mijur.app.ContentProvider;
+import uk.co.ataulm.mijur.app.Provider;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 public class GalleryItemPersister {
 
-    private static final Uri GALLERY_ITEM_URI = ContentProvider.Uris.GALLERY_ITEM.uri();
+    private static final Uri GALLERY_ITEM_URI = Provider.Uris.GALLERY_ITEM.uri();
 
     public static void persist(ContentResolver contentResolver, List<GalleryItem> galleryItems) {
         List<ContentValues> values = new ArrayList<ContentValues>();
         for (GalleryItem item : galleryItems) {
-            // FIXME: SQLException - "failed to update row into content://uk.co...Provider/GALLERY_ITEM"
-//            if (!update(contentResolver, item)) {
-                values.add(valuesFrom(item));
-//            }
+            if (!update(contentResolver, item)) {
+                values.add(newContentValuesFrom(item));
+            }
         }
         contentResolver.bulkInsert(GALLERY_ITEM_URI, values.toArray(new ContentValues[values.size()]));
     }
 
     private static boolean update(ContentResolver contentResolver, GalleryItem item) {
-        ContentValues values = new ContentValues();
-        values.put(ContentProvider.GalleryItem.views.name(), item.views);
-        values.put(ContentProvider.GalleryItem.ups.name(), item.ups);
-        values.put(ContentProvider.GalleryItem.downs.name(), item.downs);
-        values.put(ContentProvider.GalleryItem.score.name(), item.score);
-        values.put(ContentProvider.GalleryItem.bandwidth.name(), item.bandwidth);
-        values.put(ContentProvider.GalleryItem.lastSynced.name(), new DateTime(Instant.now()).toString());
+        ContentValues values = newUpdateContentValuesFrom(item);
 
-        String selection = ContentProvider.GalleryItem._id + " = '" + item.id + "'";
-        return contentResolver.update(GALLERY_ITEM_URI, values, selection, null) == 1;
+        // TODO: looking to do an INSERT OR REPLACE (sqlite has) or UPSERT (sqlite has not)
+        String selection = Provider.GalleryItem._ID + "= '" + item.id + "'";
+        Cursor cursor = contentResolver.query(GALLERY_ITEM_URI, null, selection, null, null);
+        if (cursor == null || cursor.getCount() == 0) {
+            return false;
+        }
+
+        contentResolver.update(GALLERY_ITEM_URI, values, selection, null);
+        return true;
     }
 
-    private static ContentValues valuesFrom(GalleryItem item) {
+    private static ContentValues newUpdateContentValuesFrom(GalleryItem item) {
         ContentValues values = new ContentValues();
-        values.put(ContentProvider.GalleryItem._id.name(), item.id);
-        values.put(ContentProvider.GalleryItem.title.name(), item.title);
-        values.put(ContentProvider.GalleryItem.description.name(), item.description);
-        values.put(ContentProvider.GalleryItem.datetime.name(), new DateTime(item.datetime * 1000).toString());
-        values.put(ContentProvider.GalleryItem.views.name(), item.views);
-        values.put(ContentProvider.GalleryItem.link.name(), item.link);
-        values.put(ContentProvider.GalleryItem.account_url.name(), item.account_url);
-        values.put(ContentProvider.GalleryItem.ups.name(), item.ups);
-        values.put(ContentProvider.GalleryItem.downs.name(), item.downs);
-        values.put(ContentProvider.GalleryItem.score.name(), item.score);
-        values.put(ContentProvider.GalleryItem.is_album.name(), item.is_album);
-        values.put(ContentProvider.GalleryItem.cover.name(), item.cover);
-        values.put(ContentProvider.GalleryItem.layout.name(), item.layout);
-        values.put(ContentProvider.GalleryItem.images_count.name(), item.images_count);
-        values.put(ContentProvider.GalleryItem.type.name(), item.type);
-        values.put(ContentProvider.GalleryItem.animated.name(), item.animated);
-        values.put(ContentProvider.GalleryItem.width.name(), item.width);
-        values.put(ContentProvider.GalleryItem.height.name(), item.height);
-        values.put(ContentProvider.GalleryItem.size.name(), item.size);
-        values.put(ContentProvider.GalleryItem.bandwidth.name(), item.bandwidth);
-        values.put(ContentProvider.GalleryItem.deletehash.name(), item.deletehash);
-        values.put(ContentProvider.GalleryItem.lastSynced.name(), new DateTime(Instant.now()).toString());
+        values.put(Provider.GalleryItem.PAGE_VIEWS.name(), item.views);
+        values.put(Provider.GalleryItem.UPVOTES.name(), item.ups);
+        values.put(Provider.GalleryItem.DOWNVOTES.name(), item.downs);
+        values.put(Provider.GalleryItem.SCORE.name(), item.score);
+        values.put(Provider.GalleryItem.BANDWIDTH_BYTES.name(), item.bandwidth);
+        values.put(Provider.GalleryItem.LAST_SYNCED_DATETIME.name(), new DateTime(Instant.now()).toString());
+        return values;
+    }
+
+    private static ContentValues newContentValuesFrom(GalleryItem item) {
+        ContentValues values = new ContentValues();
+        values.put(Provider.GalleryItem._ID.toString(), item.id);
+        values.put(Provider.GalleryItem.TITLE.toString(), item.title);
+        values.put(Provider.GalleryItem.DESCRIPTION.toString(), item.description);
+        values.put(Provider.GalleryItem.SUBMISSION_DATETIME.toString(), new DateTime(item.datetime * 1000).toString());
+        values.put(Provider.GalleryItem.PAGE_VIEWS.toString(), item.views);
+        values.put(Provider.GalleryItem.URL.toString(), item.link);
+        values.put(Provider.GalleryItem.UPLOADER.toString(), item.account_url);
+        values.put(Provider.GalleryItem.UPVOTES.toString(), item.ups);
+        values.put(Provider.GalleryItem.DOWNVOTES.toString(), item.downs);
+        values.put(Provider.GalleryItem.SCORE.toString(), item.score);
+        values.put(Provider.GalleryItem.IS_ALBUM.toString(), item.is_album);
+        values.put(Provider.GalleryItem.COVER_IMAGE_ID.toString(), item.cover);
+        values.put(Provider.GalleryItem.ALBUM_LAYOUT.toString(), item.layout);
+        values.put(Provider.GalleryItem.NUM_IMAGES.toString(), item.images_count);
+        values.put(Provider.GalleryItem.IMAGE_MIME_TYPE.toString(), item.type);
+        values.put(Provider.GalleryItem.IS_ANIMATED.toString(), item.animated);
+        values.put(Provider.GalleryItem.WIDTH.toString(), item.width);
+        values.put(Provider.GalleryItem.HEIGHT.toString(), item.height);
+        values.put(Provider.GalleryItem.SIZE_BYTES.toString(), item.size);
+        values.put(Provider.GalleryItem.BANDWIDTH_BYTES.toString(), item.bandwidth);
+        values.put(Provider.GalleryItem.DELETE_HASH.toString(), item.deletehash);
+        values.put(Provider.GalleryItem.LAST_SYNCED_DATETIME.toString(), new DateTime(Instant.now()).toString());
+        values.put(Provider.GalleryItem.FIRST_SYNCED_DATETIME.toString(), new DateTime(Instant.now()).toString());
         return values;
     }
 
