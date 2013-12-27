@@ -3,7 +3,7 @@ buildscript {
         mavenLocal()
         mavenCentral()
         maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots"
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
         }
     }
     dependencies {
@@ -13,7 +13,7 @@ buildscript {
 
 repositories {
     maven {
-        url "https://github.com/novoda/public-mvn-repo/raw/master/releases"
+        url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
     }
 }
 
@@ -22,16 +22,16 @@ apply plugin: 'android'
 dependencies {
     compile project(':core')
     compile project(':etsygrid')
-
     compile 'com.novoda:notils:2.1-SNAPSHOT'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.novoda:sqliteprovider-core:1.0.1-SNAPSHOT'
     compile 'com.android.support:support-v13:18.0.0'
+    compile 'joda-time:joda-time:2.3'
 }
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.0"
+    buildToolsVersion '19.0.0'
 
     defaultConfig {
         minSdkVersion 15
@@ -50,8 +50,8 @@ android {
     } 
 
     buildTypes {
-        final String PROVIDER_AUTHORITY_DEBUG = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.debug.ContentProvider\";\n";
-        final String PROVIDER_AUTHORITY_RELEASE = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.ContentProvider\";\n";
+        final String PROVIDER_AUTHORITY_DEBUG = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.debug.Provider\";\n";
+        final String PROVIDER_AUTHORITY_RELEASE = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.Provider\";\n";
 
         debug {
             packageNameSuffix ".debug"

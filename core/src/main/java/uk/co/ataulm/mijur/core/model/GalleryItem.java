@@ -1,15 +1,17 @@
 package uk.co.ataulm.mijur.core.model;
 
-/**
- * GalleryItem could be either a GalleryImage or GalleryAlbum.
- */
+import java.util.List;
+
 public class GalleryItem {
 
+    private static final String BASE_URL = "http://i.imgur.com/";
+    private static final String IMAGE_EXTENSION = ".jpg";
+
+    // both gallery album and gallery image
     public String id;
     public String title;
     public String description;
     public long datetime;
-    public String cover;
     public int views;
     public String link;
     public String vote;
@@ -18,6 +20,23 @@ public class GalleryItem {
     public int downs;
     public int score;
     public boolean is_album;
+
+    // gallery album
+    public String cover;
+    public String privacy;
+    public String layout;
+    public int images_count;
+    public List<Image> images;
+
+    // gallery image
+    public String type;
+    public boolean animated;
+    public int width;
+    public int height;
+    public long size;
+    public long bandwidth;
+    public String deletehash;
+    public String section;
 
     @Override
     public String toString() {
@@ -32,11 +51,43 @@ public class GalleryItem {
     }
 
     public static String getImageUrlFor(GalleryItem item) {
-        if (item.is_album) {
-            // worried it's not a jpg? The jpg extension also works for gifs on Imgur (2013.12.24)
-            return String.format("http://i.imgur.com/%s.jpg", item.cover);
+        return getUrlWithId(item) + IMAGE_EXTENSION;
+    }
+
+    /**
+     * Gets url to the thumbnail of the GalleryItem at the requested size.
+     *
+     * @param item
+     * @param thumbnailSuffix http://api.imgur.com/models/gallery_image
+     * @return url the url to the image
+     */
+    public static String getThumbnailImageUrlFor(GalleryItem item, String thumbnailSuffix) {
+        if (!isValidThumbnailSuffix(thumbnailSuffix)) {
+            throw new IllegalArgumentException("Must be one of {t, m, l} (small, medium, large). Given: " + thumbnailSuffix);
         }
-        return item.link;
+
+        return getUrlWithId(item) + thumbnailSuffix + IMAGE_EXTENSION;
+    }
+
+    private static String getUrlWithId(GalleryItem item) {
+        String id = (item.is_album) ? item.cover : item.id;
+        return BASE_URL + id;
+    }
+
+    private static boolean isValidThumbnailSuffix(String thumbnailSuffix) {
+        if (thumbnailSuffix.equals("t")) {
+            return true;
+        }
+
+        if (thumbnailSuffix.equals("m")) {
+            return true;
+        }
+
+        if (thumbnailSuffix.equals("l")) {
+            return true;
+        }
+
+        return false;
     }
 
 }

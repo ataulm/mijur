@@ -53,50 +53,6 @@ public class Imgur {
         }
     }
 
-    public static Image getImageWith(String id) {
-        try {
-            return instance().getImage(id).data;
-        } catch (RetrofitError e) {
-            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
-                throw new ImgurApiResourceNotFoundError(e);
-            }
-            throw new ImgurApiError(e);
-        }
-    }
-
-    public static GalleryImage getGalleryImageWith(String id) {
-        try {
-            return instance().getGalleryImage(id).data;
-        } catch (RetrofitError e) {
-            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
-                throw new ImgurApiResourceNotFoundError(e);
-            }
-            throw new ImgurApiError(e);
-        }
-    }
-
-    public static Album getAlbumWith(String id) {
-        try {
-            return instance().getAlbum(id).data;
-        } catch (RetrofitError e) {
-            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
-                throw new ImgurApiResourceNotFoundError(e);
-            }
-            throw new ImgurApiError(e);
-        }
-    }
-
-    public static GalleryAlbum getGalleryAlbumWith(String id) {
-        try {
-            return instance().getGalleryAlbum(id).data;
-        } catch (RetrofitError e) {
-            if (e.getResponse() != null && isBadHttp(e.getResponse().getStatus())) {
-                throw new ImgurApiResourceNotFoundError(e);
-            }
-            throw new ImgurApiError(e);
-        }
-    }
-
     private static boolean isBadHttp(int status) {
         return !(status >= HttpURLConnection.HTTP_OK && status < HttpURLConnection.HTTP_MOVED_PERM);
     }

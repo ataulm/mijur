@@ -20,7 +20,7 @@ public class Matisse {
     }
 
     /**
-     * Loads the image at the given URL into the specified ImageView.
+     * Loads the IMAGE_ID at the given URL into the specified ImageView.
      *
      * This is all I care about.
      *
@@ -45,10 +45,10 @@ public class Matisse {
     }
 
     /**
-     * Loads the bitmap at the url into the ImageView.
+     * Loads the bitmap at the URL into the ImageView.
      *
-     * @param url  the url where the image is
-     * @param view the ImageView into which the image should be loaded
+     * @param url  the URL where the IMAGE_ID is
+     * @param view the ImageView into which the IMAGE_ID should be loaded
      */
     private void loadUrlInView(String url, ImageView view) {
         setupImageManager();
