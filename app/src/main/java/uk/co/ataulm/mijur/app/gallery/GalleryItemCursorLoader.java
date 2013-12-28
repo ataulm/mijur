@@ -15,7 +15,7 @@ class GalleryItemCursorLoader extends CursorLoader {
                 null,
                 Provider.GalleryItem.IS_ANIMATED + " = ? AND " + Provider.GalleryItem.IS_ALBUM + " = ?",
                 new String[]{FALSE, FALSE},
-                Provider.GalleryItem.SUBMISSION_DATETIME.toString());
+                Provider.GalleryItem.SUBMISSION_DATETIME.toString() + " DESC");
     }
 
 }
