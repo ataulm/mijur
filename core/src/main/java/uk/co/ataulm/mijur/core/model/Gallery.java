@@ -4,20 +4,10 @@ import java.util.List;
 
 public class Gallery {
 
-    public final int albumCount;
-    public final int imageCount;
     public final List<GalleryItem> elements;
 
     public Gallery(List<GalleryItem> elements) {
         this.elements = elements;
-        int count = 0;
-        for (GalleryItem element : elements) {
-            if (element.is_album) {
-                count++;
-            }
-        }
-        this.albumCount = count;
-        this.imageCount = elements.size() - albumCount;
     }
 
     public int size() {

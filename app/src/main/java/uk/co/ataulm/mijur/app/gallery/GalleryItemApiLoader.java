@@ -14,19 +14,12 @@ import uk.co.ataulm.mijur.core.api.Imgur;
 import uk.co.ataulm.mijur.core.model.Gallery;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
-/**
- * GalleryItemLoader is used to retrieve a list of GalleryItems using the Imgur api.
- * <p/>
- * It doesn't currently monitor for content changes because the data is not modified after it is retrieved.
- * It may monitor for content changes later if and when a database is used (at which point this loader may be obsolete),
- * which could be used to cache "pages" of the Gallery (but not the images themselves).
- */
-class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
+class GalleryItemApiLoader extends AsyncTaskLoader<List<GalleryItem>> {
 
     private List<GalleryItem> data;
     private int page;
 
-    public GalleryItemLoader(Context context) {
+    public GalleryItemApiLoader(Context context) {
         super(context);
         page = 0;
     }
@@ -34,29 +27,27 @@ class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
     @Override
     protected void onStartLoading() {
         if (data != null) {
-            Novogger.d("onStartLoading, data not null");
             deliverResult(data);
         } else {
-            Novogger.d("onStartLoading, forceLoad()");
             forceLoad();
         }
     }
 
     @Override
     public List<GalleryItem> loadInBackground() {
+        if (networkIsAvailable()) {
+            Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
+            return gallery.elements;
+        }
+        return Collections.emptyList();
+    }
+
+    private boolean networkIsAvailable() {
         ConnectivityManager connectivityManager =
                 (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-        if (networkInfo != null && networkInfo.isConnected()) {
-            Gallery gallery = Imgur.getGalleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, page);
-            GalleryItemPersister.persist(getContext().getContentResolver(), gallery.elements);
-            Novogger.d("loadInBackground, gallery SIZE_BYTES: " + gallery.size());
-            return gallery.elements;
-        }
-
-        // TODO: fallback to cached gallery
-        return Collections.emptyList();
+        return networkInfo != null && networkInfo.isConnected();
     }
 
     @Override
@@ -69,11 +60,9 @@ class GalleryItemLoader extends AsyncTaskLoader<List<GalleryItem>> {
         this.data = data;
 
         if (isStarted()) {
-            Novogger.d("deliverResult, isStarted");
             super.deliverResult(data);
         }
     }
-
 
     @Override
     protected void onStopLoading() {
