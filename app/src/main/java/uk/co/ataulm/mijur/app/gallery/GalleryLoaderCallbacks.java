@@ -54,6 +54,8 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
         SharedPreferences prefs = context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE);
         prefs.edit().putString(GalleryActivity.PREFS_LAST_FETCHED, new DateTime(Instant.now()).toString()).apply();
         Toast.makeText(context, "Gallery refreshed from Imgur!", Toast.LENGTH_SHORT).show();
+
+
     }
 
     private void onCursorLoadFinished(Loader loader, Cursor cursor) {
