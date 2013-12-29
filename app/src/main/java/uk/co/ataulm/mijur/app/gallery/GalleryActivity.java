@@ -24,6 +24,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
 
     static final String PREFS_LAST_FETCHED = "uk.co.ataulm.mijur.prefs.last_fetched";
     private static final int MINUTES_UNTIL_GALLERY_STALE = 60;
+    private static final int MINIMUM_WAIT_TIL_REFRESH = 5;
 
     private StaggeredGridView grid;
     private GalleryLoaderCallbacks loaderCallbacks;
@@ -49,18 +50,19 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         getLoaderManager().initLoader(GalleryLoaderCallbacks.HEADER_LOADER, null, loaderCallbacks);
         getLoaderManager().initLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
 
-        if (galleryNeedsRefreshing()) {
+        if (galleryDataOlderThan(MINUTES_UNTIL_GALLERY_STALE)) {
             getLoaderManager().initLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
         }
     }
 
-    private boolean galleryNeedsRefreshing() {
+    private boolean galleryDataOlderThan(int minutes) {
         SharedPreferences prefs = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE);
         DateTime lastFetched = new DateTime(prefs.getString(PREFS_LAST_FETCHED, new DateTime(0).toString()));
         Interval interval = new Interval(lastFetched, new DateTime(Instant.now()));
 
-        return interval.toDuration().getStandardMinutes() >= MINUTES_UNTIL_GALLERY_STALE;
+        return interval.toDuration().getStandardMinutes() >= minutes;
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -73,7 +75,9 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_item_refresh:
-                getLoaderManager().restartLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
+                if (galleryDataOlderThan(MINIMUM_WAIT_TIL_REFRESH)) {
+                    getLoaderManager().restartLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
