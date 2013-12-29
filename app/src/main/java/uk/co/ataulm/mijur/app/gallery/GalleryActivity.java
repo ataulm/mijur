@@ -21,6 +21,8 @@ import org.joda.time.Interval;
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
+import static junit.framework.Assert.assertNotNull;
+
 public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
     static final String PREFS_LAST_FETCHED = "uk.co.ataulm.mijur.prefs.last_fetched";
@@ -34,21 +36,22 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), null, this);
-        loaderCallbacks = new GalleryLoaderCallbacks(this, adapter);
-
         View header = getLayoutInflater().inflate(R.layout.gallery_header_view, null);
+
+        GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), null, this);
+        loaderCallbacks = new GalleryLoaderCallbacks(this, adapter, header);
+
         grid = Views.findById(this, R.id.gridview);
         grid.addHeaderView(header);
         grid.setAdapter(adapter);
-
-        getLoaderManager().initLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        
+        getLoaderManager().initLoader(GalleryLoaderCallbacks.HEADER_LOADER, null, loaderCallbacks);
+        getLoaderManager().initLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
+
         if (galleryNeedsRefreshing()) {
             getLoaderManager().initLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
         }

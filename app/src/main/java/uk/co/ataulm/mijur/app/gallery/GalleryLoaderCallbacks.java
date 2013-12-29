@@ -6,8 +6,10 @@ import android.content.Loader;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
+import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.Novogger;
 
 import java.util.List;
@@ -15,19 +17,24 @@ import java.util.List;
 import org.joda.time.DateTime;
 import org.joda.time.Instant;
 
+import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
 
     static final int CURSOR_LOADER = 0;
     static final int API_LOADER = 1;
-
+    static final int HEADER_LOADER = 2;
+    private final View header;
+    private GalleryActivity activity;
     private Context context;
     private GalleryAdapter adapter;
 
-    GalleryLoaderCallbacks(Context context, GalleryAdapter adapter) {
-        this.context = context.getApplicationContext();
+    GalleryLoaderCallbacks(GalleryActivity activity, GalleryAdapter adapter, View header) {
+        this.activity = activity;
+        this.context = activity.getApplicationContext();
         this.adapter = adapter;
+        this.header = header;
     }
 
     @Override
@@ -36,6 +43,8 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
             return new GalleryItemCursorLoader(context);
         } else if (id == API_LOADER) {
             return new GalleryItemApiLoader(context);
+        } else if (id == HEADER_LOADER) {
+            return new GalleryItemHeaderLoader(context);
         }
         return null;
     }
@@ -46,7 +55,15 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
             onCursorLoadFinished(loader, (Cursor) data);
         } else if (loader.getId() == API_LOADER) {
             onApiLoadFinished(loader, (List<GalleryItem>) data);
+        } else if (loader.getId() == HEADER_LOADER) {
+            onHeaderLoadFinished(loader, (Cursor) data);
         }
+    }
+
+    private void onHeaderLoadFinished(Loader loader, Cursor cursor) {
+        GalleryItemView galleryItemView = Views.findById(header, R.id.image);
+
+        galleryItemView.updateWith(0, GalleryItemPersister.newGalleryItemFrom(cursor, 0), activity);
     }
 
     private void onApiLoadFinished(Loader loader, List<GalleryItem> galleryItems) {
@@ -54,12 +71,11 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
         SharedPreferences prefs = context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE);
         prefs.edit().putString(GalleryActivity.PREFS_LAST_FETCHED, new DateTime(Instant.now()).toString()).apply();
         Toast.makeText(context, "Gallery refreshed from Imgur!", Toast.LENGTH_SHORT).show();
-
-
     }
 
     private void onCursorLoadFinished(Loader loader, Cursor cursor) {
         adapter.changeCursor(cursor);
+
         Toast.makeText(context, "Gallery loaded!", Toast.LENGTH_SHORT).show();
         Novogger.d("adapter count: " + adapter.getCount());
     }
