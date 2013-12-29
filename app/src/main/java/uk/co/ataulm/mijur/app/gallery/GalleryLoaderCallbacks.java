@@ -6,10 +6,8 @@ import android.content.Loader;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
-import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.Novogger;
 
 import java.util.List;
@@ -17,7 +15,6 @@ import java.util.List;
 import org.joda.time.DateTime;
 import org.joda.time.Instant;
 
-import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
 
 class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
@@ -25,12 +22,12 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
     static final int CURSOR_LOADER = 0;
     static final int API_LOADER = 1;
     static final int HEADER_LOADER = 2;
-    private final View header;
+    private final GalleryItemHeaderView header;
     private GalleryActivity activity;
     private Context context;
     private GalleryAdapter adapter;
 
-    GalleryLoaderCallbacks(GalleryActivity activity, GalleryAdapter adapter, View header) {
+    GalleryLoaderCallbacks(GalleryActivity activity, GalleryAdapter adapter, GalleryItemHeaderView header) {
         this.activity = activity;
         this.context = activity.getApplicationContext();
         this.adapter = adapter;
@@ -61,9 +58,7 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
     }
 
     private void onHeaderLoadFinished(Loader loader, Cursor cursor) {
-        GalleryItemView galleryItemView = Views.findById(header, R.id.image);
-
-        galleryItemView.updateWith(0, GalleryItemPersister.newGalleryItemFrom(cursor, 0), activity);
+        header.updateWith(GalleryItemPersister.newGalleryItemFrom(cursor, 0), activity);
     }
 
     private void onApiLoadFinished(Loader loader, List<GalleryItem> galleryItems) {

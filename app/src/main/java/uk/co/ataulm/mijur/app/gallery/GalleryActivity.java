@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.etsy.android.grid.StaggeredGridView;
@@ -20,8 +19,6 @@ import org.joda.time.Interval;
 
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.core.model.GalleryItem;
-
-import static junit.framework.Assert.assertNotNull;
 
 public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
 
@@ -36,7 +33,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        View header = getLayoutInflater().inflate(R.layout.gallery_header_view, null);
+        GalleryItemHeaderView header = (GalleryItemHeaderView) getLayoutInflater().inflate(R.layout.gallery_header_view, null);
 
         GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), null, this);
         loaderCallbacks = new GalleryLoaderCallbacks(this, adapter, header);
