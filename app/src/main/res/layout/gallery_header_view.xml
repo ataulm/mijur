@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content"
+  android:layout_width="match_parent"
+  android:padding="4dp">
+
+
+  <uk.co.ataulm.mijur.app.gallery.GalleryItemView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/placeholder"
+    android:scaleType="centerCrop"
+    android:adjustViewBounds="true"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/holo_green_dark"
+    android:maxHeight="300dp"
+    android:cropToPadding="false" />
+
+  <TextView
+    android:id="@+id/caption"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:textColor="#fff"
+    android:textSize="16sp"
+    android:padding="8dp"
+    android:background="@color/black_alpha_half"
+    android:layout_alignParentBottom="true"
+    android:text="This is a caption and I\'m usually pretty long lol, I\'m so funny" />
+
+</RelativeLayout>

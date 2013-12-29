@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.etsy.android.grid.StaggeredGridView xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:id="@+id/gridview"
-  android:layout_width="match_parent"
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:padding="4dp"
+  android:background="@color/app_background"
   android:layout_height="match_parent"
-  app:item_margin="5dp"
-  app:column_count_portrait="3"
-  app:column_count_landscape="4" />
+  android:layout_width="match_parent">
+
+  <com.etsy.android.grid.StaggeredGridView
+    android:id="@+id/gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:item_margin="4dp"
+    app:column_count_portrait="3"
+    app:column_count_landscape="4" />
+</FrameLayout>

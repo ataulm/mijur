@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.etsy.android.grid.StaggeredGridView;
@@ -35,7 +36,10 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
 
         GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), null, this);
         loaderCallbacks = new GalleryLoaderCallbacks(this, adapter);
+
+        View header = getLayoutInflater().inflate(R.layout.gallery_header_view, null);
         grid = Views.findById(this, R.id.gridview);
+        grid.addHeaderView(header);
         grid.setAdapter(adapter);
 
         getLoaderManager().initLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
