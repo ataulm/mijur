@@ -4,7 +4,7 @@
 
   <application>
     <provider
-      android:name=".app.Provider"
+      android:name=".Provider"
       android:authorities="uk.co.ataulm.mijur.debug.Provider"
       android:exported="false" />
   </application>
