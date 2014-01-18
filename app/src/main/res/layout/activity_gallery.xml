@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:padding="4dp"
-  android:background="@color/app_background"
+<com.etsy.android.grid.StaggeredGridView xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/gridview"
+  android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:layout_width="match_parent">
-
-  <com.etsy.android.grid.StaggeredGridView
-    android:id="@+id/gridview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clipToPadding="false"
-    app:item_margin="4dp"
-    app:column_count_portrait="3"
-    app:column_count_landscape="4" />
-</FrameLayout>
+  android:clipToPadding="false"
+  app:item_margin="4dp"
+  app:column_count_portrait="@integer/columns" />

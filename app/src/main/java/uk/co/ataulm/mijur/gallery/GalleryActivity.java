@@ -25,7 +25,6 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
     static final String PREFS_LAST_FETCHED = "uk.co.ataulm.mijur.prefs.last_fetched";
     private static final int MINUTES_UNTIL_GALLERY_STALE = 60;
     private static final int MINIMUM_WAIT_TIL_REFRESH = 5;
-
     private StaggeredGridView grid;
     private GalleryLoaderCallbacks loaderCallbacks;
 
@@ -42,16 +41,29 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         grid = Views.findById(this, R.id.gridview);
         grid.addHeaderView(header);
         grid.setAdapter(adapter);
+
+        if (savedInstanceState == null) {
+            initGalleryLoaders();
+        } else {
+            restartGalleryLoaders();
+        }
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+    private void initGalleryLoaders() {
         getLoaderManager().initLoader(GalleryLoaderCallbacks.HEADER_LOADER, null, loaderCallbacks);
         getLoaderManager().initLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
 
         if (galleryDataOlderThan(MINUTES_UNTIL_GALLERY_STALE)) {
             getLoaderManager().initLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
+        }
+    }
+
+    private void restartGalleryLoaders() {
+        getLoaderManager().restartLoader(GalleryLoaderCallbacks.HEADER_LOADER, null, loaderCallbacks);
+        getLoaderManager().restartLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
+
+        if (galleryDataOlderThan(MINUTES_UNTIL_GALLERY_STALE)) {
+            getLoaderManager().restartLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
         }
     }
 
@@ -62,7 +74,6 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
 
         return interval.toDuration().getStandardMinutes() >= minutes;
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
