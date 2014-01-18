@@ -1,26 +1,26 @@
 package uk.co.ataulm.mijur.gallery;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.etsy.android.grid.StaggeredGridView;
 import com.novoda.notils.caster.Views;
-import com.novoda.notils.logger.Novogger;
 
 import org.joda.time.DateTime;
 import org.joda.time.Instant;
 import org.joda.time.Interval;
 
+import uk.co.ataulm.mijur.Provider;
 import uk.co.ataulm.mijur.R;
+import uk.co.ataulm.mijur.base.MijurActivity;
 import uk.co.ataulm.mijur.model.GalleryItem;
 
-public class GalleryActivity extends Activity implements GalleryAdapter.GalleryItemListener {
+public class GalleryActivity extends MijurActivity implements GalleryAdapter.GalleryItemListener {
 
     static final String PREFS_LAST_FETCHED = "uk.co.ataulm.mijur.prefs.last_fetched";
     private static final int MINUTES_UNTIL_GALLERY_STALE = 60;
@@ -34,6 +34,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         setContentView(R.layout.activity_gallery);
 
         GalleryItemHeaderView header = (GalleryItemHeaderView) getLayoutInflater().inflate(R.layout.gallery_header_view, null);
+        header.setGalleryItemListener(this);
 
         GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), null, this);
         loaderCallbacks = new GalleryLoaderCallbacks(this, adapter, header);
@@ -50,20 +51,20 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
     }
 
     private void initGalleryLoaders() {
-        getLoaderManager().initLoader(GalleryLoaderCallbacks.HEADER_LOADER, null, loaderCallbacks);
-        getLoaderManager().initLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
+        getLoaderManager().initLoader(R.id.loader_gallery_header_view, null, loaderCallbacks);
+        getLoaderManager().initLoader(R.id.loader_gallery_cursor, null, loaderCallbacks);
 
         if (galleryDataOlderThan(MINUTES_UNTIL_GALLERY_STALE)) {
-            getLoaderManager().initLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
+            getLoaderManager().initLoader(R.id.loader_gallery_api, null, loaderCallbacks);
         }
     }
 
     private void restartGalleryLoaders() {
-        getLoaderManager().restartLoader(GalleryLoaderCallbacks.HEADER_LOADER, null, loaderCallbacks);
-        getLoaderManager().restartLoader(GalleryLoaderCallbacks.CURSOR_LOADER, null, loaderCallbacks);
+        getLoaderManager().restartLoader(R.id.loader_gallery_header_view, null, loaderCallbacks);
+        getLoaderManager().restartLoader(R.id.loader_gallery_cursor, null, loaderCallbacks);
 
         if (galleryDataOlderThan(MINUTES_UNTIL_GALLERY_STALE)) {
-            getLoaderManager().restartLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
+            getLoaderManager().restartLoader(R.id.loader_gallery_api, null, loaderCallbacks);
         }
     }
 
@@ -87,7 +88,7 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
         switch (item.getItemId()) {
             case R.id.menu_item_refresh:
                 if (galleryDataOlderThan(MINIMUM_WAIT_TIL_REFRESH)) {
-                    getLoaderManager().restartLoader(GalleryLoaderCallbacks.API_LOADER, null, loaderCallbacks);
+                    getLoaderManager().restartLoader(R.id.loader_gallery_api, null, loaderCallbacks);
                 }
                 return true;
             default:
@@ -97,8 +98,8 @@ public class GalleryActivity extends Activity implements GalleryAdapter.GalleryI
 
     @Override
     public void onGalleryItemClicked(GalleryItem item) {
-        Novogger.v("Clicked:" + item.toString());
-        Toast.makeText(this, "Clicked: " + item.id, Toast.LENGTH_SHORT).show();
+        Uri uri = Provider.Uris.GALLERY_ITEM.uri().buildUpon().appendPath(item.id).build();
+        navigate().toPost(uri);
     }
 
 }

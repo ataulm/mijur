@@ -15,15 +15,14 @@ import uk.co.ataulm.mijur.model.GalleryItem;
 
 public class GalleryItemHeaderView extends RelativeLayout {
 
+    private GalleryAdapter.GalleryItemListener listener;
     private ImageView imageView;
     private TextView caption;
-
-    public GalleryItemHeaderView(Context context) {
-        super(context);
-    }
+    private GalleryItem item;
 
     public GalleryItemHeaderView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        this.listener = new GalleryAdapter.DummyGalleryItemListener();
     }
 
     @Override
@@ -32,16 +31,21 @@ public class GalleryItemHeaderView extends RelativeLayout {
         caption = Views.findById(this, R.id.caption);
     }
 
-    void updateWith(final GalleryItem item, final GalleryAdapter.GalleryItemListener listener) {
-        Matisse.load(GalleryItem.getImageUrlFor(item), imageView);
-        caption.setText(item.title);
-
+    void setGalleryItemListener(final GalleryAdapter.GalleryItemListener listener) {
         setOnClickListener(new OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 listener.onGalleryItemClicked(item);
             }
+
         });
+    }
+
+    void updateWith(final GalleryItem item) {
+        this.item = item;
+        Matisse.load(GalleryItem.getImageUrlFor(item), imageView);
+        caption.setText(item.title);
     }
 
 }

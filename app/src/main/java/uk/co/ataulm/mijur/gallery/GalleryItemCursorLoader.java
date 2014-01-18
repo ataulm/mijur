@@ -10,7 +10,7 @@ class GalleryItemCursorLoader extends CursorLoader {
     private static final String FALSE = "0";
     private static final String LIMIT_KEY = "limit";
     private static final String ROW_OFFSET = "1";
-    private static final String ROW_LIMIT = "999999";
+    private static final String ROW_LIMIT = String.valueOf(Integer.MAX_VALUE);
 
     public GalleryItemCursorLoader(Context context) {
         super(context);

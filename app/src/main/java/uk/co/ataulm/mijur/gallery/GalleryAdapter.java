@@ -74,4 +74,12 @@ class GalleryAdapter extends CursorAdapter {
 
     }
 
+    static class DummyGalleryItemListener implements GalleryItemListener {
+
+        @Override
+        public void onGalleryItemClicked(GalleryItem item) {
+        }
+
+    }
+
 }

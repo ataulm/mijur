@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="loader_gallery_cursor" type="id" />
+  <item name="loader_gallery_api" type="id" />
+  <item name="loader_gallery_header_view" type="id" />
+  <item name="loader_post_cursor" type="id" />
+</resources>

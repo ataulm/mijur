@@ -15,32 +15,28 @@ import java.util.List;
 import org.joda.time.DateTime;
 import org.joda.time.Instant;
 
+import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.model.GalleryItem;
 
 class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
 
-    static final int CURSOR_LOADER = 0;
-    static final int API_LOADER = 1;
-    static final int HEADER_LOADER = 2;
     private final GalleryItemHeaderView header;
-    private GalleryActivity activity;
-    private Context context;
-    private GalleryAdapter adapter;
+    private final Context context;
+    private final GalleryAdapter adapter;
 
-    GalleryLoaderCallbacks(GalleryActivity activity, GalleryAdapter adapter, GalleryItemHeaderView header) {
-        this.activity = activity;
-        this.context = activity.getApplicationContext();
+    GalleryLoaderCallbacks(Context context, GalleryAdapter adapter, GalleryItemHeaderView header) {
+        this.context = context.getApplicationContext();
         this.adapter = adapter;
         this.header = header;
     }
 
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
-        if (id == CURSOR_LOADER) {
+        if (id == R.id.loader_gallery_cursor) {
             return new GalleryItemCursorLoader(context);
-        } else if (id == API_LOADER) {
+        } else if (id == R.id.loader_gallery_api) {
             return new GalleryItemApiLoader(context);
-        } else if (id == HEADER_LOADER) {
+        } else if (id == R.id.loader_gallery_header_view) {
             return new GalleryItemHeaderLoader(context);
         }
         return null;
@@ -48,17 +44,21 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
 
     @Override
     public void onLoadFinished(Loader loader, Object data) {
-        if (loader.getId() == CURSOR_LOADER) {
+        if (loader.getId() == R.id.loader_gallery_cursor) {
             onCursorLoadFinished(loader, (Cursor) data);
-        } else if (loader.getId() == API_LOADER) {
+        } else if (loader.getId() == R.id.loader_gallery_api) {
             onApiLoadFinished(loader, (List<GalleryItem>) data);
-        } else if (loader.getId() == HEADER_LOADER) {
+        } else if (loader.getId() == R.id.loader_gallery_header_view) {
             onHeaderLoadFinished(loader, (Cursor) data);
         }
     }
 
+    @Override
+    public void onLoaderReset(Loader loader) {
+    }
+
     private void onHeaderLoadFinished(Loader loader, Cursor cursor) {
-        header.updateWith(GalleryItemPersister.newGalleryItemFrom(cursor, 0), activity);
+        header.updateWith(GalleryItemPersister.newGalleryItemFrom(cursor, 0));
     }
 
     private void onApiLoadFinished(Loader loader, List<GalleryItem> galleryItems) {
@@ -73,10 +73,6 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
 
         Toast.makeText(context, "Gallery loaded!", Toast.LENGTH_SHORT).show();
         Novogger.d("adapter count: " + adapter.getCount());
-    }
-
-    @Override
-    public void onLoaderReset(Loader loader) {
     }
 
 }
