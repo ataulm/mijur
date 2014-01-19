@@ -1,1 +1,1 @@
-include ':app-test', ':etsygrid', ':app'
+include ':app-test', ':app'
