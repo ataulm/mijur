@@ -1,6 +1,6 @@
 package uk.co.ataulm.mijur.model;
 
-import uk.co.ataulm.mijur.util.ImgurUtils;
+import android.text.TextUtils;
 
 public class Image {
 
@@ -20,8 +20,8 @@ public class Image {
     public String link;
 
     public static boolean isUseable(Image image) {
-        return ImgurUtils.isNotEmpty(image.id)
-                && ImgurUtils.isNotEmpty(image.link)
+        return !TextUtils.isEmpty(image.id)
+                && !TextUtils.isEmpty(image.link)
                 && image.width > 0
                 && image.height > 0;
     }
