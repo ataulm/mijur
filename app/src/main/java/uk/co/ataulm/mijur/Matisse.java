@@ -54,8 +54,8 @@ public class Matisse {
         setupImageManager();
 
         ImageTagFactory factory = ImageTagFactory.newInstance();
-        factory.setWidth(1024);
-        factory.setHeight(1024);
+        factory.setWidth(4096);
+        factory.setHeight(4096);
         ImageTag tag = factory.build(url, context);
         view.setTag(tag);
 
