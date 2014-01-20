@@ -70,8 +70,6 @@ class GalleryLoaderCallbacks implements LoaderManager.LoaderCallbacks {
 
     private void onCursorLoadFinished(Loader loader, Cursor cursor) {
         adapter.changeCursor(cursor);
-
-        Toast.makeText(context, "Gallery loaded!", Toast.LENGTH_SHORT).show();
         Novogger.d("adapter count: " + adapter.getCount());
     }
 
