@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.AsyncTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,17 +19,25 @@ public class GalleryItemPersister {
 
     private static final Uri GALLERY_ITEM_URI = Provider.Uris.GALLERY_ITEM.uri();
 
-    public static void persist(ContentResolver contentResolver, List<GalleryItem> galleryItems) {
-        List<ContentValues> values = new ArrayList<ContentValues>();
-        for (GalleryItem item : galleryItems) {
-            if (!update(contentResolver, item)) {
-                values.add(newContentValuesFrom(item));
+    public static void persist(final ContentResolver contentResolver, final List<GalleryItem> galleryItems) {
+        new AsyncTask<Void, Void, Void>() {
+
+            @Override
+            protected Void doInBackground(Void... params) {
+                List<ContentValues> values = new ArrayList<ContentValues>();
+                for (GalleryItem item : galleryItems) {
+                    if (!update(contentResolver, item)) {
+                        values.add(newContentValuesFrom(item));
+                    }
+                }
+                contentResolver.bulkInsert(GALLERY_ITEM_URI, values.toArray(new ContentValues[values.size()]));
+                return null;
             }
-        }
-        contentResolver.bulkInsert(GALLERY_ITEM_URI, values.toArray(new ContentValues[values.size()]));
+
+        }.execute();
     }
 
-    private static boolean update(ContentResolver contentResolver, GalleryItem item) {
+    private static boolean update(final ContentResolver contentResolver, final GalleryItem item) {
         ContentValues values = newUpdateContentValuesFrom(item);
 
         // TODO: looking to do an INSERT OR REPLACE (sqlite has) or UPSERT (sqlite has not)
