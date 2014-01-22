@@ -14,7 +14,6 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:textSize="16sp"
-      android:saveEnabled="true"
       android:text="@string/placeholder_caption"
       android:paddingBottom="8dp"
       app:font="RobotoSlab-Light" />
@@ -27,6 +26,18 @@
       android:src="@drawable/ic_launcher"
       android:adjustViewBounds="true"
       android:layout_below="@id/caption" />
+
+    <uk.co.ataulm.mijur.base.CustomFontTextView
+      android:id="@+id/description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/image"
+      android:textSize="16sp"
+      android:text="@string/placeholder_caption"
+      android:paddingTop="8dp"
+      android:visibility="gone"
+      android:autoLink="web"
+      app:font="RobotoSlab-Light" />
 
   </RelativeLayout>
 </ScrollView>

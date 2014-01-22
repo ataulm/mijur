@@ -1,6 +1,7 @@
 package uk.co.ataulm.mijur.post;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ public class PostFragment extends MijurFragment {
 
     private ImageView imageView;
     private TextView captionView;
+    private TextView descView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,8 +31,9 @@ public class PostFragment extends MijurFragment {
         super.onViewCreated(view, savedInstanceState);
         imageView = Views.findById(view, R.id.image);
         captionView = Views.findById(view, R.id.caption);
+        descView = Views.findById(view, R.id.description);
 
-        PostUpdater postUpdater = new PostUpdater(imageView, captionView);
+        PostUpdater postUpdater = new PostUpdater(imageView, captionView, descView);
         String postId = getActivity().getIntent().getData().getLastPathSegment();
         PostLoaderCallbacks loaderCallbacks = new PostLoaderCallbacks(getActivity(), postId, postUpdater);
 
@@ -45,16 +48,23 @@ public class PostFragment extends MijurFragment {
 
         private final ImageView imageView;
         private final TextView captionView;
+        private final TextView descView;
 
-        PostUpdater(ImageView imageView, TextView captionView) {
+        PostUpdater(ImageView imageView, TextView captionView, TextView descView) {
             this.imageView = imageView;
             this.captionView = captionView;
+            this.descView = descView;
         }
 
         @Override
         public void onGalleryItemLoaded(GalleryItem galleryItem) {
             Matisse.load(galleryItem.link, imageView);
             captionView.setText(galleryItem.title);
+
+            if (!TextUtils.isEmpty(galleryItem.description)) {
+                descView.setText(galleryItem.description);
+                descView.setVisibility(View.VISIBLE);
+            }
         }
 
     }
