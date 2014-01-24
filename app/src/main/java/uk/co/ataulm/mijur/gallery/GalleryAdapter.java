@@ -1,38 +1,45 @@
 package uk.co.ataulm.mijur.gallery;
 
-import android.content.Context;
-import android.database.Cursor;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CursorAdapter;
 
 import java.util.Random;
 
 import uk.co.ataulm.mijur.R;
+import uk.co.ataulm.mijur.base.MijurAdapter;
 import uk.co.ataulm.mijur.model.GalleryItem;
 
-class GalleryAdapter extends CursorAdapter {
+class GalleryAdapter extends MijurAdapter<GalleryItem> {
 
     private static final Random RANDOM = new Random();
     private static final SparseArray<Double> POSITION_HEIGHT_RATIOS = new SparseArray<Double>();
 
     private final GalleryItemListener listener;
 
-    public GalleryAdapter(Context context, Cursor c, GalleryItemListener listener) {
-        super(context, c, 0);
+    public GalleryAdapter() {
+        super();
+        this.listener = new DummyGalleryItemListener();
+    }
+
+    public GalleryAdapter(GalleryItemListener listener) {
+        super();
         this.listener = listener;
     }
 
     @Override
-    public View newView(Context context, Cursor cursor, ViewGroup parent) {
-        return createView(parent);
+    public long getItemId(int position) {
+        return position + 1;
     }
 
     @Override
-    public void bindView(View view, Context context, Cursor cursor) {
-        updateView((GalleryItemView) view, cursor.getPosition());
+    public View getView(int position, View view, ViewGroup parent) {
+        if (view == null) {
+            view = createView(parent);
+        }
+        updateView((GalleryItemView) view, position);
+        return view;
     }
 
     private View createView(ViewGroup parent) {
@@ -44,14 +51,7 @@ class GalleryAdapter extends CursorAdapter {
     private void updateView(GalleryItemView view, int position) {
         GalleryItem item = getItem(position);
         view.setHeightRatio(calculateHeightRatio(position));
-
         view.updateWith(position, item, listener);
-    }
-
-    @Override
-    public GalleryItem getItem(int position) {
-        Cursor cursor = getCursor();
-        return GalleryItemPersister.newGalleryItemFrom(cursor, position);
     }
 
     private double calculateHeightRatio(int position) {

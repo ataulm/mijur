@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.base.DeveloperError;
-import uk.co.ataulm.mijur.gallery.GalleryItemPersister;
+import uk.co.ataulm.mijur.gallery.GalleryItemCursorMarshaller;
 import uk.co.ataulm.mijur.model.GalleryItem;
 
 class PostLoaderCallbacks implements LoaderManager.LoaderCallbacks<Cursor> {
@@ -35,7 +35,8 @@ class PostLoaderCallbacks implements LoaderManager.LoaderCallbacks<Cursor> {
     @Override
     public void onLoadFinished(Loader loader, Cursor cursor) {
         if (loader.getId() == R.id.loader_post_cursor) {
-            GalleryItem galleryItem = GalleryItemPersister.newGalleryItemFrom(cursor, 0);
+            cursor.moveToFirst();
+            GalleryItem galleryItem = new GalleryItemCursorMarshaller().marshall(cursor);
             callback.onGalleryItemLoaded(galleryItem);
         }
     }

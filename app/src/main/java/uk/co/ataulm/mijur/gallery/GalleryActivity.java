@@ -23,8 +23,10 @@ import uk.co.ataulm.mijur.model.GalleryItem;
 public class GalleryActivity extends MijurActivity implements GalleryAdapter.GalleryItemListener {
 
     static final String PREFS_LAST_FETCHED = "uk.co.ataulm.mijur.prefs.last_fetched";
+
     private static final int MINUTES_UNTIL_GALLERY_STALE = 60;
     private static final int MINIMUM_WAIT_TIL_REFRESH = 5;
+
     private StaggeredGridView grid;
     private GalleryLoaderCallbacks loaderCallbacks;
 
@@ -36,7 +38,7 @@ public class GalleryActivity extends MijurActivity implements GalleryAdapter.Gal
         GalleryItemHeaderView header = (GalleryItemHeaderView) getLayoutInflater().inflate(R.layout.gallery_header_view, null);
         header.setGalleryItemListener(this);
 
-        GalleryAdapter adapter = new GalleryAdapter(getApplicationContext(), null, this);
+        GalleryAdapter adapter = new GalleryAdapter(this);
         loaderCallbacks = new GalleryLoaderCallbacks(this, adapter, header);
 
         grid = Views.findById(this, R.id.gridview);

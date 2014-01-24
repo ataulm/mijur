@@ -44,17 +44,10 @@ public class PostFragment extends MijurFragment {
         descView = Views.findById(view, R.id.description);
 
         PostUpdater postUpdater = new PostUpdater(imageView, captionView, descView);
-        String postId = getActivity().getIntent().getData().getLastPathSegment();
-        PostLoaderCallbacks loaderCallbacks = new PostLoaderCallbacks(getActivity(), postId, postUpdater);
-
-        if (savedInstanceState == null) {
-            getLoaderManager().initLoader(R.id.loader_post_cursor, null, loaderCallbacks);
-        } else {
-            getLoaderManager().initLoader(R.id.loader_post_cursor, null, loaderCallbacks);
-        }
+        postUpdater.updateWith(galleryItem);
     }
 
-    private static class PostUpdater implements GalleryItemLoadedCallback {
+    private static class PostUpdater {
 
         private final ImageView imageView;
         private final TextView captionView;
@@ -66,8 +59,7 @@ public class PostFragment extends MijurFragment {
             this.descView = descView;
         }
 
-        @Override
-        public void onGalleryItemLoaded(GalleryItem galleryItem) {
+        public void updateWith(GalleryItem galleryItem) {
             Matisse.load(galleryItem.link, imageView);
             captionView.setText(galleryItem.title);
 

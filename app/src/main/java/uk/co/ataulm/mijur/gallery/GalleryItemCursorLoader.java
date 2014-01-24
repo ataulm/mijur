@@ -5,7 +5,7 @@ import android.content.CursorLoader;
 
 import uk.co.ataulm.mijur.Provider;
 
-class GalleryItemCursorLoader extends CursorLoader {
+public class GalleryItemCursorLoader extends CursorLoader {
 
     private static final String FALSE = "0";
     private static final String LIMIT_KEY = "limit";
