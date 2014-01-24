@@ -56,4 +56,5 @@ public class PostActivity extends MijurActivity implements LoaderManager.LoaderC
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
     }
+
 }

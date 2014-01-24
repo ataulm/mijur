@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.novoda.notils.caster.Views;
 
+import icepick.Icepick;
 import icepick.Icicle;
 import uk.co.ataulm.mijur.Matisse;
 import uk.co.ataulm.mijur.R;
@@ -29,6 +30,18 @@ public class PostFragment extends MijurFragment {
         PostFragment fragment = new PostFragment();
         fragment.galleryItem = galleryItem;
         return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Icepick.restoreInstanceState(this, savedInstanceState);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Icepick.saveInstanceState(this, outState);
     }
 
     @Override
