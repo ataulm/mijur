@@ -3,8 +3,8 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <fragment
-    android:id="@+id/post_fragment"
+  <ViewPager
+    android:id="@+id/posts"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:name="uk.co.ataulm.mijur.post.PostFragment" />

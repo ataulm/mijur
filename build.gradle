@@ -1,13 +1,33 @@
 subprojects {
+    buildscript {
+        repositories {
+            mavenCentral()
+            maven {
+                url "https://oss.sonatype.org/content/repositories/snapshots"
+            }
+            maven {
+                url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
+            }
+        }
+
+        dependencies {
+            classpath 'com.android.tools.build:gradle:0.6.+'
+            classpath 'com.neenbedankt.gradle.plugins:android-apt:1.1'
+        }
+    }
+
     repositories {
-        mavenCentral();
         maven {
             url "https://oss.sonatype.org/content/repositories/snapshots"
         }
+        maven {
+            url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
+        }
+        mavenCentral()
+        mavenLocal()
     }
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '1.8'
 }
-

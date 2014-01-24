@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.novoda.notils.caster.Views;
 
+import icepick.Icicle;
 import uk.co.ataulm.mijur.Matisse;
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.base.MijurFragment;
@@ -17,9 +18,18 @@ import uk.co.ataulm.mijur.model.GalleryItem;
 
 public class PostFragment extends MijurFragment {
 
+    @Icicle
+    GalleryItem galleryItem;
+
     private ImageView imageView;
     private TextView captionView;
     private TextView descView;
+
+    public static PostFragment newInstance(GalleryItem galleryItem) {
+        PostFragment fragment = new PostFragment();
+        fragment.galleryItem = galleryItem;
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
