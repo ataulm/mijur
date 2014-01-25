@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import com.novoda.notils.caster.Views;
 
-import icepick.Icepick;
-import icepick.Icicle;
 import uk.co.ataulm.mijur.Matisse;
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.base.MijurFragment;
@@ -19,9 +17,7 @@ import uk.co.ataulm.mijur.model.GalleryItem;
 
 public class PostFragment extends MijurFragment {
 
-    @Icicle
-    GalleryItem galleryItem;
-
+    private GalleryItem galleryItem;
     private ImageView imageView;
     private TextView captionView;
     private TextView descView;
@@ -35,13 +31,15 @@ public class PostFragment extends MijurFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Icepick.restoreInstanceState(this, savedInstanceState);
+        if (savedInstanceState != null) {
+            galleryItem = savedInstanceState.getParcelable(GalleryItem.class.getName());
+        }
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Icepick.saveInstanceState(this, outState);
+        outState.putParcelable(GalleryItem.class.getName(), galleryItem);
     }
 
     @Override

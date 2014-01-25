@@ -15,6 +15,10 @@ public class GalleryItemCursorMarshaller implements CursorMarshaller<GalleryItem
     public GalleryItem marshall(Cursor cursor) {
         GalleryItem item = new GalleryItem();
 
+        if (cursor.getCount() == 0) {
+            return item;
+        }
+
         item.id = cursor.getString(cursor.getColumnIndex(Provider.GalleryItem._ID.toString()));
         item.title = cursor.getString(cursor.getColumnIndex(Provider.GalleryItem.TITLE.toString()));
         item.description = cursor.getString(cursor.getColumnIndex(Provider.GalleryItem.DESCRIPTION.toString()));

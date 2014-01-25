@@ -1,8 +1,10 @@
 package uk.co.ataulm.mijur.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.text.TextUtils;
 
-public class Image {
+public class Image implements Parcelable {
 
     public String id;
     public String title;
@@ -19,6 +21,25 @@ public class Image {
     public String section;
     public String link;
 
+    public Image() {}
+
+    public Image(Parcel parcel) {
+        id = parcel.readString();
+        title = parcel.readString();
+        description = parcel.readString();
+        datetime = parcel.readLong();
+        views = parcel.readInt();
+        link = parcel.readString();
+        type = parcel.readString();
+        animated = parcel.readInt() == 1 ? true : false;
+        width = parcel.readInt();
+        height = parcel.readInt();
+        size = parcel.readLong();
+        bandwidth = parcel.readLong();
+        deletehash = parcel.readString();
+        section = parcel.readString();
+    }
+
     public static boolean isUseable(Image image) {
         return !TextUtils.isEmpty(image.id)
                 && !TextUtils.isEmpty(image.link)
@@ -29,7 +50,7 @@ public class Image {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        return builder.append(getClass().getName()).append("{")
+        return builder.append(Image.class.getName()).append("{")
                 .append("id: ").append(id).append(", ")
                 .append("title: ").append(title).append(", ")
                 .append("description: ").append(description).append(", ")
@@ -47,4 +68,26 @@ public class Image {
                 .toString();
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int flags) {
+        parcel.writeString(id);
+        parcel.writeString(title);
+        parcel.writeString(description);
+        parcel.writeLong(datetime);
+        parcel.writeInt(views);
+        parcel.writeString(link);
+        parcel.writeString(type);
+        parcel.writeInt(animated == true ? 1 : 0);
+        parcel.writeInt(width);
+        parcel.writeInt(height);
+        parcel.writeLong(size);
+        parcel.writeLong(bandwidth);
+        parcel.writeString(deletehash);
+        parcel.writeString(section);
+    }
 }

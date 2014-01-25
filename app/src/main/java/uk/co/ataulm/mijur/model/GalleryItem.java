@@ -1,10 +1,13 @@
 package uk.co.ataulm.mijur.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.List;
 
 import org.joda.time.DateTime;
 
-public class GalleryItem {
+public class GalleryItem implements Parcelable {
 
     private static final String BASE_URL = "http://i.imgur.com/";
     private static final String IMAGE_EXTENSION = ".jpg";
@@ -42,6 +45,41 @@ public class GalleryItem {
 
     public DateTime firstSynced;
     public DateTime lastSynced;
+    
+    public GalleryItem() {
+    }
+    
+    public GalleryItem(Parcel parcel) {
+        id = parcel.readString();
+        title = parcel.readString();
+        description = parcel.readString();
+        datetime = parcel.readLong();
+        views = parcel.readInt();
+        link = parcel.readString();
+        vote = parcel.readString();
+        account_url = parcel.readString();
+        ups = parcel.readInt();
+        downs = parcel.readInt();
+        is_album = parcel.readInt() == 1 ? true : false;
+
+        cover = parcel.readString();
+        privacy = parcel.readString();
+        layout = parcel.readString();
+        images_count = parcel.readInt();
+        parcel.readList(images, Image.class.getClassLoader());
+
+        type = parcel.readString();
+        animated = parcel.readInt() == 1 ? true : false;
+        width = parcel.readInt();
+        height = parcel.readInt();
+        size = parcel.readLong();
+        bandwidth = parcel.readLong();
+        deletehash = parcel.readString();
+        section = parcel.readString();
+
+        firstSynced = new DateTime(parcel.readLong());
+        lastSynced = new DateTime(parcel.readLong());
+    }
 
     @Override
     public String toString() {
@@ -95,4 +133,41 @@ public class GalleryItem {
         return false;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int flags) {
+            parcel.writeString(id);
+            parcel.writeString(title);
+            parcel.writeString(description);
+            parcel.writeLong(datetime);
+            parcel.writeInt(views);
+            parcel.writeString(link);
+            parcel.writeString(vote);
+            parcel.writeString(account_url);
+            parcel.writeInt(ups);
+            parcel.writeInt(downs);
+            parcel.writeInt(is_album == true ? 1 : 0);
+            
+            parcel.writeString(cover);
+            parcel.writeString(privacy);
+            parcel.writeString(layout);
+            parcel.writeInt(images_count);
+            parcel.writeList(images);
+
+            parcel.writeString(type);
+            parcel.writeInt(animated == true ? 1 : 0);
+            parcel.writeInt(width);
+            parcel.writeInt(height);
+            parcel.writeLong(size);
+            parcel.writeLong(bandwidth);
+            parcel.writeString(deletehash);
+            parcel.writeString(section);
+        
+            parcel.writeLong(firstSynced.getMillis());
+            parcel.writeLong(lastSynced.getMillis());
+    }
 }
