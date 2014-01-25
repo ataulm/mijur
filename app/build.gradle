@@ -29,7 +29,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("/home/ataulm/.keystores/mijur.keystore")
+            storeFile file("$System.env.KEYSTORES/mijur.keystore")
             storePassword password
             keyAlias "mijur"
             keyPassword password
