@@ -2,7 +2,6 @@ package uk.co.ataulm.mijur.gallery;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -15,7 +14,6 @@ import org.joda.time.DateTime;
 import org.joda.time.Instant;
 import org.joda.time.Interval;
 
-import uk.co.ataulm.mijur.Provider;
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.base.MijurActivity;
 import uk.co.ataulm.mijur.model.GalleryItem;
@@ -99,9 +97,8 @@ public class GalleryActivity extends MijurActivity implements GalleryAdapter.Gal
     }
 
     @Override
-    public void onGalleryItemClicked(GalleryItem item) {
-        Uri uri = Provider.Uris.GALLERY_ITEM.uri().buildUpon().appendPath(item.id).build();
-        navigate().toPost(uri);
+    public void onGalleryItemClicked(int position, GalleryItem item) {
+        navigate().toPost(position);
     }
 
 }

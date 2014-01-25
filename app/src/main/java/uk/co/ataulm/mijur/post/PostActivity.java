@@ -14,11 +14,12 @@ import java.util.List;
 import uk.co.ataulm.mijur.R;
 import uk.co.ataulm.mijur.base.DeveloperError;
 import uk.co.ataulm.mijur.base.MijurActivity;
-import uk.co.ataulm.mijur.gallery.GalleryItemCursorLoader;
 import uk.co.ataulm.mijur.gallery.GalleryItemCursorMarshaller;
 import uk.co.ataulm.mijur.model.GalleryItem;
 
 public class PostActivity extends MijurActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+
+    public static final String EXTRA_POST_POSITION = "uk.co.ataulm.mijur.extra_post_position";
 
     private ViewPager posts;
 
@@ -51,6 +52,9 @@ public class PostActivity extends MijurActivity implements LoaderManager.LoaderC
 
         PostPagerAdapter adapter = new PostPagerAdapter(getFragmentManager(), galleryItems);
         posts.setAdapter(adapter);
+
+        int position = getIntent().getIntExtra(EXTRA_POST_POSITION, 0);
+        posts.setCurrentItem(position);
     }
 
     @Override

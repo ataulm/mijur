@@ -18,11 +18,6 @@ class GalleryAdapter extends MijurAdapter<GalleryItem> {
 
     private final GalleryItemListener listener;
 
-    public GalleryAdapter() {
-        super();
-        this.listener = new DummyGalleryItemListener();
-    }
-
     public GalleryAdapter(GalleryItemListener listener) {
         super();
         this.listener = listener;
@@ -51,7 +46,7 @@ class GalleryAdapter extends MijurAdapter<GalleryItem> {
     private void updateView(GalleryItemView view, int position) {
         GalleryItem item = getItem(position);
         view.setHeightRatio(calculateHeightRatio(position));
-        view.updateWith(position, item, listener);
+        view.updateWith((int) getItemId(position), item, listener);
     }
 
     private double calculateHeightRatio(int position) {
@@ -70,15 +65,7 @@ class GalleryAdapter extends MijurAdapter<GalleryItem> {
 
     interface GalleryItemListener {
 
-        void onGalleryItemClicked(GalleryItem item);
-
-    }
-
-    static class DummyGalleryItemListener implements GalleryItemListener {
-
-        @Override
-        public void onGalleryItemClicked(GalleryItem item) {
-        }
+        void onGalleryItemClicked(int position, GalleryItem item);
 
     }
 

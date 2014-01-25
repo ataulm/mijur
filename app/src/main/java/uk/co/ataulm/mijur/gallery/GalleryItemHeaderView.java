@@ -22,7 +22,7 @@ public class GalleryItemHeaderView extends RelativeLayout {
 
     public GalleryItemHeaderView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.listener = new GalleryAdapter.DummyGalleryItemListener();
+        this.listener = new DummyGalleryItemListener();
     }
 
     @Override
@@ -36,7 +36,7 @@ public class GalleryItemHeaderView extends RelativeLayout {
 
             @Override
             public void onClick(View v) {
-                listener.onGalleryItemClicked(item);
+                listener.onGalleryItemClicked(0, item);
             }
 
         });
@@ -46,6 +46,14 @@ public class GalleryItemHeaderView extends RelativeLayout {
         this.item = item;
         Matisse.load(GalleryItem.getImageUrlFor(item), imageView);
         caption.setText(item.title);
+    }
+
+    private static class DummyGalleryItemListener implements GalleryAdapter.GalleryItemListener {
+
+        @Override
+        public void onGalleryItemClicked(int position, GalleryItem item) {
+        }
+
     }
 
 }

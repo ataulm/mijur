@@ -27,8 +27,6 @@ public class GalleryItemView extends ImageView {
     }
 
     void updateWith(final int position, final GalleryItem item, final GalleryAdapter.GalleryItemListener listener) {
-        applyTemporaryDifferentiation(position);
-
         String thumbnailSuffix = getResources().getString(R.string.thumbnail_suffix);
         String imageUrl = GalleryItem.getThumbnailImageUrlFor(item, thumbnailSuffix);
         Matisse.load(imageUrl, this);
@@ -36,7 +34,7 @@ public class GalleryItemView extends ImageView {
         setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onGalleryItemClicked(item);
+                listener.onGalleryItemClicked(position, item);
             }
         });
     }
@@ -50,18 +48,6 @@ public class GalleryItemView extends ImageView {
             setMeasuredDimension(width, height);
         } else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        }
-    }
-
-    /**
-     * This is just temporary to make it look interesting during development!
-     * @param position
-     */
-    private void applyTemporaryDifferentiation(int position) {
-        if (position % 2 == 0) {
-            setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
-        } else {
-            setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
         }
     }
 

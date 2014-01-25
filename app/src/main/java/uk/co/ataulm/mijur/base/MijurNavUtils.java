@@ -2,7 +2,6 @@ package uk.co.ataulm.mijur.base;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 
 import uk.co.ataulm.mijur.post.PostActivity;
 
@@ -14,9 +13,9 @@ public class MijurNavUtils {
         this.activity = activity;
     }
 
-    public void toPost(Uri uri) {
+    public void toPost(int postPosition) {
         Intent intent = new Intent(activity, PostActivity.class);
-        intent.setData(uri);
+        intent.putExtra(PostActivity.EXTRA_POST_POSITION, postPosition);
         activity.startActivity(intent);
     }
 

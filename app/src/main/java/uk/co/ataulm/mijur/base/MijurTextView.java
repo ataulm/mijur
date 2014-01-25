@@ -12,18 +12,18 @@ public class MijurTextView extends TextView {
 
     public MijurTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        fontWriter = FontWriter.create(this, attrs, R.styleable.CustomFontTextView);
+        fontWriter = FontWriter.create(this, attrs, R.styleable.MijurTextView);
         init();
     }
 
     public MijurTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        fontWriter = FontWriter.create(this, attrs, R.styleable.CustomFontTextView);
+        fontWriter = FontWriter.create(this, attrs, R.styleable.MijurTextView);
         init();
     }
 
     private void init() {
-        setCustomFont(R.styleable.CustomFontTextView_font);
+        setCustomFont(R.styleable.MijurTextView_font);
     }
 
     private void setCustomFont(int customFontId) {
