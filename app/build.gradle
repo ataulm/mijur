@@ -1,5 +1,4 @@
 apply plugin: 'android'
-apply plugin: 'android-apt'
 
 dependencies {
     compile 'com.android.support:support-v13:18.0.0'
@@ -11,9 +10,6 @@ dependencies {
     compile 'com.squareup.retrofit:retrofit:1.2.2'
     compile 'com.etsy.android.grid:library:1.0.3'
     compile 'joda-time:joda-time:2.3'
-
-    compile 'com.github.frankiesardo:icepick:2.3'
-    apt 'com.github.frankiesardo:icepick-processor:2.3'
 }
 android {
     compileSdkVersion 19
@@ -26,12 +22,17 @@ android {
         versionName "0.0.5"
     }
 
+    def password = ""
+    if (project.hasProperty('signingPassword')) {
+        password = signingPassword;
+    }
+
     signingConfigs {
         release {
-//            storeFile file("/Users/ataulm/.keystores/mijur.keystore")
-//            storePassword signingPassword
-//            keyAlias "mijur"
-//            keyPassword signingPassword
+            storeFile file("/home/ataulm/.keystores/mijur.keystore")
+            storePassword password
+            keyAlias "mijur"
+            keyPassword password
         }
     }
 
