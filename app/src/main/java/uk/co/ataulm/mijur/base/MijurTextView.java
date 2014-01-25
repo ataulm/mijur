@@ -6,17 +6,17 @@ import android.widget.TextView;
 
 import uk.co.ataulm.mijur.R;
 
-public class CustomFontTextView extends TextView {
+public class MijurTextView extends TextView {
 
     private final FontWriter fontWriter;
 
-    public CustomFontTextView(Context context, AttributeSet attrs) {
+    public MijurTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         fontWriter = FontWriter.create(this, attrs, R.styleable.CustomFontTextView);
         init();
     }
 
-    public CustomFontTextView(Context context, AttributeSet attrs, int defStyle) {
+    public MijurTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         fontWriter = FontWriter.create(this, attrs, R.styleable.CustomFontTextView);
         init();

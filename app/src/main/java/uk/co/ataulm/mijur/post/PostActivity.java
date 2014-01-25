@@ -39,7 +39,7 @@ public class PostActivity extends MijurActivity implements LoaderManager.LoaderC
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         if (id == R.id.loader_post_cursor) {
-            return new GalleryItemCursorLoader(this);
+            return new PostsCursorLoader(this);
         }
         throw new DeveloperError("Unknown loader initialised.");
     }
