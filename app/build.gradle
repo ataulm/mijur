@@ -18,8 +18,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 19
-        versionCode 1519005
-        versionName "0.0.5"
+        versionCode 1519010
+        versionName "0.1"
     }
 
     def password = ""
