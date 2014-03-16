@@ -1,11 +1,11 @@
 apply plugin: 'android'
 
 dependencies {
-    compile 'com.android.support:support-v13:18.0.0'
+    compile 'com.android.support:support-v13:19.0.1'
 
-    compile 'com.novoda:notils:2.1-SNAPSHOT'
+    compile 'com.novoda:notils:2.2.+'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
-    compile 'com.novoda:sqliteprovider-core:1.0.1-SNAPSHOT'
+    compile 'com.novoda:sqliteprovider-core:1.0.1'
 
     compile 'com.squareup.retrofit:retrofit:1.2.2'
     compile 'com.etsy.android.grid:library:1.0.3'
@@ -13,10 +13,10 @@ dependencies {
 }
 android {
     compileSdkVersion 19
-    buildToolsVersion '19.0.0'
+    buildToolsVersion '19.0.3'
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 14
         targetSdkVersion 19
         versionCode 1519010
         versionName "0.1"
@@ -37,14 +37,14 @@ android {
     }
 
     buildTypes {
-        final String PROVIDER_AUTHORITY_DEBUG = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.debug.Provider\";\n";
-        final String PROVIDER_AUTHORITY_RELEASE = "public static final String PROVIDER_AUTHORITY = \"uk.co.ataulm.mijur.Provider\";\n";
+        final String PROVIDER_AUTHORITY_TYPE = "String";
+        final String PROVIDER_AUTHORITY_KEY = "PROVIDER_AUTHORITY";
 
         debug {
             packageNameSuffix ".debug"
             versionNameSuffix "-debug"
 
-            buildConfig PROVIDER_AUTHORITY_DEBUG
+            buildConfigField PROVIDER_AUTHORITY_TYPE, PROVIDER_AUTHORITY_KEY, "\"uk.co.ataulm.mijur.debug.Provider\""
         }
 
         release {
@@ -53,8 +53,7 @@ android {
 
             signingConfig signingConfigs.release
 
-            buildConfig PROVIDER_AUTHORITY_RELEASE
+            buildConfigField PROVIDER_AUTHORITY_TYPE, PROVIDER_AUTHORITY_KEY, "\"uk.co.ataulm.mijur.Provider\""
         }
     }
 }
-
