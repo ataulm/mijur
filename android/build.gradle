@@ -1,4 +1,17 @@
+buildscript {
+    dependencies {
+        classpath 'com.novoda:sqlite-analyzer:0.0.1-SNAPSHOT'
+    }
+}
+
 apply plugin: 'android'
+apply plugin: 'sqlite-access'
+
+sqliteAccess {
+    migrationsDir 'src/main/assets/migrations'
+    packageName 'uk.co.ataulm.mijur'
+}
+
 
 dependencies {
     compile 'com.android.support:support-v13:19.0.1'
@@ -6,7 +19,6 @@ dependencies {
     compile 'com.novoda:notils:2.2.+'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.novoda:sqliteprovider-core:1.0.1'
-    compile 'com.novoda:sqlite-analyzer:0.0.1-SNAPSHOT'
 
     compile 'com.squareup.retrofit:retrofit:1.2.2'
     compile 'com.etsy.android.grid:library:1.0.3'

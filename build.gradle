@@ -22,7 +22,8 @@ subprojects {
         maven {
             url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
         }
-        mavenCentral()    }
+        mavenCentral()
+    }
 }
 
 task wrapper(type: Wrapper) {
