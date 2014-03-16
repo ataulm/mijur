@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import uk.co.ataulm.mijur.base.viewserver.ViewServerManager;
+
 public abstract class MijurActivity extends Activity {
 
     private ViewServerManager viewServerManager;

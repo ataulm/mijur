@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur.base;
+package uk.co.ataulm.mijur.base.viewserver;
 
 import android.app.Activity;
 

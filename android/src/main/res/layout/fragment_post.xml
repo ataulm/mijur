@@ -9,14 +9,14 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
-    <uk.co.ataulm.mijur.base.MijurTextView
+    <uk.co.ataulm.mijur.view.FontTextView
       android:id="@+id/caption"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:textSize="16sp"
       android:text="@string/placeholder_caption"
       android:paddingBottom="8dp"
-      app:font="RobotoSlab-Light" />
+      app:font="robotoSlabLight" />
 
     <ImageView
       android:id="@+id/image"
@@ -27,7 +27,7 @@
       android:adjustViewBounds="true"
       android:layout_below="@id/caption" />
 
-    <uk.co.ataulm.mijur.base.MijurTextView
+    <uk.co.ataulm.mijur.view.FontTextView
       android:id="@+id/description"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
       android:paddingTop="8dp"
       android:visibility="gone"
       android:autoLink="web"
-      app:font="RobotoSlab-Light" />
+      app:font="robotoSlabLight" />
 
   </RelativeLayout>
 </ScrollView>

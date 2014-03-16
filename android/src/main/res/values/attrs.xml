@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <attr name="font" format="string" />
-
-  <declare-styleable name="MijurTextView">
-    <attr name="font" />
+  <declare-styleable name="CustomTextAppearance">
+    <attr name="font" format="enum">
+      <enum name="none" value="-1" />
+      <enum name="robotoSlabLight" value="0" />
+    </attr>
   </declare-styleable>
 </resources>

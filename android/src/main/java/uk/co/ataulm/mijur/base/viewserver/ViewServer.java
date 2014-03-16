@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur.base;
+package uk.co.ataulm.mijur.base.viewserver;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +16,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
@@ -102,16 +103,14 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * </pre>
  */
 public class ViewServer implements Runnable {
-    /**
-     * The default port used to start view servers.
-     */
+
+    private static final String LOG_TAG = ViewServer.class.getSimpleName();
+
     private static final int VIEW_SERVER_DEFAULT_PORT = 4939;
     private static final int VIEW_SERVER_MAX_CONNECTIONS = 10;
+    private static final int BUFFER_SIZE = 8 * 1024;
+
     private static final String BUILD_TYPE_USER = "user";
-
-    // Debug facility
-    private static final String LOG_TAG = "ViewServer";
-
     private static final String VALUE_PROTOCOL_VERSION = "4";
     private static final String VALUE_SERVER_VERSION = "4";
 
@@ -126,24 +125,19 @@ public class ViewServer implements Runnable {
     private static final String COMMAND_WINDOW_MANAGER_AUTOLIST = "AUTOLIST";
     // Returns the focused window
     private static final String COMMAND_WINDOW_MANAGER_GET_FOCUS = "GET_FOCUS";
-    private static final int BUFFER_SIZE = 8 * 1024;
 
-    private ServerSocket mServer;
-    private final int mPort;
+    private static ViewServer server;
 
-    private Thread mThread;
-    private ExecutorService mThreadPool;
+    private final int port;
+    private final List<WindowListener> windowListeners;
+    private final Map<View, String> windows;
+    private final ReentrantReadWriteLock windowsLock;
+    private final ReentrantReadWriteLock focusLock;
 
-    private final List<WindowListener> mListeners =
-            new CopyOnWriteArrayList<ViewServer.WindowListener>();
-
-    private final HashMap<View, String> mWindows = new HashMap<View, String>();
-    private final ReentrantReadWriteLock mWindowsLock = new ReentrantReadWriteLock();
-
-    private View mFocusedWindow;
-    private final ReentrantReadWriteLock mFocusLock = new ReentrantReadWriteLock();
-
-    private static ViewServer sServer;
+    private ServerSocket serverSocket;
+    private Thread thread;
+    private ExecutorService threadPool;
+    private View focusedWindow;
 
     /**
      * Returns a unique instance of the ViewServer. This method should only be
@@ -162,26 +156,26 @@ public class ViewServer implements Runnable {
         ApplicationInfo info = context.getApplicationInfo();
         if (BUILD_TYPE_USER.equals(Build.TYPE) &&
                 (info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0) {
-            if (sServer == null) {
-                sServer = new ViewServer(ViewServer.VIEW_SERVER_DEFAULT_PORT);
+            if (server == null) {
+                server = new ViewServer(ViewServer.VIEW_SERVER_DEFAULT_PORT);
             }
 
-            if (!sServer.isRunning()) {
+            if (!server.isRunning()) {
                 try {
-                    sServer.start();
+                    server.start();
                 } catch (IOException e) {
                     Log.d(LOG_TAG, "Error:", e);
                 }
             }
         } else {
-            sServer = new NoopViewServer();
+            server = new NoActionViewServer();
         }
 
-        return sServer;
+        return server;
     }
 
-    private ViewServer() {
-        mPort = -1;
+    protected ViewServer() {
+        this(-1);
     }
 
     /**
@@ -191,181 +185,12 @@ public class ViewServer implements Runnable {
      * @param port The port for the server to listen to.
      * @see #start()
      */
-    private ViewServer(int port) {
-        mPort = port;
-    }
-
-    public boolean start() throws IOException {
-        if (mThread != null) {
-            return false;
-        }
-
-        mThread = new Thread(this, "Local View Server [port=" + mPort + "]");
-        mThreadPool = Executors.newFixedThreadPool(VIEW_SERVER_MAX_CONNECTIONS);
-        mThread.start();
-
-        return true;
-    }
-
-    public boolean stop() {
-        if (mThread != null) {
-            mThread.interrupt();
-            if (mThreadPool != null) {
-                try {
-                    mThreadPool.shutdownNow();
-                } catch (SecurityException e) {
-                    Log.w(LOG_TAG, "Could not stop all view server threads");
-                }
-            }
-
-            mThreadPool = null;
-            mThread = null;
-
-            try {
-                mServer.close();
-                mServer = null;
-                return true;
-            } catch (IOException e) {
-                Log.w(LOG_TAG, "Could not close the view server");
-            }
-        }
-
-        mWindowsLock.writeLock().lock();
-        try {
-            mWindows.clear();
-        } finally {
-            mWindowsLock.writeLock().unlock();
-        }
-
-        mFocusLock.writeLock().lock();
-        try {
-            mFocusedWindow = null;
-        } finally {
-            mFocusLock.writeLock().unlock();
-        }
-
-        return false;
-    }
-
-    public boolean isRunning() {
-        return mThread != null && mThread.isAlive();
-    }
-
-    /**
-     * Invoke this method to register a new view hierarchy.
-     *
-     * @param activity The activity whose view hierarchy/window to register
-     * @see #addWindow(View, String)
-     * @see #removeWindow(Activity)
-     */
-    public void addWindow(Activity activity) {
-        String name = activity.getTitle().toString();
-        if (TextUtils.isEmpty(name)) {
-            name = activity.getClass().getCanonicalName() +
-                    "/0x" + System.identityHashCode(activity);
-        } else {
-            name += "(" + activity.getClass().getCanonicalName() + ")";
-        }
-        addWindow(activity.getWindow().getDecorView(), name);
-    }
-
-    /**
-     * Invoke this method to unregister a view hierarchy.
-     *
-     * @param activity The activity whose view hierarchy/window to unregister
-     * @see #addWindow(Activity)
-     * @see #removeWindow(View)
-     */
-    public void removeWindow(Activity activity) {
-        removeWindow(activity.getWindow().getDecorView());
-    }
-
-    /**
-     * Invoke this method to register a new view hierarchy.
-     *
-     * @param view A view that belongs to the view hierarchy/window to register
-     * @name name The name of the view hierarchy/window to register
-     * @see #removeWindow(View)
-     */
-    public void addWindow(View view, String name) {
-        mWindowsLock.writeLock().lock();
-        try {
-            mWindows.put(view.getRootView(), name);
-        } finally {
-            mWindowsLock.writeLock().unlock();
-        }
-        fireWindowsChangedEvent();
-    }
-
-    /**
-     * Invoke this method to unregister a view hierarchy.
-     *
-     * @param view A view that belongs to the view hierarchy/window to unregister
-     * @see #addWindow(View, String)
-     */
-    public void removeWindow(View view) {
-        mWindowsLock.writeLock().lock();
-        try {
-            mWindows.remove(view.getRootView());
-        } finally {
-            mWindowsLock.writeLock().unlock();
-        }
-        fireWindowsChangedEvent();
-    }
-
-    /**
-     * Invoke this method to change the currently focused window.
-     *
-     * @param activity The activity whose view hierarchy/window hasfocus,
-     *                 or null to remove focus
-     */
-    public void setFocusedWindow(Activity activity) {
-        setFocusedWindow(activity.getWindow().getDecorView());
-    }
-
-    /**
-     * Invoke this method to change the currently focused window.
-     *
-     * @param view A view that belongs to the view hierarchy/window that has focus,
-     *             or null to remove focus
-     */
-    public void setFocusedWindow(View view) {
-        mFocusLock.writeLock().lock();
-        try {
-            mFocusedWindow = view == null ? null : view.getRootView();
-        } finally {
-            mFocusLock.writeLock().unlock();
-        }
-        fireFocusChangedEvent();
-    }
-
-    /**
-     * Main server loop.
-     */
-    public void run() {
-        try {
-            mServer = new ServerSocket(mPort, VIEW_SERVER_MAX_CONNECTIONS, InetAddress.getLocalHost());
-        } catch (Exception e) {
-            Log.w(LOG_TAG, "Starting ServerSocket error: ", e);
-        }
-
-        while (mServer != null && Thread.currentThread() == mThread) {
-            // Any uncaught exception will crash the system process
-            try {
-                Socket client = mServer.accept();
-                if (mThreadPool != null) {
-                    mThreadPool.submit(new ViewServerWorker(client));
-                } else {
-                    try {
-                        client.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            } catch (Exception e) {
-                Log.w(LOG_TAG, "Connection error: ", e);
-            }
-        }
+    protected ViewServer(int port) {
+        this.port = port;
+        this.windowListeners = new CopyOnWriteArrayList<WindowListener>();
+        this.windows = new HashMap<View, String>();
+        this.windowsLock = new ReentrantReadWriteLock();
+        this.focusLock = new ReentrantReadWriteLock();
     }
 
     private static boolean writeValue(Socket client, String value) {
@@ -392,77 +217,498 @@ public class ViewServer implements Runnable {
         return result;
     }
 
+    public boolean start() throws IOException {
+        if (thread != null) {
+            return false;
+        }
+
+        thread = new Thread(this, "Local View Server [port=" + port + "]");
+        threadPool = Executors.newFixedThreadPool(VIEW_SERVER_MAX_CONNECTIONS);
+        thread.start();
+
+        return true;
+    }
+
+    public boolean stop() {
+        if (thread != null) {
+            thread.interrupt();
+            if (threadPool != null) {
+                try {
+                    threadPool.shutdownNow();
+                } catch (SecurityException e) {
+                    Log.w(LOG_TAG, "Could not stop all view server threads");
+                }
+            }
+
+            threadPool = null;
+            thread = null;
+
+            try {
+                serverSocket.close();
+                serverSocket = null;
+                return true;
+            } catch (IOException e) {
+                Log.w(LOG_TAG, "Could not close the view server");
+            }
+        }
+
+        windowsLock.writeLock().lock();
+        try {
+            windows.clear();
+        } finally {
+            windowsLock.writeLock().unlock();
+        }
+
+        focusLock.writeLock().lock();
+        try {
+            focusedWindow = null;
+        } finally {
+            focusLock.writeLock().unlock();
+        }
+
+        return false;
+    }
+
+    public boolean isRunning() {
+        return thread != null && thread.isAlive();
+    }
+
+    /**
+     * Invoke this method to register a new view hierarchy.
+     *
+     * @param activity The activity whose view hierarchy/window to register
+     * @see #addWindow(View, String)
+     * @see #removeWindow(Activity)
+     */
+    public void addWindow(Activity activity) {
+        String name = activity.getTitle().toString();
+        if (TextUtils.isEmpty(name)) {
+            name = activity.getClass().getCanonicalName() + "/0x" + System.identityHashCode(activity);
+        } else {
+            name += "(" + activity.getClass().getCanonicalName() + ")";
+        }
+        addWindow(activity.getWindow().getDecorView(), name);
+    }
+
+    /**
+     * Invoke this method to unregister a view hierarchy.
+     *
+     * @param activity The activity whose view hierarchy/window to unregister
+     * @see #addWindow(Activity)
+     * @see #removeWindow(View)
+     */
+    public void removeWindow(Activity activity) {
+        removeWindow(activity.getWindow().getDecorView());
+    }
+
+    /**
+     * Invoke this method to register a new view hierarchy.
+     *
+     * @param view A view that belongs to the view hierarchy/window to register
+     * @name name The name of the view hierarchy/window to register
+     * @see #removeWindow(View)
+     */
+    public void addWindow(View view, String name) {
+        windowsLock.writeLock().lock();
+        try {
+            windows.put(view.getRootView(), name);
+        } finally {
+            windowsLock.writeLock().unlock();
+        }
+        fireWindowsChangedEvent();
+    }
+
+    /**
+     * Invoke this method to unregister a view hierarchy.
+     *
+     * @param view A view that belongs to the view hierarchy/window to unregister
+     * @see #addWindow(View, String)
+     */
+    public void removeWindow(View view) {
+        windowsLock.writeLock().lock();
+        try {
+            windows.remove(view.getRootView());
+        } finally {
+            windowsLock.writeLock().unlock();
+        }
+        fireWindowsChangedEvent();
+    }
+
+    /**
+     * Invoke this method to change the currently focused window.
+     *
+     * @param activity The activity whose view hierarchy/window hasfocus,
+     *                 or null to remove focus
+     */
+    public void setFocusedWindow(Activity activity) {
+        setFocusedWindow(activity.getWindow().getDecorView());
+    }
+
+    /**
+     * Invoke this method to change the currently focused window.
+     *
+     * @param view A view that belongs to the view hierarchy/window that has focus,
+     *             or null to remove focus
+     */
+    public void setFocusedWindow(View view) {
+        focusLock.writeLock().lock();
+        try {
+            focusedWindow = view == null ? null : view.getRootView();
+        } finally {
+            focusLock.writeLock().unlock();
+        }
+        fireFocusChangedEvent();
+    }
+
+    @Override
+    public void run() {
+        try {
+            serverSocket = new ServerSocket(port, VIEW_SERVER_MAX_CONNECTIONS, InetAddress.getLocalHost());
+        } catch (Exception e) {
+            Log.w(LOG_TAG, "Starting ServerSocket error: ", e);
+        }
+
+        while (serverSocket != null && Thread.currentThread() == thread) {
+            // Any uncaught exception will crash the system process
+            try {
+                Socket client = serverSocket.accept();
+                if (threadPool != null) {
+                    threadPool.submit(new ViewServerWorker(client));
+                } else {
+                    try {
+                        client.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            } catch (Exception e) {
+                Log.w(LOG_TAG, "Connection error: ", e);
+            }
+        }
+    }
+
     private void fireWindowsChangedEvent() {
-        for (WindowListener listener : mListeners) {
+        for (WindowListener listener : windowListeners) {
             listener.windowsChanged();
         }
     }
 
     private void fireFocusChangedEvent() {
-        for (WindowListener listener : mListeners) {
+        for (WindowListener listener : windowListeners) {
             listener.focusChanged();
         }
     }
 
     private void addWindowListener(WindowListener listener) {
-        if (!mListeners.contains(listener)) {
-            mListeners.add(listener);
+        if (!windowListeners.contains(listener)) {
+            windowListeners.add(listener);
         }
     }
 
     private void removeWindowListener(WindowListener listener) {
-        mListeners.remove(listener);
+        windowListeners.remove(listener);
     }
 
-    private interface WindowListener {
-        void windowsChanged();
+    private class ViewServerWorker implements Runnable, WindowListener {
 
-        void focusChanged();
+        private final Object[] lock = new Object[0];
+
+        private Socket client;
+        private boolean needWindowListUpdate;
+        private boolean needFocusedWindowUpdate;
+
+        public ViewServerWorker(Socket client) {
+            this.client = client;
+            needWindowListUpdate = false;
+            needFocusedWindowUpdate = false;
+        }
+
+        @Override
+        public void run() {
+            BufferedReader in = null;
+            try {
+                in = new BufferedReader(new InputStreamReader(client.getInputStream()), 1024);
+
+                final String request = in.readLine();
+
+                String command;
+                String parameters;
+
+                int index = request.indexOf(' ');
+                if (index == -1) {
+                    command = request;
+                    parameters = "";
+                } else {
+                    command = request.substring(0, index);
+                    parameters = request.substring(index + 1);
+                }
+
+                boolean result;
+                if (COMMAND_PROTOCOL_VERSION.equalsIgnoreCase(command)) {
+                    result = writeValue(client, VALUE_PROTOCOL_VERSION);
+                } else if (COMMAND_SERVER_VERSION.equalsIgnoreCase(command)) {
+                    result = writeValue(client, VALUE_SERVER_VERSION);
+                } else if (COMMAND_WINDOW_MANAGER_LIST.equalsIgnoreCase(command)) {
+                    result = listWindows(client);
+                } else if (COMMAND_WINDOW_MANAGER_GET_FOCUS.equalsIgnoreCase(command)) {
+                    result = getFocusedWindow(client);
+                } else if (COMMAND_WINDOW_MANAGER_AUTOLIST.equalsIgnoreCase(command)) {
+                    result = windowManagerAutolistLoop();
+                } else {
+                    result = windowCommand(client, command, parameters);
+                }
+
+                if (!result) {
+                    Log.w(LOG_TAG, "An error occurred with the command: " + command);
+                }
+            } catch (IOException e) {
+                Log.w(LOG_TAG, "Connection error: ", e);
+            } finally {
+                if (in != null) {
+                    try {
+                        in.close();
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (client != null) {
+                    try {
+                        client.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        private boolean windowCommand(Socket client, String command, String parameters) {
+            boolean success = true;
+            BufferedWriter out = null;
+
+            try {
+                // Find the hash code of the window
+                int index = parameters.indexOf(' ');
+                if (index == -1) {
+                    index = parameters.length();
+                }
+                final String code = parameters.substring(0, index);
+                int hashCode = (int) Long.parseLong(code, 16);
+
+                // Extract the command's parameter after the window description
+                if (index < parameters.length()) {
+                    parameters = parameters.substring(index + 1);
+                } else {
+                    parameters = "";
+                }
+
+                final View window = findWindow(hashCode);
+                if (window == null) {
+                    return false;
+                }
+
+                // call stuff
+                final Method dispatch = ViewDebug.class.getDeclaredMethod("dispatchCommand", View.class, String.class, String.class, OutputStream.class);
+                dispatch.setAccessible(true);
+                dispatch.invoke(null, window, command, parameters,
+                        new UncloseableOutputStream(client.getOutputStream()));
+
+                if (!client.isOutputShutdown()) {
+                    out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
+                    out.write("DONE\n");
+                    out.flush();
+                }
+
+            } catch (Exception e) {
+                Log.w(LOG_TAG, String.format("Could not send command %s with parameters %s", command, parameters), e);
+                success = false;
+            } finally {
+                if (out != null) {
+                    try {
+                        out.close();
+                    } catch (IOException e) {
+                        success = false;
+                    }
+                }
+            }
+
+            return success;
+        }
+
+        private View findWindow(int hashCode) {
+            if (hashCode == -1) {
+                View window = null;
+                windowsLock.readLock().lock();
+                try {
+                    window = focusedWindow;
+                } finally {
+                    windowsLock.readLock().unlock();
+                }
+                return window;
+            }
+
+            windowsLock.readLock().lock();
+            try {
+                for (Entry<View, String> entry : windows.entrySet()) {
+                    if (System.identityHashCode(entry.getKey()) == hashCode) {
+                        return entry.getKey();
+                    }
+                }
+            } finally {
+                windowsLock.readLock().unlock();
+            }
+
+            return null;
+        }
+
+        private boolean listWindows(Socket client) {
+            boolean result = true;
+            BufferedWriter out = null;
+
+            try {
+                windowsLock.readLock().lock();
+
+                OutputStream clientStream = client.getOutputStream();
+                out = new BufferedWriter(new OutputStreamWriter(clientStream), BUFFER_SIZE);
+
+                for (Entry<View, String> entry : windows.entrySet()) {
+                    out.write(Integer.toHexString(System.identityHashCode(entry.getKey())));
+                    out.write(' ');
+                    out.append(entry.getValue());
+                    out.write('\n');
+                }
+
+                out.write("DONE.\n");
+                out.flush();
+            } catch (Exception e) {
+                result = false;
+            } finally {
+                windowsLock.readLock().unlock();
+
+                if (out != null) {
+                    try {
+                        out.close();
+                    } catch (IOException e) {
+                        result = false;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        private boolean getFocusedWindow(Socket client) {
+            boolean result = true;
+            String focusName = null;
+
+            BufferedWriter out = null;
+            try {
+                OutputStream clientStream = client.getOutputStream();
+                out = new BufferedWriter(new OutputStreamWriter(clientStream), BUFFER_SIZE);
+
+                View focusedWindow = null;
+
+                focusLock.readLock().lock();
+                try {
+                    focusedWindow = ViewServer.this.focusedWindow;
+                } finally {
+                    focusLock.readLock().unlock();
+                }
+
+                if (focusedWindow != null) {
+                    windowsLock.readLock().lock();
+                    try {
+                        focusName = windows.get(ViewServer.this.focusedWindow);
+                    } finally {
+                        windowsLock.readLock().unlock();
+                    }
+
+                    out.write(Integer.toHexString(System.identityHashCode(focusedWindow)));
+                    out.write(' ');
+                    out.append(focusName);
+                }
+                out.write('\n');
+                out.flush();
+            } catch (Exception e) {
+                result = false;
+            } finally {
+                if (out != null) {
+                    try {
+                        out.close();
+                    } catch (IOException e) {
+                        result = false;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        public void windowsChanged() {
+            synchronized (lock) {
+                needWindowListUpdate = true;
+                lock.notifyAll();
+            }
+        }
+
+        public void focusChanged() {
+            synchronized (lock) {
+                needFocusedWindowUpdate = true;
+                lock.notifyAll();
+            }
+        }
+
+        private boolean windowManagerAutolistLoop() {
+            addWindowListener(this);
+            BufferedWriter out = null;
+            try {
+                out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
+                while (!Thread.interrupted()) {
+                    boolean needWindowListUpdate = false;
+                    boolean needFocusedWindowUpdate = false;
+                    synchronized (lock) {
+                        while (!this.needWindowListUpdate && !this.needFocusedWindowUpdate) {
+                            lock.wait();
+                        }
+                        if (this.needWindowListUpdate) {
+                            this.needWindowListUpdate = false;
+                            needWindowListUpdate = true;
+                        }
+                        if (this.needFocusedWindowUpdate) {
+                            this.needFocusedWindowUpdate = false;
+                            needFocusedWindowUpdate = true;
+                        }
+                    }
+                    if (needWindowListUpdate) {
+                        out.write("LIST UPDATE\n");
+                        out.flush();
+                    }
+                    if (needFocusedWindowUpdate) {
+                        out.write("FOCUS UPDATE\n");
+                        out.flush();
+                    }
+                }
+            } catch (Exception e) {
+                Log.w(LOG_TAG, "Connection error: ", e);
+            } finally {
+                if (out != null) {
+                    try {
+                        out.close();
+                    } catch (IOException e) {
+                        Log.w(LOG_TAG, "Error closing the buffer: ", e);
+                    }
+                }
+                removeWindowListener(this);
+            }
+            return true;
+        }
+
     }
 
-    private static class UncloseableOuputStream extends OutputStream {
-        private final OutputStream mStream;
+    static final class NoActionViewServer extends ViewServer {
 
-        UncloseableOuputStream(OutputStream stream) {
-            mStream = stream;
-        }
-
-        public void close() throws IOException {
-            // Don't close the stream
-        }
-
-        public boolean equals(Object o) {
-            return mStream.equals(o);
-        }
-
-        public void flush() throws IOException {
-            mStream.flush();
-        }
-
-        public int hashCode() {
-            return mStream.hashCode();
-        }
-
-        public String toString() {
-            return mStream.toString();
-        }
-
-        public void write(byte[] buffer, int offset, int count)
-                throws IOException {
-            mStream.write(buffer, offset, count);
-        }
-
-        public void write(byte[] buffer) throws IOException {
-            mStream.write(buffer);
-        }
-
-        public void write(int oneByte) throws IOException {
-            mStream.write(oneByte);
-        }
-    }
-
-    private static class NoopViewServer extends ViewServer {
-        private NoopViewServer() {
+        NoActionViewServer() {
+            super();
         }
 
         @Override
@@ -507,300 +753,6 @@ public class ViewServer implements Runnable {
         @Override
         public void run() {
         }
-    }
 
-    private class ViewServerWorker implements Runnable, WindowListener {
-        private Socket mClient;
-        private boolean mNeedWindowListUpdate;
-        private boolean mNeedFocusedWindowUpdate;
-
-        private final Object[] mLock = new Object[0];
-
-        public ViewServerWorker(Socket client) {
-            mClient = client;
-            mNeedWindowListUpdate = false;
-            mNeedFocusedWindowUpdate = false;
-        }
-
-        public void run() {
-            BufferedReader in = null;
-            try {
-                in = new BufferedReader(new InputStreamReader(mClient.getInputStream()), 1024);
-
-                final String request = in.readLine();
-
-                String command;
-                String parameters;
-
-                int index = request.indexOf(' ');
-                if (index == -1) {
-                    command = request;
-                    parameters = "";
-                } else {
-                    command = request.substring(0, index);
-                    parameters = request.substring(index + 1);
-                }
-
-                boolean result;
-                if (COMMAND_PROTOCOL_VERSION.equalsIgnoreCase(command)) {
-                    result = writeValue(mClient, VALUE_PROTOCOL_VERSION);
-                } else if (COMMAND_SERVER_VERSION.equalsIgnoreCase(command)) {
-                    result = writeValue(mClient, VALUE_SERVER_VERSION);
-                } else if (COMMAND_WINDOW_MANAGER_LIST.equalsIgnoreCase(command)) {
-                    result = listWindows(mClient);
-                } else if (COMMAND_WINDOW_MANAGER_GET_FOCUS.equalsIgnoreCase(command)) {
-                    result = getFocusedWindow(mClient);
-                } else if (COMMAND_WINDOW_MANAGER_AUTOLIST.equalsIgnoreCase(command)) {
-                    result = windowManagerAutolistLoop();
-                } else {
-                    result = windowCommand(mClient, command, parameters);
-                }
-
-                if (!result) {
-                    Log.w(LOG_TAG, "An error occurred with the command: " + command);
-                }
-            } catch (IOException e) {
-                Log.w(LOG_TAG, "Connection error: ", e);
-            } finally {
-                if (in != null) {
-                    try {
-                        in.close();
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-                if (mClient != null) {
-                    try {
-                        mClient.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-
-        private boolean windowCommand(Socket client, String command, String parameters) {
-            boolean success = true;
-            BufferedWriter out = null;
-
-            try {
-                // Find the hash code of the window
-                int index = parameters.indexOf(' ');
-                if (index == -1) {
-                    index = parameters.length();
-                }
-                final String code = parameters.substring(0, index);
-                int hashCode = (int) Long.parseLong(code, 16);
-
-                // Extract the command's parameter after the window description
-                if (index < parameters.length()) {
-                    parameters = parameters.substring(index + 1);
-                } else {
-                    parameters = "";
-                }
-
-                final View window = findWindow(hashCode);
-                if (window == null) {
-                    return false;
-                }
-
-                // call stuff
-                final Method dispatch = ViewDebug.class.getDeclaredMethod("dispatchCommand",
-                        View.class, String.class, String.class, OutputStream.class);
-                dispatch.setAccessible(true);
-                dispatch.invoke(null, window, command, parameters,
-                        new UncloseableOuputStream(client.getOutputStream()));
-
-                if (!client.isOutputShutdown()) {
-                    out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
-                    out.write("DONE\n");
-                    out.flush();
-                }
-
-            } catch (Exception e) {
-                Log.w(LOG_TAG, "Could not send command " + command +
-                        " with parameters " + parameters, e);
-                success = false;
-            } finally {
-                if (out != null) {
-                    try {
-                        out.close();
-                    } catch (IOException e) {
-                        success = false;
-                    }
-                }
-            }
-
-            return success;
-        }
-
-        private View findWindow(int hashCode) {
-            if (hashCode == -1) {
-                View window = null;
-                mWindowsLock.readLock().lock();
-                try {
-                    window = mFocusedWindow;
-                } finally {
-                    mWindowsLock.readLock().unlock();
-                }
-                return window;
-            }
-
-            mWindowsLock.readLock().lock();
-            try {
-                for (Entry<View, String> entry : mWindows.entrySet()) {
-                    if (System.identityHashCode(entry.getKey()) == hashCode) {
-                        return entry.getKey();
-                    }
-                }
-            } finally {
-                mWindowsLock.readLock().unlock();
-            }
-
-            return null;
-        }
-
-        private boolean listWindows(Socket client) {
-            boolean result = true;
-            BufferedWriter out = null;
-
-            try {
-                mWindowsLock.readLock().lock();
-
-                OutputStream clientStream = client.getOutputStream();
-                out = new BufferedWriter(new OutputStreamWriter(clientStream), BUFFER_SIZE);
-
-                for (Entry<View, String> entry : mWindows.entrySet()) {
-                    out.write(Integer.toHexString(System.identityHashCode(entry.getKey())));
-                    out.write(' ');
-                    out.append(entry.getValue());
-                    out.write('\n');
-                }
-
-                out.write("DONE.\n");
-                out.flush();
-            } catch (Exception e) {
-                result = false;
-            } finally {
-                mWindowsLock.readLock().unlock();
-
-                if (out != null) {
-                    try {
-                        out.close();
-                    } catch (IOException e) {
-                        result = false;
-                    }
-                }
-            }
-
-            return result;
-        }
-
-        private boolean getFocusedWindow(Socket client) {
-            boolean result = true;
-            String focusName = null;
-
-            BufferedWriter out = null;
-            try {
-                OutputStream clientStream = client.getOutputStream();
-                out = new BufferedWriter(new OutputStreamWriter(clientStream), BUFFER_SIZE);
-
-                View focusedWindow = null;
-
-                mFocusLock.readLock().lock();
-                try {
-                    focusedWindow = mFocusedWindow;
-                } finally {
-                    mFocusLock.readLock().unlock();
-                }
-
-                if (focusedWindow != null) {
-                    mWindowsLock.readLock().lock();
-                    try {
-                        focusName = mWindows.get(mFocusedWindow);
-                    } finally {
-                        mWindowsLock.readLock().unlock();
-                    }
-
-                    out.write(Integer.toHexString(System.identityHashCode(focusedWindow)));
-                    out.write(' ');
-                    out.append(focusName);
-                }
-                out.write('\n');
-                out.flush();
-            } catch (Exception e) {
-                result = false;
-            } finally {
-                if (out != null) {
-                    try {
-                        out.close();
-                    } catch (IOException e) {
-                        result = false;
-                    }
-                }
-            }
-
-            return result;
-        }
-
-        public void windowsChanged() {
-            synchronized (mLock) {
-                mNeedWindowListUpdate = true;
-                mLock.notifyAll();
-            }
-        }
-
-        public void focusChanged() {
-            synchronized (mLock) {
-                mNeedFocusedWindowUpdate = true;
-                mLock.notifyAll();
-            }
-        }
-
-        private boolean windowManagerAutolistLoop() {
-            addWindowListener(this);
-            BufferedWriter out = null;
-            try {
-                out = new BufferedWriter(new OutputStreamWriter(mClient.getOutputStream()));
-                while (!Thread.interrupted()) {
-                    boolean needWindowListUpdate = false;
-                    boolean needFocusedWindowUpdate = false;
-                    synchronized (mLock) {
-                        while (!mNeedWindowListUpdate && !mNeedFocusedWindowUpdate) {
-                            mLock.wait();
-                        }
-                        if (mNeedWindowListUpdate) {
-                            mNeedWindowListUpdate = false;
-                            needWindowListUpdate = true;
-                        }
-                        if (mNeedFocusedWindowUpdate) {
-                            mNeedFocusedWindowUpdate = false;
-                            needFocusedWindowUpdate = true;
-                        }
-                    }
-                    if (needWindowListUpdate) {
-                        out.write("LIST UPDATE\n");
-                        out.flush();
-                    }
-                    if (needFocusedWindowUpdate) {
-                        out.write("FOCUS UPDATE\n");
-                        out.flush();
-                    }
-                }
-            } catch (Exception e) {
-                Log.w(LOG_TAG, "Connection error: ", e);
-            } finally {
-                if (out != null) {
-                    try {
-                        out.close();
-                    } catch (IOException e) {
-                        Log.w(LOG_TAG, "Error closing the buffer: ", e);
-                    }
-                }
-                removeWindowListener(this);
-            }
-            return true;
-        }
     }
 }
