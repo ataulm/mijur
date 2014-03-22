@@ -30,7 +30,7 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
     }
 
     private void registerForUpdates() {
-        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().getGalleryItemsObservable();
+        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
         observable.subscribe(this);
     }
 

@@ -20,7 +20,7 @@ public class MockGalleryItemsProvider implements GalleryItemsProvider {
     }
 
     @Override
-    public Observable<GalleryItems> getGalleryItemsObservable() {
+    public Observable<GalleryItems> newObservable() {
         return Observable.just(galleryItems);
     }
 

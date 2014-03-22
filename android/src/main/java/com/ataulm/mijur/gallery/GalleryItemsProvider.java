@@ -4,6 +4,6 @@ import rx.Observable;
 
 public interface GalleryItemsProvider {
 
-    Observable<GalleryItems> getGalleryItemsObservable();
+    Observable<GalleryItems> newObservable();
 
 }
