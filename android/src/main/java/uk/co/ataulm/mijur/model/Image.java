@@ -21,7 +21,8 @@ public class Image implements Parcelable {
     public String section;
     public String link;
 
-    public Image() {}
+    public Image() {
+    }
 
     public Image(Parcel parcel) {
         id = parcel.readString();

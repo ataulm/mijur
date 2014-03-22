@@ -2,11 +2,11 @@ package uk.co.ataulm.mijur.api;
 
 import java.net.HttpURLConnection;
 
-import uk.co.ataulm.mijur.api.error.ImgurApiError;
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import uk.co.ataulm.mijur.ApiConstants;
+import uk.co.ataulm.mijur.api.error.ImgurApiError;
 import uk.co.ataulm.mijur.api.error.ImgurApiResourceNotFoundError;
 import uk.co.ataulm.mijur.model.Gallery;
 

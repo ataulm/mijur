@@ -45,10 +45,10 @@ public class GalleryItem implements Parcelable {
 
     public DateTime firstSynced;
     public DateTime lastSynced;
-    
+
     public GalleryItem() {
     }
-    
+
     public GalleryItem(Parcel parcel) {
         id = parcel.readString();
         title = parcel.readString();
@@ -79,18 +79,6 @@ public class GalleryItem implements Parcelable {
 
         firstSynced = new DateTime(parcel.readLong());
         lastSynced = new DateTime(parcel.readLong());
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder(GalleryItem.class.getSimpleName());
-        builder.append('{')
-                .append("id:").append(id).append(',')
-                .append("title:").append(title).append(',')
-                .append("is_album:").append(is_album).append(',')
-                .append("link:").append(link).append('}');
-
-        return builder.toString();
     }
 
     public static String getImageUrlFor(GalleryItem item) {
@@ -134,40 +122,52 @@ public class GalleryItem implements Parcelable {
     }
 
     @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder(GalleryItem.class.getSimpleName());
+        builder.append('{')
+                .append("id:").append(id).append(',')
+                .append("title:").append(title).append(',')
+                .append("is_album:").append(is_album).append(',')
+                .append("link:").append(link).append('}');
+
+        return builder.toString();
+    }
+
+    @Override
     public int describeContents() {
         return 0;
     }
 
     @Override
     public void writeToParcel(Parcel parcel, int flags) {
-            parcel.writeString(id);
-            parcel.writeString(title);
-            parcel.writeString(description);
-            parcel.writeLong(datetime);
-            parcel.writeInt(views);
-            parcel.writeString(link);
-            parcel.writeString(vote);
-            parcel.writeString(account_url);
-            parcel.writeInt(ups);
-            parcel.writeInt(downs);
-            parcel.writeInt(is_album == true ? 1 : 0);
-            
-            parcel.writeString(cover);
-            parcel.writeString(privacy);
-            parcel.writeString(layout);
-            parcel.writeInt(images_count);
-            parcel.writeList(images);
+        parcel.writeString(id);
+        parcel.writeString(title);
+        parcel.writeString(description);
+        parcel.writeLong(datetime);
+        parcel.writeInt(views);
+        parcel.writeString(link);
+        parcel.writeString(vote);
+        parcel.writeString(account_url);
+        parcel.writeInt(ups);
+        parcel.writeInt(downs);
+        parcel.writeInt(is_album == true ? 1 : 0);
 
-            parcel.writeString(type);
-            parcel.writeInt(animated == true ? 1 : 0);
-            parcel.writeInt(width);
-            parcel.writeInt(height);
-            parcel.writeLong(size);
-            parcel.writeLong(bandwidth);
-            parcel.writeString(deletehash);
-            parcel.writeString(section);
-        
-            parcel.writeLong(firstSynced.getMillis());
-            parcel.writeLong(lastSynced.getMillis());
+        parcel.writeString(cover);
+        parcel.writeString(privacy);
+        parcel.writeString(layout);
+        parcel.writeInt(images_count);
+        parcel.writeList(images);
+
+        parcel.writeString(type);
+        parcel.writeInt(animated == true ? 1 : 0);
+        parcel.writeInt(width);
+        parcel.writeInt(height);
+        parcel.writeLong(size);
+        parcel.writeLong(bandwidth);
+        parcel.writeString(deletehash);
+        parcel.writeString(section);
+
+        parcel.writeLong(firstSynced.getMillis());
+        parcel.writeLong(lastSynced.getMillis());
     }
 }

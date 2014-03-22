@@ -12,18 +12,6 @@ import uk.co.ataulm.mijur.R;
 
 class TypefaceFactory {
 
-    public enum FontType {
-
-        ROBOTO_SLAB_LIGHT("fonts/RobotoSlab-Light.ttf");
-
-        private final String assetUrl;
-
-        FontType(String assetUrl) {
-            this.assetUrl = assetUrl;
-        }
-
-    }
-
     private static final Hashtable<FontType, SoftReference<Typeface>> FONT_CACHE = new Hashtable<FontType, SoftReference<Typeface>>();
     private static final int INVALID_FONT_ID = -1;
     private static final Typeface DEFAULT_TYPEFACE = null;
@@ -92,6 +80,18 @@ class TypefaceFactory {
 
     private void saveFontToCache(FontType fontType, Typeface typeface) {
         FONT_CACHE.put(fontType, new SoftReference<Typeface>(typeface));
+    }
+
+    public enum FontType {
+
+        ROBOTO_SLAB_LIGHT("fonts/RobotoSlab-Light.ttf");
+
+        private final String assetUrl;
+
+        FontType(String assetUrl) {
+            this.assetUrl = assetUrl;
+        }
+
     }
 
 }

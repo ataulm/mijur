@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="thumbnail_suffix">l</string> <!-- http://api.imgur.com/models/gallery_image -->
+  <string name="thumbnail_suffix">l</string>
+  <!-- http://api.imgur.com/models/gallery_image -->
 
 </resources>

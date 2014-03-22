@@ -3,7 +3,6 @@ package uk.co.ataulm.mijur;
 import android.net.Uri;
 
 import novoda.lib.sqliteprovider.provider.SQLiteContentProviderImpl;
-import uk.co.ataulm.mijur.BuildConfig;
 
 public class Provider extends SQLiteContentProviderImpl {
 
@@ -54,7 +53,7 @@ public class Provider extends SQLiteContentProviderImpl {
 
     /**
      * Manages the association between a GalleryImage and a GalleryAlbum.
-     *
+     * <p/>
      * This data structure contains GalleryImages which are part of a GalleryAlbum. Each GalleryImage may be part of
      * multiple GalleryAlbums (though unlikely).
      */

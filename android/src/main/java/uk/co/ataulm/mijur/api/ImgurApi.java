@@ -1,8 +1,8 @@
 package uk.co.ataulm.mijur.api;
 
-import uk.co.ataulm.mijur.api.response.GalleryResponse;
 import retrofit.http.GET;
 import retrofit.http.Path;
+import uk.co.ataulm.mijur.api.response.GalleryResponse;
 
 public interface ImgurApi {
 

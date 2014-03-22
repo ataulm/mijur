@@ -4,9 +4,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ataulm.mijur.gallery.GalleryItem;
-
 import com.ataulm.mijur.base.android.MijurAdapter;
+import com.ataulm.mijur.gallery.GalleryItem;
 
 import uk.co.ataulm.mijur.R;
 
