@@ -3,9 +3,10 @@ package com.ataulm.mijur.base.android;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.viewserver.ViewServerManager;
 
-import uk.co.ataulm.mijur.BuildConfig;
+import com.ataulm.mijur.BuildConfig;
 
 public abstract class MijurActivity extends Activity {
 
@@ -15,6 +16,7 @@ public abstract class MijurActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Log.SHOW_LOGS = BuildConfig.DEBUG;
         initViewServerManager();
         viewServerManager.onCreate();
     }

@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur.model;
+package com.ataulm.mijur.model;
 
 import java.util.List;
 

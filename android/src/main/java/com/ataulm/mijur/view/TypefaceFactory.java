@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur.view;
+package com.ataulm.mijur.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import java.lang.ref.SoftReference;
 import java.util.Hashtable;
 
-import uk.co.ataulm.mijur.R;
+import com.ataulm.mijur.R;
 
 class TypefaceFactory {
 
@@ -80,18 +80,6 @@ class TypefaceFactory {
 
     private void saveFontToCache(FontType fontType, Typeface typeface) {
         FONT_CACHE.put(fontType, new SoftReference<Typeface>(typeface));
-    }
-
-    public enum FontType {
-
-        ROBOTO_SLAB_LIGHT("fonts/RobotoSlab-Light.ttf");
-
-        private final String assetUrl;
-
-        FontType(String assetUrl) {
-            this.assetUrl = assetUrl;
-        }
-
     }
 
 }

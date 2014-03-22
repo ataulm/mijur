@@ -1,4 +1,4 @@
-package uk.co.ataulm.mijur;
+package com.ataulm.mijur;
 
 import android.content.Context;
 import android.widget.ImageView;

@@ -1,6 +1,6 @@
-package uk.co.ataulm.mijur.api.response;
+package com.ataulm.mijur.response;
 
-import uk.co.ataulm.mijur.model.Image;
+import com.ataulm.mijur.model.Image;
 
 public class ImageResponse {
 

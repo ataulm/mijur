@@ -9,8 +9,8 @@ import android.widget.TextView;
 import com.ataulm.mijur.gallery.GalleryItem;
 import com.novoda.notils.caster.Views;
 
-import uk.co.ataulm.mijur.Matisse;
-import uk.co.ataulm.mijur.R;
+import com.ataulm.mijur.Matisse;
+import com.ataulm.mijur.R;
 
 public class GalleryItemView extends LinearLayout {
 

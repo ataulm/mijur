@@ -1,8 +1,9 @@
-package uk.co.ataulm.mijur;
+package com.ataulm.mijur;
 
 import android.net.Uri;
 
 import novoda.lib.sqliteprovider.provider.SQLiteContentProviderImpl;
+import com.ataulm.mijur.BuildConfig;
 
 public class Provider extends SQLiteContentProviderImpl {
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import com.ataulm.mijur.base.android.MijurAdapter;
 import com.ataulm.mijur.gallery.GalleryItem;
 
-import uk.co.ataulm.mijur.R;
+import com.ataulm.mijur.R;
 
 class GalleryAdapter extends MijurAdapter<GalleryItem> {
 
