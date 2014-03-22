@@ -12,15 +12,15 @@ sqliteAccess {
     packageName 'uk.co.ataulm.mijur'
 }
 
-
 dependencies {
     compile 'com.android.support:support-v13:19.0.1'
 
-    compile 'com.novoda:notils:2.2.+'
+    compile 'com.novoda:notils:2.2.5'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.novoda:sqliteprovider-core:1.0.1'
 
     compile 'com.squareup.retrofit:retrofit:1.2.2'
+    compile 'com.netflix.rxjava:rxjava-core:0.17.1'
     compile 'com.etsy.android.grid:library:1.0.3'
     compile 'joda-time:joda-time:2.3'
 }
@@ -31,7 +31,7 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 19
-        versionCode 1519010
+        versionCode 1419010
         versionName "0.1"
     }
 
