@@ -32,7 +32,9 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
     }
 
     private void subscribeToGalleryItemsObservable() {
+//        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
         Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
+
         observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
         observable.subscribe(this);
     }
@@ -40,10 +42,12 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
     @Override
     public void onNext(GalleryItems galleryItems) {
         ((GalleryAdapter) list.getAdapter()).swapList(galleryItems.asList());
+        Log.d("onNext: list count = " + list.getAdapter().getCount());
     }
 
     @Override
     public void onCompleted() {
+        Log.d("onComplete: list count = " + list.getAdapter().getCount());
     }
 
     @Override
