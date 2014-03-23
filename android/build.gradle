@@ -19,10 +19,14 @@ dependencies {
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
     compile 'com.novoda:sqliteprovider-core:1.0.1'
 
-    compile 'com.squareup.retrofit:retrofit:1.2.2'
-    compile 'com.netflix.rxjava:rxjava-core:0.17.1'
+    compile 'com.novoda.rx:android:0.0.2-SNAPSHOT',
+    'com.novoda.rx:core:0.0.2-SNAPSHOT',
+    'com.netflix.rxjava:rxjava-android:0.17.1'
+
+    compile 'com.squareup.retrofit:retrofit:1.5.0'
     compile 'com.etsy.android.grid:library:1.0.3'
     compile 'joda-time:joda-time:2.3'
+
 }
 android {
     compileSdkVersion 19

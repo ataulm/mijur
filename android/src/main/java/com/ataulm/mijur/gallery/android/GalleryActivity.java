@@ -3,16 +3,18 @@ package com.ataulm.mijur.gallery.android;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
+import com.ataulm.mijur.gallery.ApiGalleryItemsProvider;
 import com.ataulm.mijur.gallery.GalleryItems;
-import com.ataulm.mijur.gallery.MockGalleryItemsProvider;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.logger.toast.Toaster;
 
 import rx.Observable;
 import rx.Observer;
-import com.ataulm.mijur.R;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class GalleryActivity extends MijurActivity implements Observer<GalleryItems> {
 
@@ -30,7 +32,8 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
     }
 
     private void subscribeToGalleryItemsObservable() {
-        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
+        Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
+        observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
         observable.subscribe(this);
     }
 
@@ -41,7 +44,6 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
 
     @Override
     public void onCompleted() {
-        // Observable<GalleryItems>.just(galleryItems) will call "onCompleted" when it's emitted that single items obj
     }
 
     @Override

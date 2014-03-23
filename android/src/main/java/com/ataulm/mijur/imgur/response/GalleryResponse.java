@@ -1,8 +1,8 @@
 package com.ataulm.mijur.imgur.response;
 
-import java.util.List;
+import com.ataulm.mijur.gallery.GalleryItem;
 
-import com.ataulm.mijur.model.GalleryItem;
+import java.util.List;
 
 public class GalleryResponse {
 
