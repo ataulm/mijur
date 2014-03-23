@@ -32,6 +32,8 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
 
     private void subscribeToGalleryItemsObservable() {
         Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
+//        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
+
         observable.observeOn(AndroidSchedulers.mainThread()).subscribe(this);
     }
 

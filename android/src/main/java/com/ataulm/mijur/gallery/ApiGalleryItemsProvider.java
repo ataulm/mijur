@@ -26,11 +26,13 @@ public class ApiGalleryItemsProvider implements GalleryItemsProvider {
             private GalleryItems unwrap(GalleryResponse galleryResponse) {
                 List<GalleryItem> cleanedResponses = new ArrayList<GalleryItem>(galleryResponse.data.size());
                 for (GalleryItemResponse response : galleryResponse.data) {
+                    String imageUrl;
                     if (response.is_album) {
-                        cleanedResponses.add(GalleryItem.from(response.title, response.description, response.cover));
+                        imageUrl = "http://i.imgur.com/" + response.cover + ".jpg";
                     } else {
-                        cleanedResponses.add(GalleryItem.from(response.title, response.description, response.link));
+                        imageUrl = response.link;
                     }
+                    cleanedResponses.add(GalleryItem.from(response.title, response.description, imageUrl));
                 }
                 return new GalleryItems(cleanedResponses);
             }
