@@ -1,12 +1,14 @@
 package com.ataulm.mijur.model;
 
+import com.ataulm.mijur.imgur.response.GalleryItemResponse;
+
 import java.util.List;
 
 public class Gallery {
 
-    public final List<GalleryItem> elements;
+    public final List<GalleryItemResponse> elements;
 
-    public Gallery(List<GalleryItem> elements) {
+    public Gallery(List<GalleryItemResponse> elements) {
         this.elements = elements;
     }
 
@@ -19,7 +21,7 @@ public class Gallery {
         StringBuilder builder = new StringBuilder(getClass().getName());
         builder.append("{");
 
-        for (GalleryItem element : elements) {
+        for (GalleryItemResponse element : elements) {
             builder.append(element.link).append(", ");
         }
 

@@ -13,11 +13,14 @@ public class GalleryItem {
     }
 
     public static GalleryItem from(String caption, String description, String imageUrl) {
+        if (description == null) {
+            description = "";
+        }
         return new GalleryItem(caption, description, imageUrl);
     }
 
     public static GalleryItem from(String caption, String imageUrl) {
-        return GalleryItem.from(caption, "", imageUrl);
+        return GalleryItem.from(caption, null, imageUrl);
     }
 
 }

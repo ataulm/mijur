@@ -1,8 +1,12 @@
 package com.ataulm.mijur.gallery;
 
 import com.ataulm.mijur.imgur.Imgur;
+import com.ataulm.mijur.imgur.response.GalleryItemResponse;
 import com.ataulm.mijur.imgur.response.GalleryResponse;
 import com.ataulm.mijur.model.Gallery;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import rx.Observable;
 import rx.functions.Func1;
@@ -21,7 +25,15 @@ public class ApiGalleryItemsProvider implements GalleryItemsProvider {
             }
 
             private GalleryItems unwrap(GalleryResponse galleryResponse) {
-                return new GalleryItems(galleryResponse.data);
+                List<GalleryItem> cleanedResponses = new ArrayList<GalleryItem>(galleryResponse.data.size());
+                for (GalleryItemResponse response : galleryResponse.data) {
+                    if (response.is_album) {
+                        cleanedResponses.add(GalleryItem.from(response.title, response.description, response.cover));
+                    } else {
+                        cleanedResponses.add(GalleryItem.from(response.title, response.description, response.link));
+                    }
+                }
+                return new GalleryItems(cleanedResponses);
             }
 
         });
