@@ -37,8 +37,9 @@ class GalleryAdapter extends MijurAdapter<GalleryItem> {
     private static class GalleryItemViewTypeMapper {
 
         private static final int[] LAYOUTS = {
-                R.layout.gallery_item_view_1,
-                R.layout.gallery_item_view_2
+                R.layout.gallery_item_view_3,
+                R.layout.gallery_item_view_2,
+                R.layout.gallery_item_view_1
         };
 
         static int layoutResIdFrom(int position) {

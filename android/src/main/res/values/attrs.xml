@@ -4,6 +4,7 @@
     <attr name="font" format="enum">
       <enum name="none" value="-1" />
       <enum name="robotoSlabLight" value="0" />
+      <enum name="robotoSlabBold" value="1" />
     </attr>
   </declare-styleable>
 </resources>

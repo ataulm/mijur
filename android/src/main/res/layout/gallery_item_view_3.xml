@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ataulm.mijur.gallery.android.GalleryItemView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="288dp"
+  android:minHeight="288dp"
+  android:orientation="horizontal">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/gallery_image_thumb"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop" />
+
+    <com.ataulm.mijur.view.MijurTextView
+      android:id="@+id/gallery_text_caption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:background="#B3000000"
+      android:gravity="center_vertical"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      android:ellipsize="end"
+      android:maxLines="2"
+      app:font="robotoSlabBold" />
+  </FrameLayout>
+
+</com.ataulm.mijur.gallery.android.GalleryItemView>
