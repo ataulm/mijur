@@ -11,6 +11,16 @@ import com.ataulm.mijur.gallery.GalleryItem;
 class GalleryAdapter extends MijurAdapter<GalleryItem> {
 
     @Override
+    public int getViewTypeCount() {
+        return GalleryItemViewTypeMapper.LAYOUTS.length;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return GalleryItemViewTypeMapper.viewTypeFrom(position);
+    }
+
+    @Override
     public View getView(int position, View view, ViewGroup parent) {
         if (view == null) {
             view = createView(LayoutInflater.from(parent.getContext()), position);
@@ -20,10 +30,25 @@ class GalleryAdapter extends MijurAdapter<GalleryItem> {
     }
 
     private View createView(LayoutInflater inflater, int position) {
-        if (position % 2 == 0) {
-            return inflater.inflate(R.layout.gallery_item_view_1, null, false);
+        int layout = GalleryItemViewTypeMapper.layoutResIdFrom(position);
+        return inflater.inflate(layout, null, false);
+    }
+
+    private static class GalleryItemViewTypeMapper {
+
+        private static final int[] LAYOUTS = {
+                R.layout.gallery_item_view_1,
+                R.layout.gallery_item_view_2
+        };
+
+        static int layoutResIdFrom(int position) {
+            return LAYOUTS[viewTypeFrom(position)];
         }
-        return inflater.inflate(R.layout.gallery_item_view_2, null, false);
+
+        static int viewTypeFrom(int position) {
+            return position % LAYOUTS.length;
+        }
+
     }
 
 }

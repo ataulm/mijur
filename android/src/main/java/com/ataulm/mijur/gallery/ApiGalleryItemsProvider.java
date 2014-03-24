@@ -16,11 +16,11 @@ public class ApiGalleryItemsProvider implements GalleryItemsProvider {
     @Override
     public Observable<GalleryItems> newObservable() {
         Observable<GalleryResponse> galleryResponseObservable = Imgur.INSTANCE.galleryWith(Gallery.Section.HOT, Gallery.Sort.TIME, 0);
-        Observable<GalleryItems> galleryItemsObservable = galleryResponseObservable.flatMap(new Func1<GalleryResponse, Observable<GalleryItems>>() {
+        Observable<GalleryItems> galleryItemsObservable = galleryResponseObservable.map(new Func1<GalleryResponse, GalleryItems>() {
 
             @Override
-            public Observable<GalleryItems> call(GalleryResponse galleryResponse) {
-                return Observable.just(unwrap(galleryResponse));
+            public GalleryItems call(GalleryResponse galleryResponse) {
+                return unwrap(galleryResponse);
             }
 
             private GalleryItems unwrap(GalleryResponse galleryResponse) {

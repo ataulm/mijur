@@ -15,7 +15,7 @@ import rx.Observable;
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 
-public class GalleryActivity extends MijurActivity implements Observer<GalleryItems> {
+public class GalleryActivity extends MijurActivity {
 
     private ListView list;
 
@@ -31,27 +31,30 @@ public class GalleryActivity extends MijurActivity implements Observer<GalleryIt
     }
 
     private void subscribeToGalleryItemsObservable() {
-        Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
 //        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
-
-        observable.observeOn(AndroidSchedulers.mainThread()).subscribe(this);
+        Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
+        observable.observeOn(AndroidSchedulers.mainThread()).subscribe(new GalleryItemsObserver());
     }
 
-    @Override
-    public void onNext(GalleryItems galleryItems) {
-        ((GalleryAdapter) list.getAdapter()).swapList(galleryItems.asList());
-        Log.d("onNext: list count = " + list.getAdapter().getCount());
-    }
+    private class GalleryItemsObserver implements Observer<GalleryItems> {
 
-    @Override
-    public void onCompleted() {
-        Log.d("onComplete: list count = " + list.getAdapter().getCount());
-    }
+        @Override
+        public void onNext(GalleryItems galleryItems) {
+            ((GalleryAdapter) list.getAdapter()).swapList(galleryItems.asList());
+            Log.d("onNext: list count = " + list.getAdapter().getCount());
+        }
 
-    @Override
-    public void onError(Throwable e) {
-        new Toaster(this).popToast("well, poop.");
-        Log.e("onError", e);
+        @Override
+        public void onCompleted() {
+            Log.d("onCompleted: list count = " + list.getAdapter().getCount());
+        }
+
+        @Override
+        public void onError(Throwable e) {
+            new Toaster(GalleryActivity.this).popToast("well, poop.");
+            Log.e("onError", e);
+        }
+
     }
 
 }
