@@ -14,6 +14,7 @@ import com.novoda.notils.logger.toast.Toaster;
 import rx.Observable;
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class GalleryActivity extends MijurActivity {
 
@@ -33,7 +34,7 @@ public class GalleryActivity extends MijurActivity {
     private void subscribeToGalleryItemsObservable() {
 //        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
         Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
-        observable.observeOn(AndroidSchedulers.mainThread()).subscribe(new GalleryItemsObserver());
+        observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new GalleryItemsObserver());
     }
 
     private class GalleryItemsObserver implements Observer<GalleryItems> {
