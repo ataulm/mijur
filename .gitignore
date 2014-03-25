@@ -16,7 +16,6 @@ out
 .idea
 *.iml
 classes
-ApiConstants.java
 
 #gradle
 build
