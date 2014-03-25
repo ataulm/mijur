@@ -22,12 +22,16 @@ android {
         targetSdkVersion 19
         versionCode 1
         versionName "0.0.1"
+
+        buildConfigField 'String', 'IMGUR_CLIENT_ID', '"' + IMGUR_CLIENT_ID + '"'
     }
 
     def password = ""
     if (project.hasProperty('signingPassword')) {
         password = signingPassword;
     }
+
+
 
     signingConfigs {
         release {
@@ -39,7 +43,6 @@ android {
     }
 
     buildTypes {
-
         debug {
             packageNameSuffix ".debug"
             versionNameSuffix "-debug"

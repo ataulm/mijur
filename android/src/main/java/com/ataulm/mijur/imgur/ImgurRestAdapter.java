@@ -1,8 +1,9 @@
 package com.ataulm.mijur.imgur;
 
+import com.ataulm.mijur.BuildConfig;
+
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
-import com.ataulm.mijur.ApiConstants;
 
 public class ImgurRestAdapter {
 
@@ -16,7 +17,7 @@ public class ImgurRestAdapter {
                 .setRequestInterceptor(new RequestInterceptor() {
                     @Override
                     public void intercept(RequestFacade request) {
-                        request.addHeader(PROPERTY_KEY_AUTHORISATION, PROPERTY_VALUE_CLIENT_ID_PREFIX + ApiConstants.API_CLIENT_ID);
+                        request.addHeader(PROPERTY_KEY_AUTHORISATION, PROPERTY_VALUE_CLIENT_ID_PREFIX + BuildConfig.IMGUR_CLIENT_ID);
                     }
                 }).build();
 
