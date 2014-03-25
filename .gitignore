@@ -27,3 +27,4 @@ build
 
 *.keystore
 createRelease.sh
+gradle.properties
