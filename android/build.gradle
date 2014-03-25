@@ -7,8 +7,8 @@ dependencies {
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
 
     compile 'com.novoda.rx:android:0.0.2-SNAPSHOT',
-    'com.novoda.rx:core:0.0.2-SNAPSHOT',
-    'com.netflix.rxjava:rxjava-android:0.17.1'
+            'com.novoda.rx:core:0.0.2-SNAPSHOT',
+            'com.netflix.rxjava:rxjava-android:0.17.1'
 
     compile 'com.squareup.retrofit:retrofit:1.5.0'
 }
@@ -23,7 +23,12 @@ android {
         versionCode 1
         versionName "0.0.1"
 
-        buildConfigField 'String', 'IMGUR_CLIENT_ID', '"' + IMGUR_CLIENT_ID + '"'
+        // add gradle.properties to root dir
+        // IMGUR_CLIENT_ID=YOUR_CLIENT_ID
+        buildConfigField 'String', 'IMGUR_CLIENT_ID', '"YOUR_CLIENT_ID_HERE"'
+        if (hasProperty('IMGUR_CLIENT_ID')) {
+            buildConfigField 'String', 'IMGUR_CLIENT_ID', '"' + IMGUR_CLIENT_ID + '"'
+        }
     }
 
     def password = ""
