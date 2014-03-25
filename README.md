@@ -13,6 +13,11 @@ Read the rest of the [FAQ][imgur-faq].
 [imgur]: http://imgur.com
 [imgur-faq]: http://imgur.com/help
 
+## Building
+Should build out of the box now (`./gradlew clean build`). If you want to test using the real API, add `gradle.properties` in the root directory, and set your Imgur client ID:
+
+    // gradle.properties
+    IMGUR_CLIENT_ID=YOUR_CLIENT_ID
 
 ## Resources
 Uses open-source libraries, with thanks:
