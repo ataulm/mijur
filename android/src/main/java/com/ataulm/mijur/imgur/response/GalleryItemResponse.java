@@ -4,8 +4,6 @@ import com.ataulm.mijur.model.Image;
 
 import java.util.List;
 
-import org.joda.time.DateTime;
-
 public class GalleryItemResponse {
 
     // both gallery album and gallery image
@@ -39,7 +37,7 @@ public class GalleryItemResponse {
     public String deletehash;
     public String section;
 
-    public DateTime firstSynced;
-    public DateTime lastSynced;
+    public long firstSynced;
+    public long lastSynced;
 
 }

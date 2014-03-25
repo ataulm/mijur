@@ -11,10 +11,8 @@ dependencies {
     'com.netflix.rxjava:rxjava-android:0.17.1'
 
     compile 'com.squareup.retrofit:retrofit:1.5.0'
-    compile 'com.etsy.android.grid:library:1.0.3'
-    compile 'joda-time:joda-time:2.3'
-
 }
+
 android {
     compileSdkVersion 19
     buildToolsVersion '19.0.3'
@@ -22,8 +20,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 19
-        versionCode 1419010
-        versionName "0.1"
+        versionCode 1
+        versionName "0.0.1"
     }
 
     def password = ""
