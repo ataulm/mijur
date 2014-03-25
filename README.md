@@ -18,9 +18,11 @@ Read the rest of the [FAQ][imgur-faq].
 Uses open-source libraries, with thanks:
 
 - Novoda's [ImageLoader][link-imageloader]
+- Novoda's [NoTils][link-notils]
+- Netflix's [RxJava (alpha)][link-rxjava]
 - Square's [Retrofit][link-retrofit]
-- Pablo Fernandez's [Scribe][link-scribe]
 
 [link-imageloader]: https://github.com/novoda/ImageLoader
+[link-notils]: https://github.com/novoda/NoTils
+[link-rxjava]: https://github.com/Netflix/RxJava
 [link-retrofit]: http://square.github.io/retrofit/
-[link-scribe]: https://github.com/fernandezpablo85/scribe-java
