@@ -1,23 +1,10 @@
-buildscript {
-    dependencies {
-        classpath 'com.novoda:sqlite-analyzer:0.0.1-SNAPSHOT'
-    }
-}
-
 apply plugin: 'android'
-apply plugin: 'sqlite-access'
-
-sqliteAccess {
-    migrationsDir 'src/main/assets/migrations'
-    packageName 'com.ataulm.mijur'
-}
 
 dependencies {
     compile 'com.android.support:support-v13:19.0.1'
 
     compile 'com.novoda:notils:2.2.5'
     compile 'com.novoda.imageloader:imageloader-core:1.6.1'
-    compile 'com.novoda:sqliteprovider-core:1.0.1'
 
     compile 'com.novoda.rx:android:0.0.2-SNAPSHOT',
     'com.novoda.rx:core:0.0.2-SNAPSHOT',
@@ -54,14 +41,10 @@ android {
     }
 
     buildTypes {
-        final String PROVIDER_AUTHORITY_TYPE = "String";
-        final String PROVIDER_AUTHORITY_KEY = "PROVIDER_AUTHORITY";
 
         debug {
             packageNameSuffix ".debug"
             versionNameSuffix "-debug"
-
-            buildConfigField PROVIDER_AUTHORITY_TYPE, PROVIDER_AUTHORITY_KEY, "\"com.ataulm.mijur.debug.Provider\""
         }
 
         release {
@@ -69,8 +52,6 @@ android {
             jniDebugBuild false
 
             signingConfig signingConfigs.release
-
-            buildConfigField PROVIDER_AUTHORITY_TYPE, PROVIDER_AUTHORITY_KEY, "\"com.ataulm.mijur.Provider\""
         }
     }
 }

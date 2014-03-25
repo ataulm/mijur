@@ -1,4 +1,4 @@
-package com.ataulm.mijur.response;
+package com.ataulm.mijur.imgur.response;
 
 import com.ataulm.mijur.model.Image;
 
