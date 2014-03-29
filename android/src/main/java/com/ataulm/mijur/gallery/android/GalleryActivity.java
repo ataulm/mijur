@@ -5,8 +5,8 @@ import android.widget.ListView;
 
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
+import com.ataulm.mijur.gallery.ApiGalleryItemsProvider;
 import com.ataulm.mijur.gallery.GalleryItems;
-import com.ataulm.mijur.gallery.MockGalleryItemsProvider;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.logger.toast.Toaster;
@@ -32,8 +32,8 @@ public class GalleryActivity extends MijurActivity {
     }
 
     private void subscribeToGalleryItemsObservable() {
-        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
-//        Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
+//        Observable<GalleryItems> observable = MockGalleryItemsProvider.getInstance().newObservable();
+        Observable<GalleryItems> observable = new ApiGalleryItemsProvider().newObservable();
         observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new GalleryItemsObserver());
     }
 
