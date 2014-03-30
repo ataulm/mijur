@@ -11,10 +11,10 @@ import rx.Subscriber;
 
 import static rx.Observable.OnSubscribe;
 
-class ContentFetcher {
+public class ContentFetcher {
 
-    private static final int READ_TIMEOUT_MILLIS = 100;
-    private static final int CONNECT_TIMEOUT_MILLIS = 100;
+    private static final int READ_TIMEOUT_MILLIS = 10 * 1000;
+    private static final int CONNECT_TIMEOUT_MILLIS = 10 * 1000;
 
     public Observable<InputStream> observableFetchingInputStreamFrom(final String target) {
         return Observable.create(new OnSubscribe<InputStream>() {

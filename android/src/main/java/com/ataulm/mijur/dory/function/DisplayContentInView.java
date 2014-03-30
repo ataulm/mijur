@@ -1,10 +1,12 @@
-package com.ataulm.mijur.dory;
+package com.ataulm.mijur.dory.function;
 
 import android.view.View;
 
+import com.ataulm.mijur.dory.Displayer;
+
 import rx.functions.Func1;
 
-class DisplayContentInView<T, U extends View> implements Func1<T, U> {
+public class DisplayContentInView<T, U extends View> implements Func1<T, U> {
 
     private final Displayer<T, U> displayer;
     private final U view;

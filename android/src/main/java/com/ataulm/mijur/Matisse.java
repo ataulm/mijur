@@ -3,6 +3,7 @@ package com.ataulm.mijur;
 import android.content.Context;
 import android.widget.ImageView;
 
+import com.ataulm.mijur.dory.Dory;
 import com.novoda.imageloader.core.ImageManager;
 import com.novoda.imageloader.core.LoaderSettings;
 import com.novoda.imageloader.core.model.ImageTag;
@@ -28,7 +29,9 @@ public class Matisse {
      * @param view
      */
     public static void load(String url, ImageView view) {
-        with(view.getContext()).loadUrlInView(url, view);
+        Dory.Bitmaps.getInstance().display(url, view);
+
+//        with(view.getContext()).loadUrlInView(url, view);
     }
 
     /**

@@ -3,6 +3,10 @@ package com.ataulm.mijur.dory;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+import com.novoda.notils.logger.simple.Log;
+
+import java.io.BufferedInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 import rx.Observable;
@@ -21,17 +25,25 @@ public class BitmapStreamConverter implements StreamConverter<Bitmap> {
             }
 
             private Bitmap decodeSampledBitmapFromResource(InputStream inputStream, int width, int height) {
+                BufferedInputStream wrappedStream = new BufferedInputStream(inputStream);
+                final int bufferSize = 128 * 1024;
+                wrappedStream.mark(bufferSize);
+
                 // First decode with inJustDecodeBounds=true to check dimensions
                 final BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inJustDecodeBounds = true;
-                BitmapFactory.decodeStream(inputStream, null, options);
+                BitmapFactory.decodeStream(wrappedStream, null, options);
 
-                // Calculate inSampleSize
                 options.inSampleSize = calculateInSampleSize(options, width, height);
-
-                // Decode bitmap with inSampleSize set
                 options.inJustDecodeBounds = false;
-                return BitmapFactory.decodeStream(inputStream, null, options);
+
+                try {
+                    wrappedStream.reset();
+                } catch (IOException e) {
+                    throw new RuntimeException("Failed to reset InputStream.");
+                }
+
+                return BitmapFactory.decodeStream(wrappedStream, null, options);
             }
 
             private int calculateInSampleSize(BitmapFactory.Options options, int targetWidth, int targetHeight) {
