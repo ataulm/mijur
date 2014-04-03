@@ -1,8 +1,10 @@
 package com.ataulm.mijur.dory;
 
+import android.graphics.Bitmap;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.ataulm.mijur.dory.function.DisplayContentInView;
 import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.logger.toast.Toaster;
 
@@ -13,7 +15,7 @@ import rx.Observer;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-public class Dory {
+public class Dory<T, U extends View> {
 
     public static class Bitmaps {
 
@@ -21,7 +23,7 @@ public class Dory {
 
         public static Dory getInstance() {
             if (instance == null) {
-                instance = new Dory(new ContentFetcher(), new DisplayManager(new BitmapDisplayer(), new BitmapStreamConverter()));
+                instance = new Dory<Bitmap, ImageView>(new ContentFetcher(), new BitmapStreamConverter(), new BitmapDisplayer());
             }
             return instance;
         }
@@ -29,20 +31,22 @@ public class Dory {
     }
 
     private final ContentFetcher contentFetcher;
-    private final DisplayManager displayManager;
+    private final Displayer displayer;
+    private final StreamConverter streamConverter;
 
-    public Dory(ContentFetcher retriever, DisplayManager displayManager) {
+    public Dory(ContentFetcher retriever, StreamConverter streamConverter, Displayer displayer) {
         this.contentFetcher = retriever;
-        this.displayManager = displayManager;
+        this.displayer = displayer;
+        this.streamConverter = streamConverter;
     }
 
-    public void display(final String url, final ImageView view) {
+    public void display(final String url, final U view) {
         Log.d("display: " + url);
-        contentFetcher.observableFetchingInputStreamFrom(url).flatMap(new Func1<InputStream, Observable<View>>() {
+        contentFetcher.observableFetchingInputStreamFrom(url).flatMap(new Func1<InputStream, Observable<U>>() {
 
             @Override
-            public Observable<View> call(InputStream inputStream) {
-                return displayManager.observableLoadingContentIntoView(inputStream, view);
+            public Observable<U> call(InputStream inputStream) {
+                return observableLoadingContentIntoView(inputStream, view);
             }
 
         })
@@ -50,11 +54,21 @@ public class Dory {
                 .subscribe(new ContentDisplayedInViewObserver(view));
     }
 
+    public Observable<U> observableLoadingContentIntoView(InputStream stream, U view) {
+        int width = view.getWidth();
+        int height = view.getHeight();
+        return streamConverter.observableConverting(stream, width, height).map(new DisplayContentInView<T, U>(displayer, view));
+    }
+
+    public Observable<U> observableLoadingContentIntoView(InputStream stream, U view, int width, int height) {
+        return streamConverter.observableConverting(stream, width, height).map(new DisplayContentInView<T, U>(displayer, view));
+    }
+
     private static class ContentDisplayedInViewObserver implements Observer<View> {
 
-        private final ImageView view;
+        private final View view;
 
-        public ContentDisplayedInViewObserver(ImageView view) {
+        public ContentDisplayedInViewObserver(View view) {
             this.view = view;
         }
 
