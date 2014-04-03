@@ -1,11 +1,9 @@
 package com.ataulm.mijur.dory;
 
-import android.graphics.Bitmap;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.ataulm.mijur.dory.function.DisplayContentInView;
-import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.logger.toast.Toaster;
 
 import java.io.InputStream;
@@ -17,13 +15,13 @@ import rx.schedulers.Schedulers;
 
 public class Dory<T, U extends View> {
 
-    public static class Bitmaps {
+    public static class Bitmap {
 
         private static Dory instance;
 
         public static Dory getInstance() {
             if (instance == null) {
-                instance = new Dory<Bitmap, ImageView>(new ContentFetcher(), new BitmapStreamConverter(), new BitmapDisplayer());
+                instance = new Dory<android.graphics.Bitmap, ImageView>(new ContentFetcher(), new BitmapStreamConverter(), new BitmapDisplayer());
             }
             return instance;
         }
@@ -41,7 +39,6 @@ public class Dory<T, U extends View> {
     }
 
     public void display(final String url, final U view) {
-        Log.d("display: " + url);
         contentFetcher.observableFetchingInputStreamFrom(url).flatMap(new Func1<InputStream, Observable<U>>() {
 
             @Override

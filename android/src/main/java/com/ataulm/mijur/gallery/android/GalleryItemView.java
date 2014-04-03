@@ -6,11 +6,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.ataulm.mijur.R;
+import com.ataulm.mijur.dory.Dory;
 import com.ataulm.mijur.gallery.GalleryItem;
 import com.novoda.notils.caster.Views;
-
-import com.ataulm.mijur.Matisse;
-import com.ataulm.mijur.R;
 
 public class GalleryItemView extends LinearLayout {
 
@@ -32,7 +31,7 @@ public class GalleryItemView extends LinearLayout {
     }
 
     public void updateWith(GalleryItem galleryItem) {
-        Matisse.load(galleryItem.imageUrl, thumbImage);
+        Dory.Bitmap.getInstance().display(galleryItem.imageUrl, thumbImage);
         captionText.setText(galleryItem.caption);
     }
 
