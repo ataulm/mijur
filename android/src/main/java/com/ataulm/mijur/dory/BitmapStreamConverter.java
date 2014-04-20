@@ -3,8 +3,6 @@ package com.ataulm.mijur.dory;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import com.novoda.notils.logger.simple.Log;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +11,8 @@ import rx.Observable;
 import rx.Subscriber;
 
 public class BitmapStreamConverter implements StreamConverter<Bitmap> {
+
+    private static final int BUFFER_SIZE_BYTES = 128 * 1024;
 
     public Observable<Bitmap> observableConverting(final InputStream stream, final int width, final int height) {
         return Observable.create(new Observable.OnSubscribe<Bitmap>() {
@@ -26,8 +26,7 @@ public class BitmapStreamConverter implements StreamConverter<Bitmap> {
 
             private Bitmap decodeSampledBitmapFromResource(InputStream inputStream, int width, int height) {
                 BufferedInputStream wrappedStream = new BufferedInputStream(inputStream);
-                final int bufferSize = 128 * 1024;
-                wrappedStream.mark(bufferSize);
+                wrappedStream.mark(BUFFER_SIZE_BYTES);
 
                 // First decode with inJustDecodeBounds=true to check dimensions
                 final BitmapFactory.Options options = new BitmapFactory.Options();

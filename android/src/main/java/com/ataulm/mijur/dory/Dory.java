@@ -4,6 +4,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.ataulm.mijur.dory.function.DisplayContentInView;
+import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.logger.toast.Toaster;
 
 import java.io.InputStream;
@@ -39,14 +40,17 @@ public class Dory<T, U extends View> {
     }
 
     public void display(final String url, final U view) {
-        contentFetcher.observableFetchingInputStreamFrom(url).flatMap(new Func1<InputStream, Observable<U>>() {
+        Func1<InputStream, Observable<U>> convertStreamThenReturnViewWithDisplayedContent = new Func1<InputStream, Observable<U>>() {
 
             @Override
             public Observable<U> call(InputStream inputStream) {
                 return observableLoadingContentIntoView(inputStream, view);
             }
 
-        })
+        };
+
+        contentFetcher.observableFetchingInputStreamFrom(url)
+                .flatMap(convertStreamThenReturnViewWithDisplayedContent)
                 .subscribeOn(Schedulers.io())
                 .subscribe(new ContentDisplayedInViewObserver(view));
     }
@@ -54,7 +58,11 @@ public class Dory<T, U extends View> {
     public Observable<U> observableLoadingContentIntoView(InputStream stream, U view) {
         int width = view.getWidth();
         int height = view.getHeight();
-        return streamConverter.observableConverting(stream, width, height).map(new DisplayContentInView<T, U>(displayer, view));
+
+        Observable convertingStreamToContent = streamConverter.observableConverting(stream, width, height);
+        DisplayContentInView<T, U> displayContentInView = new DisplayContentInView<T, U>(displayer, view);
+
+        return convertingStreamToContent.map(displayContentInView);
     }
 
     public Observable<U> observableLoadingContentIntoView(InputStream stream, U view, int width, int height) {
@@ -75,12 +83,12 @@ public class Dory<T, U extends View> {
 
         @Override
         public void onError(Throwable e) {
+            Log.e("Failed to display content in view", e);
             new Toaster(view.getContext()).popToast("well, poop");
         }
 
         @Override
         public void onNext(View view) {
-            new Toaster(view.getContext()).popToast("well, alright");
         }
 
     }
