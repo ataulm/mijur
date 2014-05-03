@@ -2,14 +2,21 @@ package com.ataulm.mijur.gallery.android;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ataulm.mijur.R;
-import com.ataulm.mijur.gallery.GalleryItem;
 import com.ataulm.mijur.dory.Dorys;
+import com.ataulm.mijur.gallery.GalleryItem;
 import com.novoda.notils.caster.Views;
+import com.novoda.notils.logger.simple.Log;
+
+import rx.Observable;
+import rx.Observer;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class GalleryItemView extends LinearLayout {
 
@@ -31,8 +38,27 @@ public class GalleryItemView extends LinearLayout {
     }
 
     public void updateWith(GalleryItem galleryItem) {
-        Dorys.bitmapDory().load(galleryItem.imageUrl, thumbImage);
+        Observable<ImageView> loadImageObservable = Dorys.bitmapDory().load(galleryItem.imageUrl, thumbImage);
+        loadImageObservable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new BitmapLoadedObserver());
         captionText.setText(galleryItem.caption);
+    }
+
+    private static class BitmapLoadedObserver implements Observer<View> {
+
+        @Override
+        public void onCompleted() {
+        }
+
+        @Override
+        public void onError(Throwable e) {
+            Log.e("GalleryItemView", e);
+        }
+
+        @Override
+        public void onNext(View view) {
+            Log.v("GalleryItemView" + view.getId());
+        }
+
     }
 
 }

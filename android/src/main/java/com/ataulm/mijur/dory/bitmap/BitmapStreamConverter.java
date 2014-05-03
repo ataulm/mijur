@@ -5,9 +5,7 @@ import android.graphics.BitmapFactory;
 
 import com.ataulm.mijur.dory.StreamConverter;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -21,30 +19,40 @@ public class BitmapStreamConverter implements StreamConverter<Bitmap> {
 
             @Override
             public void call(Subscriber<? super Bitmap> subscriber) {
-                Bitmap decoded = decodeSampledBitmapFromResource(stream, width, height);
+                Bitmap decoded = decodeSampledBitmapFromSource(stream, width, height);
                 subscriber.onNext(decoded);
                 subscriber.onCompleted();
             }
 
-            private Bitmap decodeSampledBitmapFromResource(InputStream inputStream, int width, int height) {
-                BufferedInputStream wrappedStream = new BufferedInputStream(inputStream);
-                wrappedStream.mark(BUFFER_SIZE_BYTES);
+            private byte[] byteArrayFrom(InputStream stream) {
+                try {
+                    return byteArrayFromStreamOrThrow(stream);
+                } catch (IOException e) {
+                    throw new RuntimeException("Couldn't create bytearray from stream", e);
+                }
+            }
+
+            private byte[] byteArrayFromStreamOrThrow(InputStream stream) throws IOException {
+                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                byte[] buf = new byte[BUFFER_SIZE_BYTES];
+                int n;
+                while ((n = stream.read(buf)) >= 0) {
+                    baos.write(buf, 0, n);
+                }
+                return baos.toByteArray();
+            }
+
+            private Bitmap decodeSampledBitmapFromSource(InputStream inputStream, int width, int height) {
+                byte[] streamAsBytes = byteArrayFrom(inputStream);
 
                 // First decode with inJustDecodeBounds=true to check dimensions
                 final BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inJustDecodeBounds = true;
-                BitmapFactory.decodeStream(wrappedStream, null, options);
+                BitmapFactory.decodeStream(new ByteArrayInputStream(streamAsBytes), null, options);
 
                 options.inSampleSize = calculateInSampleSize(options, width, height);
                 options.inJustDecodeBounds = false;
-
-                try {
-                    wrappedStream.reset();
-                } catch (IOException e) {
-                    throw new RuntimeException("Failed to reset InputStream.");
-                }
-
-                return BitmapFactory.decodeStream(wrappedStream, null, options);
+                return BitmapFactory.decodeStream(new ByteArrayInputStream(streamAsBytes), null, options);
             }
 
             private int calculateInSampleSize(BitmapFactory.Options options, int targetWidth, int targetHeight) {

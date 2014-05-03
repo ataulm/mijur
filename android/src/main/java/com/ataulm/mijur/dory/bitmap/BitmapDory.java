@@ -51,7 +51,9 @@ public class BitmapDory implements Dory<Bitmap, ImageView> {
 
             @Override
             public Observable<Bitmap> call(InputStream inputStream) {
-                return streamConverter.observableConverting(inputStream, view.getWidth(), view.getHeight());
+                int width = view.getWidth();
+                int height = view.getHeight();
+                return streamConverter.observableConverting(inputStream, width, height);
             }
 
         }).flatMap(new Func1<Bitmap, Observable<ImageView>>() {
