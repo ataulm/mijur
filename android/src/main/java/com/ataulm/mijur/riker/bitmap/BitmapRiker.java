@@ -5,18 +5,13 @@ import android.widget.ImageView;
 
 import com.ataulm.mijur.dory.BitmapDisplayer;
 import com.ataulm.mijur.dory.BitmapStreamConverter;
-import com.ataulm.mijur.dory.ContentFetcher;
-import com.ataulm.mijur.dory.Displayer;
-import com.ataulm.mijur.dory.StreamConverter;
-import com.ataulm.mijur.dory.function.DisplayContentInView;
-import com.ataulm.mijur.riker.ContentDisplayedInViewObserver;
+import com.ataulm.mijur.dory.*;
 import com.ataulm.mijur.riker.Riker;
 
 import java.io.InputStream;
 
 import rx.Observable;
 import rx.functions.Func1;
-import rx.schedulers.Schedulers;
 
 public class BitmapRiker implements Riker<Bitmap, ImageView> {
 
@@ -46,42 +41,24 @@ public class BitmapRiker implements Riker<Bitmap, ImageView> {
     }
 
     @Override
-    public Observable<ImageView> load(String url, ImageView view) {
-        // TODO: chain fetch and display
-        return Observable.just(view);
-    }
-
-    // TODO: Delete anything below this line once functionality is secured /////////////////////////////////////////////
-
-    public void display(final String url, final ImageView view) {
-        Func1<InputStream, Observable<ImageView>> convertStreamThenReturnViewWithDisplayedContent = new Func1<InputStream, Observable<ImageView>>() {
+    public Observable<ImageView> load(final String url, final ImageView view) {
+        return fetch(url).flatMap(new Func1<InputStream, Observable<Bitmap>>() {
 
             @Override
-            public Observable<ImageView> call(InputStream inputStream) {
-                return observableLoadingContentIntoView(inputStream, view);
+            public Observable<Bitmap> call(InputStream inputStream) {
+                return streamConverter.observableConverting(inputStream, view.getWidth(), view.getHeight());
             }
 
-        };
+        }).flatMap(new Func1<Bitmap, Observable<ImageView>>() {
 
-        contentFetcher.observableFetchingInputStreamFrom(url)
-                .flatMap(convertStreamThenReturnViewWithDisplayedContent)
-                .subscribeOn(Schedulers.io())
-                .subscribe(new ContentDisplayedInViewObserver(view));
+            @Override
+            public Observable<ImageView> call(Bitmap bitmap) {
+                return display(bitmap, view);
+            }
+
+        });
     }
 
-    public Observable<ImageView> observableLoadingContentIntoView(InputStream stream, ImageView view) {
-        int width = view.getWidth();
-        int height = view.getHeight();
 
-        Observable convertingStreamToContent = streamConverter.observableConverting(stream, width, height);
-        DisplayContentInView<Bitmap, ImageView> displayContentInView = new DisplayContentInView<Bitmap, ImageView>(displayer, view);
-
-        return convertingStreamToContent.map(displayContentInView);
-    }
-
-    public Observable<ImageView> observableLoadingContentIntoView(InputStream stream, ImageView view, int width, int height) {
-        return streamConverter.observableConverting(stream, width, height)
-                .map(new DisplayContentInView<Bitmap, ImageView>(displayer, view));
-    }
 
 }

@@ -3,8 +3,8 @@ apply plugin: 'android'
 dependencies {
     compile 'com.android.support:support-v13:19.0.1'
 
-    compile 'com.novoda:notils:2.2.5'
-    compile 'com.novoda.imageloader:imageloader-core:1.6.1'
+    compile 'com.novoda:notils:2.2.6'
+    compile 'com.koushikdutta.ion:ion:1.2.4'
 
     compile 'com.novoda.rx:android:0.0.2-SNAPSHOT',
             'com.novoda.rx:core:0.0.2-SNAPSHOT',
