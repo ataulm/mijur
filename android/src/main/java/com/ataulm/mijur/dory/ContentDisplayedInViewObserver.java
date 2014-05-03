@@ -1,4 +1,4 @@
-package com.ataulm.mijur.riker;
+package com.ataulm.mijur.dory;
 
 import android.view.View;
 

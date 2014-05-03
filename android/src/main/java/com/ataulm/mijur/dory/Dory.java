@@ -1,4 +1,4 @@
-package com.ataulm.mijur.riker;
+package com.ataulm.mijur.dory;
 
 import android.view.View;
 
@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 import rx.Observable;
 
-public interface Riker<T, U extends View> {
+public interface Dory<T, U extends View> {
 
     /**
      * Returns an InputStream of the content identified by the url.

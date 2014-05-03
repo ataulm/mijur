@@ -1,9 +1,9 @@
-package com.ataulm.mijur.riker.bitmap;
+package com.ataulm.mijur.dory.bitmap;
 
 import android.graphics.Bitmap;
 import android.widget.ImageView;
 
-import com.ataulm.mijur.riker.Displayer;
+import com.ataulm.mijur.dory.Displayer;
 
 public class BitmapDisplayer implements Displayer<Bitmap, ImageView> {
 

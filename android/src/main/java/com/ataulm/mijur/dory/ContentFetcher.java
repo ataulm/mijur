@@ -1,4 +1,4 @@
-package com.ataulm.mijur.riker;
+package com.ataulm.mijur.dory;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,12 +1,12 @@
-package com.ataulm.mijur.riker.bitmap;
+package com.ataulm.mijur.dory.bitmap;
 
 import android.graphics.Bitmap;
 import android.widget.ImageView;
 
-import com.ataulm.mijur.riker.ContentFetcher;
-import com.ataulm.mijur.riker.Displayer;
-import com.ataulm.mijur.riker.Riker;
-import com.ataulm.mijur.riker.StreamConverter;
+import com.ataulm.mijur.dory.ContentFetcher;
+import com.ataulm.mijur.dory.Displayer;
+import com.ataulm.mijur.dory.Dory;
+import com.ataulm.mijur.dory.StreamConverter;
 
 import java.io.InputStream;
 
@@ -15,17 +15,17 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-public class BitmapRiker implements Riker<Bitmap, ImageView> {
+public class BitmapDory implements Dory<Bitmap, ImageView> {
 
     private final ContentFetcher contentFetcher;
     private final Displayer<Bitmap, ImageView> displayer;
     private final StreamConverter<Bitmap> streamConverter;
 
-    public static BitmapRiker newInstance() {
-        return new BitmapRiker(new ContentFetcher(), new BitmapStreamConverter(), new BitmapDisplayer());
+    public static BitmapDory newInstance() {
+        return new BitmapDory(new ContentFetcher(), new BitmapStreamConverter(), new BitmapDisplayer());
     }
 
-    BitmapRiker(ContentFetcher contentFetcher, StreamConverter<Bitmap> streamConverter, Displayer<Bitmap, ImageView> displayer) {
+    BitmapDory(ContentFetcher contentFetcher, StreamConverter<Bitmap> streamConverter, Displayer<Bitmap, ImageView> displayer) {
         this.contentFetcher = contentFetcher;
         this.displayer = displayer;
         this.streamConverter = streamConverter;
