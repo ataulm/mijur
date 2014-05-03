@@ -8,8 +8,6 @@ import com.ataulm.mijur.dory.Displayer;
 import com.ataulm.mijur.dory.Dory;
 import com.ataulm.mijur.dory.StreamConverter;
 
-import java.io.InputStream;
-
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
@@ -32,7 +30,7 @@ public class BitmapDory implements Dory<Bitmap, ImageView> {
     }
 
     @Override
-    public Observable<InputStream> fetch(String url) {
+    public Observable<byte[]> fetch(String url) {
         return contentFetcher.observableFetchingInputStreamFrom(url)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
@@ -47,13 +45,13 @@ public class BitmapDory implements Dory<Bitmap, ImageView> {
 
     @Override
     public Observable<ImageView> load(final String url, final ImageView view) {
-        return fetch(url).flatMap(new Func1<InputStream, Observable<Bitmap>>() {
+        return fetch(url).flatMap(new Func1<byte[], Observable<Bitmap>>() {
 
             @Override
-            public Observable<Bitmap> call(InputStream inputStream) {
+            public Observable<Bitmap> call(byte[] input) {
                 int width = view.getWidth();
                 int height = view.getHeight();
-                return streamConverter.observableConverting(inputStream, width, height);
+                return streamConverter.observableConverting(input, width, height);
             }
 
         }).flatMap(new Func1<Bitmap, Observable<ImageView>>() {

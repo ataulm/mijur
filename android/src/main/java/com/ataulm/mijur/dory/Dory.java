@@ -2,22 +2,20 @@ package com.ataulm.mijur.dory;
 
 import android.view.View;
 
-import java.io.InputStream;
-
 import rx.Observable;
 
 public interface Dory<T, U extends View> {
 
     /**
-     * Returns an InputStream of the content identified by the url.
+     * Returns a byte array of the content identified by the url.
      *
      * The url may be the content's location on the internet, or may
      * be a key to retrieve content from a disk or in-memory cache.
      *
      * @param url identifier to locate the content
-     * @return an InputStream of the content
+     * @return byte array representing content
      */
-    Observable<InputStream> fetch(String url);
+    Observable<byte[]> fetch(String url);
 
     /**
      * Presents the content in the View.

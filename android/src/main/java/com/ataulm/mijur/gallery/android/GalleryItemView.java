@@ -39,7 +39,10 @@ public class GalleryItemView extends LinearLayout {
 
     public void updateWith(GalleryItem galleryItem) {
         Observable<ImageView> loadImageObservable = Dorys.bitmapDory().load(galleryItem.imageUrl, thumbImage);
-        loadImageObservable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new BitmapLoadedObserver());
+        loadImageObservable
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new BitmapLoadedObserver());
         captionText.setText(galleryItem.caption);
     }
 

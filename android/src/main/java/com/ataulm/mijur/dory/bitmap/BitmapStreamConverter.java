@@ -12,47 +12,25 @@ import rx.Subscriber;
 
 public class BitmapStreamConverter implements StreamConverter<Bitmap> {
 
-    private static final int BUFFER_SIZE_BYTES = 128 * 1024;
-
-    public Observable<Bitmap> observableConverting(final InputStream stream, final int width, final int height) {
+    public Observable<Bitmap> observableConverting(final byte[] input, final int width, final int height) {
         return Observable.create(new Observable.OnSubscribe<Bitmap>() {
 
             @Override
             public void call(Subscriber<? super Bitmap> subscriber) {
-                Bitmap decoded = decodeSampledBitmapFromSource(stream, width, height);
+                Bitmap decoded = decodeSampledBitmapFromSource(input, width, height);
                 subscriber.onNext(decoded);
                 subscriber.onCompleted();
             }
 
-            private byte[] byteArrayFrom(InputStream stream) {
-                try {
-                    return byteArrayFromStreamOrThrow(stream);
-                } catch (IOException e) {
-                    throw new RuntimeException("Couldn't create bytearray from stream", e);
-                }
-            }
-
-            private byte[] byteArrayFromStreamOrThrow(InputStream stream) throws IOException {
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                byte[] buf = new byte[BUFFER_SIZE_BYTES];
-                int n;
-                while ((n = stream.read(buf)) >= 0) {
-                    baos.write(buf, 0, n);
-                }
-                return baos.toByteArray();
-            }
-
-            private Bitmap decodeSampledBitmapFromSource(InputStream inputStream, int width, int height) {
-                byte[] streamAsBytes = byteArrayFrom(inputStream);
-
+            private Bitmap decodeSampledBitmapFromSource(byte[] input, int width, int height) {
                 // First decode with inJustDecodeBounds=true to check dimensions
                 final BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inJustDecodeBounds = true;
-                BitmapFactory.decodeStream(new ByteArrayInputStream(streamAsBytes), null, options);
+                BitmapFactory.decodeStream(new ByteArrayInputStream(input), null, options);
 
                 options.inSampleSize = calculateInSampleSize(options, width, height);
                 options.inJustDecodeBounds = false;
-                return BitmapFactory.decodeStream(new ByteArrayInputStream(streamAsBytes), null, options);
+                return BitmapFactory.decodeStream(new ByteArrayInputStream(input), null, options);
             }
 
             private int calculateInSampleSize(BitmapFactory.Options options, int targetWidth, int targetHeight) {

@@ -1,5 +1,6 @@
 package com.ataulm.mijur.dory;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -15,15 +16,17 @@ public class ContentFetcher {
 
     private static final int READ_TIMEOUT_MILLIS = 10 * 1000;
     private static final int CONNECT_TIMEOUT_MILLIS = 10 * 1000;
+    private static final int BUFFER_SIZE_BYTES = 128 * 1024;
 
-    public Observable<InputStream> observableFetchingInputStreamFrom(final String target) {
-        return Observable.create(new OnSubscribe<InputStream>() {
+    public Observable<byte[]> observableFetchingInputStreamFrom(final String target) {
+        return Observable.create(new OnSubscribe<byte[]>() {
 
-            URL url;
-            HttpURLConnection connection;
 
             @Override
-            public void call(Subscriber<? super InputStream> subscriber) {
+            public void call(Subscriber<? super byte[]> subscriber) {
+                URL url;
+                HttpURLConnection connection = null;
+
                 try {
                     url = new URL(target);
                 } catch (MalformedURLException e) {
@@ -35,12 +38,33 @@ public class ContentFetcher {
                     connection = (HttpURLConnection) url.openConnection();
                     connection.setConnectTimeout(CONNECT_TIMEOUT_MILLIS);
                     connection.setReadTimeout(READ_TIMEOUT_MILLIS);
-                    subscriber.onNext(connection.getInputStream());
+                    byte[] streamAsByteArray = byteArrayFromStreamOrThrow(connection.getInputStream());
+                    subscriber.onNext(streamAsByteArray);
                 } catch (IOException e) {
                     subscriber.onError(e);
                 } finally {
-                    connection.disconnect();
+                    if (connection != null) {
+                        connection.disconnect();
+                    }
                 }
+            }
+
+            private byte[] byteArrayFromStreamOrThrow(InputStream stream) {
+                try {
+                    return byteArrayFromStream(stream);
+                } catch (IOException e) {
+                    throw new RuntimeException("Couldn't create bytearray from stream", e);
+                }
+            }
+
+            private byte[] byteArrayFromStream(InputStream stream) throws IOException {
+                ByteArrayOutputStream output = new ByteArrayOutputStream();
+                byte[] buf = new byte[BUFFER_SIZE_BYTES];
+                int n;
+                while ((n = stream.read(buf)) >= 0) {
+                    output.write(buf, 0, n);
+                }
+                return output.toByteArray();
             }
 
         });
