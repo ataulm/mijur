@@ -59,6 +59,4 @@ public class BitmapRiker implements Riker<Bitmap, ImageView> {
         });
     }
 
-
-
 }
