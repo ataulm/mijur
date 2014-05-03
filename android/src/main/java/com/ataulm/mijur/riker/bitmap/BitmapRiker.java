@@ -3,15 +3,17 @@ package com.ataulm.mijur.riker.bitmap;
 import android.graphics.Bitmap;
 import android.widget.ImageView;
 
-import com.ataulm.mijur.dory.BitmapDisplayer;
-import com.ataulm.mijur.dory.BitmapStreamConverter;
-import com.ataulm.mijur.dory.*;
+import com.ataulm.mijur.riker.ContentFetcher;
+import com.ataulm.mijur.riker.Displayer;
 import com.ataulm.mijur.riker.Riker;
+import com.ataulm.mijur.riker.StreamConverter;
 
 import java.io.InputStream;
 
 import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
+import rx.schedulers.Schedulers;
 
 public class BitmapRiker implements Riker<Bitmap, ImageView> {
 
@@ -31,12 +33,15 @@ public class BitmapRiker implements Riker<Bitmap, ImageView> {
 
     @Override
     public Observable<InputStream> fetch(String url) {
-        return contentFetcher.observableFetchingInputStreamFrom(url);
+        return contentFetcher.observableFetchingInputStreamFrom(url)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread());
     }
 
     @Override
     public Observable<ImageView> display(Bitmap content, ImageView view) {
         displayer.display(content, view);
+
         return Observable.just(view);
     }
 

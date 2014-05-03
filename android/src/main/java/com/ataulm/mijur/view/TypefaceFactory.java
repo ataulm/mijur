@@ -5,23 +5,16 @@ import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 
+import com.ataulm.mijur.R;
+
 import java.lang.ref.SoftReference;
 import java.util.Hashtable;
-
-import com.ataulm.mijur.R;
 
 class TypefaceFactory {
 
     private static final Hashtable<FontType, SoftReference<Typeface>> FONT_CACHE = new Hashtable<FontType, SoftReference<Typeface>>();
     private static final int INVALID_FONT_ID = -1;
     private static final Typeface DEFAULT_TYPEFACE = null;
-
-    public Typeface createFrom(Context context, FontType fontType) {
-        if (fontType == null) {
-            return DEFAULT_TYPEFACE;
-        }
-        return getTypeFace(context, fontType);
-    }
 
     public Typeface createFrom(Context context, AttributeSet attrs) {
         int fontId = getFontId(context, attrs);

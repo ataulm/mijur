@@ -7,8 +7,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ataulm.mijur.R;
-import com.ataulm.mijur.dory.Dory;
 import com.ataulm.mijur.gallery.GalleryItem;
+import com.ataulm.mijur.riker.Rikers;
 import com.novoda.notils.caster.Views;
 
 public class GalleryItemView extends LinearLayout {
@@ -31,7 +31,7 @@ public class GalleryItemView extends LinearLayout {
     }
 
     public void updateWith(GalleryItem galleryItem) {
-        Dory.Bitmap.getInstance().display(galleryItem.imageUrl, thumbImage);
+        Rikers.bitmapRiker().load(galleryItem.imageUrl, thumbImage);
         captionText.setText(galleryItem.caption);
     }
 

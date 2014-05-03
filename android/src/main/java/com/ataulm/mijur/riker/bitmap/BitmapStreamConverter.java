@@ -3,7 +3,7 @@ package com.ataulm.mijur.riker.bitmap;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import com.ataulm.mijur.dory.StreamConverter;
+import com.ataulm.mijur.riker.StreamConverter;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
