@@ -15,6 +15,8 @@ import rx.schedulers.Schedulers;
 
 public class FeedRetriever {
 
+    private static final String MOCK_JSON_FEED = "mockFeed.json";
+
     private final AssetFileManager assetFileManager;
     private final FeedParser feedParser;
 
@@ -32,7 +34,7 @@ public class FeedRetriever {
 
             @Override
             public void call(Subscriber<? super Feed> subscriber) {
-                InputStream inputStream = assetFileManager.open("mocks/feed.json");
+                InputStream inputStream = assetFileManager.open(MOCK_JSON_FEED);
                 Feed feed = feedParser.parse(inputStream);
                 subscriber.onNext(feed);
                 subscriber.onCompleted();

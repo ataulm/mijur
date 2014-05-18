@@ -2,7 +2,10 @@ package com.ataulm.mijur.feed.parser;
 
 import com.ataulm.mijur.feed.*;
 import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +21,9 @@ public class FeedParser {
         return new FeedParser(new Gson());
     }
 
-    public Feed parse(String json) {
-        GsonGalleryResponse gsonFeed = gson.fromJson(json, GsonGalleryResponse.class);
+    public Feed parse(InputStream stream) {
+        JsonReader reader = new JsonReader(new InputStreamReader(stream));
+        GsonGalleryResponse gsonFeed = gson.fromJson(reader, GsonGalleryResponse.class);
         return parseFeed(gsonFeed);
     }
 
