@@ -43,9 +43,9 @@ public class FeedParser {
         GalleryItemCore core = parseGalleryItemCore(gsonGalleryItem);
 
         if (gsonGalleryItem.isAlbum) {
-            return parseImage(core, gsonGalleryItem);
+            return parseAlbum(core, gsonGalleryItem);
         }
-        return parseAlbum(core, gsonGalleryItem);
+        return parseImage(core, gsonGalleryItem);
     }
 
     private GalleryItemCore parseGalleryItemCore(GsonGalleryItem gsonGalleryItem) {
