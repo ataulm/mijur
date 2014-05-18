@@ -10,6 +10,7 @@ dependencies {
             'com.netflix.rxjava:rxjava-android:0.17.1'
 
     compile 'com.squareup.retrofit:retrofit:1.5.0'
+    compile 'com.squareup.picasso:picasso:2.2.0'
     compile 'com.google.code.gson:gson:2.2.4'
 }
 
