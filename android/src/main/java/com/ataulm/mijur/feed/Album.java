@@ -49,8 +49,9 @@ public class Album implements GalleryItem, Iterable<Image> {
     }
 
     @Override
-    public String getImageUrl() {
-        return cover.link;
+    public String getThumbnailUrl() {
+        int dot = cover.link.lastIndexOf(".");
+        return cover.link.substring(0, dot) + "m" + cover.link.substring(dot, cover.link.length());
     }
 
     @Override

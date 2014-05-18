@@ -35,8 +35,10 @@ public class Image implements GalleryItem {
     }
 
     @Override
-    public String getImageUrl() {
-        return core.link;
+    public String getThumbnailUrl() {
+        // TODO: prettify this such that it's part of the parsing stage (album.cover too)
+        int dot = core.link.lastIndexOf(".");
+        return core.link.substring(0, dot) + "m" + core.link.substring(dot, core.link.length());
     }
 
     @Override

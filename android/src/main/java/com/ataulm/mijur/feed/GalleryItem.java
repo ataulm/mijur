@@ -10,7 +10,7 @@ public interface GalleryItem {
 
     Time getGallerySubmissionTime();
 
-    String getImageUrl();
+    String getThumbnailUrl();
 
     int getWidth();
 

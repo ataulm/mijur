@@ -32,7 +32,7 @@ public class GalleryItemView extends FrameLayout {
     }
 
     public void update(GalleryItem item) {
-        Picasso.with(getContext()).load(item.getImageUrl()).into(imageView);
+        Picasso.with(getContext()).load(item.getThumbnailUrl()).into(imageView);
     }
 
 }
