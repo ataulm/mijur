@@ -4,6 +4,7 @@ import android.content.res.AssetManager;
 
 import com.ataulm.mijur.base.DeveloperError;
 import com.ataulm.mijur.base.android.MijurApplication;
+import com.ataulm.mijur.feed.parser.FeedParser;
 
 import java.io.IOException;
 import java.io.InputStream;

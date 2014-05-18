@@ -1,17 +1,19 @@
 package com.ataulm.mijur.feed;
 
-import java.util.List;
-
 public class Feed {
 
-    private static class FeedGalleryResponse {
+    private final Gallery gallery;
 
-        private final List<GalleryItemCore> data;
+    private Feed(Gallery gallery) {
+        this.gallery = gallery;
+    }
 
-        private FeedGalleryResponse(List<GalleryItemCore> data) {
-            this.data = data;
-        }
+    public static Feed newInstance(Gallery gallery) {
+        return new Feed(gallery);
+    }
 
+    public static Feed empty() {
+        return new Feed(Gallery.empty());
     }
 
 }
