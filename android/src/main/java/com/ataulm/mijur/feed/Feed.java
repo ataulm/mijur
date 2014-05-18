@@ -2,7 +2,7 @@ package com.ataulm.mijur.feed;
 
 public class Feed {
 
-    private final Gallery gallery;
+    public final Gallery gallery;
 
     private Feed(Gallery gallery) {
         this.gallery = gallery;

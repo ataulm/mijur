@@ -29,4 +29,8 @@ public class Gallery implements Iterable<GalleryItem> {
         return galleryItems.size();
     }
 
+    public GalleryItem get(int position) {
+        return galleryItems.get(position);
+    }
+
 }
