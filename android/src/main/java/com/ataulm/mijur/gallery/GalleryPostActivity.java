@@ -7,7 +7,7 @@ import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
 import com.ataulm.mijur.feed.FeedProvider;
 import com.ataulm.mijur.feed.GalleryItem;
-import com.ataulm.mijur.view.GalleryItemView;
+import com.ataulm.mijur.view.GalleryPostView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 
@@ -28,7 +28,7 @@ public class GalleryPostActivity extends MijurActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery_post);
 
-        GalleryItemView post = Views.findById(this, R.id.gallery_post);
+        GalleryPostView post = Views.findById(this, R.id.gallery_post);
         galleryPostUpdater = new GalleryPostUpdater(post);
     }
 
@@ -52,12 +52,11 @@ public class GalleryPostActivity extends MijurActivity {
         feedSubscription.unsubscribe();
     }
 
-    // TODO: we want a GalleryPostView - a compound of comments, the image, and stats
     private static class GalleryPostUpdater implements Observer<GalleryItem> {
 
-        private final GalleryItemView view;
+        private final GalleryPostView view;
 
-        private GalleryPostUpdater(GalleryItemView view) {
+        private GalleryPostUpdater(GalleryPostView view) {
             this.view = view;
         }
 
@@ -72,13 +71,7 @@ public class GalleryPostActivity extends MijurActivity {
 
         @Override
         public void onNext(GalleryItem galleryItem) {
-            view.update(galleryItem, new GalleryItemView.OnClickListener() {
-
-                @Override
-                public void onClick(GalleryItem item) {
-                }
-
-            });
+            view.update(galleryItem);
         }
 
     }

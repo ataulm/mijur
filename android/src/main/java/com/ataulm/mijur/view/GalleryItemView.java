@@ -2,7 +2,6 @@ package com.ataulm.mijur.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -26,9 +25,7 @@ public class GalleryItemView extends FrameLayout {
 
     @Override
     protected void onFinishInflate() {
-        super.onFinishInflate();
-        LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-        layoutInflater.inflate(R.layout.merge_gallery_item, this, true);
+        View.inflate(getContext(), R.layout.merge_gallery_item, this);
         imageView = Views.findById(this, R.id.gallery_image);
     }
 
