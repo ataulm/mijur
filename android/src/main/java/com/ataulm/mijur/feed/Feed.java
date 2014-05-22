@@ -2,6 +2,8 @@ package com.ataulm.mijur.feed;
 
 public class Feed {
 
+    private static final Feed EMPTY = new Feed(Gallery.empty());
+
     public final Gallery gallery;
 
     private Feed(Gallery gallery) {
@@ -13,7 +15,11 @@ public class Feed {
     }
 
     public static Feed empty() {
-        return new Feed(Gallery.empty());
+        return EMPTY;
+    }
+
+    public boolean isValid() {
+        return this != empty();
     }
 
 }
