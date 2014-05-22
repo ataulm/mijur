@@ -56,14 +56,14 @@ public class FeedParser {
                 gsonGalleryItem.link);
     }
 
-    private Image parseImage(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
-        return new Image(core, gsonGalleryItem.animated, gsonGalleryItem.width, gsonGalleryItem.height);
+    private ImageGalleryItem parseImage(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
+        return new ImageGalleryItem(core, gsonGalleryItem.animated, gsonGalleryItem.width, gsonGalleryItem.height);
     }
 
-    private Album parseAlbum(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
+    private AlbumGalleryItem parseAlbum(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
         final String coverLink = String.format("http://i.imgur.com/%s.jpg", gsonGalleryItem.cover);
-        final Album.Cover cover = new Album.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
-        return new Album(core, cover);
+        final AlbumGalleryItem.Cover cover = new AlbumGalleryItem.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
+        return new AlbumGalleryItem(core, cover);
     }
 
 }

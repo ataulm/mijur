@@ -2,14 +2,14 @@ package com.ataulm.mijur.feed;
 
 import java.util.Iterator;
 
-public class Album implements GalleryItem, Iterable<Image> {
+public class AlbumGalleryItem implements GalleryItem, Iterable<ImageGalleryItem> {
 
     private final GalleryItemCore core;
     private final Cover cover;
 
     private Images images;
 
-    public Album(GalleryItemCore core, Cover cover) {
+    public AlbumGalleryItem(GalleryItemCore core, Cover cover) {
         this.core = core;
         this.cover = cover;
         this.images = Images.empty();
@@ -24,7 +24,7 @@ public class Album implements GalleryItem, Iterable<Image> {
     }
 
     @Override
-    public Iterator<Image> iterator() {
+    public Iterator<ImageGalleryItem> iterator() {
         return images.iterator();
     }
 

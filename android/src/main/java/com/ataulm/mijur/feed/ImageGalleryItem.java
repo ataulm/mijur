@@ -1,13 +1,13 @@
 package com.ataulm.mijur.feed;
 
-public class Image implements GalleryItem {
+public class ImageGalleryItem implements GalleryItem {
 
     private final GalleryItemCore core;
     private final boolean animated;
     private final int width;
     private final int height;
 
-    public Image(GalleryItemCore core, boolean animated, int width, int height) {
+    public ImageGalleryItem(GalleryItemCore core, boolean animated, int width, int height) {
         this.core = core;
         this.animated = animated;
         this.width = width;

@@ -4,24 +4,24 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class Images implements Iterable<Image> {
+public class Images implements Iterable<ImageGalleryItem> {
 
-    private final List<Image> images;
+    private final List<ImageGalleryItem> images;
 
-    public Images(List<Image> images) {
+    public Images(List<ImageGalleryItem> images) {
         this.images = Collections.unmodifiableList(images);
     }
 
-    public static Images newInstance(List<Image> images) {
+    public static Images newInstance(List<ImageGalleryItem> images) {
         return new Images(images);
     }
 
     public static Images empty() {
-        return new Images(Collections.<Image>emptyList());
+        return new Images(Collections.<ImageGalleryItem>emptyList());
     }
 
     @Override
-    public Iterator<Image> iterator() {
+    public Iterator<ImageGalleryItem> iterator() {
         return images.iterator();
     }
 

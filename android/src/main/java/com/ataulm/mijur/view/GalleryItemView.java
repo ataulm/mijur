@@ -3,6 +3,7 @@ package com.ataulm.mijur.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
@@ -31,8 +32,23 @@ public class GalleryItemView extends FrameLayout {
         imageView = Views.findById(this, R.id.gallery_image);
     }
 
-    public void update(GalleryItem item) {
+    public void update(final GalleryItem item, final OnClickListener listener) {
+        setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                listener.onClick(item);
+            }
+
+        });
+
         Picasso.with(getContext()).load(item.getThumbnailUrl()).into(imageView);
+    }
+
+    public interface OnClickListener {
+
+        void onClick(GalleryItem item);
+
     }
 
 }

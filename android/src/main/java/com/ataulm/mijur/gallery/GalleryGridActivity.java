@@ -8,6 +8,8 @@ import com.ataulm.mijur.base.android.MijurActivity;
 import com.ataulm.mijur.feed.Feed;
 import com.ataulm.mijur.feed.FeedProvider;
 import com.ataulm.mijur.feed.Gallery;
+import com.ataulm.mijur.feed.GalleryItem;
+import com.ataulm.mijur.view.GalleryItemView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 
@@ -16,33 +18,31 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class GalleryActivity extends MijurActivity {
+public class GalleryGridActivity extends MijurActivity implements GalleryItemView.OnClickListener {
 
     private ListView list;
-    private FeedProvider provider;
     private Subscription feedSubscription;
-    private GalleryUpdater galleryUpdater;
+    private GalleryViewUpdater galleryViewUpdater;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery);
+        setContentView(R.layout.activity_gallery_grid);
 
-        final GalleryAdapter adapter = new GalleryAdapter(getLayoutInflater(), Gallery.empty());
+        final GridAdapter adapter = new GridAdapter(getLayoutInflater(), Gallery.empty(), this);
         list = Views.findById(this, R.id.gallery_list);
         list.setAdapter(adapter);
 
-        provider = new FeedProvider();
-        galleryUpdater = new GalleryUpdater(adapter);
+        galleryViewUpdater = new GalleryViewUpdater(adapter);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        feedSubscription = provider.getFeed()
+        feedSubscription = FeedProvider.instance().getFeed()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(galleryUpdater);
+                .subscribe(galleryViewUpdater);
     }
 
     @Override
@@ -51,11 +51,16 @@ public class GalleryActivity extends MijurActivity {
         feedSubscription.unsubscribe();
     }
 
-    private static class GalleryUpdater implements Observer<Feed> {
+    @Override
+    public void onClick(GalleryItem item) {
+        navigate().toGalleryPostActivity(item);
+    }
 
-        private final GalleryAdapter adapter;
+    private static class GalleryViewUpdater implements Observer<Feed> {
 
-        private GalleryUpdater(GalleryAdapter adapter) {
+        private final GridAdapter adapter;
+
+        private GalleryViewUpdater(GridAdapter adapter) {
             this.adapter = adapter;
         }
 

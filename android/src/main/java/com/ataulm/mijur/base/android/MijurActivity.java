@@ -3,6 +3,7 @@ package com.ataulm.mijur.base.android;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.ataulm.mijur.base.Navigator;
 import com.novoda.notils.logger.simple.Log;
 import com.novoda.notils.viewserver.ViewServerManager;
 
@@ -10,6 +11,7 @@ import com.ataulm.mijur.BuildConfig;
 
 public abstract class MijurActivity extends Activity {
 
+    private Navigator navigator;
     private ViewServerManager viewServerManager;
 
     @Override
@@ -17,6 +19,7 @@ public abstract class MijurActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         Log.SHOW_LOGS = BuildConfig.DEBUG;
+        navigator = Navigator.newInstance(this);
         initViewServerManager();
         viewServerManager.onCreate();
     }
@@ -39,6 +42,10 @@ public abstract class MijurActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         viewServerManager.onDestroy();
+    }
+
+    protected Navigator navigate() {
+        return navigator;
     }
 
 }

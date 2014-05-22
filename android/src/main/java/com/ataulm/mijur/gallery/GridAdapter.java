@@ -11,15 +11,17 @@ import com.ataulm.mijur.feed.Gallery;
 import com.ataulm.mijur.feed.GalleryItem;
 import com.ataulm.mijur.view.GalleryItemView;
 
-class GalleryAdapter extends BaseAdapter {
+class GridAdapter extends BaseAdapter {
 
     private final LayoutInflater layoutInflater;
 
     private Gallery gallery;
+    private final GalleryItemView.OnClickListener listener;
 
-    public GalleryAdapter(LayoutInflater layoutInflater, Gallery gallery) {
+    public GridAdapter(LayoutInflater layoutInflater, Gallery gallery, GalleryItemView.OnClickListener listener) {
         this.layoutInflater = layoutInflater;
         this.gallery = gallery;
+        this.listener = listener;
     }
 
     public void update(Gallery gallery) {
@@ -48,7 +50,7 @@ class GalleryAdapter extends BaseAdapter {
         if (view == null) {
             view = createView(parent);
         }
-        ((GalleryItemView) view).update(getItem(position));
+        ((GalleryItemView) view).update(getItem(position), listener);
 
         if (position % 2 == 0) {
             view.setBackgroundColor(Color.GREEN);
