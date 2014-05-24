@@ -13,15 +13,15 @@ import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.toast.Toaster;
 
-public class GalleryPostView extends ScrollView {
+public class PostView extends ScrollView {
 
     private FrameLayout contentContainerView;
 
-    public GalleryPostView(Context context, AttributeSet attrs) {
+    public PostView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public GalleryPostView(Context context, AttributeSet attrs, int defStyle) {
+    public PostView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

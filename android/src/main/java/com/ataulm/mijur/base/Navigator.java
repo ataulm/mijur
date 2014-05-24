@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 import com.ataulm.mijur.data.GalleryItem;
-import com.ataulm.mijur.gallery.GalleryPostActivity;
+import com.ataulm.mijur.gallery.PostActivity;
 
 public class Navigator {
 
@@ -19,8 +19,8 @@ public class Navigator {
     }
 
     public void toGalleryPostActivity(GalleryItem item) {
-        Intent intent = new Intent(sourceActivity, GalleryPostActivity.class);
-        intent.putExtra(GalleryPostActivity.EXTRA_GALLERY_ITEM_ID, item.getId());
+        Intent intent = new Intent(sourceActivity, PostActivity.class);
+        intent.putExtra(PostActivity.EXTRA_POST_ID, item.getId());
         sourceActivity.startActivity(intent);
     }
 

@@ -6,7 +6,7 @@ import com.ataulm.mijur.BuildConfig;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
 import com.ataulm.mijur.data.*;
-import com.ataulm.mijur.view.GalleryPostView;
+import com.ataulm.mijur.view.PostView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 
@@ -15,34 +15,30 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class GalleryPostActivity extends MijurActivity {
+public class PostActivity extends MijurActivity {
 
-    public static final String EXTRA_GALLERY_ITEM_ID = BuildConfig.PACKAGE_NAME + ".EXTRA_GALLERY_ITEM_ID";
+    public static final String EXTRA_POST_ID = BuildConfig.PACKAGE_NAME + ".EXTRA_POST_ID";
 
     private Subscription feedSubscription;
-    private GalleryPostUpdater galleryPostUpdater;
+    private PostUpdater postUpdater;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery_post);
+        setContentView(R.layout.activity_post);
 
-        GalleryPostView post = Views.findById(this, R.id.gallery_post);
-        galleryPostUpdater = new GalleryPostUpdater(post);
+        PostView post = Views.findById(this, R.id.post);
+        postUpdater = new PostUpdater(post);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        String galleryItemId = getExtraGalleryItemId();
-        feedSubscription = GalleryProvider.instance().getGalleryItem(galleryItemId)
+        String postId = getIntent().getStringExtra(EXTRA_POST_ID);
+        feedSubscription = GalleryProvider.instance().getGalleryItem(postId)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(galleryPostUpdater);
-    }
-
-    private String getExtraGalleryItemId() {
-        return getIntent().getStringExtra(EXTRA_GALLERY_ITEM_ID);
+                .subscribe(postUpdater);
     }
 
     @Override
@@ -51,11 +47,11 @@ public class GalleryPostActivity extends MijurActivity {
         feedSubscription.unsubscribe();
     }
 
-    private static class GalleryPostUpdater implements Observer<GalleryItem> {
+    private static class PostUpdater implements Observer<GalleryItem> {
 
-        private final GalleryPostView view;
+        private final PostView view;
 
-        private GalleryPostUpdater(GalleryPostView view) {
+        private PostUpdater(PostView view) {
             this.view = view;
         }
 

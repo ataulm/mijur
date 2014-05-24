@@ -20,6 +20,6 @@
       </intent-filter>
     </activity>
 
-    <activity android:name="com.ataulm.mijur.gallery.GalleryPostActivity" />
+    <activity android:name=".gallery.PostActivity" />
   </application>
 </manifest>

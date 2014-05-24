@@ -26,7 +26,7 @@ public class GalleryGridActivity extends MijurActivity implements GalleryItemVie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery_grid);
+        setContentView(R.layout.activity_gallery);
 
         final GridAdapter adapter = new GridAdapter(getLayoutInflater(), Gallery.empty(), this);
         list = Views.findById(this, R.id.gallery_list);
