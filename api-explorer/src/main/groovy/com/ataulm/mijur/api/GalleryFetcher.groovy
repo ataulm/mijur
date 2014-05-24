@@ -52,6 +52,21 @@ public class GalleryFetcher {
         }
     }
 
+    private static void fetchCommentsForPost(String id) {
+        HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/gallery/' + id + '/comments')
+        http.request(Method.GET) {
+            headers['Authorization'] = 'Client-ID ' + CLIENT_ID
+            response.success = { resp, json ->
+                def formattedJson = prettifyJson(json)
+                writeJsonToFile(id + '_comments', formattedJson)
+            }
+
+            response.failure = { resp, json ->
+                println(resp, "FAILURE")
+            }
+        }
+    }
+
     private static Gallery parseGallery(String json) {
         GalleryParser parser = GalleryParser.newInstance()
         parser.parse(json.toString())
@@ -59,6 +74,7 @@ public class GalleryFetcher {
 
     private static void processGalleryItems(Gallery gallery) {
         for (GalleryItem item : gallery) {
+            fetchCommentsForPost(item.id)
             if (item instanceof Album) {
                 fetchAlbum(item.id)
             }
