@@ -5,10 +5,9 @@ import android.widget.ListView;
 
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
-import com.ataulm.mijur.feed.Feed;
-import com.ataulm.mijur.feed.FeedProvider;
-import com.ataulm.mijur.feed.Gallery;
-import com.ataulm.mijur.feed.GalleryItem;
+import com.ataulm.mijur.data.Gallery;
+import com.ataulm.mijur.data.GalleryItem;
+import com.ataulm.mijur.data.GalleryProvider;
 import com.ataulm.mijur.view.GalleryItemView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
@@ -39,7 +38,7 @@ public class GalleryGridActivity extends MijurActivity implements GalleryItemVie
     @Override
     protected void onResume() {
         super.onResume();
-        feedSubscription = FeedProvider.instance().getFeed()
+        feedSubscription = GalleryProvider.instance().getGallery()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(galleryViewUpdater);
@@ -56,7 +55,7 @@ public class GalleryGridActivity extends MijurActivity implements GalleryItemVie
         navigate().toGalleryPostActivity(item);
     }
 
-    private static class GalleryViewUpdater implements Observer<Feed> {
+    private static class GalleryViewUpdater implements Observer<Gallery> {
 
         private final GridAdapter adapter;
 
@@ -74,8 +73,8 @@ public class GalleryGridActivity extends MijurActivity implements GalleryItemVie
         }
 
         @Override
-        public void onNext(Feed feed) {
-            adapter.update(feed.gallery);
+        public void onNext(Gallery gallery) {
+            adapter.update(gallery);
         }
 
     }

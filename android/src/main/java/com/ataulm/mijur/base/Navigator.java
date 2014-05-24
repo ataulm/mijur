@@ -3,7 +3,7 @@ package com.ataulm.mijur.base;
 import android.app.Activity;
 import android.content.Intent;
 
-import com.ataulm.mijur.feed.GalleryItem;
+import com.ataulm.mijur.data.GalleryItem;
 import com.ataulm.mijur.gallery.GalleryPostActivity;
 
 public class Navigator {

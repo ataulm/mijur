@@ -1,4 +1,4 @@
-package com.ataulm.mijur.feed;
+package com.ataulm.mijur.data;
 
 import java.util.Collections;
 import java.util.Iterator;

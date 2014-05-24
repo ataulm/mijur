@@ -8,7 +8,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.ataulm.mijur.R;
-import com.ataulm.mijur.feed.GalleryItem;
+import com.ataulm.mijur.data.GalleryItem;
 import com.novoda.notils.caster.Views;
 import com.squareup.picasso.Picasso;
 

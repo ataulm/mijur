@@ -1,4 +1,4 @@
-package com.ataulm.mijur.feed.parser;
+package com.ataulm.mijur.data.parser;
 
 import com.google.gson.annotations.SerializedName;
 

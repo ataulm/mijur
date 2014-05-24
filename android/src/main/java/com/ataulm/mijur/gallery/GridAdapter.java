@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.ataulm.mijur.R;
-import com.ataulm.mijur.feed.Gallery;
-import com.ataulm.mijur.feed.GalleryItem;
+import com.ataulm.mijur.data.Gallery;
+import com.ataulm.mijur.data.GalleryItem;
 import com.ataulm.mijur.view.GalleryItemView;
 
 class GridAdapter extends BaseAdapter {
