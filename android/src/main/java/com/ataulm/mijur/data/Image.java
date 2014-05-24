@@ -1,16 +1,16 @@
 package com.ataulm.mijur.data;
 
-import android.graphics.Point;
-
 public class Image implements GalleryItem {
 
     private final GalleryItemCommon core;
-    private final Point size;
+    private final int width;
+    private final int height;
     private final boolean animated;
 
-    public Image(GalleryItemCommon core, Point size, boolean animated) {
+    public Image(GalleryItemCommon core, int width, int height, boolean animated) {
         this.core = core;
-        this.size = size;
+        this.width = width;
+        this.height = height;
         this.animated = animated;
     }
 

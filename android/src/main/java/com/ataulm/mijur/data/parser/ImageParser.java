@@ -22,7 +22,7 @@ public class ImageParser {
         boolean animated = gsonImage.animated;
         int width = gsonImage.width;
         int height = gsonImage.height;
-        return new Image(core, animated, width, height);
+        return new Image(core, width, height, animated);
     }
 
     private GalleryItemCommon parseCore(GsonImage gsonImage) {

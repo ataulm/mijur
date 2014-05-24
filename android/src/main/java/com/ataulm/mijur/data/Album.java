@@ -1,7 +1,5 @@
 package com.ataulm.mijur.data;
 
-import android.graphics.Point;
-
 public class Album implements GalleryItem {
 
     private static final Album EMPTY = new Album(GalleryItemCommon.none(), Cover.none(), Images.empty());
@@ -64,14 +62,16 @@ public class Album implements GalleryItem {
 
     public static class Cover {
 
-        private static final Cover NONE = new Cover("", new Point(0, 0));
+        private static final Cover NONE = new Cover("", 0, 0);
 
         private final String link;
-        private final Point size;
+        private final int width;
+        private final int height;
 
-        public Cover(String link, Point size) {
+        public Cover(String link, int width, int height) {
             this.link = link;
-            this.size = size;
+            this.width = width;
+            this.height = height;
         }
 
         public static Cover none() {

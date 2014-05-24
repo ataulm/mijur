@@ -1,7 +1,5 @@
 package com.ataulm.mijur.data.parser;
 
-import android.graphics.Point;
-
 import com.ataulm.mijur.data.*;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
@@ -62,12 +60,12 @@ public class GalleryParser {
     }
 
     private Image parseImage(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
-        return new Image(core, new Point(gsonGalleryItem.width, gsonGalleryItem.height), gsonGalleryItem.animated);
+        return new Image(core, gsonGalleryItem.width, gsonGalleryItem.height, gsonGalleryItem.animated);
     }
 
     private Album parseAlbum(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
         final String coverLink = String.format("http://i.imgur.com/%s.jpg", gsonGalleryItem.cover);
-        final Album.Cover cover = new Album.Cover(coverLink, new Point(gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight));
+        final Album.Cover cover = new Album.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
         return Album.newInstance(core, cover);
     }
 
