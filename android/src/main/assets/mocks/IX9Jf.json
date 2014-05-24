@@ -1,0 +1,57 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "animated": true,
+            "link": "http://i.imgur.com/pC1IdkT.gif",
+            "width": 500,
+            "type": "image/gif",
+            "favorite": false,
+            "section": null,
+            "size": 955622,
+            "bandwidth": 93497100858,
+            "id": "pC1IdkT",
+            "title": null,
+            "height": 215,
+            "nsfw": null,
+            "description": null,
+            "views": 97839,
+            "datetime": 1400924647
+        },
+        {
+            "animated": true,
+            "link": "http://i.imgur.com/wLO5NNX.gif",
+            "width": 245,
+            "type": "image/gif",
+            "favorite": false,
+            "section": null,
+            "size": 1239390,
+            "bandwidth": 121953497220,
+            "id": "wLO5NNX",
+            "title": null,
+            "height": 212,
+            "nsfw": null,
+            "description": null,
+            "views": 98398,
+            "datetime": 1400924648
+        },
+        {
+            "animated": true,
+            "link": "http://i.imgur.com/IT0wGfQ.gif",
+            "width": 245,
+            "type": "image/gif",
+            "favorite": false,
+            "section": null,
+            "size": 1489032,
+            "bandwidth": 145277407080,
+            "id": "IT0wGfQ",
+            "title": null,
+            "height": 212,
+            "nsfw": null,
+            "description": null,
+            "views": 97565,
+            "datetime": 1400924648
+        }
+    ],
+    "success": true
+}

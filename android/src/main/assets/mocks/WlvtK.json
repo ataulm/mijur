@@ -1,0 +1,40 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "animated": true,
+            "link": "http://i.imgur.com/knZjjz5.gif",
+            "width": 400,
+            "type": "image/gif",
+            "favorite": false,
+            "section": null,
+            "size": 521800,
+            "bandwidth": 14096948800,
+            "id": "knZjjz5",
+            "title": null,
+            "height": 288,
+            "nsfw": null,
+            "description": null,
+            "views": 27016,
+            "datetime": 1400945389
+        },
+        {
+            "animated": false,
+            "link": "http://i.imgur.com/baPTy0Y.png",
+            "width": 535,
+            "type": "image/png",
+            "favorite": false,
+            "section": null,
+            "size": 40418,
+            "bandwidth": 967202740,
+            "id": "baPTy0Y",
+            "title": null,
+            "height": 492,
+            "nsfw": null,
+            "description": null,
+            "views": 23930,
+            "datetime": 1400945390
+        }
+    ],
+    "success": true
+}
