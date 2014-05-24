@@ -5,8 +5,7 @@ import android.os.Bundle;
 import com.ataulm.mijur.BuildConfig;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
-import com.ataulm.mijur.data.GalleryProvider;
-import com.ataulm.mijur.data.GalleryItem;
+import com.ataulm.mijur.data.*;
 import com.ataulm.mijur.view.GalleryPostView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
@@ -36,7 +35,7 @@ public class GalleryPostActivity extends MijurActivity {
     protected void onResume() {
         super.onResume();
         String galleryItemId = getExtraGalleryItemId();
-        feedSubscription = GalleryProvider.instance().getGalleryItemWith(galleryItemId)
+        feedSubscription = GalleryProvider.instance().getGalleryItem(galleryItemId)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(galleryPostUpdater);

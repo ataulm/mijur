@@ -1,6 +1,6 @@
 package com.ataulm.mijur.api
 
-import com.ataulm.mijur.data.AlbumGalleryItem
+import com.ataulm.mijur.data.Album
 import com.ataulm.mijur.data.Gallery
 import com.ataulm.mijur.data.GalleryItem
 import com.ataulm.mijur.data.parser.GalleryParser
@@ -37,8 +37,8 @@ public class GalleryFetcher {
         }
     }
 
-    private AlbumGalleryItem fetchAlbum(String id) {
-        HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/album/' + id)
+    private Album fetchAlbum(String id) {
+        HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/album/' + id + '/images')
         http.request(Method.GET) {
             headers['Authorization'] = 'Client-ID ' + CLIENT_ID
             response.success = { resp, json ->
@@ -62,7 +62,7 @@ public class GalleryFetcher {
 
     private void processGalleryItems(Gallery gallery) {
         for (GalleryItem item : gallery) {
-            if (item instanceof AlbumGalleryItem) {
+            if (item instanceof Album) {
                 fetchAlbum(item.id)
             }
         }

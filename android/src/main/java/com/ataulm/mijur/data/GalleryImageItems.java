@@ -4,20 +4,20 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class Images implements Iterable<Image> {
+public class GalleryImageItems implements Iterable<Image> {
 
     private final List<Image> images;
 
-    public Images(List<Image> images) {
+    public GalleryImageItems(List<Image> images) {
         this.images = Collections.unmodifiableList(images);
     }
 
-    public static Images newInstance(List<Image> images) {
-        return new Images(images);
+    public static GalleryImageItems newInstance(List<Image> images) {
+        return new GalleryImageItems(images);
     }
 
-    public static Images empty() {
-        return new Images(Collections.<Image>emptyList());
+    public static GalleryImageItems empty() {
+        return new GalleryImageItems(Collections.<Image>emptyList());
     }
 
     @Override
@@ -27,10 +27,6 @@ public class Images implements Iterable<Image> {
 
     public int size() {
         return images.size();
-    }
-
-    public Image get(int position) {
-        return images.get(position);
     }
 
 }

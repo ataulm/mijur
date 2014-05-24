@@ -23,13 +23,8 @@ public class GalleryParser {
 
     public Gallery parse(InputStream stream) {
         JsonReader reader = new JsonReader(new InputStreamReader(stream));
-        GsonGalleryResponse gsonGallery = gson.fromJson(reader, GsonGalleryResponse.class);
-        return parse(gsonGallery);
-    }
-
-    public Gallery parse(String json) {
-        GsonGalleryResponse gsonGallery = gson.fromJson(json, GsonGalleryResponse.class);
-        return parse(gsonGallery);
+        GsonGalleryResponse gsonGalleryResponse = gson.fromJson(reader, GsonGalleryResponse.class);
+        return parse(gsonGalleryResponse);
     }
 
     private Gallery parse(GsonGalleryResponse gsonGalleryResponse) {
@@ -61,14 +56,14 @@ public class GalleryParser {
                 gsonGalleryItem.link);
     }
 
-    private ImageGalleryItem parseImage(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
-        return new ImageGalleryItem(core, gsonGalleryItem.animated, gsonGalleryItem.width, gsonGalleryItem.height);
+    private Image parseImage(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
+        return new Image(core, gsonGalleryItem.animated, gsonGalleryItem.width, gsonGalleryItem.height);
     }
 
-    private AlbumGalleryItem parseAlbum(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
+    private Album parseAlbum(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
         final String coverLink = String.format("http://i.imgur.com/%s.jpg", gsonGalleryItem.cover);
-        final AlbumGalleryItem.Cover cover = new AlbumGalleryItem.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
-        return new AlbumGalleryItem(core, cover);
+        final Album.Cover cover = new Album.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
+        return Album.newInstance(core, cover);
     }
 
 }

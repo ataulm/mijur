@@ -31,20 +31,34 @@ public class GalleryProvider {
         return Observable.just(cachedGallery);
     }
 
-    public Observable<GalleryItem> getGalleryItemWith(final String id) {
-        return getGallery().map(new Func1<Gallery, GalleryItem>() {
+    public Observable<GalleryItem> getGalleryItem(final String id) {
+        return getGallery().flatMap(new Func1<Gallery, Observable<? extends GalleryItem>>() {
 
             @Override
-            public GalleryItem call(Gallery gallery) {
+            public Observable<? extends GalleryItem> call(Gallery gallery) {
                 for (GalleryItem item : gallery) {
                     if (item.getId().equals(id)) {
-                        return item;
+                        return evaluateAndReturn(item);
                     }
                 }
                 throw DeveloperError.because("Specified item not found in Gallery");
             }
 
         });
+    }
+
+    /**
+     * Gets the album (with all its Images) else returns the item (Image).
+     */
+    private Observable<? extends GalleryItem> evaluateAndReturn(GalleryItem item) {
+        if (item.isAlbum()) {
+            return getAlbum(item.getId());
+        }
+        return Observable.just(item);
+    }
+
+    private Observable<Album> getAlbum(final String id) {
+        return AlbumProvider.instance().getAlbumWithId(id);
     }
 
     private Observable<Gallery> refreshGallery() {

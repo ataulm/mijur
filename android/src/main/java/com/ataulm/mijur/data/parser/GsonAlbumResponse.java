@@ -2,12 +2,10 @@ package com.ataulm.mijur.data.parser;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
-class GsonGalleryResponse {
+class GsonAlbumResponse {
 
     @SerializedName("data")
-    List<GsonGalleryItem> data;
+    GsonAlbum data;
 
     @SerializedName("success")
     boolean success;

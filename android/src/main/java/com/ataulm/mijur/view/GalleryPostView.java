@@ -3,19 +3,19 @@ package com.ataulm.mijur.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.FrameLayout;
 import android.widget.ScrollView;
-import android.widget.TextView;
 
 import com.ataulm.mijur.R;
+import com.ataulm.mijur.data.Album;
 import com.ataulm.mijur.data.GalleryItem;
+import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
-import com.squareup.picasso.Picasso;
+import com.novoda.notils.logger.toast.Toaster;
 
 public class GalleryPostView extends ScrollView {
 
-    private TextView captionView;
-    private ImageView imageView;
+    private FrameLayout contentContainerView;
 
     public GalleryPostView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -30,13 +30,35 @@ public class GalleryPostView extends ScrollView {
         setFillViewport(true);
 
         View.inflate(getContext(), R.layout.merge_gallery_post, this);
-        captionView = Views.findById(this, R.id.gallery_post_caption);
-        imageView = Views.findById(this, R.id.gallery_post_image);
+        contentContainerView = Views.findById(this, R.id.post_content_container);
     }
 
     public void update(final GalleryItem item) {
-        captionView.setText(item.getTitle());
-        Picasso.with(getContext()).load(item.getThumbnailUrl()).into(imageView);
+        contentContainerView.removeAllViews();
+        if (item.isAlbum()) {
+            showAlbum((Album) item);
+        } else {
+            showImage((Image) item);
+        }
+    }
+
+    private void showAlbum(final Album album) {
+        FrameLayout root = (FrameLayout) View.inflate(getContext(), R.layout.view_album_content, contentContainerView);
+        AlbumContentView view = (AlbumContentView) root.getChildAt(0);
+        view.update(album, new ShowFullListener() {
+
+            @Override
+            public void onClickShowFull(GalleryItem item) {
+                new Toaster(getContext()).popToast("I want more of album: " + album.getId());
+            }
+
+        });
+    }
+
+    private void showImage(Image image) {
+        FrameLayout root = (FrameLayout) View.inflate(getContext(), R.layout.view_image_content, contentContainerView);
+        ImageContentView view = (ImageContentView) root.getChildAt(0);
+        view.update(image);
     }
 
 }

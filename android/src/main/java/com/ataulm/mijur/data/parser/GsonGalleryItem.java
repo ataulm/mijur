@@ -23,7 +23,7 @@ class GsonGalleryItem {
     boolean isAlbum;
 
     ///////////////////////
-    /* Only GalleryAlbum */
+    /* Only Album */
     ///////////////////////
 
     @SerializedName("cover")
@@ -36,7 +36,7 @@ class GsonGalleryItem {
     int coverHeight;
 
     ///////////////////////
-    /* Only GalleryImage */
+    /* Only Image */
     ///////////////////////
 
     @SerializedName("animated")

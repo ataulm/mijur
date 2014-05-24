@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.data.GalleryItem;
@@ -13,7 +12,7 @@ import com.squareup.picasso.Picasso;
 
 public class GalleryItemView extends FrameLayout {
 
-    private ImageView imageView;
+    private MatchParentWidthImageView imageView;
 
     public GalleryItemView(Context context, AttributeSet attrs) {
         super(context, attrs);

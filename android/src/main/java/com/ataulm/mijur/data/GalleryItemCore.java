@@ -2,6 +2,8 @@ package com.ataulm.mijur.data;
 
 public class GalleryItemCore {
 
+    private static final GalleryItemCore NONE = new GalleryItemCore("", "", "", Time.invalid(), "");
+
     public final String id;
     public final String title;
     public final String description;
@@ -14,6 +16,10 @@ public class GalleryItemCore {
         this.description = description;
         this.gallerySubmissionTime = gallerySubmissionTime;
         this.link = link;
+    }
+
+    public static GalleryItemCore none() {
+        return NONE;
     }
 
 }

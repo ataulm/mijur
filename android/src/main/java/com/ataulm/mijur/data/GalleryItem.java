@@ -4,16 +4,9 @@ public interface GalleryItem {
 
     String getId();
 
-    String getTitle();
-
-    String getDescription();
-
-    Time getGallerySubmissionTime();
+    boolean isAlbum();
 
     String getThumbnailUrl();
 
-    int getWidth();
-
-    int getHeight();
-
+    String getTitle();
 }

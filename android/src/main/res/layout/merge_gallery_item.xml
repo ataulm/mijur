@@ -4,9 +4,9 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <ImageView
+  <com.ataulm.mijur.view.MatchParentWidthImageView
     android:id="@+id/gallery_image"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="wrap_content" />
 
 </merge>
