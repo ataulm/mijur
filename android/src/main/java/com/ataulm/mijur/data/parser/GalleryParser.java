@@ -1,5 +1,7 @@
 package com.ataulm.mijur.data.parser;
 
+import android.graphics.Point;
+
 import com.ataulm.mijur.data.*;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
@@ -29,18 +31,21 @@ public class GalleryParser {
 
     private Gallery parse(GsonGalleryResponse gsonGalleryResponse) {
         if (gsonGalleryResponse.success) {
-            List<GalleryItem> galleryItems = new ArrayList<GalleryItem>(gsonGalleryResponse.data.size());
-            for (GsonGalleryItem item : gsonGalleryResponse.data) {
-                galleryItems.add(parseGalleryItem(item));
-            }
-            return Gallery.newInstance(galleryItems);
-        } else {
-            return Gallery.empty();
+            return parseGallery(gsonGalleryResponse.data);
         }
+        return Gallery.empty();
+    }
+
+    private Gallery parseGallery(List<GsonGalleryItem> gsonGalleryItems) {
+        List<GalleryItem> galleryItems = new ArrayList<GalleryItem>(gsonGalleryItems.size());
+        for (GsonGalleryItem item : gsonGalleryItems) {
+            galleryItems.add(parseGalleryItem(item));
+        }
+        return Gallery.newInstance(galleryItems);
     }
 
     private GalleryItem parseGalleryItem(GsonGalleryItem gsonGalleryItem) {
-        GalleryItemCore core = parseGalleryItemCore(gsonGalleryItem);
+        GalleryItemCommon core = extractGalleryItemCommonFrom(gsonGalleryItem);
 
         if (gsonGalleryItem.isAlbum) {
             return parseAlbum(core, gsonGalleryItem);
@@ -48,21 +53,21 @@ public class GalleryParser {
         return parseImage(core, gsonGalleryItem);
     }
 
-    private GalleryItemCore parseGalleryItemCore(GsonGalleryItem gsonGalleryItem) {
-        return new GalleryItemCore(gsonGalleryItem.id,
+    private GalleryItemCommon extractGalleryItemCommonFrom(GsonGalleryItem gsonGalleryItem) {
+        return new GalleryItemCommon(gsonGalleryItem.id,
                 gsonGalleryItem.title,
                 gsonGalleryItem.description,
                 new Time(gsonGalleryItem.datetime),
                 gsonGalleryItem.link);
     }
 
-    private Image parseImage(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
-        return new Image(core, gsonGalleryItem.animated, gsonGalleryItem.width, gsonGalleryItem.height);
+    private Image parseImage(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
+        return new Image(core, new Point(gsonGalleryItem.width, gsonGalleryItem.height), gsonGalleryItem.animated);
     }
 
-    private Album parseAlbum(GalleryItemCore core, GsonGalleryItem gsonGalleryItem) {
+    private Album parseAlbum(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
         final String coverLink = String.format("http://i.imgur.com/%s.jpg", gsonGalleryItem.cover);
-        final Album.Cover cover = new Album.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
+        final Album.Cover cover = new Album.Cover(coverLink, new Point(gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight));
         return Album.newInstance(core, cover);
     }
 

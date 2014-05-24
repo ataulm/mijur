@@ -1,8 +1,8 @@
 package com.ataulm.mijur.data;
 
-public class GalleryItemCore {
+public class GalleryItemCommon {
 
-    private static final GalleryItemCore NONE = new GalleryItemCore("", "", "", Time.invalid(), "");
+    private static final GalleryItemCommon NONE = new GalleryItemCommon("", "", "", Time.invalid(), "");
 
     public final String id;
     public final String title;
@@ -10,7 +10,7 @@ public class GalleryItemCore {
     public final Time gallerySubmissionTime;
     public final String link;
 
-    public GalleryItemCore(String id, String title, String description, Time gallerySubmissionTime, String link) {
+    public GalleryItemCommon(String id, String title, String description, Time gallerySubmissionTime, String link) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -18,7 +18,7 @@ public class GalleryItemCore {
         this.link = link;
     }
 
-    public static GalleryItemCore none() {
+    public static GalleryItemCommon none() {
         return NONE;
     }
 

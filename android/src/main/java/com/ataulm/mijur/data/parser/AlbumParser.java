@@ -31,7 +31,7 @@ public class AlbumParser {
 
     private Album parse(GsonAlbumResponse gsonAlbumResponse) {
         if (gsonAlbumResponse.success) {
-            GalleryItemCore core = parseGalleryItemCore(gsonAlbumResponse.data);
+            GalleryItemCommon core = parseGalleryItemCore(gsonAlbumResponse.data);
             Album.Cover cover = Album.Cover.none();
             List<Image> images = parseImages(gsonAlbumResponse);
             return Album.newInstance(core, cover, new Images(images));
@@ -40,8 +40,8 @@ public class AlbumParser {
         }
     }
 
-    private GalleryItemCore parseGalleryItemCore(GsonAlbum gsonAlbum) {
-        return new GalleryItemCore(gsonAlbum.id,
+    private GalleryItemCommon parseGalleryItemCore(GsonAlbum gsonAlbum) {
+        return new GalleryItemCommon(gsonAlbum.id,
                 gsonAlbum.title,
                 gsonAlbum.description,
                 new Time(gsonAlbum.images.get(0).datetime),

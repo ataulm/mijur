@@ -38,7 +38,7 @@ public class ImageContentView extends LinearLayout {
     public void update(final Image image) {
         titleView.setText(image.getTitle());
         descriptionView.setText(image.getDescription());
-        Picasso.with(getContext()).load(image.getThumbnailUrl()).into(imageView);
+        Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
     }
 
 }

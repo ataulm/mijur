@@ -57,6 +57,21 @@ public class AlbumContentView extends LinearLayout {
         updateMoreView(album);
     }
 
+    private void updateImages(Images images) {
+        imagesView.removeAllViews();
+        for (int i = 0; i < Math.min(images.size(), MAX_IMAGES_SHOWN_IN_VIEW); i++) {
+            Image image = images.get(i);
+            ImageContentView view = getImageContentView(i);
+            view.update(image);
+            invalidate();
+        }
+    }
+
+    private ImageContentView getImageContentView(int i) {
+        LinearLayout root = (LinearLayout) View.inflate(getContext(), R.layout.view_image_content, imagesView);
+        return (ImageContentView) root.getChildAt(i);
+    }
+
     private void updateMoreView(Album album) {
         if (album.size() > MAX_IMAGES_SHOWN_IN_VIEW) {
             moreView.setVisibility(VISIBLE);
@@ -64,17 +79,6 @@ public class AlbumContentView extends LinearLayout {
             moreView.setText(String.format(SEE_MORE_PATTERN, remaining));
         } else {
             moreView.setVisibility(GONE);
-        }
-    }
-
-    public void updateImages(Images images) {
-        imagesView.removeAllViews();
-        for (int i = 0; i < Math.min(images.size(), MAX_IMAGES_SHOWN_IN_VIEW); i++) {
-            Image image = images.get(i);
-            LinearLayout root = (LinearLayout) View.inflate(getContext(), R.layout.view_image_content, imagesView);
-            ImageContentView view = (ImageContentView) root.getChildAt(i);
-            view.update(image);
-            invalidate();
         }
     }
 

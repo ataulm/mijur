@@ -38,7 +38,7 @@ public class GalleryItemView extends FrameLayout {
 
         });
 
-        Picasso.with(getContext()).load(item.getThumbnailUrl()).into(imageView);
+        Picasso.with(getContext()).load(item.getPreviewImageUrl()).into(imageView);
     }
 
     public interface OnClickListener {

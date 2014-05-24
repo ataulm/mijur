@@ -1,6 +1,6 @@
 package com.ataulm.mijur.data.parser;
 
-import com.ataulm.mijur.data.GalleryItemCore;
+import com.ataulm.mijur.data.GalleryItemCommon;
 import com.ataulm.mijur.data.Image;
 import com.ataulm.mijur.data.Time;
 import com.google.gson.Gson;
@@ -18,15 +18,15 @@ public class ImageParser {
     }
 
     public Image parse(GsonImage gsonImage) {
-        GalleryItemCore core = parseCore(gsonImage);
+        GalleryItemCommon core = parseCore(gsonImage);
         boolean animated = gsonImage.animated;
         int width = gsonImage.width;
         int height = gsonImage.height;
         return new Image(core, animated, width, height);
     }
 
-    private GalleryItemCore parseCore(GsonImage gsonImage) {
-        return new GalleryItemCore(gsonImage.id,
+    private GalleryItemCommon parseCore(GsonImage gsonImage) {
+        return new GalleryItemCommon(gsonImage.id,
                 gsonImage.title,
                 gsonImage.description,
                 new Time(gsonImage.datetime),

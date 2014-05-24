@@ -1,24 +1,26 @@
 package com.ataulm.mijur.data;
 
+import android.graphics.Point;
+
 public class Album implements GalleryItem {
 
-    private static final Album EMPTY = new Album(GalleryItemCore.none(), Cover.none(), Images.empty());
+    private static final Album EMPTY = new Album(GalleryItemCommon.none(), Cover.none(), Images.empty());
 
-    private final GalleryItemCore core;
+    private final GalleryItemCommon core;
     private final Cover cover;
     private final Images images;
 
-    private Album(GalleryItemCore core, Cover cover, Images images) {
+    private Album(GalleryItemCommon core, Cover cover, Images images) {
         this.core = core;
         this.cover = cover;
         this.images = images;
     }
 
-    public static Album newInstance(GalleryItemCore core, Cover cover) {
+    public static Album newInstance(GalleryItemCommon core, Cover cover) {
         return new Album(core, cover, Images.empty());
     }
 
-    public static Album newInstance(GalleryItemCore core, Cover cover, Images images) {
+    public static Album newInstance(GalleryItemCommon core, Cover cover, Images images) {
         return new Album(core, cover, images);
     }
 
@@ -26,6 +28,7 @@ public class Album implements GalleryItem {
         return EMPTY;
     }
 
+    @Override
     public String getId() {
         return core.id;
     }
@@ -35,8 +38,20 @@ public class Album implements GalleryItem {
         return core.title;
     }
 
+    @Override
     public String getDescription() {
         return core.description;
+    }
+
+    @Override
+    public String getPreviewImageUrl() {
+        int dot = cover.link.lastIndexOf(".");
+        return cover.link.substring(0, dot) + "m" + cover.link.substring(dot, cover.link.length());
+    }
+
+    @Override
+    public boolean isAlbum() {
+        return true;
     }
 
     public int size() {
@@ -47,29 +62,16 @@ public class Album implements GalleryItem {
         return images;
     }
 
-    @Override
-    public boolean isAlbum() {
-        return true;
-    }
-
-    @Override
-    public String getThumbnailUrl() {
-        int dot = cover.link.lastIndexOf(".");
-        return cover.link.substring(0, dot) + "m" + cover.link.substring(dot, cover.link.length());
-    }
-
     public static class Cover {
 
-        private static final Cover NONE = new Cover("", 0, 0);
+        private static final Cover NONE = new Cover("", new Point(0, 0));
 
         private final String link;
-        private final int width;
-        private final int height;
+        private final Point size;
 
-        public Cover(String link, int width, int height) {
+        public Cover(String link, Point size) {
             this.link = link;
-            this.width = width;
-            this.height = height;
+            this.size = size;
         }
 
         public static Cover none() {

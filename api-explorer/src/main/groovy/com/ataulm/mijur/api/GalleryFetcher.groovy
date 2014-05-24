@@ -21,7 +21,7 @@ public class GalleryFetcher {
         }
     }
 
-    private Gallery fetchGallery() {
+    private static Gallery fetchGallery() {
         HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/gallery.json')
         http.request(Method.GET) {
             headers['Authorization'] = 'Client-ID ' + CLIENT_ID
@@ -37,20 +37,17 @@ public class GalleryFetcher {
         }
     }
 
-    private Album fetchAlbum(String id) {
+    private static void fetchAlbum(String id) {
         HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/album/' + id + '/images')
         http.request(Method.GET) {
             headers['Authorization'] = 'Client-ID ' + CLIENT_ID
             response.success = { resp, json ->
                 def formattedJson = prettifyJson(json)
                 writeJsonToFile(id, formattedJson)
-                // TODO: parse album gallery item
-                return null
             }
 
             response.failure = { resp, json ->
                 println(resp, "FAILURE")
-                return null
             }
         }
     }
@@ -60,7 +57,7 @@ public class GalleryFetcher {
         parser.parse(json.toString())
     }
 
-    private void processGalleryItems(Gallery gallery) {
+    private static void processGalleryItems(Gallery gallery) {
         for (GalleryItem item : gallery) {
             if (item instanceof Album) {
                 fetchAlbum(item.id)
