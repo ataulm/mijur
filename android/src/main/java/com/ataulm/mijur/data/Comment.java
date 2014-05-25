@@ -22,4 +22,12 @@ public class Comment {
         return text;
     }
 
+    public boolean isReply() {
+        return parentId != 0;
+    }
+
+    public boolean parentIdIs(long id) {
+        return parentId == id;
+    }
+
 }
