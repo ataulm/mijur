@@ -1,8 +1,6 @@
 # mĭjur
 An Android client for Imgur. I'm using this as a project to learn about REST, custom UI components in Android, as well as UX/UI design for the Android and mobile platform in general.
 
-I expect pull requests will be welcome after 1.0, but comments and crit are welcome and appreciated at any time.
-
 ## Imgur
 [Imgur][imgur] is the go-to destination for viral images. Backed by a friendly and funny community, Imgur is the best place to spend your free time online. 
 
@@ -14,20 +12,17 @@ Read the rest of the [FAQ][imgur-faq].
 [imgur-faq]: http://imgur.com/help
 
 ## Building
-Should build out of the box now (`./gradlew clean build`). If you want to test using the real API, add `gradle.properties` in the root directory, and set your Imgur client ID:
-
-    // gradle.properties
-    IMGUR_CLIENT_ID=YOUR_CLIENT_ID
+Should build out of the box now (`./gradlew clean build`).
 
 ## Resources
 Uses open-source libraries, with thanks:
 
-- Novoda's [ImageLoader][link-imageloader]
 - Novoda's [NoTils][link-notils]
 - Netflix's [RxJava (alpha)][link-rxjava]
-- Square's [Retrofit][link-retrofit]
+- Google's [Gson][link-gson]
+- Square's [Picasso][link-picasso]
 
-[link-imageloader]: https://github.com/novoda/ImageLoader
 [link-notils]: https://github.com/novoda/NoTils
 [link-rxjava]: https://github.com/Netflix/RxJava
-[link-retrofit]: http://square.github.io/retrofit/
+[link-gson]: https://code.google.com/p/google-gson/
+[link-picasso]: http://square.github.io/picasso/
