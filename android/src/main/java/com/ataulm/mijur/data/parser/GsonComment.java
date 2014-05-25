@@ -19,10 +19,10 @@ class GsonComment {
     int downvotes;
 
     @SerializedName("comment")
-    int text;
+    String text;
 
     @SerializedName("parent_id")
-    int parentId;
+    String parentId;
 
     @SerializedName("children")
     List<GsonComment> children;
