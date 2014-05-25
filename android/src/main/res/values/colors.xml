@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-  <color name="app_background">#2B2B2B</color>
-  <color name="gallery_listitem_2_background">#3D3D3D</color>
-  <color name="gallery_listitem_1_background">@android:color/black</color>
 
+<resources>
+
+  <color name="app_background">#2B2B2B</color>
 
 </resources>
