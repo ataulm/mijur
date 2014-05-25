@@ -30,7 +30,7 @@ public class Comment {
         return parentId != 0;
     }
 
-    public boolean parentIdIs(long id) {
+    public boolean parentIdMatches(long id) {
         return parentId == id;
     }
 

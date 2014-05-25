@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">mĭjur</string>
-
-  <string name="action_settings">Settings</string>
-  <string name="action_refresh">Refresh</string>
-
-  <!-- http://api.imgur.com/models/gallery_image -->
-  <string name="thumbnail_suffix">t</string>
-  <string name="placeholder_caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis fringilla dolor. Vivamus rutrum tellus a velit ornare sagittis.</string>
+  <string name="app_name">Mĭjur</string>
 
 </resources>

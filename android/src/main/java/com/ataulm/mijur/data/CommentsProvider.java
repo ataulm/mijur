@@ -47,7 +47,7 @@ public class CommentsProvider {
             public Comments call(Comments comments) {
                 List<Comment> filteredComments = new ArrayList<Comment>();
                 for (Comment comment : comments) {
-                    if (comment.parentIdIs(commentId)) {
+                    if (comment.parentIdMatches(commentId)) {
                         filteredComments.add(comment);
                     }
                 }
