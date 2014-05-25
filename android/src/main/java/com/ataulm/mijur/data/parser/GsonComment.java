@@ -7,7 +7,7 @@ import java.util.List;
 class GsonComment {
 
     @SerializedName("id")
-    String id;
+    long id;
 
     @SerializedName("author")
     String author;
@@ -22,7 +22,7 @@ class GsonComment {
     String text;
 
     @SerializedName("parent_id")
-    String parentId;
+    long parentId;
 
     @SerializedName("children")
     List<GsonComment> children;
