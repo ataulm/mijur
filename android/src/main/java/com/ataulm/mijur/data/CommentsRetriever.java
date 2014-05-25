@@ -9,20 +9,20 @@ import rx.Observable;
 import rx.Subscriber;
 import rx.schedulers.Schedulers;
 
-public class CommentRetriever {
+public class CommentsRetriever {
 
     private static final String MOCK_JSON_COMMENT_PATTERN = "mocks/%s_comments.json";
 
     private final AssetFileManager assetFileManager;
     private final CommentParser commentParser;
 
-    private CommentRetriever(AssetFileManager assetFileManager, CommentParser commentParser) {
+    private CommentsRetriever(AssetFileManager assetFileManager, CommentParser commentParser) {
         this.assetFileManager = assetFileManager;
         this.commentParser = commentParser;
     }
 
-    public static CommentRetriever newInstance() {
-        return new CommentRetriever(AssetFileManager.newInstance(), CommentParser.newInstance());
+    public static CommentsRetriever newInstance() {
+        return new CommentsRetriever(AssetFileManager.newInstance(), CommentParser.newInstance());
     }
 
     public Observable<List<Comment>> fetchCommentsForPost(final String postId) {
