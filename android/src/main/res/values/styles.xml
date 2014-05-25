@@ -7,15 +7,28 @@
 
   <style name="Mijur.Gallery" />
 
-  <style name="Mijur.Gallery.List" parent="android:Widget.ListView">
-    <item name="android:paddingLeft">16dp</item>
-    <item name="android:paddingTop">16dp</item>
-    <item name="android:paddingRight">16dp</item>
-    <item name="android:paddingBottom">16dp</item>
+  <style name="Mijur.Gallery.ListView" parent="android:Widget.ListView">
+    <item name="android:paddingLeft">@dimen/gallery_list_padding_left</item>
+    <item name="android:paddingTop">@dimen/gallery_list_padding_top</item>
+    <item name="android:paddingRight">@dimen/gallery_list_padding_right</item>
+    <item name="android:paddingBottom">@dimen/gallery_list_padding_bottom</item>
     <item name="android:clipToPadding">false</item>
     <item name="android:scrollbars">none</item>
     <item name="android:divider">@android:color/transparent</item>
-    <item name="android:dividerHeight">8dp</item>
+    <item name="android:dividerHeight">@dimen/gallery_list_divider_height</item>
+  </style>
+
+  <style name="Mijur.Post" />
+  
+  <style name="Mijur.Post.ListView" parent="android:Widget.ListView">
+    <item name="android:paddingLeft">@dimen/post_list_padding_left</item>
+    <item name="android:paddingTop">@dimen/post_list_padding_top</item>
+    <item name="android:paddingRight">@dimen/post_list_padding_right</item>
+    <item name="android:paddingBottom">@dimen/post_list_padding_bottom</item>
+    <item name="android:clipToPadding">false</item>
+    <item name="android:scrollbars">none</item>
+    <item name="android:divider">@android:color/transparent</item>
+    <item name="android:dividerHeight">@dimen/post_list_divider_height</item>
   </style>
 
 </resources>

@@ -4,4 +4,18 @@
   <dimen name="activity_horizontal_margin">16dp</dimen>
   <dimen name="activity_vertical_margin">16dp</dimen>
 
+  <dimen name="gallery_list_padding_base">16dp</dimen>
+  <dimen name="gallery_list_padding_left">@dimen/gallery_list_padding_base</dimen>
+  <dimen name="gallery_list_padding_top">@dimen/gallery_list_padding_base</dimen>
+  <dimen name="gallery_list_padding_right">@dimen/gallery_list_padding_base</dimen>
+  <dimen name="gallery_list_padding_bottom">@dimen/gallery_list_padding_base</dimen>
+  <dimen name="gallery_list_divider_height">8dp</dimen>
+
+  <dimen name="post_list_padding_base">16dp</dimen>
+  <dimen name="post_list_padding_left">@dimen/post_list_padding_base</dimen>
+  <dimen name="post_list_padding_top">@dimen/post_list_padding_base</dimen>
+  <dimen name="post_list_padding_right">@dimen/post_list_padding_base</dimen>
+  <dimen name="post_list_padding_bottom">@dimen/post_list_padding_base</dimen>
+  <dimen name="post_list_divider_height">8dp</dimen>
+
 </resources>
