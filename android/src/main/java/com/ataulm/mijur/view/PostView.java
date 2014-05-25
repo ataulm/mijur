@@ -10,15 +10,9 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.ataulm.mijur.R;
-import com.ataulm.mijur.data.Album;
-import com.ataulm.mijur.data.Comment;
-import com.ataulm.mijur.data.GalleryItem;
-import com.ataulm.mijur.data.Image;
+import com.ataulm.mijur.data.*;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.toast.Toaster;
-
-import java.util.Collections;
-import java.util.List;
 
 public class PostView extends FrameLayout {
 
@@ -57,7 +51,7 @@ public class PostView extends FrameLayout {
         }
     }
 
-    public void update(List<Comment> comments) {
+    public void update(Comments comments) {
         commentsAdapter.update(comments);
     }
 
@@ -82,17 +76,17 @@ public class PostView extends FrameLayout {
 
     private static class CommentsAdapter extends BaseAdapter {
 
-        private List<Comment> comments;
+        private Comments comments;
 
-        private CommentsAdapter(List<Comment> comments) {
+        private CommentsAdapter(Comments comments) {
             this.comments = comments;
         }
 
         public static CommentsAdapter newInstance() {
-            return new CommentsAdapter(Collections.<Comment>emptyList());
+            return new CommentsAdapter(Comments.empty());
         }
 
-        public void update(List<Comment> comments) {
+        public void update(Comments comments) {
             this.comments = comments;
             notifyDataSetChanged();
         }

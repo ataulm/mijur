@@ -1,13 +1,13 @@
 package com.ataulm.mijur.data.parser;
 
 import com.ataulm.mijur.data.Comment;
+import com.ataulm.mijur.data.Comments;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class CommentParser {
@@ -22,17 +22,18 @@ public class CommentParser {
         return new CommentParser(new Gson());
     }
 
-    public List<Comment> parse(InputStream stream) {
+    public Comments parse(InputStream stream) {
         JsonReader reader = new JsonReader(new InputStreamReader(stream));
         GsonCommentResponse gsonCommentResponse = gson.fromJson(reader, GsonCommentResponse.class);
         return parse(gsonCommentResponse);
     }
 
-    private List<Comment> parse(GsonCommentResponse gsonCommentResponse) {
+    private Comments parse(GsonCommentResponse gsonCommentResponse) {
         if (gsonCommentResponse.success) {
-            return parseAllComments(gsonCommentResponse.data);
+            List<Comment> commentsList = parseAllComments(gsonCommentResponse.data);
+            return new Comments(commentsList);
         }
-        return Collections.emptyList();
+        return Comments.empty();
     }
 
     /**

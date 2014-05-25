@@ -5,15 +5,13 @@ import android.os.Bundle;
 import com.ataulm.mijur.BuildConfig;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
-import com.ataulm.mijur.data.Comment;
+import com.ataulm.mijur.data.Comments;
 import com.ataulm.mijur.data.CommentsProvider;
 import com.ataulm.mijur.data.GalleryItem;
 import com.ataulm.mijur.data.GalleryProvider;
 import com.ataulm.mijur.view.PostView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
-
-import java.util.List;
 
 import rx.Observer;
 import rx.Subscription;
@@ -86,7 +84,7 @@ public class PostActivity extends MijurActivity {
 
     }
 
-    private static class PostCommentsUpdater implements Observer<List<Comment>> {
+    private static class PostCommentsUpdater implements Observer<Comments> {
 
         private final PostView view;
 
@@ -104,7 +102,7 @@ public class PostActivity extends MijurActivity {
         }
 
         @Override
-        public void onNext(List<Comment> comments) {
+        public void onNext(Comments comments) {
             view.update(comments);
         }
 

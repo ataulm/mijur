@@ -23,41 +23,41 @@ public class CommentsProvider {
         return commentsProvider;
     }
 
-    public Observable<List<Comment>> getTopLevelCommentsForPost(String id) {
-        return getCommentsForPost(id).map(new Func1<List<Comment>, List<Comment>>() {
+    public Observable<Comments> getTopLevelCommentsForPost(String id) {
+        return getCommentsForPost(id).map(new Func1<Comments, Comments>() {
 
             @Override
-            public List<Comment> call(List<Comment> comments) {
+            public Comments call(Comments comments) {
                 List<Comment> filteredComments = new ArrayList<Comment>();
                 for (Comment comment : comments) {
                     if (!comment.isReply()) {
                         filteredComments.add(comment);
                     }
                 }
-                return filteredComments;
+                return new Comments(filteredComments);
             }
 
         });
     }
 
-    public Observable<List<Comment>> getRepliesToComment(String postId, final int commentId) {
-        return getCommentsForPost(postId).map(new Func1<List<Comment>, List<Comment>>() {
+    public Observable<Comments> getRepliesToComment(String postId, final int commentId) {
+        return getCommentsForPost(postId).map(new Func1<Comments, Comments>() {
 
             @Override
-            public List<Comment> call(List<Comment> comments) {
+            public Comments call(Comments comments) {
                 List<Comment> filteredComments = new ArrayList<Comment>();
                 for (Comment comment : comments) {
                     if (comment.parentIdIs(commentId)) {
                         filteredComments.add(comment);
                     }
                 }
-                return filteredComments;
+                return new Comments(filteredComments);
             }
 
         });
     }
 
-    private Observable<List<Comment>> getCommentsForPost(String id) {
+    private Observable<Comments> getCommentsForPost(String id) {
         return retriever.fetchCommentsForPost(id);
     }
 

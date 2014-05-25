@@ -25,15 +25,15 @@ public class CommentsRetriever {
         return new CommentsRetriever(AssetFileManager.newInstance(), CommentParser.newInstance());
     }
 
-    public Observable<List<Comment>> fetchCommentsForPost(final String postId) {
-        return Observable.create(new Observable.OnSubscribe<List<Comment>>() {
+    public Observable<Comments> fetchCommentsForPost(final String postId) {
+        return Observable.create(new Observable.OnSubscribe<Comments>() {
 
             @Override
-            public void call(Subscriber<? super List<Comment>> subscriber) {
+            public void call(Subscriber<? super Comments> subscriber) {
                 String pathToCommentsJson = String.format(MOCK_JSON_COMMENT_PATTERN, postId);
 
                 InputStream inputStream = assetFileManager.open(pathToCommentsJson);
-                List<Comment> comments = commentParser.parse(inputStream);
+                Comments comments = commentParser.parse(inputStream);
                 subscriber.onNext(comments);
             }
 
