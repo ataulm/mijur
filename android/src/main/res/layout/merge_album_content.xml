@@ -4,24 +4,28 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <TextView
+  <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/album_content_title"
+    style="@style/Mijur.Post.Title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
   <LinearLayout
     android:id="@+id/album_content_images"
+    style="@style/Mijur.Post.AlbumImages"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" />
 
-  <TextView
+  <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/album_content_description"
+    style="@style/Mijur.Post.AlbumDescription"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
-  <TextView
+  <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/album_content_more"
+    style="@style/Mijur.Post.AlbumShowFullButton"
     android:layout_width="match_parent"
     android:layout_height="48dp" />
 

@@ -7,7 +7,7 @@
 
   <style name="Mijur.Gallery" />
 
-  <style name="Mijur.Gallery.ListView" parent="android:Widget.ListView">
+  <style name="Mijur.Gallery.ListView">
     <item name="android:paddingLeft">@dimen/gallery_list_padding_left</item>
     <item name="android:paddingTop">@dimen/gallery_list_padding_top</item>
     <item name="android:paddingRight">@dimen/gallery_list_padding_right</item>
@@ -19,8 +19,8 @@
   </style>
 
   <style name="Mijur.Post" />
-  
-  <style name="Mijur.Post.ListView" parent="android:Widget.ListView">
+
+  <style name="Mijur.Post.ListView">
     <item name="android:paddingLeft">@dimen/post_list_padding_left</item>
     <item name="android:paddingTop">@dimen/post_list_padding_top</item>
     <item name="android:paddingRight">@dimen/post_list_padding_right</item>
@@ -29,6 +29,39 @@
     <item name="android:scrollbars">none</item>
     <item name="android:divider">@android:color/transparent</item>
     <item name="android:dividerHeight">@dimen/post_list_divider_height</item>
+  </style>
+
+  <style name="Mijur.Post.Title">
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:paddingTop">0dp</item>
+    <item name="android:paddingRight">0dp</item>
+    <item name="android:paddingBottom">0dp</item>
+    <item name="font">robotoSlabBold</item>
+  </style>
+
+  <style name="Mijur.Post.AlbumImages">
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingRight">0dp</item>
+    <item name="android:paddingBottom">0dp</item>
+  </style>
+
+  <style name="Mijur.Post.AlbumDescription">
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingRight">8dp</item>
+    <item name="android:paddingBottom">8dp</item>
+    <item name="android:background">@android:color/holo_blue_dark</item>
+    <item name="font">robotoSlabLight</item>
+  </style>
+
+  <style name="Mijur.Post.AlbumShowFullButton">
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingRight">0dp</item>
+    <item name="android:paddingBottom">0dp</item>
+    <item name="android:gravity">center</item>
+    <item name="font">robotoSlabBold</item>
   </style>
 
 </resources>
