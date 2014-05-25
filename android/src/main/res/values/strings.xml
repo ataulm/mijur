@@ -2,5 +2,7 @@
 <resources>
 
   <string name="app_name">Mĭjur</string>
+  <string name="activity_gallery">Gallery</string>
+  <string name="activity_post">Post</string>
 
 </resources>

@@ -8,19 +8,24 @@
 
   <application
     android:name="com.ataulm.mijur.base.android.MijurApplication"
-    android:allowBackup="true"
-    android:icon="@drawable/ic_launcher"
     android:label="@string/app_name"
-    android:theme="@style/Mijur">
+    android:theme="@style/Mijur"
+    android:icon="@drawable/ic_launcher"
+    android:allowBackup="true">
 
-    <activity android:name="com.ataulm.mijur.gallery.GalleryGridActivity">
+    <activity
+      android:name=".gallery.GalleryActivity"
+      android:label="@string/activity_gallery">
+
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
 
-    <activity android:name=".gallery.PostActivity" />
+    <activity
+      android:name=".gallery.PostActivity"
+      android:label="@string/activity_post" />
 
   </application>
 </manifest>

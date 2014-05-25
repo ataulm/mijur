@@ -17,7 +17,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class GalleryGridActivity extends MijurActivity implements GalleryItemView.OnClickListener {
+public class GalleryActivity extends MijurActivity implements GalleryItemView.OnClickListener {
 
     private ListView list;
     private Subscription feedSubscription;
