@@ -4,8 +4,8 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <FrameLayout
-    android:id="@+id/post_content_container"
+  <ListView
+    android:id="@+id/post_comments_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 

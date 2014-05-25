@@ -2,9 +2,10 @@ package com.ataulm.mijur.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ScrollView;
+import android.widget.ListView;
 
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.data.Album;
@@ -13,9 +14,10 @@ import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.toast.Toaster;
 
-public class PostView extends ScrollView {
+public class PostView extends FrameLayout {
 
     private FrameLayout contentContainerView;
+    private ListView commentsListView;
 
     public PostView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -27,10 +29,13 @@ public class PostView extends ScrollView {
 
     @Override
     protected void onFinishInflate() {
-        setFillViewport(true);
+        View.inflate(getContext(), R.layout.merge_post, this);
 
-        View.inflate(getContext(), R.layout.merge_gallery_post, this);
-        contentContainerView = Views.findById(this, R.id.post_content_container);
+        commentsListView = Views.findById(this, R.id.post_comments_list);
+        contentContainerView = (FrameLayout) LayoutInflater.from(getContext()).inflate(R.layout.view_post_content_container, commentsListView, false);
+        commentsListView.addHeaderView(contentContainerView);
+
+        commentsListView.setAdapter(null);
     }
 
     public void update(final GalleryItem item) {
