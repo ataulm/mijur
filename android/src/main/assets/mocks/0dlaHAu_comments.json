@@ -2,81 +2,6 @@
     "status": 200,
     "data": [
         {
-            "id": 230142274,
-            "author": "AvagantamosEaterOfNipples",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230174938,
-                    "author": "PutTheTeamOnYourBack",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 4185944,
-                    "points": 3,
-                    "on_album": false,
-                    "datetime": 1400969502,
-                    "ups": 3,
-                    "comment": "Even the master of assassin's needs to wank one out occasionally",
-                    "deleted": false,
-                    "image_id": "0dlaHAu",
-                    "parent_id": 230142274
-                },
-                {
-                    "id": 230152420,
-                    "author": "SLACKZORAZ",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 1,
-                    "author_id": 5830909,
-                    "points": 4,
-                    "on_album": false,
-                    "datetime": 1400965792,
-                    "ups": 5,
-                    "comment": "Dat relevance",
-                    "deleted": false,
-                    "image_id": "0dlaHAu",
-                    "parent_id": 230142274
-                },
-                {
-                    "id": 230176483,
-                    "author": "Stvafel",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 2926441,
-                    "points": 1,
-                    "on_album": false,
-                    "datetime": 1400969769,
-                    "ups": 1,
-                    "comment": "hugelol, wooh!",
-                    "deleted": false,
-                    "image_id": "0dlaHAu",
-                    "parent_id": 230142274
-                }
-            ],
-            "downs": 0,
-            "author_id": 10089496,
-            "points": 197,
-            "on_album": false,
-            "datetime": 1400964026,
-            "ups": 197,
-            "comment": "http://hugelolcdn.com/i/261618.gif",
-            "deleted": false,
-            "image_id": "0dlaHAu",
-            "parent_id": 0
-        },
-        {
             "id": 230010622,
             "author": "Chahol17",
             "vote": null,
@@ -98,10 +23,10 @@
                             ],
                             "downs": 0,
                             "author_id": 9412047,
-                            "points": 7,
+                            "points": 11,
                             "on_album": false,
                             "datetime": 1400964414,
-                            "ups": 7,
+                            "ups": 11,
                             "comment": "... wait what?",
                             "deleted": false,
                             "image_id": "0dlaHAu",
@@ -117,11 +42,48 @@
                             ],
                             "downs": 0,
                             "author_id": 6881486,
-                            "points": 2,
+                            "points": 3,
                             "on_album": false,
                             "datetime": 1400964803,
-                            "ups": 2,
+                            "ups": 3,
                             "comment": "Well I found my next tattoo",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230143819
+                        },
+                        {
+                            "id": 230213965,
+                            "author": "rewdew",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230266663,
+                                    "author": "ASneakyChicken",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 8430116,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400984161,
+                                    "ups": 1,
+                                    "comment": "\"One the wall\" said really fast sounds like a mentally challenged person saying \"Wonderwall\". \"WUN-THUH-WOLL\"",
+                                    "deleted": false,
+                                    "image_id": "0dlaHAu",
+                                    "parent_id": 230213965
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 1833064,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400976156,
+                            "ups": 1,
+                            "comment": "I hang my frying pans one the wall... WHAT DOES IT MEAN?! -sobs-",
                             "deleted": false,
                             "image_id": "0dlaHAu",
                             "parent_id": 230143819
@@ -167,10 +129,10 @@
                     ],
                     "downs": 0,
                     "author_id": 9270495,
-                    "points": 12,
+                    "points": 25,
                     "on_album": false,
                     "datetime": 1400964276,
-                    "ups": 12,
+                    "ups": 25,
                     "comment": "Every sword needs a sheath, just like every frying pan needs a cupboard to lie in...",
                     "deleted": false,
                     "image_id": "0dlaHAu",
@@ -192,10 +154,10 @@
                             ],
                             "downs": 0,
                             "author_id": 9798809,
-                            "points": 1,
+                            "points": 10,
                             "on_album": false,
                             "datetime": 1400967714,
-                            "ups": 1,
+                            "ups": 10,
                             "comment": "The word \"vagina\" IS the Latin word for \"sheath.\"",
                             "deleted": false,
                             "image_id": "0dlaHAu",
@@ -204,10 +166,10 @@
                     ],
                     "downs": 0,
                     "author_id": 1271594,
-                    "points": 5,
+                    "points": 13,
                     "on_album": false,
                     "datetime": 1400967089,
-                    "ups": 5,
+                    "ups": 13,
                     "comment": "The word \"vagina\" comes from the Latin word for \"sheath\". True fact.",
                     "deleted": false,
                     "image_id": "0dlaHAu",
@@ -231,15 +193,202 @@
                     "deleted": false,
                     "image_id": "0dlaHAu",
                     "parent_id": 230010622
+                },
+                {
+                    "id": 230280715,
+                    "author": "YourFriendlySysadmin",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 671528,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400986164,
+                    "ups": 1,
+                    "comment": "*pork sword.",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230010622
+                },
+                {
+                    "id": 230234878,
+                    "author": "Sigurd2021",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 4038696,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400979422,
+                    "ups": 1,
+                    "comment": "It's not so he has someone to play rock, paper, scissors with?",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230010622
                 }
             ],
             "downs": 2,
             "author_id": 11438667,
-            "points": 219,
+            "points": 461,
             "on_album": false,
             "datetime": 1400941219,
-            "ups": 221,
+            "ups": 463,
             "comment": "It's a sheath for his sword.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230142274,
+            "author": "AvagantamosEaterOfNipples",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230174938,
+                    "author": "PutTheTeamOnYourBack",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230226334,
+                            "author": "KateUptonsNipples",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 3694871,
+                            "points": 9,
+                            "on_album": false,
+                            "datetime": 1400978133,
+                            "ups": 9,
+                            "comment": "That damn Sofia tempting him  with her supple flying buttresses",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230174938
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 4185944,
+                    "points": 28,
+                    "on_album": false,
+                    "datetime": 1400969502,
+                    "ups": 28,
+                    "comment": "Even the master of assassin's needs to wank one out occasionally",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230142274
+                },
+                {
+                    "id": 230152420,
+                    "author": "SLACKZORAZ",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 5830909,
+                    "points": 13,
+                    "on_album": false,
+                    "datetime": 1400965792,
+                    "ups": 14,
+                    "comment": "Dat relevance",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230142274
+                },
+                {
+                    "id": 230176483,
+                    "author": "Stvafel",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 2926441,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400969769,
+                    "ups": 3,
+                    "comment": "hugelol, wooh!",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230142274
+                },
+                {
+                    "id": 230256013,
+                    "author": "Bheema",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 329071,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400982468,
+                    "ups": 2,
+                    "comment": "I exhaled through my nose loudly. +1",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230142274
+                },
+                {
+                    "id": 230206810,
+                    "author": "youretheonewhoswierd",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230206996,
+                            "author": "AvagantamosEaterOfNipples",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 10089496,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1400974998,
+                            "ups": 3,
+                            "comment": "\"assassin's creed masturbation,\" of course :3",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230206810
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 11428067,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400974961,
+                    "ups": 1,
+                    "comment": "what did you have to google to find this....",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230142274
+                }
+            ],
+            "downs": 4,
+            "author_id": 10089496,
+            "points": 555,
+            "on_album": false,
+            "datetime": 1400964026,
+            "ups": 559,
+            "comment": "http://hugelolcdn.com/i/261618.gif",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -260,10 +409,10 @@
                     ],
                     "downs": 0,
                     "author_id": 948897,
-                    "points": 14,
+                    "points": 20,
                     "on_album": false,
                     "datetime": 1400964117,
-                    "ups": 14,
+                    "ups": 20,
                     "comment": "D\u014Dmo analgat\u014D, Fister Roboto",
                     "deleted": false,
                     "image_id": "0dlaHAu",
@@ -291,10 +440,10 @@
                                     ],
                                     "downs": 0,
                                     "author_id": 1579591,
-                                    "points": 1,
+                                    "points": 2,
                                     "on_album": false,
                                     "datetime": 1400966512,
-                                    "ups": 1,
+                                    "ups": 2,
                                     "comment": "http://imgur.com/gallery/YqiAg",
                                     "deleted": false,
                                     "image_id": "0dlaHAu",
@@ -303,10 +452,10 @@
                             ],
                             "downs": 0,
                             "author_id": 587614,
-                            "points": 2,
+                            "points": 4,
                             "on_album": false,
                             "datetime": 1400964817,
-                            "ups": 2,
+                            "ups": 4,
                             "comment": "STOP! My penis can only get SO erect! And let me tell you, as a girl, it's freaking me out!",
                             "deleted": false,
                             "image_id": "0dlaHAu",
@@ -315,10 +464,10 @@
                     ],
                     "downs": 0,
                     "author_id": 887861,
-                    "points": 4,
+                    "points": 7,
                     "on_album": false,
                     "datetime": 1400964666,
-                    "ups": 4,
+                    "ups": 7,
                     "comment": "he's learning",
                     "deleted": false,
                     "image_id": "0dlaHAu",
@@ -334,22 +483,22 @@
                     ],
                     "downs": 0,
                     "author_id": 3777108,
-                    "points": 4,
+                    "points": 5,
                     "on_album": false,
                     "datetime": 1400964204,
-                    "ups": 4,
+                    "ups": 5,
                     "comment": "http://fallout.wikia.com/wiki/Fisto",
                     "deleted": false,
                     "image_id": "0dlaHAu",
                     "parent_id": 230063536
                 }
             ],
-            "downs": 1,
+            "downs": 2,
             "author_id": 9456990,
-            "points": 91,
+            "points": 200,
             "on_album": false,
             "datetime": 1400950694,
-            "ups": 92,
+            "ups": 202,
             "comment": "http://i.imgur.com/gAFOA1b.png",
             "deleted": false,
             "image_id": "0dlaHAu",
@@ -371,10 +520,10 @@
                     ],
                     "downs": 0,
                     "author_id": 5753459,
-                    "points": 4,
+                    "points": 9,
                     "on_album": false,
                     "datetime": 1400964100,
-                    "ups": 4,
+                    "ups": 9,
                     "comment": "Ya what a shame Leonardo went with an...old fashioned...",
                     "deleted": false,
                     "image_id": "0dlaHAu",
@@ -383,10 +532,10 @@
             ],
             "downs": 0,
             "author_id": 5972293,
-            "points": 45,
+            "points": 91,
             "on_album": false,
             "datetime": 1400940851,
-            "ups": 45,
+            "ups": 91,
             "comment": "Poor Ezio",
             "deleted": false,
             "image_id": "0dlaHAu",
@@ -398,15 +547,89 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230212405,
+                    "author": "tony3564",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 10340216,
+                    "points": 7,
+                    "on_album": false,
+                    "datetime": 1400975863,
+                    "ups": 7,
+                    "comment": "*slow clap* pretty damn impressive",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230143648
+                },
+                {
+                    "id": 230378647,
+                    "author": "Granolaclusters",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 3085681,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401003338,
+                    "ups": 1,
+                    "comment": "http://imgur.com/AEA0YxX",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230143648
+                }
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 5675552,
-            "points": 23,
+            "points": 84,
             "on_album": false,
             "datetime": 1400964250,
-            "ups": 23,
+            "ups": 85,
             "comment": "I got it!  It's a mechanical butter churner.  The dairy and baked goods industries will never be the same.  Pervs.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230194324,
+            "author": "SteelHamerhands",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230450974,
+                    "author": "Merasite",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1405676,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401026707,
+                    "ups": 1,
+                    "comment": "I reloaded just so I could give him a hug",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230194324
+                }
+            ],
+            "downs": 0,
+            "author_id": 2994928,
+            "points": 30,
+            "on_album": false,
+            "datetime": 1400972810,
+            "ups": 30,
+            "comment": "He tried to hug me once and i missed the button on the quicktime event and then he looked so disappointed. I'll never forgive myself.",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -417,15 +640,347 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230215033,
+                    "author": "icypants",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 2808013,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400976333,
+                    "ups": 2,
+                    "comment": "I mean, the angle might be a bit awkward but im sure you could use it as a fisting machine....",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230020069
+                }
             ],
             "downs": 1,
             "author_id": 7358648,
-            "points": 24,
+            "points": 39,
             "on_album": false,
             "datetime": 1400943226,
-            "ups": 25,
+            "ups": 40,
             "comment": "Thought it was a fisting machine, then noticed the 'movement' of it...still",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230141953,
+            "author": "HiddenSanity",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230216554,
+                    "author": "arleas",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230223361,
+                            "author": "HiddenSanity",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 3217445,
+                            "points": 5,
+                            "on_album": false,
+                            "datetime": 1400977691,
+                            "ups": 5,
+                            "comment": "Really?  I'm certain it's a fascinating subject.",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230216554
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 1081586,
+                    "points": 15,
+                    "on_album": false,
+                    "datetime": 1400976585,
+                    "ups": 15,
+                    "comment": "sorry, I hadn't really even thought of pondering the feasibility of medieval masturbation machinery.",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230141953
+                },
+                {
+                    "id": 230149306,
+                    "author": "chrismofer",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230259823,
+                            "author": "pikmints",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 10755451,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400983078,
+                            "ups": 2,
+                            "comment": "Even if the string were going through a very tiny loop connected to the wood, it would only move once unless you put in the usual effort.",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230149306
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 1228056,
+                    "points": 6,
+                    "on_album": false,
+                    "datetime": 1400965228,
+                    "ups": 7,
+                    "comment": "yes! in fact there's pullys then it just attaches to the wood so it wouldn't go anywhere",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230141953
+                },
+                {
+                    "id": 230213707,
+                    "author": "Studoku",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1863087,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400976111,
+                    "ups": 4,
+                    "comment": "Leonardo Da Vinci built it. It can move however he wants it to move.",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230141953
+                },
+                {
+                    "id": 230143804,
+                    "author": "ScrewTheRulesIHaveMoney",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1144108,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400964274,
+                    "ups": 3,
+                    "comment": "Yep",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230141953
+                },
+                {
+                    "id": 230331583,
+                    "author": "orangeman10987",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 3526004,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400994120,
+                    "ups": 2,
+                    "comment": "I know right? If you want a masturbation machine, gonna need some springs or something for oscillatory motion. Super simple stuff people.",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230141953
+                }
+            ],
+            "downs": 2,
+            "author_id": 3217445,
+            "points": 27,
+            "on_album": false,
+            "datetime": 1400963980,
+            "ups": 29,
+            "comment": "Does it bother anyone else that that device wouldn't move in that manner?",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230145073,
+            "author": "alzooool",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230175283,
+                    "author": "WRYYYYYYYYYYYYYYYYYYY",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230190010,
+                            "author": "LolSatanSwag",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 1,
+                            "author_id": 7584842,
+                            "points": 7,
+                            "on_album": false,
+                            "datetime": 1400972134,
+                            "ups": 8,
+                            "comment": "Da firenze",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230175283
+                        },
+                        {
+                            "id": 230259658,
+                            "author": "zeradeth",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 3424672,
+                            "points": 4,
+                            "on_album": false,
+                            "datetime": 1400983043,
+                            "ups": 4,
+                            "comment": "\"So your custom, I would be Yusuf Tazim da Istanbul? I like that.\"",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230175283
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 4771272,
+                    "points": 9,
+                    "on_album": false,
+                    "datetime": 1400969565,
+                    "ups": 9,
+                    "comment": "As tight as Ezio Auditore de la la la",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230145073
+                },
+                {
+                    "id": 230259277,
+                    "author": "zeradeth",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230381428,
+                            "author": "alzooool",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230381593,
+                                    "author": "zeradeth",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230381893,
+                                            "author": "alzooool",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230382037,
+                                                    "author": "zeradeth",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 3424672,
+                                                    "points": 2,
+                                                    "on_album": false,
+                                                    "datetime": 1401004250,
+                                                    "ups": 2,
+                                                    "comment": "Boss. Boss all the way. And Edward was really great. Snarky, human and in it for his own reasons. Loved him.",
+                                                    "deleted": false,
+                                                    "image_id": "0dlaHAu",
+                                                    "parent_id": 230381893
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 5103471,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1401004213,
+                                            "ups": 1,
+                                            "comment": "I completely agree, altair was fucking boss. Never played black flag so don't really know about edward",
+                                            "deleted": false,
+                                            "image_id": "0dlaHAu",
+                                            "parent_id": 230381593
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 3424672,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1401004132,
+                                    "ups": 2,
+                                    "comment": "-shrug- It was close enough. Altair's one of my favorite of the assassins anyway. Altair, Ezio and Edward. Not Connor. Fuck Connor.",
+                                    "deleted": false,
+                                    "image_id": "0dlaHAu",
+                                    "parent_id": 230381428
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 5103471,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401004082,
+                            "ups": 1,
+                            "comment": "That's what I was thinking but I was worried that if I didn't translate it literally some people would be all like 'that's wrong'",
+                            "deleted": false,
+                            "image_id": "0dlaHAu",
+                            "parent_id": 230259277
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 3424672,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400982987,
+                    "ups": 4,
+                    "comment": "Well...I think it's actually Eagle Son of None if you translate it a little more fluidly. The developers made Altair's shadow like an eagle",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230145073
+                }
+            ],
+            "downs": 2,
+            "author_id": 5103471,
+            "points": 24,
+            "on_album": false,
+            "datetime": 1400964478,
+            "ups": 26,
+            "comment": "You know how altair's full name is Altair Ibn La'ahad, that's arabic for 'the bird son of no one'. Isn't that some tight ass shit?",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -452,10 +1007,10 @@
                             ],
                             "downs": 0,
                             "author_id": 2787033,
-                            "points": 6,
+                            "points": 11,
                             "on_album": false,
                             "datetime": 1400965590,
-                            "ups": 6,
+                            "ups": 11,
                             "comment": "So many... permutations... HHHHNNGGGGGHHHHHH",
                             "deleted": false,
                             "image_id": "0dlaHAu",
@@ -464,116 +1019,23 @@
                     ],
                     "downs": 0,
                     "author_id": 3547017,
-                    "points": 14,
+                    "points": 21,
                     "on_album": false,
                     "datetime": 1400964062,
-                    "ups": 14,
+                    "ups": 21,
                     "comment": "Mr. Rubik did not enjoy explaining to the doctor how it happened.",
                     "deleted": false,
                     "image_id": "0dlaHAu",
                     "parent_id": 230118679
                 }
             ],
-            "downs": 1,
+            "downs": 2,
             "author_id": 1487135,
-            "points": 16,
+            "points": 23,
             "on_album": false,
             "datetime": 1400960280,
-            "ups": 17,
+            "ups": 25,
             "comment": "I think every inventor in history has tried to make something sexual or use his invention for his own sexual desires...",
-            "deleted": false,
-            "image_id": "0dlaHAu",
-            "parent_id": 0
-        },
-        {
-            "id": 230145073,
-            "author": "alzooool",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230175283,
-                    "author": "WRYYYYYYYYYYYYYYYYYYY",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 4771272,
-                    "points": 3,
-                    "on_album": false,
-                    "datetime": 1400969565,
-                    "ups": 3,
-                    "comment": "As tight as Ezio Auditore de la la la",
-                    "deleted": false,
-                    "image_id": "0dlaHAu",
-                    "parent_id": 230145073
-                }
-            ],
-            "downs": 1,
-            "author_id": 5103471,
-            "points": 11,
-            "on_album": false,
-            "datetime": 1400964478,
-            "ups": 12,
-            "comment": "You know how altair's full name is Altair Ibn La'ahad, that's arabic for 'the bird son of no one'. Isn't that some tight ass shit?",
-            "deleted": false,
-            "image_id": "0dlaHAu",
-            "parent_id": 0
-        },
-        {
-            "id": 230141953,
-            "author": "HiddenSanity",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230149306,
-                    "author": "chrismofer",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 1228056,
-                    "points": 4,
-                    "on_album": false,
-                    "datetime": 1400965228,
-                    "ups": 4,
-                    "comment": "yes! in fact there's pullys then it just attaches to the wood so it wouldn't go anywhere",
-                    "deleted": false,
-                    "image_id": "0dlaHAu",
-                    "parent_id": 230141953
-                },
-                {
-                    "id": 230143804,
-                    "author": "ScrewTheRulesIHaveMoney",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 1144108,
-                    "points": 2,
-                    "on_album": false,
-                    "datetime": 1400964274,
-                    "ups": 2,
-                    "comment": "Yep",
-                    "deleted": false,
-                    "image_id": "0dlaHAu",
-                    "parent_id": 230141953
-                }
-            ],
-            "downs": 1,
-            "author_id": 3217445,
-            "points": 11,
-            "on_album": false,
-            "datetime": 1400963980,
-            "ups": 12,
-            "comment": "Does it bother anyone else that that device wouldn't move in that manner?",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -584,15 +1046,52 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230203858,
+                    "author": "ThatAwkwardMomentWhereYouAreOutOfIdeasForCoolUsernames",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 5080164,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400974454,
+                    "ups": 1,
+                    "comment": "*cringe*",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230142478
+                }
             ],
             "downs": 0,
             "author_id": 5753459,
-            "points": 6,
+            "points": 9,
             "on_album": false,
             "datetime": 1400964060,
-            "ups": 6,
+            "ups": 9,
             "comment": "Aww he had a friend built for him http://i.imgur.com/yxNCfFY.png",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230216614,
+            "author": "siler7",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11755888,
+            "points": 7,
+            "on_album": false,
+            "datetime": 1400976592,
+            "ups": 7,
+            "comment": "THE KNIFE IS CLEARLY IN HIS BELT READY TO BE INSTALLED IT'S NOT FINISHED YET ASSHOLE",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -603,7 +1102,25 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230203651,
+                    "author": "impostersquall",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 286723,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400974424,
+                    "ups": 1,
+                    "comment": "considering Leonardo liked doods, it wouldnt be strange",
+                    "deleted": false,
+                    "image_id": "0dlaHAu",
+                    "parent_id": 230152294
+                }
             ],
             "downs": 0,
             "author_id": 10338389,
@@ -612,6 +1129,63 @@
             "datetime": 1400965770,
             "ups": 3,
             "comment": "At least it wasn't moving horizontally left and right..",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230291641,
+            "author": "Idontlikewheat",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9449940,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400987746,
+            "ups": 2,
+            "comment": "swear to christ wrote leonardos bio from the game on my history test got a b",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230233369,
+            "author": "childofL1lith",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 6087557,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400979184,
+            "ups": 2,
+            "comment": "I love how innocent Ezio looks in the first  frame.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230191834,
+            "author": "Thephedora",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10256233,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400972417,
+            "ups": 2,
+            "comment": "Am I the only one that sees a potential upvote and downvote machine?",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -626,30 +1200,296 @@
             ],
             "downs": 0,
             "author_id": 1702468,
-            "points": 1,
+            "points": 2,
             "on_album": false,
             "datetime": 1400967682,
-            "ups": 1,
+            "ups": 2,
             "comment": "Is this the new Assassin's Creed game?",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
         },
         {
-            "id": 230157691,
-            "author": "MrNiceguy235",
+            "id": 230408908,
+            "author": "thisusernameintentioanllyleftblank",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 8644214,
+            "author_id": 5899234,
             "points": 1,
             "on_album": false,
-            "datetime": 1400966687,
+            "datetime": 1401012529,
             "ups": 1,
-            "comment": "Put...put your dick in it.",
+            "comment": "There was a young man named Dean, made a wanking machne. On the ninety-ninth stroke, the blasted thing broke and whipped his balls to cream.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230357836,
+            "author": "TheTwoBitGamer",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7831322,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400998776,
+            "ups": 1,
+            "comment": "I don't remember this scene from story mode.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230351320,
+            "author": "Flyndaran",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 2653578,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400997694,
+            "ups": 1,
+            "comment": "Actually similar to windmill powered hammering for producing metal sheets.  Made plate armor possible.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230349208,
+            "author": "Itsadickjoke",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11955883,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400997354,
+            "ups": 1,
+            "comment": "Hey hey. Another dick joke",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230337355,
+            "author": "Bagelz",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 4216217,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400995205,
+            "ups": 1,
+            "comment": "Ha!",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230317792,
+            "author": "Hashbrown123",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9041094,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400991914,
+            "ups": 1,
+            "comment": "You know that vitruvian man?  Plans for a rape machine.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230316637,
+            "author": "Chickenpots",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11264362,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400991755,
+            "ups": 1,
+            "comment": "Ye Olde Autoblow.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230313868,
+            "author": "WarTheory",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 4150028,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400991332,
+            "ups": 1,
+            "comment": "i still remember the time Ezio figured out he was gay, i died",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230311702,
+            "author": "iBoulderDash",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11873626,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400990992,
+            "ups": 1,
+            "comment": "It is a rock-paper-scissors machine. There are still a few kinks to work out in the system...",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230286712,
+            "author": "Littledaddysj",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11744170,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400986980,
+            "ups": 1,
+            "comment": "Yahtzee!!!",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230272003,
+            "author": "StewPedasso",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1926594,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400984936,
+            "ups": 1,
+            "comment": "Second prototype had an oil dispenser.",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230251216,
+            "author": "LittlePixy",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10789414,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400981796,
+            "ups": 1,
+            "comment": "i believe the word you're looking for is \"penis\"",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230214328,
+            "author": "NJsandman",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7995661,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400976217,
+            "ups": 1,
+            "comment": "This might be the only enjoyable part about Revelations",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230193238,
+            "author": "SenhorduBocage",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 8439911,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400972636,
+            "ups": 1,
+            "comment": "this is not accurate at all, Leonardo does not appear in Revelations!",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230190703,
+            "author": "BeeR411",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 8481818,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400972241,
+            "ups": 1,
+            "comment": "Oh there can easily be more of these made, however I'm not the one to do it.",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0
@@ -803,25 +1643,6 @@
             "parent_id": 0
         },
         {
-            "id": 230142433,
-            "author": "leaflock",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 4528904,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400964053,
-            "ups": 1,
-            "comment": "Ezio Ew-ditore",
-            "deleted": false,
-            "image_id": "0dlaHAu",
-            "parent_id": 0
-        },
-        {
             "id": 230142070,
             "author": "Kurplepush",
             "vote": null,
@@ -874,6 +1695,25 @@
             "datetime": 1400963967,
             "ups": 1,
             "comment": "It's all fun and games until your dick gets stuck in a machine",
+            "deleted": false,
+            "image_id": "0dlaHAu",
+            "parent_id": 0
+        },
+        {
+            "id": 230157691,
+            "author": "MrNiceguy235",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 8644214,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400966687,
+            "ups": 1,
+            "comment": "Put...put your dick in it.",
             "deleted": false,
             "image_id": "0dlaHAu",
             "parent_id": 0

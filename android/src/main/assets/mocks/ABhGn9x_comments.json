@@ -13,15 +13,275 @@
                     "vote": null,
                     "album_cover": null,
                     "children": [
+                        {
+                            "id": 230266342,
+                            "author": "pooplols",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1320165,
+                            "points": 6,
+                            "on_album": false,
+                            "datetime": 1400984116,
+                            "ups": 6,
+                            "comment": "Jesus Christ on a bicycle. I miss that game. Anyone know where I can get it for xbox 360 or PC? Love to all. (I'm drunk)",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230188057
+                        },
+                        {
+                            "id": 230268448,
+                            "author": "DeadlySprinklez",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230295868,
+                                    "author": "arkarao",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230326498,
+                                            "author": "MartynMage",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230327164,
+                                                    "author": "arkarao",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 10454323,
+                                                    "points": 2,
+                                                    "on_album": false,
+                                                    "datetime": 1400993410,
+                                                    "ups": 2,
+                                                    "comment": "You never know man.. imgur is a strange place",
+                                                    "deleted": false,
+                                                    "image_id": "ABhGn9x",
+                                                    "parent_id": 230326498
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 6112162,
+                                            "points": 4,
+                                            "on_album": false,
+                                            "datetime": 1400993310,
+                                            "ups": 4,
+                                            "comment": "Ya know, I would.. But it's just not gonna make it to the front.",
+                                            "deleted": false,
+                                            "image_id": "ABhGn9x",
+                                            "parent_id": 230295868
+                                        }
+                                    ],
+                                    "downs": 1,
+                                    "author_id": 10454323,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400988429,
+                                    "ups": 2,
+                                    "comment": "Check my bio haha",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230268448
+                                },
+                                {
+                                    "id": 230295733,
+                                    "author": "arkarao",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 10454323,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400988404,
+                                    "ups": 1,
+                                    "comment": "Best friends forever DeadlySprinklez!",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230268448
+                                }
+                            ],
+                            "downs": 1,
+                            "author_id": 7807091,
+                            "points": 5,
+                            "on_album": false,
+                            "datetime": 1400984433,
+                            "ups": 6,
+                            "comment": "I freaking love you from now yo forever just because you know that game. I will forever remember your name, arkarao.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230188057
+                        },
+                        {
+                            "id": 230295562,
+                            "author": "hzac",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 5064240,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400988377,
+                            "ups": 2,
+                            "comment": "I preferred crash team racing.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230188057
+                        },
+                        {
+                            "id": 230439457,
+                            "author": "PajamasInBananas",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 10236517,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401023948,
+                            "ups": 1,
+                            "comment": "holy crap on a cracka! thaat game was awwessooome,, they need to re-create it for a recent console",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230188057
+                        },
+                        {
+                            "id": 230296855,
+                            "author": "Vextroid",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230298520,
+                                    "author": "arkarao",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 10454323,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400988858,
+                                    "ups": 1,
+                                    "comment": "You're right, i meant the wrath of cortex",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230296855
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 2601865,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400988598,
+                            "ups": 1,
+                            "comment": "No it wasn't. Must be from another Crash game.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230188057
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 10454323,
+                    "points": 24,
+                    "on_album": false,
+                    "datetime": 1400971782,
+                    "ups": 25,
+                    "comment": "H2 oh no was a stage on Crash Bandicoot: Warped. Fucking greatest game of all time.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184835
+                },
+                {
+                    "id": 230258566,
+                    "author": "Hremsfeld",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230307655,
+                            "author": "MrFastZombie",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1783182,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400990364,
+                            "ups": 1,
+                            "comment": "H2Ohhhhhhhnooooo",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230258566
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 548875,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400982871,
+                    "ups": 4,
+                    "comment": "http://i.imgur.com/nlylzpA.jpg",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184835
+                },
+                {
+                    "id": 230307667,
+                    "author": "bzorp",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 10454323,
-                    "points": 1,
+                    "author_id": 4818213,
+                    "points": 2,
                     "on_album": false,
-                    "datetime": 1400971782,
-                    "ups": 1,
-                    "comment": "H2 oh no was a stage on Crash Bandicoot: Warped. Fucking greatest game of all time.",
+                    "datetime": 1400990366,
+                    "ups": 2,
+                    "comment": "H\u2082Ohdayum",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184835
+                },
+                {
+                    "id": 230247898,
+                    "author": "Crowseverywhere",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 11946316,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400981328,
+                    "ups": 2,
+                    "comment": "Waterhno?",
                     "deleted": false,
                     "image_id": "ABhGn9x",
                     "parent_id": 230184835
@@ -36,22 +296,22 @@
                     ],
                     "downs": 0,
                     "author_id": 9141738,
-                    "points": 1,
+                    "points": 2,
                     "on_album": false,
                     "datetime": 1400971729,
-                    "ups": 1,
+                    "ups": 2,
                     "comment": "H2whooo -Simpsons",
                     "deleted": false,
                     "image_id": "ABhGn9x",
                     "parent_id": 230184835
                 }
             ],
-            "downs": 0,
+            "downs": 2,
             "author_id": 790152,
-            "points": 20,
+            "points": 266,
             "on_album": false,
             "datetime": 1400971268,
-            "ups": 20,
+            "ups": 268,
             "comment": "H\u2082Ohno",
             "deleted": false,
             "image_id": "ABhGn9x",
@@ -63,14 +323,32 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230206660,
+                    "author": "mmotorcycle",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 10501510,
+                    "points": 14,
+                    "on_album": false,
+                    "datetime": 1400974934,
+                    "ups": 14,
+                    "comment": "\"Look for someone to love\"? What am I, someone who wants to give up video games for a human being?",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230185108
+                }
             ],
-            "downs": 1,
+            "downs": 6,
             "author_id": 1297308,
-            "points": 9,
+            "points": 121,
             "on_album": false,
             "datetime": 1400971323,
-            "ups": 10,
+            "ups": 127,
             "comment": "\"Just ask them out\"? What am I, someone with high self-confidence?",
             "deleted": false,
             "image_id": "ABhGn9x",
@@ -82,15 +360,221 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230189842,
+                    "author": "TheLegendarySuperStrayan",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 4797540,
+                    "points": 8,
+                    "on_album": false,
+                    "datetime": 1400972107,
+                    "ups": 8,
+                    "comment": "I love you",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184349
+                },
+                {
+                    "id": 230196586,
+                    "author": "wigum9511",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 1791819,
+                    "points": 10,
+                    "on_album": false,
+                    "datetime": 1400973200,
+                    "ups": 11,
+                    "comment": "I like you as a friend.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184349
+                },
+                {
+                    "id": 230192503,
+                    "author": "DishonoredUser",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 5759707,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400972519,
+                    "ups": 4,
+                    "comment": "I love you.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184349
+                },
+                {
+                    "id": 230193808,
+                    "author": "jeffasaurusrex",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1392007,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400972734,
+                    "ups": 3,
+                    "comment": "I love you",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184349
+                },
+                {
+                    "id": 230193712,
+                    "author": "DontEatTheCrabDipYeyay",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 2705679,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400972719,
+                    "ups": 3,
+                    "comment": "I love you",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230184349
+                }
             ],
-            "downs": 2,
+            "downs": 5,
             "author_id": 3893089,
-            "points": 10,
+            "points": 70,
             "on_album": false,
             "datetime": 1400971170,
-            "ups": 12,
+            "ups": 75,
             "comment": "I love this show.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230186338,
+            "author": "DoverBoys",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230196436,
+                    "author": "DocMcButtStuffins",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230224930,
+                            "author": "wandergeist",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 5633627,
+                            "points": 4,
+                            "on_album": false,
+                            "datetime": 1400977930,
+                            "ups": 4,
+                            "comment": "\"shittons\" is how this problem got started in the first place.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230196436
+                        },
+                        {
+                            "id": 230200720,
+                            "author": "DoverBoys",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 790152,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400973927,
+                            "ups": 2,
+                            "comment": "Yea, and this post was eight hours ago. Your point?",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230196436
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 11002801,
+                    "points": 7,
+                    "on_album": false,
+                    "datetime": 1400973181,
+                    "ups": 7,
+                    "comment": "It was lifted 5 hours ago though. This is kinda late... Although I did see shittons of people buying water at markets.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186338
+                },
+                {
+                    "id": 230336467,
+                    "author": "yourspellingisbadandyoushouldfeelbad",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6087914,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400995034,
+                    "ups": 4,
+                    "comment": "hippies are washing themselves in the lakes again",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186338
+                },
+                {
+                    "id": 230426314,
+                    "author": "megmehell",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 583627,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401019456,
+                    "ups": 1,
+                    "comment": "Why did this make the front page? This happens 3x a year in NOLA.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186338
+                }
+            ],
+            "downs": 0,
+            "author_id": 790152,
+            "points": 22,
+            "on_album": false,
+            "datetime": 1400971504,
+            "ups": 22,
+            "comment": "Context: http://www.kgw.com/lifestyle/health/City-issues-Boil-Water-Alert-for-all-of-Portland-260435871.html",
             "deleted": false,
             "image_id": "ABhGn9x",
             "parent_id": 0
@@ -102,6 +586,302 @@
             "album_cover": null,
             "children": [
                 {
+                    "id": 230211469,
+                    "author": "ProfessorIdle",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 2,
+                    "author_id": 7299269,
+                    "points": 21,
+                    "on_album": false,
+                    "datetime": 1400975686,
+                    "ups": 23,
+                    "comment": "*Popular Opinion Puffin",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230192260,
+                    "author": "smashpro1",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230346880,
+                            "author": "TartuffeTheSpryWonderDog",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230457157,
+                                    "author": "smashpro1",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 757662,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1401027960,
+                                    "ups": 1,
+                                    "comment": "It was brilliant in the early days, but it has been awful ever since MacFarlane said he wanted to end it, and that was four-five years ago.",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230346880
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 3893089,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400996976,
+                            "ups": 2,
+                            "comment": "I recently went back on watched the first season or two, and consistently laughed my ass off.  It used to be so much funnier.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230192260
+                        },
+                        {
+                            "id": 230229265,
+                            "author": "LoopNaai",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 2,
+                            "author_id": 6622640,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400978600,
+                            "ups": 4,
+                            "comment": "Ok.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230192260
+                        }
+                    ],
+                    "downs": 7,
+                    "author_id": 757662,
+                    "points": 32,
+                    "on_album": false,
+                    "datetime": 1400972475,
+                    "ups": 39,
+                    "comment": "Family Guy is terrible.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230190883,
+                    "author": "RadicalElation",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 2945419,
+                    "points": 14,
+                    "on_album": false,
+                    "datetime": 1400972268,
+                    "ups": 15,
+                    "comment": "100% agree. While I believe Family Guy is a smarter show than it used to be, American Dad just has way more laughs. Love it.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230192809,
+                    "author": "ScottMescudi",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230196781,
+                            "author": "AnthonyNapkins",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230229058,
+                                    "author": "LoopNaai",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 6622640,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400978573,
+                                    "ups": 2,
+                                    "comment": "So 23 years then...pretty awesome if you ask me.",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230196781
+                                }
+                            ],
+                            "downs": 1,
+                            "author_id": 1507727,
+                            "points": 10,
+                            "on_album": false,
+                            "datetime": 1400973231,
+                            "ups": 11,
+                            "comment": "the simpsons had about 10 years of awesome (a very long time for a TV show) 3 years of meh, and about 10 years of crap",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230192809
+                        },
+                        {
+                            "id": 230199511,
+                            "author": "kerms",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230347147,
+                                    "author": "TartuffeTheSpryWonderDog",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230400739,
+                                            "author": "kerms",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230453362,
+                                                    "author": "TartuffeTheSpryWonderDog",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 3893089,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1401027209,
+                                                    "ups": 1,
+                                                    "comment": "Oh, the new episodes.  That's true, definitely a bit here and there for sure.  I forget about the new ones sometimes.",
+                                                    "deleted": false,
+                                                    "image_id": "ABhGn9x",
+                                                    "parent_id": 230400739
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 4433969,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1401009928,
+                                            "ups": 1,
+                                            "comment": "Seriously though, how much of the new Futurama episodes do you think catered much of its humor to reddit, knowing how huge they're into it?",
+                                            "deleted": false,
+                                            "image_id": "ABhGn9x",
+                                            "parent_id": 230347147
+                                        }
+                                    ],
+                                    "downs": 1,
+                                    "author_id": 3893089,
+                                    "points": 0,
+                                    "on_album": false,
+                                    "datetime": 1400997019,
+                                    "ups": 1,
+                                    "comment": "Strike that, reverse it.",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230199511
+                                }
+                            ],
+                            "downs": 2,
+                            "author_id": 4433969,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1400973703,
+                            "ups": 5,
+                            "comment": "Futurama panders to reddit humor.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230192809
+                        },
+                        {
+                            "id": 230192884,
+                            "author": "ScottMescudi",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 1,
+                            "author_id": 10029324,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400972586,
+                            "ups": 2,
+                            "comment": "*Simpsons.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230192809
+                        },
+                        {
+                            "id": 230415517,
+                            "author": "jjabrams",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230423158,
+                                    "author": "WhimsicalTallMan",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 4628574,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1401018177,
+                                    "ups": 1,
+                                    "comment": "You can only keep making the same type of humor and jokes for so long.",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230415517
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 5171346,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401015230,
+                            "ups": 1,
+                            "comment": "* Old Futurama. The new stuff was just awful for the most part.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230192809
+                        }
+                    ],
+                    "downs": 6,
+                    "author_id": 10029324,
+                    "points": 20,
+                    "on_album": false,
+                    "datetime": 1400972574,
+                    "ups": 26,
+                    "comment": "Futurama is better than both, but I guess that'd be more appropriate to compare to the Simpson.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
                     "id": 230189230,
                     "author": "TheThingNoNotThatOne",
                     "vote": null,
@@ -109,13 +889,32 @@
                     "children": [
                         
                     ],
-                    "downs": 0,
+                    "downs": 3,
                     "author_id": 5470671,
-                    "points": 1,
+                    "points": 12,
                     "on_album": false,
                     "datetime": 1400971979,
-                    "ups": 1,
+                    "ups": 15,
                     "comment": "Well, when you set the bar that low....",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230202898,
+                    "author": "ninmonkey",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 913066,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400974313,
+                    "ups": 4,
+                    "comment": "I like American dad, but, I still enjoyed https://www.youtube.com/watch?v=EqdEweB_bWg&feature=kp",
                     "deleted": false,
                     "image_id": "ABhGn9x",
                     "parent_id": 230186350
@@ -128,215 +927,193 @@
                     "children": [
                         
                     ],
-                    "downs": 0,
+                    "downs": 2,
                     "author_id": 5646164,
-                    "points": 1,
+                    "points": 3,
                     "on_album": false,
                     "datetime": 1400971807,
-                    "ups": 1,
+                    "ups": 5,
                     "comment": "One expected downvote for you, my honest, albeit misguided, friend!",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230287063,
+                    "author": "BenjenoftheKingsguard",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230376007,
+                            "author": "SterlingMalloryArcher",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 10917985,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1401002617,
+                            "ups": 2,
+                            "comment": "I fit in right here",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230287063
+                        },
+                        {
+                            "id": 230301751,
+                            "author": "Hemaglox",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230303707,
+                                    "author": "BenjenoftheKingsguard",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 9340344,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400989740,
+                                    "ups": 1,
+                                    "comment": "http://i.imgur.com/cYJwv4n.gif",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230301751
+                                }
+                            ],
+                            "downs": 1,
+                            "author_id": 236452,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400989405,
+                            "ups": 2,
+                            "comment": "Oh my god Archer is the shit. I love that show.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230287063
+                        },
+                        {
+                            "id": 230311888,
+                            "author": "bitterapplepie",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230447662,
+                                    "author": "BenjenoftheKingsguard",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 9340344,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1401025939,
+                                    "ups": 1,
+                                    "comment": "http://i.imgur.com/r9XLQNI.gif?1",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230311888
+                                }
+                            ],
+                            "downs": 3,
+                            "author_id": 6867023,
+                            "points": -2,
+                            "on_album": false,
+                            "datetime": 1400991023,
+                            "ups": 1,
+                            "comment": "in the overrated overshticky bin",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230287063
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 9340344,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400987040,
+                    "ups": 2,
+                    "comment": "Where does Archer fit in this? We should have a poll.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230439439,
+                    "author": "TaelTanaka",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 7809248,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401023944,
+                    "ups": 1,
+                    "comment": "Family Guy killed off Brian momentarily for the shock value. American Dad killed off 100 characters in one episode just for the fuck of it.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230195491,
+                    "author": "thisisnotthelukeyourelookingfor",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 13,
+                    "author_id": 11322775,
+                    "points": -8,
+                    "on_album": false,
+                    "datetime": 1400973010,
+                    "ups": 5,
+                    "comment": "May the downvotes you receive be confirmation that your opinion is indeed unpopular.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230186350
+                },
+                {
+                    "id": 230311654,
+                    "author": "bitterapplepie",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 7,
+                    "author_id": 6867023,
+                    "points": -6,
+                    "on_album": false,
+                    "datetime": 1400990985,
+                    "ups": 1,
+                    "comment": "it's not an unpopular opinion. it is a retarded wrong opinion that is quite popular",
                     "deleted": false,
                     "image_id": "ABhGn9x",
                     "parent_id": 230186350
                 }
             ],
-            "downs": 2,
+            "downs": 19,
             "author_id": 1194947,
-            "points": 5,
+            "points": 91,
             "on_album": false,
             "datetime": 1400971506,
-            "ups": 7,
+            "ups": 110,
             "comment": "Unpopular opinion puffin: American Dad > Family Guy",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230186338,
-            "author": "DoverBoys",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 790152,
-            "points": 2,
-            "on_album": false,
-            "datetime": 1400971504,
-            "ups": 2,
-            "comment": "Context: http://www.kgw.com/lifestyle/health/City-issues-Boil-Water-Alert-for-all-of-Portland-260435871.html",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230188375,
-            "author": "moxymox",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 5646164,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971834,
-            "ups": 1,
-            "comment": "A-O RIVER!",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230187133,
-            "author": "SomethingSomethingDickbutt",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 11600302,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971625,
-            "ups": 1,
-            "comment": "If there's more than three steps, you aren't that hungry",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230186851,
-            "author": "HairyDragon",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 9934352,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971581,
-            "ups": 1,
-            "comment": "Boiling water is actually really easy. First you take the water, put it in a pan, and shoveitupyourbutt.gif",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230186653,
-            "author": "graehall",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 5825860,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971554,
-            "ups": 1,
-            "comment": "He'll have to ORDER IN. And maybe they'll have those little tiny corn!",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230186056,
-            "author": "Neutralmilkjennelle",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 5510628,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971461,
-            "ups": 1,
-            "comment": "I just drank Kombucha all day.",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230185975,
-            "author": "giantsloar",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 11371789,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971449,
-            "ups": 1,
-            "comment": "Guys the boil alert was just lifted!",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230185867,
-            "author": "Neutralmilkjennelle",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 5510628,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971436,
-            "ups": 1,
-            "comment": "As a Portlander, I was so thirsty yesterday.",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230185792,
-            "author": "srslygetyourshittogether",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 8425504,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971428,
-            "ups": 1,
-            "comment": "hahaha, i thought that was funny too. ok, here's some tips....dont fucking drink the boiling water....",
-            "deleted": false,
-            "image_id": "ABhGn9x",
-            "parent_id": 0
-        },
-        {
-            "id": 230185615,
-            "author": "MakeAllTheThings",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 10664557,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400971409,
-            "ups": 1,
-            "comment": "So I just put my bottle of Evian in the microwave?",
             "deleted": false,
             "image_id": "ABhGn9x",
             "parent_id": 0
@@ -349,13 +1126,442 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 2,
             "author_id": 5494443,
-            "points": 1,
+            "points": 18,
             "on_album": false,
             "datetime": 1400971311,
-            "ups": 1,
+            "ups": 20,
             "comment": "Francine: How's everyone's French toast? Stan: Smelly and ungrateful. But this American toast is delicious!",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230276563,
+            "author": "LooseCannonSpock",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 139977,
+            "points": 5,
+            "on_album": false,
+            "datetime": 1400985580,
+            "ups": 5,
+            "comment": "Cacao",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230185867,
+            "author": "Neutralmilkjennelle",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 5510628,
+            "points": 6,
+            "on_album": false,
+            "datetime": 1400971436,
+            "ups": 8,
+            "comment": "As a Portlander, I was so thirsty yesterday.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230203210,
+            "author": "fullofnerdiness24",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230211775,
+                    "author": "Portlandia",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 3181212,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400975745,
+                    "ups": 3,
+                    "comment": "It sure is",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230203210
+                }
+            ],
+            "downs": 4,
+            "author_id": 6088012,
+            "points": 7,
+            "on_album": false,
+            "datetime": 1400974353,
+            "ups": 11,
+            "comment": "The dream of the 90's is alive in Portland.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230226832,
+            "author": "moonbears",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230354776,
+                    "author": "crazyredhead4",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 4435595,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400998266,
+                    "ups": 1,
+                    "comment": "I work at a grocery store in Milwaukie (which wasn't affected) and we also sold out of water. We even had an emergency shipment delivered.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230226832
+                },
+                {
+                    "id": 230229937,
+                    "author": "LoopNaai",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230231539,
+                            "author": "moonbears",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1610421,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400978942,
+                            "ups": 1,
+                            "comment": "portland'a water had e. coli in it. there was a boil water warning city wide.",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230229937
+                        },
+                        {
+                            "id": 230230915,
+                            "author": "moonbears",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230235070,
+                                    "author": "LoopNaai",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 6622640,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400979446,
+                                    "ups": 1,
+                                    "comment": "Wot?",
+                                    "deleted": false,
+                                    "image_id": "ABhGn9x",
+                                    "parent_id": 230230915
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 1610421,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400978848,
+                            "ups": 1,
+                            "comment": "...wat?",
+                            "deleted": false,
+                            "image_id": "ABhGn9x",
+                            "parent_id": 230229937
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 6622640,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400978696,
+                    "ups": 1,
+                    "comment": "Wut?",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230226832
+                }
+            ],
+            "downs": 1,
+            "author_id": 1610421,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400978224,
+            "ups": 4,
+            "comment": "i work at a grocery store in portland and our water sold out in an hour because people are too lazy to boil water.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230188375,
+            "author": "moxymox",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230337166,
+                    "author": "yourspellingisbadandyoushouldfeelbad",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6087914,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400995165,
+                    "ups": 2,
+                    "comment": "this is good",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230188375
+                }
+            ],
+            "downs": 1,
+            "author_id": 5646164,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400971834,
+            "ups": 3,
+            "comment": "A-O RIVER!",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230189893,
+            "author": "TheThingNoNotThatOne",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230190994,
+                    "author": "EpicLevelDumbass",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 6078021,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400972286,
+                    "ups": 5,
+                    "comment": "And it would stop fucking happening if they'd put a roof over the damn thing so birds stop shitting in it.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230189893
+                },
+                {
+                    "id": 230391013,
+                    "author": "Hashbrown123",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 9041094,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401006650,
+                    "ups": 1,
+                    "comment": "My town used to get them every other year.  We found out the local dog track had been burying their dead dogs right next to the reservoir.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230189893
+                }
+            ],
+            "downs": 3,
+            "author_id": 5470671,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400972115,
+            "ups": 4,
+            "comment": "Apparently Portland had an e. coli outbreak in it's water supply",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230185615,
+            "author": "MakeAllTheThings",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230336875,
+                    "author": "yourspellingisbadandyoushouldfeelbad",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6087914,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400995115,
+                    "ups": 1,
+                    "comment": "throw it in a klean kanteen first, microwaving plastic is no bueno",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230185615
+                }
+            ],
+            "downs": 3,
+            "author_id": 10664557,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400971409,
+            "ups": 4,
+            "comment": "So I just put my bottle of Evian in the microwave?",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230214091,
+            "author": "siler7",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230353111,
+                    "author": "redbacardi",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1824806,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400997985,
+                    "ups": 2,
+                    "comment": "ha ha, you know a couple of radio djs got into a bit of trouble over that bit.",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230214091
+                }
+            ],
+            "downs": 2,
+            "author_id": 11755888,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400976177,
+            "ups": 3,
+            "comment": "boiling water releases gaseous dihydrogen monoxide, which is commonly found in pesticides, disinfectants, and cancerous tumors",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230228614,
+            "author": "LoopNaai",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 6622640,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400978504,
+            "ups": 2,
+            "comment": "Ok.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230187133,
+            "author": "SomethingSomethingDickbutt",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 11600302,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400971625,
+            "ups": 2,
+            "comment": "If there's more than three steps, you aren't that hungry",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230186653,
+            "author": "graehall",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 5825860,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400971554,
+            "ups": 2,
+            "comment": "He'll have to ORDER IN. And maybe they'll have those little tiny corn!",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230185975,
+            "author": "giantsloar",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 11371789,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400971449,
+            "ups": 2,
+            "comment": "Guys the boil alert was just lifted!",
             "deleted": false,
             "image_id": "ABhGn9x",
             "parent_id": 0
@@ -368,13 +1574,108 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 6567401,
             "points": 1,
             "on_album": false,
             "datetime": 1400971289,
-            "ups": 1,
+            "ups": 2,
             "comment": "That fishes expression is my expression",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230376850,
+            "author": "Chickenpots",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11264362,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401002838,
+            "ups": 1,
+            "comment": "This is how i feel when i read the directions to a food recipe.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230373691,
+            "author": "blaineevans",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1176713,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401002048,
+            "ups": 1,
+            "comment": "This is my favorite line in American Dad, period.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230332795,
+            "author": "Alindz99",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1077150,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400994347,
+            "ups": 1,
+            "comment": "Science, Bitch.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230260603,
+            "author": "NINJACOCK",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1460563,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400983202,
+            "ups": 1,
+            "comment": "OREGONIANS UNITE!",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230259271,
+            "author": "Menmenmen",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 8215146,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400982986,
+            "ups": 1,
+            "comment": "Like my own American dad, immediately after the separation.",
             "deleted": false,
             "image_id": "ABhGn9x",
             "parent_id": 0
@@ -387,13 +1688,164 @@
             "children": [
                 
             ],
-            "downs": 1,
+            "downs": 3,
             "author_id": 9268695,
             "points": 0,
             "on_album": false,
             "datetime": 1400971373,
-            "ups": 1,
+            "ups": 3,
             "comment": "Who else though he was going to boil the water in the fish bowl?",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230211946,
+            "author": "yourfatuglywhoremom",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 1273751,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400975777,
+            "ups": 2,
+            "comment": "Roger Smith 4 president",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230190898,
+            "author": "Cyanogenesis",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230230210,
+                    "author": "LoopNaai",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6622640,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400978740,
+                    "ups": 1,
+                    "comment": "Wow",
+                    "deleted": false,
+                    "image_id": "ABhGn9x",
+                    "parent_id": 230190898
+                }
+            ],
+            "downs": 2,
+            "author_id": 4634259,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400972270,
+            "ups": 2,
+            "comment": "This literally just saved my life. I got drunk while macaroni and cheese and....forgot I was making macaroni and cheese.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230190226,
+            "author": "minislip6",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 10354138,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400972168,
+            "ups": 2,
+            "comment": "For a minute there, I thought he was talking about boiling the fishbowl.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230185792,
+            "author": "srslygetyourshittogether",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 8425504,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400971428,
+            "ups": 2,
+            "comment": "hahaha, i thought that was funny too. ok, here's some tips....dont fucking drink the boiling water....",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230206918,
+            "author": "CourtneyRocks",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 9141630,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400974983,
+            "ups": 1,
+            "comment": "Yeah I didn't see that til way to late. But I ate enough salt yesterday to kill a lesser woman, I should be fine  ;-)",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230186056,
+            "author": "Neutralmilkjennelle",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 5510628,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400971461,
+            "ups": 1,
+            "comment": "I just drank Kombucha all day.",
+            "deleted": false,
+            "image_id": "ABhGn9x",
+            "parent_id": 0
+        },
+        {
+            "id": 230202073,
+            "author": "UnofficialBadass",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 810063,
+            "points": -1,
+            "on_album": false,
+            "datetime": 1400974175,
+            "ups": 1,
+            "comment": "Maine. Portland, Oregoners are hippies.",
             "deleted": false,
             "image_id": "ABhGn9x",
             "parent_id": 0

@@ -17,10 +17,10 @@
                     ],
                     "downs": 0,
                     "author_id": 1342568,
-                    "points": 60,
+                    "points": 89,
                     "on_album": false,
                     "datetime": 1400944873,
-                    "ups": 60,
+                    "ups": 89,
                     "comment": "http://i.imgur.com/429rGHq.gif",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -33,6 +33,25 @@
                     "album_cover": null,
                     "children": [
                         {
+                            "id": 230246089,
+                            "author": "thegr8rambino",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 869452,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400981073,
+                            "ups": 2,
+                            "comment": "it would be weird if you didnt",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230101111
+                        },
+                        {
                             "id": 230128723,
                             "author": "MidwinterSnow",
                             "vote": null,
@@ -42,11 +61,30 @@
                             ],
                             "downs": 0,
                             "author_id": 11364859,
-                            "points": 1,
+                            "points": 2,
                             "on_album": false,
                             "datetime": 1400961872,
-                            "ups": 1,
+                            "ups": 2,
                             "comment": "So did I. Then I laughed like a little girl.",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230101111
+                        },
+                        {
+                            "id": 230410417,
+                            "author": "sVAMP",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 7100183,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401013139,
+                            "ups": 1,
+                            "comment": "Tali Zor'ah Vas Normandy",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 230101111
@@ -54,10 +92,10 @@
                     ],
                     "downs": 1,
                     "author_id": 1610163,
-                    "points": 24,
+                    "points": 33,
                     "on_album": false,
                     "datetime": 1400957251,
-                    "ups": 25,
+                    "ups": 34,
                     "comment": "completely read this in a robotic middle eastern voice",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -83,12 +121,12 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 0,
+                                    "downs": 1,
                                     "author_id": 8950515,
-                                    "points": 7,
+                                    "points": 13,
                                     "on_album": false,
                                     "datetime": 1400964205,
-                                    "ups": 7,
+                                    "ups": 14,
                                     "comment": "Who?",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
@@ -102,36 +140,55 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 1,
+                                    "downs": 2,
                                     "author_id": 4383944,
-                                    "points": 2,
+                                    "points": 6,
                                     "on_album": false,
                                     "datetime": 1400963051,
-                                    "ups": 3,
+                                    "ups": 8,
                                     "comment": "Dude... no... just... no... Doctor Who reference...",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230120311
+                                },
+                                {
+                                    "id": 230249404,
+                                    "author": "Crown8",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 5,
+                                    "author_id": 3384364,
+                                    "points": -4,
+                                    "on_album": false,
+                                    "datetime": 1400981544,
+                                    "ups": 1,
+                                    "comment": "Nope, a gay reference to Doctor Who.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230120311
                                 }
                             ],
-                            "downs": 1,
+                            "downs": 4,
                             "author_id": 4477058,
-                            "points": 2,
+                            "points": 1,
                             "on_album": false,
                             "datetime": 1400960554,
-                            "ups": 3,
+                            "ups": 5,
                             "comment": "C&C reference?",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 230108200
                         }
                     ],
-                    "downs": 1,
+                    "downs": 2,
                     "author_id": 8950515,
-                    "points": 15,
+                    "points": 26,
                     "on_album": false,
                     "datetime": 1400958441,
-                    "ups": 16,
+                    "ups": 28,
                     "comment": "\"Ex...ter...minate!!\"",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -147,11 +204,30 @@
                     ],
                     "downs": 0,
                     "author_id": 1954811,
-                    "points": 9,
+                    "points": 14,
                     "on_album": false,
                     "datetime": 1400959033,
-                    "ups": 9,
+                    "ups": 14,
                     "comment": "\"By your command.\"",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959706
+                },
+                {
+                    "id": 230132371,
+                    "author": "CommanderNinjaOfTheNormandy",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 8345157,
+                    "points": 9,
+                    "on_album": false,
+                    "datetime": 1400962458,
+                    "ups": 9,
+                    "comment": "\"Michael, I have Identified three infidels that the police would like for questioning\" \"Good work Kitt\"",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959706
@@ -166,11 +242,30 @@
                     ],
                     "downs": 0,
                     "author_id": 10641151,
-                    "points": 5,
+                    "points": 6,
                     "on_album": false,
                     "datetime": 1400964342,
-                    "ups": 5,
+                    "ups": 6,
                     "comment": "LOLLLLL I actually laughed out loud. +1",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959706
+                },
+                {
+                    "id": 230115070,
+                    "author": "tacocat",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 436257,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400959675,
+                    "ups": 3,
+                    "comment": "Resistance is futile, Starbuck.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959706
@@ -209,10 +304,10 @@
                                                     ],
                                                     "downs": 0,
                                                     "author_id": 129580,
-                                                    "points": 1,
+                                                    "points": 2,
                                                     "on_album": false,
                                                     "datetime": 1400958888,
-                                                    "ups": 1,
+                                                    "ups": 2,
                                                     "comment": "Does that mean if I downvote I'll support Kony?",
                                                     "deleted": false,
                                                     "image_id": "W1K5Qya",
@@ -221,10 +316,10 @@
                                             ],
                                             "downs": 0,
                                             "author_id": 10541281,
-                                            "points": 2,
+                                            "points": 3,
                                             "on_album": false,
                                             "datetime": 1400958836,
-                                            "ups": 2,
+                                            "ups": 3,
                                             "comment": "aw, but upvotes can save little children in Africa :(",
                                             "deleted": false,
                                             "image_id": "W1K5Qya",
@@ -233,10 +328,10 @@
                                     ],
                                     "downs": 1,
                                     "author_id": 129580,
-                                    "points": 1,
+                                    "points": 2,
                                     "on_album": false,
                                     "datetime": 1400958796,
-                                    "ups": 2,
+                                    "ups": 3,
                                     "comment": "I don't find too many things interesting.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
@@ -245,10 +340,10 @@
                             ],
                             "downs": 0,
                             "author_id": 10541281,
-                            "points": 2,
+                            "points": 3,
                             "on_album": false,
                             "datetime": 1400958593,
-                            "ups": 2,
+                            "ups": 3,
                             "comment": "Why the hell not?",
                             "deleted": false,
                             "image_id": "W1K5Qya",
@@ -267,39 +362,58 @@
                     "parent_id": 229959706
                 },
                 {
-                    "id": 230132371,
-                    "author": "CommanderNinjaOfTheNormandy",
+                    "id": 230260075,
+                    "author": "HaraDaya",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 8345157,
-                    "points": 2,
+                    "author_id": 7444391,
+                    "points": 1,
                     "on_album": false,
-                    "datetime": 1400962458,
-                    "ups": 2,
-                    "comment": "\"Michael, I have Identified three infidels that the police would like for questioning\" \"Good work Kitt\"",
+                    "datetime": 1400983120,
+                    "ups": 1,
+                    "comment": "This better be the caption when it gets reposted.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959706
                 },
                 {
-                    "id": 230115070,
-                    "author": "tacocat",
+                    "id": 230244688,
+                    "author": "thegr8rambino",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 436257,
-                    "points": 2,
+                    "author_id": 869452,
+                    "points": 1,
                     "on_album": false,
-                    "datetime": 1400959675,
-                    "ups": 2,
-                    "comment": "Resistance is futile, Starbuck.",
+                    "datetime": 1400980876,
+                    "ups": 1,
+                    "comment": "AHAHAHHAAHHAAH",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959706
+                },
+                {
+                    "id": 230220970,
+                    "author": "lalalalalalalalaimgurrrrr",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 5138019,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400977333,
+                    "ups": 1,
+                    "comment": "I went to the next image but had to come back and upvote lol",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959706
@@ -343,13 +457,32 @@
                     "parent_id": 229959706
                 }
             ],
-            "downs": 10,
+            "downs": 16,
             "author_id": 246910,
-            "points": 746,
+            "points": 1287,
             "on_album": false,
             "datetime": 1400925625,
-            "ups": 756,
+            "ups": 1303,
             "comment": "\"Scanning for Infidels\".",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230110525,
+            "author": "SihayaOfTheAllPowerfulMeh",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7859648,
+            "points": 42,
+            "on_album": false,
+            "datetime": 1400958854,
+            "ups": 42,
+            "comment": "Frakkin toasters",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -374,24 +507,24 @@
                             "children": [
                                 
                             ],
-                            "downs": 7,
+                            "downs": 8,
                             "author_id": 155843,
-                            "points": -4,
+                            "points": 2,
                             "on_album": false,
                             "datetime": 1400962429,
-                            "ups": 3,
+                            "ups": 10,
                             "comment": "cri dis if u lyk evry tym",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 230103007
                         }
                     ],
-                    "downs": 2,
+                    "downs": 4,
                     "author_id": 11312020,
-                    "points": 44,
+                    "points": 85,
                     "on_album": false,
                     "datetime": 1400957584,
-                    "ups": 46,
+                    "ups": 89,
                     "comment": "because it's a repost T_T",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -403,6 +536,25 @@
                     "vote": null,
                     "album_cover": null,
                     "children": [
+                        {
+                            "id": 230097412,
+                            "author": "Weeabooninja",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 1,
+                            "author_id": 4703517,
+                            "points": 13,
+                            "on_album": false,
+                            "datetime": 1400956582,
+                            "ups": 14,
+                            "comment": "Your wife is secretly a robot? That's a paddlin'",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 229963135
+                        },
                         {
                             "id": 229991878,
                             "author": "coolfield7",
@@ -425,10 +577,10 @@
                                             ],
                                             "downs": 2,
                                             "author_id": 3199726,
-                                            "points": 6,
+                                            "points": 8,
                                             "on_album": false,
                                             "datetime": 1400956433,
-                                            "ups": 8,
+                                            "ups": 10,
                                             "comment": "I agree. As a white, middle class European Christian, I feel Islam gets too much stick",
                                             "deleted": false,
                                             "image_id": "W1K5Qya",
@@ -444,10 +596,10 @@
                                             ],
                                             "downs": 3,
                                             "author_id": 5860405,
-                                            "points": 6,
+                                            "points": 7,
                                             "on_album": false,
                                             "datetime": 1400950462,
-                                            "ups": 9,
+                                            "ups": 10,
                                             "comment": "Thanks so much man!",
                                             "deleted": false,
                                             "image_id": "W1K5Qya",
@@ -456,10 +608,10 @@
                                     ],
                                     "downs": 5,
                                     "author_id": 1345903,
-                                    "points": 13,
+                                    "points": 17,
                                     "on_album": false,
                                     "datetime": 1400950230,
-                                    "ups": 18,
+                                    "ups": 22,
                                     "comment": "Wow, dude! That's amazing! You should resubmit that. That's front page worthy imo.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
@@ -471,25 +623,6 @@
                                     "vote": null,
                                     "album_cover": null,
                                     "children": [
-                                        {
-                                            "id": 230105788,
-                                            "author": "CerebrawlHemmorage",
-                                            "vote": null,
-                                            "album_cover": null,
-                                            "children": [
-                                                
-                                            ],
-                                            "downs": 3,
-                                            "author_id": 3777108,
-                                            "points": 1,
-                                            "on_album": false,
-                                            "datetime": 1400958029,
-                                            "ups": 4,
-                                            "comment": "Here's a video explaining why: https://www.youtube.com/watch?v=d8c38_46W5c",
-                                            "deleted": false,
-                                            "image_id": "W1K5Qya",
-                                            "parent_id": 230105629
-                                        },
                                         {
                                             "id": 230162815,
                                             "author": "CanadiansWillRule",
@@ -504,9 +637,9 @@
                                                     "children": [
                                                         
                                                     ],
-                                                    "downs": 1,
+                                                    "downs": 3,
                                                     "author_id": 3777108,
-                                                    "points": 1,
+                                                    "points": -1,
                                                     "on_album": false,
                                                     "datetime": 1400968462,
                                                     "ups": 2,
@@ -540,25 +673,6 @@
                                                                             "album_cover": null,
                                                                             "children": [
                                                                                 {
-                                                                                    "id": 230171590,
-                                                                                    "author": "CerebrawlHemmorage",
-                                                                                    "vote": null,
-                                                                                    "album_cover": null,
-                                                                                    "children": [
-                                                                                        
-                                                                                    ],
-                                                                                    "downs": 0,
-                                                                                    "author_id": 3777108,
-                                                                                    "points": 1,
-                                                                                    "on_album": false,
-                                                                                    "datetime": 1400968935,
-                                                                                    "ups": 1,
-                                                                                    "comment": "So what part did you disagree with? The violent passages being placed in the later parts of the koran?",
-                                                                                    "deleted": false,
-                                                                                    "image_id": "W1K5Qya",
-                                                                                    "parent_id": 230170531
-                                                                                },
-                                                                                {
                                                                                     "id": 230172880,
                                                                                     "author": "CerebrawlHemmorage",
                                                                                     "vote": null,
@@ -566,13 +680,32 @@
                                                                                     "children": [
                                                                                         
                                                                                     ],
-                                                                                    "downs": 1,
+                                                                                    "downs": 2,
                                                                                     "author_id": 3777108,
                                                                                     "points": 0,
                                                                                     "on_album": false,
                                                                                     "datetime": 1400969155,
-                                                                                    "ups": 1,
+                                                                                    "ups": 2,
                                                                                     "comment": "Mohammed spoke of being nice when islam was new and his followers few, and then of violence when he had many followers.",
+                                                                                    "deleted": false,
+                                                                                    "image_id": "W1K5Qya",
+                                                                                    "parent_id": 230170531
+                                                                                },
+                                                                                {
+                                                                                    "id": 230171590,
+                                                                                    "author": "CerebrawlHemmorage",
+                                                                                    "vote": null,
+                                                                                    "album_cover": null,
+                                                                                    "children": [
+                                                                                        
+                                                                                    ],
+                                                                                    "downs": 2,
+                                                                                    "author_id": 3777108,
+                                                                                    "points": -1,
+                                                                                    "on_album": false,
+                                                                                    "datetime": 1400968935,
+                                                                                    "ups": 1,
+                                                                                    "comment": "So what part did you disagree with? The violent passages being placed in the later parts of the koran?",
                                                                                     "deleted": false,
                                                                                     "image_id": "W1K5Qya",
                                                                                     "parent_id": 230170531
@@ -592,10 +725,10 @@
                                                                     ],
                                                                     "downs": 0,
                                                                     "author_id": 3777108,
-                                                                    "points": 2,
+                                                                    "points": 3,
                                                                     "on_album": false,
                                                                     "datetime": 1400968658,
-                                                                    "ups": 2,
+                                                                    "ups": 3,
                                                                     "comment": "http://en.wikipedia.org/wiki/Naskh_(tafsir)",
                                                                     "deleted": false,
                                                                     "image_id": "W1K5Qya",
@@ -604,19 +737,19 @@
                                                             ],
                                                             "downs": 1,
                                                             "author_id": 7833965,
-                                                            "points": 0,
+                                                            "points": 2,
                                                             "on_album": false,
                                                             "datetime": 1400968568,
-                                                            "ups": 1,
+                                                            "ups": 3,
                                                             "comment": "I can't handle how ignorant this comment is",
                                                             "deleted": false,
                                                             "image_id": "W1K5Qya",
                                                             "parent_id": 230168365
                                                         }
                                                     ],
-                                                    "downs": 1,
+                                                    "downs": 3,
                                                     "author_id": 3777108,
-                                                    "points": 1,
+                                                    "points": -1,
                                                     "on_album": false,
                                                     "datetime": 1400968400,
                                                     "ups": 2,
@@ -628,23 +761,61 @@
                                             ],
                                             "downs": 2,
                                             "author_id": 7833965,
-                                            "points": 0,
+                                            "points": 2,
                                             "on_album": false,
                                             "datetime": 1400967509,
-                                            "ups": 2,
+                                            "ups": 4,
                                             "comment": "The qu'ran was NOT intended to be applied the way extremists apply it.",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230105629
+                                        },
+                                        {
+                                            "id": 230105788,
+                                            "author": "CerebrawlHemmorage",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 3,
+                                            "author_id": 3777108,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400958029,
+                                            "ups": 4,
+                                            "comment": "Here's a video explaining why: https://www.youtube.com/watch?v=d8c38_46W5c",
                                             "deleted": false,
                                             "image_id": "W1K5Qya",
                                             "parent_id": 230105629
                                         }
                                     ],
-                                    "downs": 3,
+                                    "downs": 7,
                                     "author_id": 3777108,
-                                    "points": 7,
+                                    "points": 4,
                                     "on_album": false,
                                     "datetime": 1400958004,
-                                    "ups": 10,
+                                    "ups": 11,
                                     "comment": "I really wish the moderates' views would encompass islam. Unfortunately they don't, and the extremists follow the koran as it was intended.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 229991878
+                                },
+                                {
+                                    "id": 230265682,
+                                    "author": "NegroCommunity",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 1509030,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400984015,
+                                    "ups": 2,
+                                    "comment": "That has no where as many views as it should",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 229991878
@@ -659,10 +830,10 @@
                                     ],
                                     "downs": 1,
                                     "author_id": 5416041,
-                                    "points": 1,
+                                    "points": 2,
                                     "on_album": false,
                                     "datetime": 1400968262,
-                                    "ups": 2,
+                                    "ups": 3,
                                     "comment": "Thanks man. Not a lot of people know this and think the worst of us based off of stereotypes. JazakAllah Khair",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
@@ -671,30 +842,11 @@
                             ],
                             "downs": 9,
                             "author_id": 5860405,
-                            "points": 19,
+                            "points": 28,
                             "on_album": false,
                             "datetime": 1400936633,
-                            "ups": 28,
+                            "ups": 37,
                             "comment": "http://imgur.com/gallery/3JZZC",
-                            "deleted": false,
-                            "image_id": "W1K5Qya",
-                            "parent_id": 229963135
-                        },
-                        {
-                            "id": 230097412,
-                            "author": "Weeabooninja",
-                            "vote": null,
-                            "album_cover": null,
-                            "children": [
-                                
-                            ],
-                            "downs": 1,
-                            "author_id": 4703517,
-                            "points": 8,
-                            "on_album": false,
-                            "datetime": 1400956582,
-                            "ups": 9,
-                            "comment": "Your wife is secretly a robot? That's a paddlin'",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 229963135
@@ -706,6 +858,43 @@
                             "album_cover": null,
                             "children": [
                                 {
+                                    "id": 230194543,
+                                    "author": "moshthun",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230387590,
+                                            "author": "CerebrawlHemmorage",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 3,
+                                            "author_id": 3777108,
+                                            "points": -1,
+                                            "on_album": false,
+                                            "datetime": 1401005708,
+                                            "ups": 2,
+                                            "comment": "That's because it allows you to beat them, rule by fear.",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230194543
+                                        }
+                                    ],
+                                    "downs": 1,
+                                    "author_id": 9469848,
+                                    "points": 5,
+                                    "on_album": false,
+                                    "datetime": 1400972845,
+                                    "ups": 6,
+                                    "comment": "Yeah, you get bacon, we get more wives. Ours don't complain that much.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230119726
+                                },
+                                {
                                     "id": 230123404,
                                     "author": "Vlexis",
                                     "vote": null,
@@ -713,25 +902,63 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 2,
+                                    "downs": 3,
                                     "author_id": 1889001,
-                                    "points": 3,
+                                    "points": 4,
                                     "on_album": false,
                                     "datetime": 1400961047,
-                                    "ups": 5,
+                                    "ups": 7,
                                     "comment": "They do have their similarities, and from a historical perspective that makes a lot of sense.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230119726
+                                },
+                                {
+                                    "id": 230237251,
+                                    "author": "Probyn",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 3,
+                                    "author_id": 1640979,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400979761,
+                                    "ups": 4,
+                                    "comment": "Yeah pretty much, both are retarded.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230119726
                                 }
                             ],
-                            "downs": 3,
+                            "downs": 5,
                             "author_id": 5008887,
-                            "points": 8,
+                            "points": 12,
                             "on_album": false,
                             "datetime": 1400960461,
-                            "ups": 11,
+                            "ups": 17,
                             "comment": "So it's a lot like Christianity?",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 229963135
+                        },
+                        {
+                            "id": 230353915,
+                            "author": "ABCDEFGHIJKLMNOPsucksQRSTUVWXYZ",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 5464566,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400998126,
+                            "ups": 2,
+                            "comment": "even not making a sin is a sin",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 229963135
@@ -756,36 +983,55 @@
                                             "children": [
                                                 
                                             ],
-                                            "downs": 1,
+                                            "downs": 4,
                                             "author_id": 9802283,
-                                            "points": 1,
+                                            "points": -1,
                                             "on_album": false,
                                             "datetime": 1400965528,
-                                            "ups": 2,
+                                            "ups": 3,
                                             "comment": "Not really. Okey, maybe. I guess it's going to be classified.",
                                             "deleted": false,
                                             "image_id": "W1K5Qya",
                                             "parent_id": 230096173
                                         }
                                     ],
-                                    "downs": 7,
+                                    "downs": 8,
                                     "author_id": 1498522,
-                                    "points": 11,
+                                    "points": 16,
                                     "on_album": false,
                                     "datetime": 1400956353,
-                                    "ups": 18,
+                                    "ups": 24,
                                     "comment": "Or, maybe, he made a joke.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 229982698
+                                },
+                                {
+                                    "id": 230237497,
+                                    "author": "Probyn",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 6,
+                                    "author_id": 1640979,
+                                    "points": -2,
+                                    "on_album": false,
+                                    "datetime": 1400979797,
+                                    "ups": 4,
+                                    "comment": "I know it's a religion with zealous followers, that is enough to know it's bad for humanity.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 229982698
                                 }
                             ],
-                            "downs": 25,
+                            "downs": 30,
                             "author_id": 9802283,
-                            "points": -5,
+                            "points": -7,
                             "on_album": false,
                             "datetime": 1400934013,
-                            "ups": 20,
+                            "ups": 23,
                             "comment": "I guess you don't know much about Islam.",
                             "deleted": false,
                             "image_id": "W1K5Qya",
@@ -819,10 +1065,10 @@
                                                     ],
                                                     "downs": 0,
                                                     "author_id": 3383560,
-                                                    "points": 14,
+                                                    "points": 16,
                                                     "on_album": false,
                                                     "datetime": 1400956915,
-                                                    "ups": 14,
+                                                    "ups": 16,
                                                     "comment": "You're making no sense at all..",
                                                     "deleted": false,
                                                     "image_id": "W1K5Qya",
@@ -857,10 +1103,10 @@
                                                     ],
                                                     "downs": 0,
                                                     "author_id": 3467029,
-                                                    "points": 5,
+                                                    "points": 6,
                                                     "on_album": false,
                                                     "datetime": 1400958776,
-                                                    "ups": 5,
+                                                    "ups": 6,
                                                     "comment": "U wot",
                                                     "deleted": false,
                                                     "image_id": "W1K5Qya",
@@ -876,10 +1122,10 @@
                                                     ],
                                                     "downs": 0,
                                                     "author_id": 10682215,
-                                                    "points": 4,
+                                                    "points": 5,
                                                     "on_album": false,
                                                     "datetime": 1400958423,
-                                                    "ups": 4,
+                                                    "ups": 5,
                                                     "comment": "The amount of people taking you seriously is astounding",
                                                     "deleted": false,
                                                     "image_id": "W1K5Qya",
@@ -895,19 +1141,19 @@
                                                     ],
                                                     "downs": 2,
                                                     "author_id": 4423883,
-                                                    "points": 0,
+                                                    "points": 1,
                                                     "on_album": false,
                                                     "datetime": 1400957594,
-                                                    "ups": 2,
+                                                    "ups": 3,
                                                     "comment": "You're an ignorant buffoon... You think all Muslims are \"out to get us\"? There are extremists in every religion dipshit",
                                                     "deleted": false,
                                                     "image_id": "W1K5Qya",
                                                     "parent_id": 230052874
                                                 }
                                             ],
-                                            "downs": 24,
+                                            "downs": 26,
                                             "author_id": 1157325,
-                                            "points": -19,
+                                            "points": -21,
                                             "on_album": false,
                                             "datetime": 1400948925,
                                             "ups": 5,
@@ -919,10 +1165,10 @@
                                     ],
                                     "downs": 0,
                                     "author_id": 1492744,
-                                    "points": 25,
+                                    "points": 29,
                                     "on_album": false,
                                     "datetime": 1400933317,
-                                    "ups": 25,
+                                    "ups": 29,
                                     "comment": "Islam's not a country.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
@@ -938,19 +1184,19 @@
                                     ],
                                     "downs": 1,
                                     "author_id": 8308815,
-                                    "points": 0,
+                                    "points": 2,
                                     "on_album": false,
                                     "datetime": 1400969153,
-                                    "ups": 1,
+                                    "ups": 3,
                                     "comment": "There are over a billion Muslims all over the world",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 229979044
                                 }
                             ],
-                            "downs": 37,
+                            "downs": 41,
                             "author_id": 1157325,
-                            "points": -34,
+                            "points": -38,
                             "on_album": false,
                             "datetime": 1400932757,
                             "ups": 3,
@@ -960,32 +1206,13 @@
                             "parent_id": 229963135
                         }
                     ],
-                    "downs": 34,
+                    "downs": 42,
                     "author_id": 1640979,
-                    "points": 94,
+                    "points": 129,
                     "on_album": false,
                     "datetime": 1400926975,
-                    "ups": 128,
+                    "ups": 171,
                     "comment": "Because everything is a sin in Islam.",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 229959055
-                },
-                {
-                    "id": 230101507,
-                    "author": "driveslow",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 9412047,
-                    "points": 4,
-                    "on_album": false,
-                    "datetime": 1400957331,
-                    "ups": 4,
-                    "comment": "Because robot sentience is scary bro.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959055
@@ -1010,13 +1237,32 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 1,
+                                    "downs": 2,
                                     "author_id": 5254596,
-                                    "points": 6,
+                                    "points": 9,
                                     "on_album": false,
                                     "datetime": 1400963559,
-                                    "ups": 7,
+                                    "ups": 11,
                                     "comment": "Extremists. You know who \"they\" are.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230096608
+                                },
+                                {
+                                    "id": 230152423,
+                                    "author": "talibanter",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 11162152,
+                                    "points": 3,
+                                    "on_album": false,
+                                    "datetime": 1400965792,
+                                    "ups": 3,
+                                    "comment": "GOD! ever heard of anaphoric referencing. JESUS CHRIST THESE PEOPLE",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230096608
@@ -1029,13 +1275,32 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 1,
+                                    "downs": 2,
                                     "author_id": 392800,
                                     "points": 4,
                                     "on_album": false,
                                     "datetime": 1400957326,
-                                    "ups": 5,
+                                    "ups": 6,
                                     "comment": "exactly",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230096608
+                                },
+                                {
+                                    "id": 230137030,
+                                    "author": "tarataqa",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 1,
+                                    "author_id": 155843,
+                                    "points": 3,
+                                    "on_album": false,
+                                    "datetime": 1400963209,
+                                    "ups": 4,
+                                    "comment": "robot wives",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230096608
@@ -1058,52 +1323,14 @@
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230096608
-                                },
-                                {
-                                    "id": 230152423,
-                                    "author": "talibanter",
-                                    "vote": null,
-                                    "album_cover": null,
-                                    "children": [
-                                        
-                                    ],
-                                    "downs": 0,
-                                    "author_id": 11162152,
-                                    "points": 2,
-                                    "on_album": false,
-                                    "datetime": 1400965792,
-                                    "ups": 2,
-                                    "comment": "GOD! ever heard of anaphoric referencing. JESUS CHRIST THESE PEOPLE",
-                                    "deleted": false,
-                                    "image_id": "W1K5Qya",
-                                    "parent_id": 230096608
-                                },
-                                {
-                                    "id": 230137030,
-                                    "author": "tarataqa",
-                                    "vote": null,
-                                    "album_cover": null,
-                                    "children": [
-                                        
-                                    ],
-                                    "downs": 1,
-                                    "author_id": 155843,
-                                    "points": 2,
-                                    "on_album": false,
-                                    "datetime": 1400963209,
-                                    "ups": 3,
-                                    "comment": "robot wives",
-                                    "deleted": false,
-                                    "image_id": "W1K5Qya",
-                                    "parent_id": 230096608
                                 }
                             ],
-                            "downs": 7,
+                            "downs": 8,
                             "author_id": 1325005,
                             "points": 8,
                             "on_album": false,
                             "datetime": 1400956428,
-                            "ups": 15,
+                            "ups": 16,
                             "comment": "Who's \"them\"?",
                             "deleted": false,
                             "image_id": "W1K5Qya",
@@ -1123,12 +1350,12 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 1,
+                                    "downs": 3,
                                     "author_id": 1391628,
-                                    "points": 5,
+                                    "points": 4,
                                     "on_album": false,
                                     "datetime": 1400958584,
-                                    "ups": 6,
+                                    "ups": 7,
                                     "comment": "That's like saying most people are anti-corporate because of Occupy Wall Street.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
@@ -1146,23 +1373,41 @@
                                             "vote": null,
                                             "album_cover": null,
                                             "children": [
-                                                
+                                                {
+                                                    "id": 230396092,
+                                                    "author": "CerebrawlHemmorage",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 3777108,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1401008308,
+                                                    "ups": 1,
+                                                    "comment": "http://www.handbookforinfidels.com/Extremism-in-Mainstream-Islam.html",
+                                                    "deleted": false,
+                                                    "image_id": "W1K5Qya",
+                                                    "parent_id": 230184247
+                                                }
                                             ],
                                             "downs": 0,
                                             "author_id": 7450859,
-                                            "points": 1,
+                                            "points": 2,
                                             "on_album": false,
                                             "datetime": 1400971155,
-                                            "ups": 1,
+                                            "ups": 2,
                                             "comment": "Source?",
                                             "deleted": false,
                                             "image_id": "W1K5Qya",
                                             "parent_id": 230104093
                                         }
                                     ],
-                                    "downs": 8,
+                                    "downs": 9,
                                     "author_id": 3777108,
-                                    "points": -3,
+                                    "points": -4,
                                     "on_album": false,
                                     "datetime": 1400957742,
                                     "ups": 5,
@@ -1172,13 +1417,32 @@
                                     "parent_id": 230103592
                                 }
                             ],
-                            "downs": 14,
+                            "downs": 19,
                             "author_id": 3777108,
-                            "points": -3,
+                            "points": -7,
                             "on_album": false,
                             "datetime": 1400957669,
-                            "ups": 11,
+                            "ups": 12,
                             "comment": "And when they do, there is rejoicing in the streets in islamic countries, so you can't say it's only a few extremists, it's prevailing.",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230024758
+                        },
+                        {
+                            "id": 230354389,
+                            "author": "TrentHatex",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 6706400,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400998199,
+                            "ups": 1,
+                            "comment": "I legitimately said \"ohhhh\" out loud",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 230024758
@@ -1228,9 +1492,9 @@
                                                     "children": [
                                                         
                                                     ],
-                                                    "downs": 1,
+                                                    "downs": 2,
                                                     "author_id": 1391628,
-                                                    "points": 2,
+                                                    "points": 1,
                                                     "on_album": false,
                                                     "datetime": 1400958619,
                                                     "ups": 3,
@@ -1264,9 +1528,9 @@
                                     "parent_id": 230037094
                                 }
                             ],
-                            "downs": 11,
+                            "downs": 13,
                             "author_id": 8737922,
-                            "points": -6,
+                            "points": -8,
                             "on_album": false,
                             "datetime": 1400946227,
                             "ups": 5,
@@ -1276,13 +1540,88 @@
                             "parent_id": 230024758
                         }
                     ],
-                    "downs": 29,
+                    "downs": 39,
                     "author_id": 3253727,
-                    "points": 16,
+                    "points": 21,
                     "on_album": false,
                     "datetime": 1400944113,
-                    "ups": 45,
+                    "ups": 60,
                     "comment": "the slightest insult to islam drives them to blow stuff up",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959055
+                },
+                {
+                    "id": 230101507,
+                    "author": "driveslow",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 9412047,
+                    "points": 5,
+                    "on_album": false,
+                    "datetime": 1400957331,
+                    "ups": 6,
+                    "comment": "Because robot sentience is scary bro.",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959055
+                },
+                {
+                    "id": 230314576,
+                    "author": "SalsaOreos",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1748445,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400991453,
+                    "ups": 3,
+                    "comment": "Because some people forget that not every woman is oppressed into their religious beliefs",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959055
+                },
+                {
+                    "id": 230208433,
+                    "author": "ReductiMat",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230279971,
+                            "author": "PookaDaShiba",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 1,
+                            "author_id": 11029654,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400986048,
+                            "ups": 3,
+                            "comment": "Just islam, hating Christianity and Judaism seems to be ok on here though. :S",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230208433
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 233192,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400975231,
+                    "ups": 3,
+                    "comment": "Totally agree, but we all know it's because we aren't allowed to talk about anyone's religion without being labeled a bigot",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959055
@@ -1295,32 +1634,13 @@
                     "children": [
                         
                     ],
-                    "downs": 0,
+                    "downs": 1,
                     "author_id": 10015984,
-                    "points": 1,
+                    "points": 4,
                     "on_album": false,
                     "datetime": 1400970087,
-                    "ups": 1,
+                    "ups": 5,
                     "comment": "If this is wrong, I don't wanna be right.",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 229959055
-                },
-                {
-                    "id": 230153419,
-                    "author": "eastbayrae",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 128018,
-                    "points": 1,
-                    "on_album": false,
-                    "datetime": 1400965943,
-                    "ups": 1,
-                    "comment": "Because of the watermark.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959055
@@ -1335,23 +1655,302 @@
                     ],
                     "downs": 2,
                     "author_id": 7833965,
-                    "points": 0,
+                    "points": 2,
                     "on_album": false,
                     "datetime": 1400966813,
-                    "ups": 2,
+                    "ups": 4,
                     "comment": "I'm a Muslim, I can't think of anything that would insult anyone, even the crazy Muslims",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229959055
+                },
+                {
+                    "id": 230153419,
+                    "author": "eastbayrae",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 128018,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400965943,
+                    "ups": 2,
+                    "comment": "Because of the watermark.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 229959055
                 }
             ],
-            "downs": 12,
+            "downs": 19,
             "author_id": 8737922,
-            "points": 190,
+            "points": 306,
             "on_album": false,
             "datetime": 1400925362,
-            "ups": 202,
+            "ups": 325,
             "comment": "\u2026. Why would it be wrong?",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 229966714,
+            "author": "Species5009",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230101195,
+                    "author": "driveslow",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230159320,
+                            "author": "Species5009",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230246581,
+                                    "author": "driveslow",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 9412047,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400981138,
+                                    "ups": 1,
+                                    "comment": "No, they're all evil",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230159320
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 6835295,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400966953,
+                            "ups": 2,
+                            "comment": "I think if people knew of Tricia Helfer's hotness the viewing numbers of BSG would rocket to FTL!",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230101195
+                        },
+                        {
+                            "id": 230149105,
+                            "author": "LastNightIThoughtItWasAGoodIdea",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 1,
+                            "author_id": 2854468,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400965191,
+                            "ups": 2,
+                            "comment": "That's because some incults think it's a Knight Rider reference.",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230101195
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 9412047,
+                    "points": 13,
+                    "on_album": false,
+                    "datetime": 1400957270,
+                    "ups": 13,
+                    "comment": "So say we all.  Really I'm surprised that all of the top comments have no reference to bsg.  Maybe they didn't want to relive the feels.",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229966714
+                },
+                {
+                    "id": 230253754,
+                    "author": "boomerang139",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230305180,
+                            "author": "pinklebaboon",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1032604,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400989988,
+                            "ups": 2,
+                            "comment": "Action stations! Action stations! Set condition 1 throughout the ship!",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230253754
+                        },
+                        {
+                            "id": 230268835,
+                            "author": "rookie91",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230345329,
+                                    "author": "AnaximanderBolton",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230345428,
+                                            "author": "AnaximanderBolton",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 417153,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400996720,
+                                            "ups": 1,
+                                            "comment": "Oof them feels. Wasn't ready for them.",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230345329
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 417153,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400996708,
+                                    "ups": 1,
+                                    "comment": "BANG",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230268835
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 5476458,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400984485,
+                            "ups": 1,
+                            "comment": "\"It stopped.\"",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230253754
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 431005,
+                    "points": 6,
+                    "on_album": false,
+                    "datetime": 1400982142,
+                    "ups": 6,
+                    "comment": "SIR. DRADIS CONTACT. 3 CYLON BASESHIPS. THEYRE RIGHT ON TOP OF US. <---season all episode all",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229966714
+                },
+                {
+                    "id": 230199931,
+                    "author": "autonomoussqueegee",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1621649,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400973775,
+                    "ups": 4,
+                    "comment": "SO SAY WE ALL!",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229966714
+                },
+                {
+                    "id": 230137195,
+                    "author": "LurkerinDenial",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6016942,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400963240,
+                    "ups": 2,
+                    "comment": "Careful no to reprogram them into sentient beings...",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229966714
+                },
+                {
+                    "id": 230411377,
+                    "author": "SayidJarrah",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 788811,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401013575,
+                    "ups": 1,
+                    "comment": "So say we all.",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229966714
+                },
+                {
+                    "id": 230391553,
+                    "author": "Hashbrown123",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 9041094,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401006817,
+                    "ups": 1,
+                    "comment": "There must be some way out of here...",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229966714
+                }
+            ],
+            "downs": 5,
+            "author_id": 6835295,
+            "points": 117,
+            "on_album": false,
+            "datetime": 1400928197,
+            "ups": 122,
+            "comment": "So say we all!",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -1372,10 +1971,10 @@
                     ],
                     "downs": 0,
                     "author_id": 246313,
-                    "points": 12,
+                    "points": 16,
                     "on_album": false,
                     "datetime": 1400959349,
-                    "ups": 12,
+                    "ups": 16,
                     "comment": "*BurKITT",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1387,14 +1986,32 @@
                     "vote": null,
                     "album_cover": null,
                     "children": [
-                        
+                        {
+                            "id": 230268673,
+                            "author": "TheNameIsAshHousewares",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 725277,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400984464,
+                            "ups": 1,
+                            "comment": "Battlestar used their tech from K.I.T.T.'s remains...origin stories, yo.",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230150623
+                        }
                     ],
                     "downs": 0,
                     "author_id": 2854468,
-                    "points": 4,
+                    "points": 6,
                     "on_album": false,
                     "datetime": 1400965463,
-                    "ups": 4,
+                    "ups": 6,
                     "comment": "It's a Battlestar Galactica reference, not Knight Rider. Get your series together, yo!",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1410,10 +2027,10 @@
                     ],
                     "downs": 0,
                     "author_id": 621122,
-                    "points": 2,
+                    "points": 3,
                     "on_album": false,
                     "datetime": 1400960119,
-                    "ups": 2,
+                    "ups": 3,
                     "comment": "Scrolled down, seen the \"Michael. .\" Comment. Then understood yours. I tilt my top hat to you!",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1458,125 +2075,13 @@
                     "parent_id": 229964329
                 }
             ],
-            "downs": 6,
+            "downs": 12,
             "author_id": 6863396,
-            "points": 79,
+            "points": 110,
             "on_album": false,
             "datetime": 1400927380,
-            "ups": 85,
+            "ups": 122,
             "comment": "BurKit",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 229966714,
-            "author": "Species5009",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230101195,
-                    "author": "driveslow",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        {
-                            "id": 230149105,
-                            "author": "LastNightIThoughtItWasAGoodIdea",
-                            "vote": null,
-                            "album_cover": null,
-                            "children": [
-                                
-                            ],
-                            "downs": 1,
-                            "author_id": 2854468,
-                            "points": 1,
-                            "on_album": false,
-                            "datetime": 1400965191,
-                            "ups": 2,
-                            "comment": "That's because some incults think it's a Knight Rider reference.",
-                            "deleted": false,
-                            "image_id": "W1K5Qya",
-                            "parent_id": 230101195
-                        },
-                        {
-                            "id": 230159320,
-                            "author": "Species5009",
-                            "vote": null,
-                            "album_cover": null,
-                            "children": [
-                                
-                            ],
-                            "downs": 0,
-                            "author_id": 6835295,
-                            "points": 1,
-                            "on_album": false,
-                            "datetime": 1400966953,
-                            "ups": 1,
-                            "comment": "I think if people knew of Tricia Helfer's hotness the viewing numbers of BSG would rocket to FTL!",
-                            "deleted": false,
-                            "image_id": "W1K5Qya",
-                            "parent_id": 230101195
-                        }
-                    ],
-                    "downs": 0,
-                    "author_id": 9412047,
-                    "points": 10,
-                    "on_album": false,
-                    "datetime": 1400957270,
-                    "ups": 10,
-                    "comment": "So say we all.  Really I'm surprised that all of the top comments have no reference to bsg.  Maybe they didn't want to relive the feels.",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 229966714
-                },
-                {
-                    "id": 230137195,
-                    "author": "LurkerinDenial",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 6016942,
-                    "points": 1,
-                    "on_album": false,
-                    "datetime": 1400963240,
-                    "ups": 1,
-                    "comment": "Careful no to reprogram them into sentient beings...",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 229966714
-                }
-            ],
-            "downs": 4,
-            "author_id": 6835295,
-            "points": 50,
-            "on_album": false,
-            "datetime": 1400928197,
-            "ups": 54,
-            "comment": "So say we all!",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 229958467,
-            "author": "foltzwagon82",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 8,
-            "author_id": 8961351,
-            "points": 42,
-            "on_album": false,
-            "datetime": 1400925112,
-            "ups": 50,
-            "comment": "so so right.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -1599,26 +2104,81 @@
                             "vote": null,
                             "album_cover": null,
                             "children": [
-                                
+                                {
+                                    "id": 230305690,
+                                    "author": "pinklebaboon",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 1032604,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400990069,
+                                    "ups": 1,
+                                    "comment": "Well the original series made by Glen Larson didn't have the same religious themes as the newer series",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230174107
+                                }
                             ],
                             "downs": 0,
                             "author_id": 10843456,
-                            "points": 1,
+                            "points": 4,
                             "on_album": false,
                             "datetime": 1400969348,
-                            "ups": 1,
+                            "ups": 4,
                             "comment": "And before you know it, they nuked everybody. Kind of surprising the series was written by a Mormon.",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230113840
+                        },
+                        {
+                            "id": 230199898,
+                            "author": "MartyMupheLicensedCunnilingusist",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230224912,
+                                    "author": "GlenL",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 246313,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400977925,
+                                    "ups": 2,
+                                    "comment": "Believe it or not, that is my name.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230199898
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 3272597,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400973770,
+                            "ups": 1,
+                            "comment": "Are you... are you the one true Glen Larson?",
                             "deleted": false,
                             "image_id": "W1K5Qya",
                             "parent_id": 230113840
                         }
                     ],
-                    "downs": 1,
+                    "downs": 0,
                     "author_id": 246313,
-                    "points": 11,
+                    "points": 23,
                     "on_album": false,
                     "datetime": 1400959465,
-                    "ups": 12,
+                    "ups": 23,
                     "comment": "That's how it started.  Humans were polytheists, Cylons believed in the \"one true god\"",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1642,7 +2202,25 @@
                                     "vote": null,
                                     "album_cover": null,
                                     "children": [
-                                        
+                                        {
+                                            "id": 230256019,
+                                            "author": "damuna",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 473647,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400982469,
+                                            "ups": 1,
+                                            "comment": "Which got cancelled.",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230139010
+                                        }
                                     ],
                                     "downs": 0,
                                     "author_id": 1203475,
@@ -1687,12 +2265,12 @@
                             "parent_id": 230137858
                         }
                     ],
-                    "downs": 1,
+                    "downs": 0,
                     "author_id": 1203475,
-                    "points": 2,
+                    "points": 6,
                     "on_album": false,
                     "datetime": 1400963339,
-                    "ups": 3,
+                    "ups": 6,
                     "comment": "as @GlenL said below, that's what it was all about all along. highly recommend seeing Caprica!",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1706,9 +2284,9 @@
                     "children": [
                         
                     ],
-                    "downs": 11,
+                    "downs": 13,
                     "author_id": 4656537,
-                    "points": -8,
+                    "points": -10,
                     "on_album": false,
                     "datetime": 1400937002,
                     "ups": 3,
@@ -1718,13 +2296,69 @@
                     "parent_id": 229983508
                 }
             ],
-            "downs": 5,
+            "downs": 7,
             "author_id": 10693684,
-            "points": 30,
+            "points": 65,
             "on_album": false,
             "datetime": 1400934297,
-            "ups": 35,
+            "ups": 72,
             "comment": "Interesting to see the Cylons exploring faith, very interesting.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 229972084,
+            "author": "nilee",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230346037,
+                    "author": "rookie91",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 5476458,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400996824,
+                    "ups": 3,
+                    "comment": "It has happened before....",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229972084
+                }
+            ],
+            "downs": 0,
+            "author_id": 11441944,
+            "points": 14,
+            "on_album": false,
+            "datetime": 1400930246,
+            "ups": 14,
+            "comment": "I can hear the sound they make...http://www.mwctoys.com/images/review_bg12_1a.jpg",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 229958467,
+            "author": "foltzwagon82",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 9,
+            "author_id": 8961351,
+            "points": 45,
+            "on_album": false,
+            "datetime": 1400925112,
+            "ups": 54,
+            "comment": "so so right.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -1737,12 +2371,12 @@
             "children": [
                 
             ],
-            "downs": 1,
+            "downs": 2,
             "author_id": 9769806,
-            "points": 13,
+            "points": 18,
             "on_album": false,
             "datetime": 1400957358,
-            "ups": 14,
+            "ups": 20,
             "comment": "\"Michael, where are you?\"",
             "deleted": false,
             "image_id": "W1K5Qya",
@@ -1770,10 +2404,10 @@
                             ],
                             "downs": 1,
                             "author_id": 11312020,
-                            "points": 5,
+                            "points": 8,
                             "on_album": false,
                             "datetime": 1400957738,
-                            "ups": 6,
+                            "ups": 9,
                             "comment": "http://i.imgur.com/XhhX3U6.jpg",
                             "deleted": false,
                             "image_id": "W1K5Qya",
@@ -1782,10 +2416,10 @@
                     ],
                     "downs": 4,
                     "author_id": 3769536,
-                    "points": 17,
+                    "points": 24,
                     "on_album": false,
                     "datetime": 1400956966,
-                    "ups": 21,
+                    "ups": 28,
                     "comment": "The difference is how they'll be getting stoned later.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1809,26 +2443,62 @@
                                     "vote": null,
                                     "album_cover": null,
                                     "children": [
-                                        
+                                        {
+                                            "id": 230202505,
+                                            "author": "AsAMuslim",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230218165,
+                                                    "author": "TheDarkPotato",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 1,
+                                                    "author_id": 3739575,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1400976875,
+                                                    "ups": 2,
+                                                    "comment": "But in reality that usually isn't the case. Wearing it, like I said before, it just fuel to the fire. I don't cherry pick situations.",
+                                                    "deleted": false,
+                                                    "image_id": "W1K5Qya",
+                                                    "parent_id": 230202505
+                                                }
+                                            ],
+                                            "downs": 1,
+                                            "author_id": 9189048,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400974252,
+                                            "ups": 2,
+                                            "comment": "believe it or not, i have a friend who wore it AGAINST her parents' wishes. It can be a choice for many.",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230133811
+                                        }
                                     ],
-                                    "downs": 1,
+                                    "downs": 3,
                                     "author_id": 3739575,
-                                    "points": 2,
+                                    "points": 1,
                                     "on_album": false,
                                     "datetime": 1400962697,
-                                    "ups": 3,
+                                    "ups": 4,
                                     "comment": "Yeah, nah. Wearing that is only fueling the male oppression in the Middle East. It is less of a choice and more like conditioning.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230133127
                                 }
                             ],
-                            "downs": 2,
+                            "downs": 3,
                             "author_id": 9189048,
                             "points": 1,
                             "on_album": false,
                             "datetime": 1400962591,
-                            "ups": 3,
+                            "ups": 4,
                             "comment": "The picture obviously shows that they are in a western country, where most niqabi women wear it out of choice and not out of fear of arrest",
                             "deleted": false,
                             "image_id": "W1K5Qya",
@@ -1837,10 +2507,10 @@
                     ],
                     "downs": 4,
                     "author_id": 3739575,
-                    "points": 12,
+                    "points": 14,
                     "on_album": false,
                     "datetime": 1400957383,
-                    "ups": 16,
+                    "ups": 18,
                     "comment": "The difference here is that the one on the left isn't going to get arrested for showing her ankles",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1856,10 +2526,10 @@
                     ],
                     "downs": 4,
                     "author_id": 8093767,
-                    "points": 7,
+                    "points": 10,
                     "on_album": false,
                     "datetime": 1400956455,
-                    "ups": 11,
+                    "ups": 14,
                     "comment": "Except that no one said the bikini chick is obligated to wear that.",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1883,26 +2553,44 @@
                                     "vote": null,
                                     "album_cover": null,
                                     "children": [
-                                        
+                                        {
+                                            "id": 230203177,
+                                            "author": "AsAMuslim",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 9189048,
+                                            "points": 2,
+                                            "on_album": false,
+                                            "datetime": 1400974349,
+                                            "ups": 2,
+                                            "comment": "the picture shows that they are obviously in a western country where either attire is a choice.",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230148202
+                                        }
                                     ],
-                                    "downs": 0,
+                                    "downs": 1,
                                     "author_id": 2854468,
                                     "points": 1,
                                     "on_album": false,
                                     "datetime": 1400965037,
-                                    "ups": 1,
+                                    "ups": 2,
                                     "comment": "Depends of the country. In Saudi Arabia she probably would be getting stoned or drowned if she wore a bikini.",
                                     "deleted": false,
                                     "image_id": "W1K5Qya",
                                     "parent_id": 230133376
                                 }
                             ],
-                            "downs": 3,
+                            "downs": 4,
                             "author_id": 9189048,
                             "points": -1,
                             "on_album": false,
                             "datetime": 1400962627,
-                            "ups": 2,
+                            "ups": 3,
                             "comment": "Neither is the niqabi woman.",
                             "deleted": false,
                             "image_id": "W1K5Qya",
@@ -1911,10 +2599,10 @@
                     ],
                     "downs": 4,
                     "author_id": 5585051,
-                    "points": 4,
+                    "points": 6,
                     "on_album": false,
                     "datetime": 1400956453,
-                    "ups": 8,
+                    "ups": 10,
                     "comment": "Only difference is that the girl in the bikini wont get arrested when she wears something else",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -1940,12 +2628,12 @@
                     "parent_id": 229982053
                 }
             ],
-            "downs": 13,
+            "downs": 15,
             "author_id": 9802283,
-            "points": 36,
+            "points": 50,
             "on_album": false,
             "datetime": 1400933788,
-            "ups": 49,
+            "ups": 65,
             "comment": "http://i.imgur.com/LPx7Zfd.png",
             "deleted": false,
             "image_id": "W1K5Qya",
@@ -1961,49 +2649,48 @@
             ],
             "downs": 4,
             "author_id": 5860405,
-            "points": 18,
+            "points": 23,
             "on_album": false,
             "datetime": 1400932347,
-            "ups": 22,
+            "ups": 27,
             "comment": "I don't know how anyone can find this offensive, this is funny +1",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
         },
         {
-            "id": 230110525,
-            "author": "SihayaOfTheAllPowerfulMeh",
+            "id": 230097160,
+            "author": "djnahjustkiddingiuseitunes",
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230136025,
+                    "author": "surroundedbystupid",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 10569157,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400963051,
+                    "ups": 2,
+                    "comment": "Goddamint that was brilliant",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230097160
+                }
             ],
-            "downs": 0,
-            "author_id": 7859648,
-            "points": 6,
+            "downs": 1,
+            "author_id": 4297784,
+            "points": 11,
             "on_album": false,
-            "datetime": 1400958854,
-            "ups": 6,
-            "comment": "Frakkin toasters",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 229972084,
-            "author": "nilee",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 11441944,
-            "points": 6,
-            "on_album": false,
-            "datetime": 1400930246,
-            "ups": 6,
-            "comment": "I can hear the sound they make...http://www.mwctoys.com/images/review_bg12_1a.jpg",
+            "datetime": 1400956533,
+            "ups": 12,
+            "comment": "Daft punk in Afghanistan.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2018,10 +2705,10 @@
             ],
             "downs": 4,
             "author_id": 1082578,
-            "points": 11,
+            "points": 13,
             "on_album": false,
             "datetime": 1400956291,
-            "ups": 15,
+            "ups": 17,
             "comment": "http://i.imgur.com/46muuGF.jpg",
             "deleted": false,
             "image_id": "W1K5Qya",
@@ -2069,15 +2756,53 @@
                     "deleted": false,
                     "image_id": "W1K5Qya",
                     "parent_id": 230155786
+                },
+                {
+                    "id": 230252662,
+                    "author": "KnockKnockWhosThereJehovahsWitness",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1451681,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400981994,
+                    "ups": 1,
+                    "comment": "I'm not touching this subject with a 10 foot coat hanger",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230155786
                 }
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 9479007,
-            "points": 4,
+            "points": 8,
             "on_album": false,
             "datetime": 1400966340,
-            "ups": 4,
+            "ups": 9,
             "comment": "Everything is funny if you use the right delivery. Except abortion jokes. By definition, those have no delivery.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230129686,
+            "author": "FlowersAndFootballTops",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9206346,
+            "points": 4,
+            "on_album": false,
+            "datetime": 1400962037,
+            "ups": 4,
+            "comment": "I wasn't at all offended by the picture, but the comments underneath it, wow Imgur.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2102,57 +2827,94 @@
             "parent_id": 0
         },
         {
-            "id": 230097160,
-            "author": "djnahjustkiddingiuseitunes",
+            "id": 229964353,
+            "author": "Jessert",
             "vote": null,
             "album_cover": null,
             "children": [
                 {
-                    "id": 230136025,
-                    "author": "surroundedbystupid",
+                    "id": 230100256,
+                    "author": "ITriedToGoogleACoolNicknameButItDidntHelpMuch",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 10569157,
-                    "points": 1,
+                    "author_id": 1944949,
+                    "points": 5,
                     "on_album": false,
-                    "datetime": 1400963051,
-                    "ups": 1,
-                    "comment": "Goddamint that was brilliant",
+                    "datetime": 1400957086,
+                    "ups": 5,
+                    "comment": "Fracking*",
                     "deleted": false,
                     "image_id": "W1K5Qya",
-                    "parent_id": 230097160
+                    "parent_id": 229964353
                 }
             ],
-            "downs": 0,
-            "author_id": 4297784,
-            "points": 4,
+            "downs": 3,
+            "author_id": 862523,
+            "points": 6,
             "on_album": false,
-            "datetime": 1400956533,
-            "ups": 4,
-            "comment": "Daft punk in Afghanistan.",
+            "datetime": 1400927385,
+            "ups": 9,
+            "comment": "Not sure if frecking toaster or skinjob.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
         },
         {
-            "id": 230129686,
-            "author": "FlowersAndFootballTops",
+            "id": 230152027,
+            "author": "deathbarf",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230270155,
+                    "author": "TheNameIsAshHousewares",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 725277,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400984678,
+                    "ups": 1,
+                    "comment": "http://moviemezzanine.com/wp-content/uploads/3005649929_b5d8ec4457_z.jpg",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230152027
+                }
+            ],
+            "downs": 0,
+            "author_id": 5955985,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400965716,
+            "ups": 3,
+            "comment": "Gort... Klaatu barada nikto.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230128699,
+            "author": "Shargan8",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 9206346,
+            "author_id": 5552742,
             "points": 3,
             "on_album": false,
-            "datetime": 1400962037,
+            "datetime": 1400961868,
             "ups": 3,
-            "comment": "I wasn't at all offended by the picture, but the comments underneath it, wow Imgur.",
+            "comment": "I have Cylons on DRADIS, sir!",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2196,57 +2958,95 @@
             "parent_id": 0
         },
         {
-            "id": 229964353,
-            "author": "Jessert",
+            "id": 229977064,
+            "author": "myndstorm",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 4618461,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400932038,
+            "ups": 4,
+            "comment": "by your command",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 229960240,
+            "author": "JenTokumei",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 7089518,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400925840,
+            "ups": 4,
+            "comment": "By your command.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230260369,
+            "author": "arthurkeighn",
             "vote": null,
             "album_cover": null,
             "children": [
                 {
-                    "id": 230100256,
-                    "author": "ITriedToGoogleACoolNicknameButItDidntHelpMuch",
+                    "id": 230267755,
+                    "author": "TheNameIsAshHousewares",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 1944949,
-                    "points": 4,
+                    "author_id": 725277,
+                    "points": 1,
                     "on_album": false,
-                    "datetime": 1400957086,
-                    "ups": 4,
-                    "comment": "Fracking*",
+                    "datetime": 1400984334,
+                    "ups": 1,
+                    "comment": "http://www.youtube.com/watch?v=2_7JbbxdvlA",
                     "deleted": false,
                     "image_id": "W1K5Qya",
-                    "parent_id": 229964353
+                    "parent_id": 230260369
                 }
             ],
-            "downs": 3,
-            "author_id": 862523,
-            "points": 5,
+            "downs": 0,
+            "author_id": 6939251,
+            "points": 2,
             "on_album": false,
-            "datetime": 1400927385,
-            "ups": 8,
-            "comment": "Not sure if frecking toaster or skinjob.",
+            "datetime": 1400983163,
+            "ups": 2,
+            "comment": "\"Right away Mahaz\"",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
         },
         {
-            "id": 230173147,
-            "author": "fracturematt",
+            "id": 230243119,
+            "author": "funkypanda",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 8344050,
+            "author_id": 8382702,
             "points": 2,
             "on_album": false,
-            "datetime": 1400969186,
+            "datetime": 1400980650,
             "ups": 2,
-            "comment": "So fraking racist",
+            "comment": "Not a single comment about how old this gif is? Or maybe it's me.. Why not both? Meh http://i.imgur.com/xtF0fWn.gif",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2295,7 +3095,25 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230267428,
+                    "author": "TheNameIsAshHousewares",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 725277,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400984282,
+                    "ups": 1,
+                    "comment": "On my way, Michael!",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230154535
+                }
             ],
             "downs": 0,
             "author_id": 10495951,
@@ -2309,20 +3127,20 @@
             "parent_id": 0
         },
         {
-            "id": 230152027,
-            "author": "deathbarf",
+            "id": 230153836,
+            "author": "ayounes",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 5955985,
+            "author_id": 1846372,
             "points": 2,
             "on_album": false,
-            "datetime": 1400965716,
+            "datetime": 1400966001,
             "ups": 2,
-            "comment": "Gort... Klaatu barada nikto.",
+            "comment": "As a muslim I approve",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2342,6 +3160,44 @@
             "datetime": 1400965172,
             "ups": 2,
             "comment": "Damn toasters.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230130787,
+            "author": "MrFixit505",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10759546,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400962212,
+            "ups": 2,
+            "comment": "Screw wrong, I would wear that to the airport every day.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230128150,
+            "author": "DoubleSw33",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10722520,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400961779,
+            "ups": 2,
+            "comment": "Is it wrong to be Muslim and laugh harder than you should have at this?.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2404,39 +3260,20 @@
             "parent_id": 0
         },
         {
-            "id": 229977064,
-            "author": "myndstorm",
+            "id": 230241667,
+            "author": "kangtuji",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 1,
-            "author_id": 4618461,
+            "author_id": 573294,
             "points": 2,
             "on_album": false,
-            "datetime": 1400932038,
+            "datetime": 1400980440,
             "ups": 3,
-            "comment": "by your command",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 229960240,
-            "author": "JenTokumei",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 7089518,
-            "points": 2,
-            "on_album": false,
-            "datetime": 1400925840,
-            "ups": 3,
-            "comment": "By your command.",
+            "comment": "*Insert \"Knight Rid*r\" Theme song*",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2461,6 +3298,62 @@
             "parent_id": 0
         },
         {
+            "id": 229965049,
+            "author": "craznar",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230102329,
+                    "author": "BigDickPodrick",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 5,
+                    "author_id": 4393433,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400957462,
+                    "ups": 7,
+                    "comment": "This comment was a stupid idea",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 229965049
+                }
+            ],
+            "downs": 26,
+            "author_id": 66893,
+            "points": -8,
+            "on_album": false,
+            "datetime": 1400927619,
+            "ups": 18,
+            "comment": "Nope - this is NOT wrong. There is nothing wrong with making fun of stupid ideas.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230129014,
+            "author": "vigilantvigilante",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 4,
+            "author_id": 11851084,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400961916,
+            "ups": 5,
+            "comment": "muslim upvote, because women who wear this in public look just as stupid as women who wear practically nothing",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
             "id": 229958098,
             "author": "mikecigarette",
             "vote": null,
@@ -2480,43 +3373,6 @@
             "parent_id": 0
         },
         {
-            "id": 229965049,
-            "author": "craznar",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230102329,
-                    "author": "BigDickPodrick",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 2,
-                    "author_id": 4393433,
-                    "points": 3,
-                    "on_album": false,
-                    "datetime": 1400957462,
-                    "ups": 5,
-                    "comment": "This comment was a stupid idea",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 229965049
-                }
-            ],
-            "downs": 21,
-            "author_id": 66893,
-            "points": -7,
-            "on_album": false,
-            "datetime": 1400927619,
-            "ups": 14,
-            "comment": "Nope - this is NOT wrong. There is nothing wrong with making fun of stupid ideas.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
             "id": 229960630,
             "author": "arbraxas",
             "vote": null,
@@ -2524,12 +3380,12 @@
             "children": [
                 
             ],
-            "downs": 8,
+            "downs": 10,
             "author_id": 625382,
-            "points": -1,
+            "points": -2,
             "on_album": false,
             "datetime": 1400925997,
-            "ups": 7,
+            "ups": 8,
             "comment": "http://spf.fotolog.com/photo/63/24/31/x_ayuu_x_returns/1238437370229_f.jpg",
             "deleted": false,
             "image_id": "W1K5Qya",
@@ -2550,6 +3406,448 @@
             "datetime": 1400926093,
             "ups": 3,
             "comment": "she's hot",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230103598,
+            "author": "MonkeyManWasTaken",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230115106,
+                    "author": "VulpisFoxfire",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 1866256,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400959679,
+                    "ups": 3,
+                    "comment": "Part of the problem is that when men try to wear them, they look like walking condoms.",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230103598
+                },
+                {
+                    "id": 230103682,
+                    "author": "MonkeyManWasTaken",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230111026,
+                            "author": "SihayaOfTheAllPowerfulMeh",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 7859648,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400958927,
+                            "ups": 1,
+                            "comment": "U mad?",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230103682
+                        }
+                    ],
+                    "downs": 3,
+                    "author_id": 3324470,
+                    "points": -1,
+                    "on_album": false,
+                    "datetime": 1400957682,
+                    "ups": 2,
+                    "comment": "yeah i mad",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230103598
+                },
+                {
+                    "id": 230246533,
+                    "author": "DempsZ11b",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230248069,
+                            "author": "MonkeyManWasTaken",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230249854,
+                                    "author": "DempsZ11b",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230250427,
+                                            "author": "MonkeyManWasTaken",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230252710,
+                                                    "author": "DempsZ11b",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        {
+                                                            "id": 230255335,
+                                                            "author": "MonkeyManWasTaken",
+                                                            "vote": null,
+                                                            "album_cover": null,
+                                                            "children": [
+                                                                {
+                                                                    "id": 230255950,
+                                                                    "author": "DempsZ11b",
+                                                                    "vote": null,
+                                                                    "album_cover": null,
+                                                                    "children": [
+                                                                        
+                                                                    ],
+                                                                    "downs": 0,
+                                                                    "author_id": 4251974,
+                                                                    "points": 1,
+                                                                    "on_album": false,
+                                                                    "datetime": 1400982460,
+                                                                    "ups": 1,
+                                                                    "comment": "In the backwards countries they are heavily made into property I agree. But more prominent countries even in the U.S. they still do it. 1/2",
+                                                                    "deleted": false,
+                                                                    "image_id": "W1K5Qya",
+                                                                    "parent_id": 230255335
+                                                                },
+                                                                {
+                                                                    "id": 230256316,
+                                                                    "author": "DempsZ11b",
+                                                                    "vote": null,
+                                                                    "album_cover": null,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": 230258335,
+                                                                            "author": "MonkeyManWasTaken",
+                                                                            "vote": null,
+                                                                            "album_cover": null,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": 230259157,
+                                                                                    "author": "DempsZ11b",
+                                                                                    "vote": null,
+                                                                                    "album_cover": null,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": 230267485,
+                                                                                            "author": "MonkeyManWasTaken",
+                                                                                            "vote": null,
+                                                                                            "album_cover": null,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": 230272564,
+                                                                                                    "author": "DempsZ11b",
+                                                                                                    "vote": null,
+                                                                                                    "album_cover": null,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": 230287312,
+                                                                                                            "author": "MonkeyManWasTaken",
+                                                                                                            "vote": null,
+                                                                                                            "album_cover": null,
+                                                                                                            "children": [
+                                                                                                                
+                                                                                                            ],
+                                                                                                            "downs": 0,
+                                                                                                            "author_id": 3324470,
+                                                                                                            "points": 1,
+                                                                                                            "on_album": false,
+                                                                                                            "datetime": 1400987080,
+                                                                                                            "ups": 1,
+                                                                                                            "comment": "no worries i'm glad we could discuss this. it seems you're pretty thoughtful yourself & thanks to you i'll have to reconsider a few things",
+                                                                                                            "deleted": false,
+                                                                                                            "image_id": "W1K5Qya",
+                                                                                                            "parent_id": 230272564
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "downs": 0,
+                                                                                                    "author_id": 4251974,
+                                                                                                    "points": 1,
+                                                                                                    "on_album": false,
+                                                                                                    "datetime": 1400985012,
+                                                                                                    "ups": 1,
+                                                                                                    "comment": "Then that is your right to believe so. I was under the impression that you were another Islamaphobic moron. Which seems to not be the case.",
+                                                                                                    "deleted": false,
+                                                                                                    "image_id": "W1K5Qya",
+                                                                                                    "parent_id": 230267485
+                                                                                                }
+                                                                                            ],
+                                                                                            "downs": 0,
+                                                                                            "author_id": 3324470,
+                                                                                            "points": 2,
+                                                                                            "on_album": false,
+                                                                                            "datetime": 1400984295,
+                                                                                            "ups": 2,
+                                                                                            "comment": "i don't consider myself to be easily swayed by what media has to say but the reality of it is still very oppressive to me.",
+                                                                                            "deleted": false,
+                                                                                            "image_id": "W1K5Qya",
+                                                                                            "parent_id": 230259157
+                                                                                        }
+                                                                                    ],
+                                                                                    "downs": 1,
+                                                                                    "author_id": 4251974,
+                                                                                    "points": 0,
+                                                                                    "on_album": false,
+                                                                                    "datetime": 1400982965,
+                                                                                    "ups": 1,
+                                                                                    "comment": "Which I see and understand. It's not what the media tells us is all I'm saying. Outside of backwards countries they do choose.",
+                                                                                    "deleted": false,
+                                                                                    "image_id": "W1K5Qya",
+                                                                                    "parent_id": 230258335
+                                                                                }
+                                                                            ],
+                                                                            "downs": 0,
+                                                                            "author_id": 3324470,
+                                                                            "points": 2,
+                                                                            "on_album": false,
+                                                                            "datetime": 1400982807,
+                                                                            "ups": 2,
+                                                                            "comment": "i think i've gotten a little off point tbh i just want these women to choose for themselves and 9/10 times i dont think they are.",
+                                                                            "deleted": false,
+                                                                            "image_id": "W1K5Qya",
+                                                                            "parent_id": 230256316
+                                                                        },
+                                                                        {
+                                                                            "id": 230257411,
+                                                                            "author": "MonkeyManWasTaken",
+                                                                            "vote": null,
+                                                                            "album_cover": null,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": 230258041,
+                                                                                    "author": "DempsZ11b",
+                                                                                    "vote": null,
+                                                                                    "album_cover": null,
+                                                                                    "children": [
+                                                                                        
+                                                                                    ],
+                                                                                    "downs": 0,
+                                                                                    "author_id": 4251974,
+                                                                                    "points": 1,
+                                                                                    "on_album": false,
+                                                                                    "datetime": 1400982764,
+                                                                                    "ups": 1,
+                                                                                    "comment": "Ashamed? Not necessarily, just out around other people do they dress. Friends, families, and spouses is completely different.",
+                                                                                    "deleted": false,
+                                                                                    "image_id": "W1K5Qya",
+                                                                                    "parent_id": 230257411
+                                                                                }
+                                                                            ],
+                                                                            "downs": 0,
+                                                                            "author_id": 3324470,
+                                                                            "points": 1,
+                                                                            "on_album": false,
+                                                                            "datetime": 1400982672,
+                                                                            "ups": 1,
+                                                                            "comment": "i mentioned they become ashamed of their naked state. i'm sure they're proud to show modesty but those are two different things.",
+                                                                            "deleted": false,
+                                                                            "image_id": "W1K5Qya",
+                                                                            "parent_id": 230256316
+                                                                        }
+                                                                    ],
+                                                                    "downs": 1,
+                                                                    "author_id": 4251974,
+                                                                    "points": 0,
+                                                                    "on_album": false,
+                                                                    "datetime": 1400982504,
+                                                                    "ups": 1,
+                                                                    "comment": "2/2 because it is apart of their faith and they aren't ashamed of it and are actually proud of it.",
+                                                                    "deleted": false,
+                                                                    "image_id": "W1K5Qya",
+                                                                    "parent_id": 230255335
+                                                                }
+                                                            ],
+                                                            "downs": 0,
+                                                            "author_id": 3324470,
+                                                            "points": 2,
+                                                            "on_album": false,
+                                                            "datetime": 1400982371,
+                                                            "ups": 2,
+                                                            "comment": "and the poor treatment of many women in these countries is proof of that. I believe in a more matriarchal society and this is not that.",
+                                                            "deleted": false,
+                                                            "image_id": "W1K5Qya",
+                                                            "parent_id": 230252710
+                                                        },
+                                                        {
+                                                            "id": 230254876,
+                                                            "author": "MonkeyManWasTaken",
+                                                            "vote": null,
+                                                            "album_cover": null,
+                                                            "children": [
+                                                                
+                                                            ],
+                                                            "downs": 0,
+                                                            "author_id": 3324470,
+                                                            "points": 1,
+                                                            "on_album": false,
+                                                            "datetime": 1400982299,
+                                                            "ups": 1,
+                                                            "comment": "between men and women when only the women have to cover themselves so completely. it make sit easier for men to think of women as objects",
+                                                            "deleted": false,
+                                                            "image_id": "W1K5Qya",
+                                                            "parent_id": 230252710
+                                                        },
+                                                        {
+                                                            "id": 230254441,
+                                                            "author": "MonkeyManWasTaken",
+                                                            "vote": null,
+                                                            "album_cover": null,
+                                                            "children": [
+                                                                
+                                                            ],
+                                                            "downs": 0,
+                                                            "author_id": 3324470,
+                                                            "points": 1,
+                                                            "on_album": false,
+                                                            "datetime": 1400982235,
+                                                            "ups": 1,
+                                                            "comment": "because i think theyre doing it for the wrong reasons. to me it reeks of body shaming. and how can you expect any sort of equality 1/2",
+                                                            "deleted": false,
+                                                            "image_id": "W1K5Qya",
+                                                            "parent_id": 230252710
+                                                        }
+                                                    ],
+                                                    "downs": 2,
+                                                    "author_id": 4251974,
+                                                    "points": -1,
+                                                    "on_album": false,
+                                                    "datetime": 1400982000,
+                                                    "ups": 1,
+                                                    "comment": "If they are fine with it and say it is apart of their faith. What's the deal with dismantling it then?",
+                                                    "deleted": false,
+                                                    "image_id": "W1K5Qya",
+                                                    "parent_id": 230250427
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 3324470,
+                                            "points": 3,
+                                            "on_album": false,
+                                            "datetime": 1400981696,
+                                            "ups": 3,
+                                            "comment": "i do say it for any religion so i don't really see your point. some people do what they think is best but it doesnt mean no harm comes of it",
+                                            "deleted": false,
+                                            "image_id": "W1K5Qya",
+                                            "parent_id": 230249854
+                                        }
+                                    ],
+                                    "downs": 2,
+                                    "author_id": 4251974,
+                                    "points": -2,
+                                    "on_album": false,
+                                    "datetime": 1400981606,
+                                    "ups": 0,
+                                    "comment": "Same could be said for any religion. There are MANY (Women) voices that pretty much say that we're full of it when we say their oppressed.",
+                                    "deleted": false,
+                                    "image_id": "W1K5Qya",
+                                    "parent_id": 230248069
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 3324470,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1400981351,
+                            "ups": 3,
+                            "comment": "yeah i'm sooo islamaphobic too. shame on me for wanting a world where people dont blindly follow an ancient book to their own detriment.",
+                            "deleted": false,
+                            "image_id": "W1K5Qya",
+                            "parent_id": 230246533
+                        }
+                    ],
+                    "downs": 2,
+                    "author_id": 4251974,
+                    "points": -1,
+                    "on_album": false,
+                    "datetime": 1400981133,
+                    "ups": 1,
+                    "comment": "Really? Tell me more of how you are ignorant of Islam.",
+                    "deleted": false,
+                    "image_id": "W1K5Qya",
+                    "parent_id": 230103598
+                }
+            ],
+            "downs": 12,
+            "author_id": 3324470,
+            "points": -4,
+            "on_album": false,
+            "datetime": 1400957670,
+            "ups": 8,
+            "comment": "whats wrong is women being forced to wear these things to de-humanize them.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 229960270,
+            "author": "MrPugg",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 4,
+            "author_id": 119780,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400925859,
+            "ups": 4,
+            "comment": "this is glorious",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 229958791,
+            "author": "Mrk2014",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 4,
+            "author_id": 10148746,
+            "points": 0,
+            "on_album": false,
+            "datetime": 1400925248,
+            "ups": 4,
+            "comment": "This is great.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230173147,
+            "author": "fracturematt",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 8344050,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400969186,
+            "ups": 2,
+            "comment": "So fraking racist",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2588,6 +3886,310 @@
             "datetime": 1400925925,
             "ups": 2,
             "comment": "https://www.youtube.com/watch?v=Mo8Qls0HnWo",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230450395,
+            "author": "Cilvaa",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1916503,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401026567,
+            "ups": 1,
+            "comment": "\"THAT'S RAC-\" wait, Islam is a belief-system, not a race... please continue OP.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230433232,
+            "author": "GoodGuyJamie",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10641604,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401022083,
+            "ups": 1,
+            "comment": "By your allah.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230424772,
+            "author": "ImWatchinYouBuddy",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11510866,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401018791,
+            "ups": 1,
+            "comment": "Frakkin skin-job",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230365606,
+            "author": "bunnyslayr",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 8902098,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401000248,
+            "ups": 1,
+            "comment": "is it wrong i read the title in Kit's voice from knight rider?",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230364811,
+            "author": "Ifiwerefireiwouldburntheworld",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 473737,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401000087,
+            "ups": 1,
+            "comment": "Am i right in thinking that these are banned in some Muslim countries like Tunisia and Turkey or not? (Burkas, not Cylons that is)",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230322556,
+            "author": "Hashbrown123",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9041094,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400992655,
+            "ups": 1,
+            "comment": "Shiite Rider.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230322364,
+            "author": "Chickenpots",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11264362,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400992631,
+            "ups": 1,
+            "comment": "RoboMuslim",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230319805,
+            "author": "stevedude777",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1256919,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400992233,
+            "ups": 1,
+            "comment": "Took me a while to notice why it was wrong. Couldn't tell it was a head. :(",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230315860,
+            "author": "Boycie",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11933398,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400991645,
+            "ups": 1,
+            "comment": "wow. this is extremely racist u shuld b ashamed of urself",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230274556,
+            "author": "nala83",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11785198,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400985285,
+            "ups": 1,
+            "comment": "Infidel detected...",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230267929,
+            "author": "TheNameIsAshHousewares",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 725277,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400984359,
+            "ups": 1,
+            "comment": "Instantly thought of this http://www.youtube.com/watch?v=2_7JbbxdvlA",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230236846,
+            "author": "henrou",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1125131,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400979702,
+            "ups": 1,
+            "comment": "Will initiate BJ, by your comand.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230226841,
+            "author": "topbadcomment",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3919188,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400978224,
+            "ups": 1,
+            "comment": "im a muslim and im lol'ing",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230224078,
+            "author": "meloange55",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 2723082,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400977800,
+            "ups": 1,
+            "comment": "Muslim cylon",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230210872,
+            "author": "69camaroSS",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7602935,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400975607,
+            "ups": 1,
+            "comment": "what is kitt doing under a tarpaulin? kitt come out from there.",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230196532,
+            "author": "mussie",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 6232343,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400973194,
+            "ups": 1,
+            "comment": "This is fucking funny",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2664,25 +4266,6 @@
             "datetime": 1400968179,
             "ups": 1,
             "comment": "I can hear it. Also, slow it down.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 230153836,
-            "author": "ayounes",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 1846372,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400966001,
-            "ups": 1,
-            "comment": "As a muslim I approve",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2802,44 +4385,6 @@
             "parent_id": 0
         },
         {
-            "id": 230130787,
-            "author": "MrFixit505",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 10759546,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400962212,
-            "ups": 1,
-            "comment": "Screw wrong, I would wear that to the airport every day.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 230128699,
-            "author": "Shargan8",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 5552742,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400961868,
-            "ups": 1,
-            "comment": "I have Cylons on DRADIS, sir!",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
             "id": 230128351,
             "author": "edemardil",
             "vote": null,
@@ -2872,25 +4417,6 @@
             "datetime": 1400961813,
             "ups": 1,
             "comment": "They have a plan...",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 230128150,
-            "author": "DoubleSw33",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 10722520,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400961779,
-            "ups": 1,
-            "comment": "Is it wrong to be Muslim and laugh harder than you should have at this?.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -2929,25 +4455,6 @@
             "datetime": 1400960591,
             "ups": 1,
             "comment": "Great, now I not only have the Nightrider theme stuck in my head, I'm trying to imagine what it sounds like played on an Oud.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 230117326,
-            "author": "Graypony4",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 6937097,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400960081,
-            "ups": 1,
-            "comment": "\"Micheal, blah, blah my turbo. Something, something blown.\"",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -3048,137 +4555,6 @@
             "parent_id": 0
         },
         {
-            "id": 230103598,
-            "author": "MonkeyManWasTaken",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230115106,
-                    "author": "VulpisFoxfire",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 1866256,
-                    "points": 1,
-                    "on_album": false,
-                    "datetime": 1400959679,
-                    "ups": 1,
-                    "comment": "Part of the problem is that when men try to wear them, they look like walking condoms.",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 230103598
-                },
-                {
-                    "id": 230103682,
-                    "author": "MonkeyManWasTaken",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        {
-                            "id": 230111026,
-                            "author": "SihayaOfTheAllPowerfulMeh",
-                            "vote": null,
-                            "album_cover": null,
-                            "children": [
-                                
-                            ],
-                            "downs": 0,
-                            "author_id": 7859648,
-                            "points": 1,
-                            "on_album": false,
-                            "datetime": 1400958927,
-                            "ups": 1,
-                            "comment": "U mad?",
-                            "deleted": false,
-                            "image_id": "W1K5Qya",
-                            "parent_id": 230103682
-                        }
-                    ],
-                    "downs": 2,
-                    "author_id": 3324470,
-                    "points": 0,
-                    "on_album": false,
-                    "datetime": 1400957682,
-                    "ups": 2,
-                    "comment": "yeah i mad",
-                    "deleted": false,
-                    "image_id": "W1K5Qya",
-                    "parent_id": 230103598
-                }
-            ],
-            "downs": 8,
-            "author_id": 3324470,
-            "points": -3,
-            "on_album": false,
-            "datetime": 1400957670,
-            "ups": 5,
-            "comment": "whats wrong is women being forced to wear these things to de-humanize them.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 229960270,
-            "author": "MrPugg",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 4,
-            "author_id": 119780,
-            "points": -1,
-            "on_album": false,
-            "datetime": 1400925859,
-            "ups": 3,
-            "comment": "this is glorious",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 229958791,
-            "author": "Mrk2014",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 4,
-            "author_id": 10148746,
-            "points": -1,
-            "on_album": false,
-            "datetime": 1400925248,
-            "ups": 3,
-            "comment": "This is great.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
-            "id": 230114548,
-            "author": "JohnyRo",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 2,
-            "author_id": 9179736,
-            "points": 0,
-            "on_album": false,
-            "datetime": 1400959586,
-            "ups": 2,
-            "comment": "Dehumanizing. But the lights are pretty.",
-            "deleted": false,
-            "image_id": "W1K5Qya",
-            "parent_id": 0
-        },
-        {
             "id": 230027362,
             "author": "MadameMCM",
             "vote": null,
@@ -3194,10 +4570,10 @@
                     ],
                     "downs": 1,
                     "author_id": 7833965,
-                    "points": 0,
+                    "points": 1,
                     "on_album": false,
                     "datetime": 1400966900,
-                    "ups": 1,
+                    "ups": 2,
                     "comment": "As a Muslim.. no, no you're not",
                     "deleted": false,
                     "image_id": "W1K5Qya",
@@ -3206,30 +4582,30 @@
             ],
             "downs": 3,
             "author_id": 6050938,
-            "points": -1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400944574,
-            "ups": 2,
+            "ups": 3,
             "comment": "okay I laughed....going to hell",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
         },
         {
-            "id": 230129014,
-            "author": "vigilantvigilante",
+            "id": 230114548,
+            "author": "JohnyRo",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
-            "downs": 4,
-            "author_id": 11851084,
-            "points": -2,
+            "downs": 3,
+            "author_id": 9179736,
+            "points": -1,
             "on_album": false,
-            "datetime": 1400961916,
+            "datetime": 1400959586,
             "ups": 2,
-            "comment": "muslim upvote, because women who wear this in public look just as stupid as women who wear practically nothing",
+            "comment": "Dehumanizing. But the lights are pretty.",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -3273,20 +4649,20 @@
             "parent_id": 0
         },
         {
-            "id": 230113858,
-            "author": "TheTrueDreadPirateRoberts",
+            "id": 230117326,
+            "author": "Graypony4",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 1,
-            "author_id": 9005802,
+            "author_id": 6937097,
             "points": 0,
             "on_album": false,
-            "datetime": 1400959467,
+            "datetime": 1400960081,
             "ups": 1,
-            "comment": "\"Rangers, Rita is sending suicide bombers! Ay yi yi yi yi!\"",
+            "comment": "\"Micheal, blah, blah my turbo. Something, something blown.\"",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0
@@ -3299,13 +4675,32 @@
             "children": [
                 
             ],
-            "downs": 6,
+            "downs": 10,
             "author_id": 4656537,
-            "points": -4,
+            "points": -8,
             "on_album": false,
             "datetime": 1400936881,
             "ups": 2,
             "comment": "http://imgur.com/gallery/IyGFY/",
+            "deleted": false,
+            "image_id": "W1K5Qya",
+            "parent_id": 0
+        },
+        {
+            "id": 230113858,
+            "author": "TheTrueDreadPirateRoberts",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 5,
+            "author_id": 9005802,
+            "points": -4,
+            "on_album": false,
+            "datetime": 1400959467,
+            "ups": 1,
+            "comment": "\"Rangers, Rita is sending suicide bombers! Ay yi yi yi yi!\"",
             "deleted": false,
             "image_id": "W1K5Qya",
             "parent_id": 0

@@ -1,23 +1,41 @@
 {
     "status": 200,
-    "data": [
-        {
-            "animated": true,
-            "link": "http://i.imgur.com/bYzjxGO.gif",
-            "width": 400,
-            "type": "image/gif",
-            "favorite": false,
-            "section": null,
-            "size": 5219347,
-            "bandwidth": 14316668821,
-            "id": "bYzjxGO",
-            "title": null,
-            "height": 278,
-            "nsfw": null,
-            "description": null,
-            "views": 2743,
-            "datetime": 1400953041
-        }
-    ],
+    "data": {
+        "link": "http://imgur.com/a/obIZM",
+        "privacy": "public",
+        "favorite": false,
+        "section": null,
+        "id": "obIZM",
+        "title": "I just can't (OC)",
+        "cover": "bYzjxGO",
+        "nsfw": null,
+        "description": null,
+        "views": 183274,
+        "cover_height": 278,
+        "layout": "blog",
+        "images": [
+            {
+                "animated": true,
+                "link": "http://i.imgur.com/bYzjxGO.gif",
+                "width": 400,
+                "type": "image/gif",
+                "favorite": false,
+                "section": null,
+                "size": 5219347,
+                "bandwidth": 1136131796919,
+                "id": "bYzjxGO",
+                "title": null,
+                "height": 278,
+                "nsfw": null,
+                "description": null,
+                "views": 217677,
+                "datetime": 1400953041
+            }
+        ],
+        "datetime": 1400953024,
+        "cover_width": 400,
+        "account_url": "terranfox",
+        "images_count": 1
+    },
     "success": true
 }

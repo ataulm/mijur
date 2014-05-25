@@ -2,11 +2,637 @@
     "status": 200,
     "data": [
         {
+            "id": 230174236,
+            "author": "knickerlicker",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230212345,
+                    "author": "hlyshft",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230215861,
+                            "author": "knickerlicker",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230216179,
+                                    "author": "hlyshft",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 524364,
+                                    "points": 4,
+                                    "on_album": false,
+                                    "datetime": 1400976498,
+                                    "ups": 4,
+                                    "comment": "I think that is what happens. Just like when I say \"I don't like flowers, they're fucking retarded\" that doesn't mean buy me flowers... 1/2",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230215861
+                                },
+                                {
+                                    "id": 230216509,
+                                    "author": "hlyshft",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230216827,
+                                            "author": "knickerlicker",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230217976,
+                                                    "author": "hlyshft",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        {
+                                                            "id": 230218336,
+                                                            "author": "knickerlicker",
+                                                            "vote": null,
+                                                            "album_cover": null,
+                                                            "children": [
+                                                                {
+                                                                    "id": 230218789,
+                                                                    "author": "hlyshft",
+                                                                    "vote": null,
+                                                                    "album_cover": null,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": 230228833,
+                                                                            "author": "knickerlicker",
+                                                                            "vote": null,
+                                                                            "album_cover": null,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": 230251252,
+                                                                                    "author": "hlyshft",
+                                                                                    "vote": null,
+                                                                                    "album_cover": null,
+                                                                                    "children": [
+                                                                                        
+                                                                                    ],
+                                                                                    "downs": 0,
+                                                                                    "author_id": 524364,
+                                                                                    "points": 2,
+                                                                                    "on_album": false,
+                                                                                    "datetime": 1400981801,
+                                                                                    "ups": 2,
+                                                                                    "comment": "UGH, that fucking sucks!",
+                                                                                    "deleted": false,
+                                                                                    "image_id": "1Q98gfW",
+                                                                                    "parent_id": 230228833
+                                                                                }
+                                                                            ],
+                                                                            "downs": 0,
+                                                                            "author_id": 10361206,
+                                                                            "points": 2,
+                                                                            "on_album": false,
+                                                                            "datetime": 1400978539,
+                                                                            "ups": 2,
+                                                                            "comment": "Ouch :(( My boyfriend just took a job in Florida while I'm still here working in Maine, I feel you, sort of.",
+                                                                            "deleted": false,
+                                                                            "image_id": "1Q98gfW",
+                                                                            "parent_id": 230218789
+                                                                        }
+                                                                    ],
+                                                                    "downs": 0,
+                                                                    "author_id": 524364,
+                                                                    "points": 2,
+                                                                    "on_album": false,
+                                                                    "datetime": 1400976981,
+                                                                    "ups": 2,
+                                                                    "comment": "I miss him. We're at different duty stations and it sucks, but he's only 4 hours away. Deployments will be fucking ridiculous.",
+                                                                    "deleted": false,
+                                                                    "image_id": "1Q98gfW",
+                                                                    "parent_id": 230218336
+                                                                }
+                                                            ],
+                                                            "downs": 0,
+                                                            "author_id": 10361206,
+                                                            "points": 2,
+                                                            "on_album": false,
+                                                            "datetime": 1400976904,
+                                                            "ups": 2,
+                                                            "comment": "YIKES. No wonder he loves you. :) You're like a unicorn to a stable boy.",
+                                                            "deleted": false,
+                                                            "image_id": "1Q98gfW",
+                                                            "parent_id": 230217976
+                                                        }
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 524364,
+                                                    "points": 3,
+                                                    "on_album": false,
+                                                    "datetime": 1400976841,
+                                                    "ups": 3,
+                                                    "comment": "Yeah I'm really simple. The issue is he had like 6 sisters and a mom who thrives on guilt trips. He's getting better, though.",
+                                                    "deleted": false,
+                                                    "image_id": "1Q98gfW",
+                                                    "parent_id": 230216827
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 10361206,
+                                            "points": 4,
+                                            "on_album": false,
+                                            "datetime": 1400976636,
+                                            "ups": 4,
+                                            "comment": "OTHER GIRLS RUIN EVERYTHING. It's entirely possible I can be basic without being a basic bitch.",
+                                            "deleted": false,
+                                            "image_id": "1Q98gfW",
+                                            "parent_id": 230216509
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 524364,
+                                    "points": 3,
+                                    "on_album": false,
+                                    "datetime": 1400976578,
+                                    "ups": 3,
+                                    "comment": "2/2 and it's happened that someone has claimed they thought that actually meant BUY FLOWERS. THAT IS LITERALLY THE OPPOSITE OF WHAT I MEAN",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230215861
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 10361206,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400976456,
+                            "ups": 2,
+                            "comment": "It's because he has a crazy number of female friends who gossip with him. \"I said I was fine, but like obviously I wasn't\"",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230212345
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 524364,
+                    "points": 29,
+                    "on_album": false,
+                    "datetime": 1400975849,
+                    "ups": 29,
+                    "comment": "Yeah, I use words by their actual meaning.. I then get aggravated when I have to argue about it.  My boyfriend now doesn't do it, thank god",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230239126,
+                    "author": "diablita1985",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230330461,
+                            "author": "Sillykittyy",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 3671906,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1400993918,
+                            "ups": 3,
+                            "comment": "SAME!",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230239126
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 10182034,
+                    "points": 16,
+                    "on_album": false,
+                    "datetime": 1400980034,
+                    "ups": 16,
+                    "comment": "Same here. I can't relate to a lot of the stereotypes about women, and often feel excluded.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230216953,
+                    "author": "goodsweetlordoftherings",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 10527709,
+                    "points": 10,
+                    "on_album": false,
+                    "datetime": 1400976658,
+                    "ups": 10,
+                    "comment": "Preach, knickerlicker. Preach.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230390977,
+                    "author": "gumikebbap",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 160228,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1401006636,
+                    "ups": 4,
+                    "comment": "When Kat Dennings says she's fine, she means \"I have these huge juggs\". In fact that's what I hear from her in every word she says",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230357548,
+                    "author": "feryooday",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230357845,
+                            "author": "knickerlicker",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230358421,
+                                    "author": "feryooday",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230363839,
+                                            "author": "knickerlicker",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 10361206,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400999896,
+                                            "ups": 1,
+                                            "comment": "Oh absolutely.",
+                                            "deleted": false,
+                                            "image_id": "1Q98gfW",
+                                            "parent_id": 230358421
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 1672784,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400998886,
+                                    "ups": 2,
+                                    "comment": "I think it depends on the vernacular of the particular area in which it's used.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230357845
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 10361206,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400998777,
+                            "ups": 2,
+                            "comment": "When I use it, it usually means unbothered.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230357548
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 1672784,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400998725,
+                    "ups": 4,
+                    "comment": "Okay but fine still doesn't mean good. If I'm fine, I'm not passive aggressively bad, but I'm not good either.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230313709,
+                    "author": "SometimesIsayfunnyshit",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 7416305,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400991309,
+                    "ups": 4,
+                    "comment": "My usual response is \"'Actual fine' or 'not fine fine?\" because I know people that use both.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230331106,
+                    "author": "sideslick",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230357941,
+                            "author": "redbacardi",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230358136,
+                                    "author": "redbacardi",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230359984,
+                                            "author": "sideslick",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 7786559,
+                                            "points": 2,
+                                            "on_album": false,
+                                            "datetime": 1400999207,
+                                            "ups": 2,
+                                            "comment": "Thanks for making it easy on us. I'm not gonna dispute the science showing men have a harder time reading women. It can be tough. Thank you.",
+                                            "deleted": false,
+                                            "image_id": "1Q98gfW",
+                                            "parent_id": 230358136
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 1824806,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400998835,
+                                    "ups": 2,
+                                    "comment": "But I don't play that shit .  If I am angry I tell him and I tell him why.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230357941
+                                }
+                            ],
+                            "downs": 1,
+                            "author_id": 1824806,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400998794,
+                            "ups": 2,
+                            "comment": "No, in this case I blame the girls, my BF is also used to \"I'm fine\" meaning keep asking because there is something wrong.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230331106
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 7786559,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400994021,
+                    "ups": 5,
+                    "comment": "As a dude, I am sorry for how clueless our gender can be. Sometimes we just don't know how to read ladies. I'm guilty of it too. I'm sorry.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230432353,
+                    "author": "suntzupup",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1364180,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1401021776,
+                    "ups": 2,
+                    "comment": "as a guy, i'm gonna assume when a girl says she's fine, she's fine. if she wants me to know there's a problem, she's gonna have to tell me.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230386675,
+                    "author": "WillJeSuis",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230389309,
+                            "author": "knickerlicker",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230389411,
+                                    "author": "WillJeSuis",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 7902820,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1401006215,
+                                    "ups": 2,
+                                    "comment": "Hon hon honnnnn!",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230389309
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 10361206,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401006186,
+                            "ups": 1,
+                            "comment": "Will, Je Suis fine.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230386675
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 7902820,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1401005467,
+                    "ups": 2,
+                    "comment": "Dayum gurl, you fine!",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230283403,
+                    "author": "tifftaro",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 2,
+                    "author_id": 157791,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400986530,
+                    "ups": 3,
+                    "comment": "Preach it sister! It took 2 years to get my boyfriend to stop freaking out about these stupid things other girls do.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                },
+                {
+                    "id": 230210290,
+                    "author": "AmbiguouslyPunny",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230214007,
+                            "author": "knickerlicker",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230239474,
+                                    "author": "mc9hc9twn",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 3,
+                                    "author_id": 883485,
+                                    "points": -1,
+                                    "on_album": false,
+                                    "datetime": 1400980085,
+                                    "ups": 2,
+                                    "comment": "this comment made me smile a lot because you worded it perfectly so go you! fight the patriarchy!",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230214007
+                                },
+                                {
+                                    "id": 230234245,
+                                    "author": "AmbiguouslyPunny",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 5,
+                                    "author_id": 2782341,
+                                    "points": -3,
+                                    "on_album": false,
+                                    "datetime": 1400979326,
+                                    "ups": 2,
+                                    "comment": "Nice",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230214007
+                                }
+                            ],
+                            "downs": 3,
+                            "author_id": 10361206,
+                            "points": 11,
+                            "on_album": false,
+                            "datetime": 1400976162,
+                            "ups": 14,
+                            "comment": "And what do you base that off of other than stereotypes and gender assumptions?",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230210290
+                        }
+                    ],
+                    "downs": 17,
+                    "author_id": 2782341,
+                    "points": -12,
+                    "on_album": false,
+                    "datetime": 1400975521,
+                    "ups": 5,
+                    "comment": "I'm sorry but you're full of it!",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230174236
+                }
+            ],
+            "downs": 8,
+            "author_id": 10361206,
+            "points": 234,
+            "on_album": false,
+            "datetime": 1400969372,
+            "ups": 242,
+            "comment": "As an uncommon white girl, when I tell my boyfriend I'm fine, he freaks out because of this shit. When I say I'm fine, I REALLY mean fine.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
             "id": 230073547,
             "author": "IWantAGirlWithaShortSkirtAndALongJacket",
             "vote": null,
             "album_cover": null,
             "children": [
+                {
+                    "id": 230233321,
+                    "author": "DeeAre",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1780378,
+                    "points": 22,
+                    "on_album": false,
+                    "datetime": 1400979179,
+                    "ups": 22,
+                    "comment": "My g/f: \"I think it it would be really unreasonable to tell you that it's OK to do something and then get mad at you for doing it.\" <3",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
                 {
                     "id": 230172595,
                     "author": "ProverbialNoose",
@@ -15,13 +641,236 @@
                     "children": [
                         
                     ],
-                    "downs": 2,
+                    "downs": 4,
                     "author_id": 737822,
-                    "points": 5,
+                    "points": 39,
                     "on_album": false,
                     "datetime": 1400969109,
-                    "ups": 7,
+                    "ups": 43,
                     "comment": "...and a loooooooooooooooooooooooooong...",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230226652,
+                    "author": "squishmakins",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230303863,
+                            "author": "Keeblebrox",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 573399,
+                            "points": 4,
+                            "on_album": false,
+                            "datetime": 1400989765,
+                            "ups": 4,
+                            "comment": "Have you tried saying \"no, but I'd prefer to talk about it after I've calmed down?\"",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230226652
+                        },
+                        {
+                            "id": 230227045,
+                            "author": "squishmakins",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 4506044,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400978256,
+                            "ups": 1,
+                            "comment": "My rhyming is hurting my head.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230226652
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 4506044,
+                    "points": 15,
+                    "on_album": false,
+                    "datetime": 1400978185,
+                    "ups": 15,
+                    "comment": "Personally, sometimes I'm trying to be \"fine\" and want to get over it in my own time, but I may not actually be fine at the time.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230172643,
+                    "author": "ProverbialNoose",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 4,
+                    "author_id": 737822,
+                    "points": 34,
+                    "on_album": false,
+                    "datetime": 1400969117,
+                    "ups": 38,
+                    "comment": "...looooooooooooooooong....",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230173024,
+                    "author": "ProverbialNoose",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230232334,
+                            "author": "VaderDarthVader",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1796645,
+                            "points": 10,
+                            "on_album": false,
+                            "datetime": 1400979047,
+                            "ups": 10,
+                            "comment": "Nanananananana Nanananananana!!",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230173024
+                        },
+                        {
+                            "id": 230270338,
+                            "author": "mpaans",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1935191,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400984707,
+                            "ups": 2,
+                            "comment": "I saw them play in Utrecht a long time ago.. they were so fucking stoned, hahaha.. I should really get back into their music :)",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230173024
+                        }
+                    ],
+                    "downs": 4,
+                    "author_id": 737822,
+                    "points": 33,
+                    "on_album": false,
+                    "datetime": 1400969169,
+                    "ups": 37,
+                    "comment": "...jacket.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230228734,
+                    "author": "jordanschlansky",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 7174622,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400978523,
+                    "ups": 4,
+                    "comment": "I happen to know a girl who uses a machete to cut through red tape.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230226085,
+                    "author": "TurpidChipmunk",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230261323,
+                            "author": "somethingdark",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230264083,
+                                    "author": "TurpidChipmunk",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230268250,
+                                            "author": "MalletBallet",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 9940533,
+                                            "points": 4,
+                                            "on_album": false,
+                                            "datetime": 1400984404,
+                                            "ups": 4,
+                                            "comment": "I'm sure that's not the single solitary reason.",
+                                            "deleted": false,
+                                            "image_id": "1Q98gfW",
+                                            "parent_id": 230264083
+                                        }
+                                    ],
+                                    "downs": 2,
+                                    "author_id": 744920,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400983782,
+                                    "ups": 4,
+                                    "comment": "I do that, but then again, I don't keep boyfriends very long.  Maybe the ladies who say they're \"fine\" have perfected things.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230261323
+                                }
+                            ],
+                            "downs": 2,
+                            "author_id": 726116,
+                            "points": 10,
+                            "on_album": false,
+                            "datetime": 1400983321,
+                            "ups": 12,
+                            "comment": "Maybe they should stop lying about their feelings so that we can consider them properly.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230226085
+                        }
+                    ],
+                    "downs": 9,
+                    "author_id": 744920,
+                    "points": 11,
+                    "on_album": false,
+                    "datetime": 1400978099,
+                    "ups": 20,
+                    "comment": "People say they're \"fine\" hoping you won't be a dick and consider their feelings without them having to outwardly tell you you're a dick.",
                     "deleted": false,
                     "image_id": "1Q98gfW",
                     "parent_id": 230073547
@@ -38,115 +887,504 @@
                             "vote": null,
                             "album_cover": null,
                             "children": [
+                                {
+                                    "id": 230200906,
+                                    "author": "steakalamode",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230313835,
+                                            "author": "TomBradyPeesSittingDown",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 9046113,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400991327,
+                                            "ups": 1,
+                                            "comment": "That's kind of a shitty justification.",
+                                            "deleted": false,
+                                            "image_id": "1Q98gfW",
+                                            "parent_id": 230200906
+                                        }
+                                    ],
+                                    "downs": 2,
+                                    "author_id": 8291943,
+                                    "points": 10,
+                                    "on_album": false,
+                                    "datetime": 1400973952,
+                                    "ups": 12,
+                                    "comment": "It's not just girls who do this.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                },
+                                {
+                                    "id": 230202487,
+                                    "author": "AllegedlySo",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 986271,
+                                    "points": 4,
+                                    "on_album": false,
+                                    "datetime": 1400974250,
+                                    "ups": 4,
+                                    "comment": "I have female genitalia and I don't condone these childish mind games. With all do respect, I down right fucking hate it.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                },
+                                {
+                                    "id": 230206108,
+                                    "author": "PaliQ",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230206678,
+                                            "author": "MolsonCanadianSorry",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230231497,
+                                                    "author": "justthesamedecayingmatter",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        {
+                                                            "id": 230273716,
+                                                            "author": "TyrannicalTBagger",
+                                                            "vote": null,
+                                                            "album_cover": null,
+                                                            "children": [
+                                                                {
+                                                                    "id": 230275810,
+                                                                    "author": "justthesamedecayingmatter",
+                                                                    "vote": null,
+                                                                    "album_cover": null,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": 230277067,
+                                                                            "author": "TyrannicalTBagger",
+                                                                            "vote": null,
+                                                                            "album_cover": null,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": 230278039,
+                                                                                    "author": "justthesamedecayingmatter",
+                                                                                    "vote": null,
+                                                                                    "album_cover": null,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": 230278459,
+                                                                                            "author": "TyrannicalTBagger",
+                                                                                            "vote": null,
+                                                                                            "album_cover": null,
+                                                                                            "children": [
+                                                                                                
+                                                                                            ],
+                                                                                            "downs": 0,
+                                                                                            "author_id": 992334,
+                                                                                            "points": 2,
+                                                                                            "on_album": false,
+                                                                                            "datetime": 1400985862,
+                                                                                            "ups": 2,
+                                                                                            "comment": "Definitely noted.",
+                                                                                            "deleted": false,
+                                                                                            "image_id": "1Q98gfW",
+                                                                                            "parent_id": 230278039
+                                                                                        }
+                                                                                    ],
+                                                                                    "downs": 0,
+                                                                                    "author_id": 2824282,
+                                                                                    "points": 2,
+                                                                                    "on_album": false,
+                                                                                    "datetime": 1400985801,
+                                                                                    "ups": 2,
+                                                                                    "comment": "I can respect that. It's easier for a lot of people to say they're fine, but it's also important to address the problem don't forget! ^_^",
+                                                                                    "deleted": false,
+                                                                                    "image_id": "1Q98gfW",
+                                                                                    "parent_id": 230277067
+                                                                                }
+                                                                            ],
+                                                                            "downs": 0,
+                                                                            "author_id": 992334,
+                                                                            "points": 1,
+                                                                            "on_album": false,
+                                                                            "datetime": 1400985652,
+                                                                            "ups": 1,
+                                                                            "comment": "I agree completely. I mainly do it, not because I expect others to read my mind but because I'm not good with confrontation.",
+                                                                            "deleted": false,
+                                                                            "image_id": "1Q98gfW",
+                                                                            "parent_id": 230275810
+                                                                        }
+                                                                    ],
+                                                                    "downs": 0,
+                                                                    "author_id": 2824282,
+                                                                    "points": 1,
+                                                                    "on_album": false,
+                                                                    "datetime": 1400985459,
+                                                                    "ups": 1,
+                                                                    "comment": "just predict what they want or what's wrong is really the problem. Mind-readers aren't very common so far as I know 2/2",
+                                                                    "deleted": false,
+                                                                    "image_id": "1Q98gfW",
+                                                                    "parent_id": 230273716
+                                                                },
+                                                                {
+                                                                    "id": 230275612,
+                                                                    "author": "justthesamedecayingmatter",
+                                                                    "vote": null,
+                                                                    "album_cover": null,
+                                                                    "children": [
+                                                                        
+                                                                    ],
+                                                                    "downs": 0,
+                                                                    "author_id": 2824282,
+                                                                    "points": 1,
+                                                                    "on_album": false,
+                                                                    "datetime": 1400985432,
+                                                                    "ups": 1,
+                                                                    "comment": "I'm not saying it's a bad thing either, open communication is important but it just doesn't always happen, people who expect others to 1/2",
+                                                                    "deleted": false,
+                                                                    "image_id": "1Q98gfW",
+                                                                    "parent_id": 230273716
+                                                                }
+                                                            ],
+                                                            "downs": 0,
+                                                            "author_id": 992334,
+                                                            "points": 2,
+                                                            "on_album": false,
+                                                            "datetime": 1400985174,
+                                                            "ups": 2,
+                                                            "comment": "I am a dude and I do this too.",
+                                                            "deleted": false,
+                                                            "image_id": "1Q98gfW",
+                                                            "parent_id": 230231497
+                                                        }
+                                                    ],
+                                                    "downs": 2,
+                                                    "author_id": 2824282,
+                                                    "points": 5,
+                                                    "on_album": false,
+                                                    "datetime": 1400978936,
+                                                    "ups": 7,
+                                                    "comment": "I love how everyone here keeps saying \"you girls\" acting like guys don't do this shit too",
+                                                    "deleted": false,
+                                                    "image_id": "1Q98gfW",
+                                                    "parent_id": 230206678
+                                                }
+                                            ],
+                                            "downs": 1,
+                                            "author_id": 599090,
+                                            "points": 3,
+                                            "on_album": false,
+                                            "datetime": 1400974940,
+                                            "ups": 4,
+                                            "comment": "okay, well if you girls say \"it's fine\" then don't get pissed when we go about our own business",
+                                            "deleted": false,
+                                            "image_id": "1Q98gfW",
+                                            "parent_id": 230206108
+                                        }
+                                    ],
+                                    "downs": 2,
+                                    "author_id": 1955533,
+                                    "points": 6,
+                                    "on_album": false,
+                                    "datetime": 1400974856,
+                                    "ups": 8,
+                                    "comment": "Because I don't want to fucking talk about it, and if I say it's NOT fine, you want to know WHY and I DONT WANT TO TALK ABOUT IT.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                },
+                                {
+                                    "id": 230255713,
+                                    "author": "Toasterpops",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 1,
+                                    "author_id": 5356098,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400982423,
+                                    "ups": 3,
+                                    "comment": "Guys do the same shit, everyone does it.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                },
+                                {
+                                    "id": 230193580,
+                                    "author": "Jayradd",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 3,
+                                    "author_id": 5279268,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400972692,
+                                    "ups": 4,
+                                    "comment": "Agreed.",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                },
+                                {
+                                    "id": 230258821,
+                                    "author": "guenwyver",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 7263074,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400982915,
+                                    "ups": 1,
+                                    "comment": "I say I'm fine so i can walk away and think about if I have a reason to be upset. This way i can cool down and come back with it calmly",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                },
+                                {
+                                    "id": 230208094,
+                                    "author": "lexicat",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 10426215,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400975175,
+                                    "ups": 1,
+                                    "comment": "Why do people play mind games*",
+                                    "deleted": false,
+                                    "image_id": "1Q98gfW",
+                                    "parent_id": 230188129
+                                }
+                            ],
+                            "downs": 6,
+                            "author_id": 599090,
+                            "points": 8,
+                            "on_album": false,
+                            "datetime": 1400971793,
+                            "ups": 14,
+                            "comment": "then just fucking say it, why do girls play mind games? just be straight forward.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230181568
+                        },
+                        {
+                            "id": 230222473,
+                            "author": "othersidelol",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
                                 
                             ],
                             "downs": 0,
-                            "author_id": 599090,
+                            "author_id": 8898363,
                             "points": 2,
                             "on_album": false,
-                            "datetime": 1400971793,
+                            "datetime": 1400977565,
                             "ups": 2,
-                            "comment": "then just fucking say it, why do girls play mind games? just be straight forward.",
+                            "comment": "Because that makes sense. Men can't do anything to help the situation if we don't know what's wrong.",
                             "deleted": false,
                             "image_id": "1Q98gfW",
                             "parent_id": 230181568
                         }
                     ],
-                    "downs": 0,
+                    "downs": 9,
                     "author_id": 1955533,
-                    "points": 3,
+                    "points": 9,
                     "on_album": false,
                     "datetime": 1400970724,
-                    "ups": 3,
+                    "ups": 18,
                     "comment": "If I say \"I'm fine.\" and look at you in confusion, I'm fine. If I say \"It's fine\" I just don't fucking want to talk to you about it.",
                     "deleted": false,
                     "image_id": "1Q98gfW",
                     "parent_id": 230073547
                 },
                 {
-                    "id": 230172643,
-                    "author": "ProverbialNoose",
+                    "id": 230333494,
+                    "author": "breesreactionpix",
                     "vote": null,
                     "album_cover": null,
                     "children": [
-                        
+                        {
+                            "id": 230416792,
+                            "author": "Flyingnun",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 3939489,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401015691,
+                            "ups": 1,
+                            "comment": "Sometimes i do it because i am upset but don't want to talk about it because it will make me worse.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230333494
+                        }
                     ],
-                    "downs": 2,
-                    "author_id": 737822,
-                    "points": 4,
+                    "downs": 0,
+                    "author_id": 10171033,
+                    "points": 3,
                     "on_album": false,
-                    "datetime": 1400969117,
-                    "ups": 6,
-                    "comment": "...looooooooooooooooong....",
+                    "datetime": 1400994476,
+                    "ups": 3,
+                    "comment": "as a female, I never fucking understood why someone would say they're fine if they AREN'T. If you cant talk bout it to your SO, then U WRONG",
                     "deleted": false,
                     "image_id": "1Q98gfW",
                     "parent_id": 230073547
                 },
                 {
-                    "id": 230173024,
-                    "author": "ProverbialNoose",
+                    "id": 230244706,
+                    "author": "cyberklown28",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
-                    "downs": 2,
-                    "author_id": 737822,
+                    "downs": 1,
+                    "author_id": 1900599,
                     "points": 3,
                     "on_album": false,
-                    "datetime": 1400969169,
-                    "ups": 5,
-                    "comment": "...jacket.",
+                    "datetime": 1400980877,
+                    "ups": 4,
+                    "comment": "'You okay?' 'I'm fine' 'oh, good' 'YOU JERK' '...what?'  'IM LEAVING YOU'  *walks out door, comes back begging to be the gf again tomorrow*",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230313907,
+                    "author": "MayDay87",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1389569,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400991338,
+                    "ups": 2,
+                    "comment": "She has nice bweebs",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230447143,
+                    "author": "cousteau",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1797576,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401025831,
+                    "ups": 1,
+                    "comment": "Maybe that's what she wants you to do.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230416618,
+                    "author": "Flyingnun",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 3939489,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401015626,
+                    "ups": 1,
+                    "comment": "I do it generally because i am upset and don't want to talk about it or because i don't want to fight. I",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230368681,
+                    "author": "TyrannoSARAusRex",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1423365,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401000854,
+                    "ups": 1,
+                    "comment": "I say \"fine\" when I'm not fine but sincerely don't want to talk about it.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073547
+                },
+                {
+                    "id": 230322250,
+                    "author": "tangybreath",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6819671,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400992606,
+                    "ups": 1,
+                    "comment": "...\"fine\" has variable definitions. \"Fine\" is unacceptable.",
                     "deleted": false,
                     "image_id": "1Q98gfW",
                     "parent_id": 230073547
                 }
             ],
-            "downs": 3,
+            "downs": 27,
             "author_id": 1683578,
-            "points": 54,
+            "points": 452,
             "on_album": false,
             "datetime": 1400952476,
-            "ups": 57,
+            "ups": 479,
             "comment": "If you say \"fine\" and dont mean it, then fuck you.",
-            "deleted": false,
-            "image_id": "1Q98gfW",
-            "parent_id": 0
-        },
-        {
-            "id": 230174236,
-            "author": "knickerlicker",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 10361206,
-            "points": 17,
-            "on_album": false,
-            "datetime": 1400969372,
-            "ups": 18,
-            "comment": "As an uncommon white girl, when I tell my boyfriend I'm fine, he freaks out because of this shit. When I say I'm fine, I REALLY mean fine.",
-            "deleted": false,
-            "image_id": "1Q98gfW",
-            "parent_id": 0
-        },
-        {
-            "id": 230181400,
-            "author": "IAmxrayman140",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 10008182,
-            "points": 4,
-            "on_album": false,
-            "datetime": 1400970694,
-            "ups": 4,
-            "comment": "I think the front page is broken.",
             "deleted": false,
             "image_id": "1Q98gfW",
             "parent_id": 0
@@ -167,11 +1405,30 @@
                     ],
                     "downs": 0,
                     "author_id": 5637713,
-                    "points": 1,
+                    "points": 8,
                     "on_album": false,
                     "datetime": 1400957204,
-                    "ups": 1,
+                    "ups": 8,
                     "comment": "I can only imagine how long you've waited to use this.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230073457
+                },
+                {
+                    "id": 230446993,
+                    "author": "cousteau",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1797576,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401025802,
+                    "ups": 1,
+                    "comment": "does her restaurant serve chicken cuz DAMN that's a lotta breast",
                     "deleted": false,
                     "image_id": "1Q98gfW",
                     "parent_id": 230073457
@@ -179,11 +1436,329 @@
             ],
             "downs": 1,
             "author_id": 964650,
-            "points": 4,
+            "points": 67,
             "on_album": false,
             "datetime": 1400952462,
-            "ups": 5,
+            "ups": 68,
             "comment": "does her restaurant serve rice cuz DAMN that's a lotta grain",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230181400,
+            "author": "IAmxrayman140",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230201086,
+                    "author": "oldamethyst",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230275906,
+                            "author": "NegroCommunity",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1509030,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400985475,
+                            "ups": 2,
+                            "comment": "This is from r/funny. So it's not all to surprising it isn't funny.",
+                            "deleted": false,
+                            "image_id": "1Q98gfW",
+                            "parent_id": 230201086
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 7318088,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400973994,
+                    "ups": 2,
+                    "comment": "Yes. For a few weeks now.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230181400
+                }
+            ],
+            "downs": 2,
+            "author_id": 10008182,
+            "points": 66,
+            "on_album": false,
+            "datetime": 1400970694,
+            "ups": 68,
+            "comment": "I think the front page is broken.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230215513,
+            "author": "TimeWoundsAllHeels",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230413648,
+                    "author": "KAG25",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 3169359,
+                    "points": 8,
+                    "on_album": false,
+                    "datetime": 1401014466,
+                    "ups": 8,
+                    "comment": "two and a half men have been on for 12 years, tv makes no sense why the keep some shows and get rid of good shows like Community",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230215513
+                },
+                {
+                    "id": 230446195,
+                    "author": "Automatvapen",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6668435,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401025618,
+                    "ups": 1,
+                    "comment": "One word: Boobs.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230215513
+                }
+            ],
+            "downs": 2,
+            "author_id": 7601231,
+            "points": 44,
+            "on_album": false,
+            "datetime": 1400976405,
+            "ups": 46,
+            "comment": "How can this show be so terrible and still be on, who is watching it? It's not just not funny it's painful",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230191759,
+            "author": "alaskanviking",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1942031,
+            "points": 19,
+            "on_album": false,
+            "datetime": 1400972406,
+            "ups": 19,
+            "comment": "go home front page your drunk.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230074069,
+            "author": "Totesmcfantastaballs",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230246014,
+                    "author": "cyberklown28",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1900599,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400981062,
+                    "ups": 4,
+                    "comment": "off-topic but some variety would be nice. it's always old guy with micropenis speedpounding a 20 yr old, who screams like godzilla is in her",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230074069
+                }
+            ],
+            "downs": 0,
+            "author_id": 9268830,
+            "points": 15,
+            "on_album": false,
+            "datetime": 1400952572,
+            "ups": 15,
+            "comment": "I'm pre sure this is Japanese porn. Only way to explain the pixel",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230073988,
+            "author": "Dogewam",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 3552949,
+            "points": 12,
+            "on_album": false,
+            "datetime": 1400952558,
+            "ups": 14,
+            "comment": "This show is fine",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230288368,
+            "author": "corvandus",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 2676619,
+            "points": 6,
+            "on_album": false,
+            "datetime": 1400987256,
+            "ups": 7,
+            "comment": "This show fucking sucks.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230197003,
+            "author": "Yourpsychoex",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230245012,
+                    "author": "cyberklown28",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1900599,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400980919,
+                    "ups": 1,
+                    "comment": "If only you weren't my psycho ex.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230197003
+                }
+            ],
+            "downs": 0,
+            "author_id": 3207884,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400973267,
+            "ups": 3,
+            "comment": "When I say I'm fine I mean I'm fine...",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230218132,
+            "author": "YourGod",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 5272905,
+            "points": 4,
+            "on_album": false,
+            "datetime": 1400976870,
+            "ups": 5,
+            "comment": "I'm fine with this post...",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230073718,
+            "author": "parabola",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 255046,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400952512,
+            "ups": 4,
+            "comment": "Honestly, if you have to deal with this mindfuck shit, find someone more mature. That goes both ways.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230357161,
+            "author": "feryooday",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1672784,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400998651,
+            "ups": 2,
+            "comment": "Is there a higher quality version of this floating around? I need it for reasons.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230300077,
+            "author": "d65vid",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9949203,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400989142,
+            "ups": 2,
+            "comment": "I always make it a point of doing whatever she says in an attempt to condition her not to do this.",
             "deleted": false,
             "image_id": "1Q98gfW",
             "parent_id": 0
@@ -208,58 +1783,455 @@
             "parent_id": 0
         },
         {
-            "id": 230074069,
-            "author": "Totesmcfantastaballs",
+            "id": 230335225,
+            "author": "Hashbrown123",
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230335378,
+                    "author": "Hashbrown123",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 9041094,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400994830,
+                    "ups": 2,
+                    "comment": "And when a girl says something isn't funny you better not laugh your ass off.",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230335225
+                }
             ],
-            "downs": 0,
-            "author_id": 9268830,
-            "points": 1,
+            "downs": 1,
+            "author_id": 9041094,
+            "points": 2,
             "on_album": false,
-            "datetime": 1400952572,
-            "ups": 1,
-            "comment": "I'm pre sure this is Japanese porn. Only way to explain the pixel",
+            "datetime": 1400994802,
+            "ups": 3,
+            "comment": "When a girl says nothing is wrong, everything is wrong.  When a girl says everything is wrong, EVERYTHING is wrong...",
             "deleted": false,
             "image_id": "1Q98gfW",
             "parent_id": 0
         },
         {
-            "id": 230073988,
-            "author": "Dogewam",
+            "id": 230329144,
+            "author": "PhthaloType",
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230329432,
+                    "author": "PhthaloType",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 10068607,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400993758,
+                    "ups": 2,
+                    "comment": "\"And when she says something's not funny, you'd better not laugh your ass off.\"",
+                    "deleted": false,
+                    "image_id": "1Q98gfW",
+                    "parent_id": 230329144
+                }
             ],
-            "downs": 0,
-            "author_id": 3552949,
-            "points": 1,
+            "downs": 1,
+            "author_id": 10068607,
+            "points": 2,
             "on_album": false,
-            "datetime": 1400952558,
-            "ups": 1,
-            "comment": "This show is fine",
+            "datetime": 1400993720,
+            "ups": 3,
+            "comment": "\"When a woman says 'nothing's wrong', everything's wrong, and when she says 'everything's wrong', EVERYTHING'S WRONG.\"",
             "deleted": false,
             "image_id": "1Q98gfW",
             "parent_id": 0
         },
         {
-            "id": 230073718,
-            "author": "parabola",
+            "id": 230310715,
+            "author": "robtjack",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 10873318,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400990829,
+            "ups": 3,
+            "comment": "I down vote because revolution gets cancelled but this crap doesn't",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230262919,
+            "author": "ForScienceb1tch",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 10234234,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400983576,
+            "ups": 4,
+            "comment": "Boobs is all I took out from this post",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230228350,
+            "author": "sirbaldrick",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 484201,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400978465,
+            "ups": 3,
+            "comment": "fuck off",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230214514,
+            "author": "xXpixiechickXx",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 5466744,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400976245,
+            "ups": 3,
+            "comment": "So damn true...",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230332657,
+            "author": "IMadeThisAccountJustforPuns",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 8556209,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400994318,
+            "ups": 2,
+            "comment": "Dear god if Two Broke Girls quote-caps start making it to the front-page with regularity, I'll be deeply distraught.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230332003,
+            "author": "whatanawfulname",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 6285488,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400994196,
+            "ups": 2,
+            "comment": "Women tricks right there",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230458408,
+            "author": "Forky7",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 255046,
+            "author_id": 837459,
             "points": 1,
             "on_album": false,
-            "datetime": 1400952512,
+            "datetime": 1401028226,
             "ups": 1,
-            "comment": "Honestly, if you have to deal with this mindfuck shit, find someone more mature. That goes both ways.",
+            "comment": "I say fine when I'm bothered by something but it's not a big deal because I will just get over it. When it doesn't need to be fixed.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230453170,
+            "author": "baldandbearded",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1061410,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401027174,
+            "ups": 1,
+            "comment": "I stopped saying fine and say perfectly average instead. Because mostly, that's life. And that's okay.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230449903,
+            "author": "ThatGeezer",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 6056092,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401026438,
+            "ups": 1,
+            "comment": "Downvoting because I fucking hate this show, sorry op.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230433169,
+            "author": "SavannahGreen",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3352208,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401022064,
+            "ups": 1,
+            "comment": "I hate this show and the tired jokes quoted from it.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230428012,
+            "author": "JaimeLannistersRightHand",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 5053395,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401020096,
+            "ups": 1,
+            "comment": "You've driven into Fuckville, and she's the mayor!",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230423530,
+            "author": "RhaegarTheBard",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11770951,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401018307,
+            "ups": 1,
+            "comment": "I clicked for Kat Dennings. :(",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230415025,
+            "author": "zanash",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 2889973,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401015032,
+            "ups": 1,
+            "comment": "As a man my scale runes from meh to okay, with fine somewhere in the middle.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230414815,
+            "author": "u9kdk",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7072133,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401014958,
+            "ups": 1,
+            "comment": "Fuck you for ruining the word fine.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230401246,
+            "author": "rivens",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10135042,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401010092,
+            "ups": 1,
+            "comment": "Freaked out, Insecure, Neurotic, Emotional = FINE",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230324734,
+            "author": "thudrs",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9838703,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400993012,
+            "ups": 1,
+            "comment": "If you say fine and dont mean fine... that sucks i dont play games you mean what you say or you dont get the proper responses",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230296465,
+            "author": "Rivalyn",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1528795,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400988537,
+            "ups": 1,
+            "comment": "This kind of thing is not limited to women, when people ask how I'm doing I say \"fine\" rather than \"My life is a wreck and I hope I die.\"",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230216344,
+            "author": "Hankthehandyman",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 2721622,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400976524,
+            "ups": 1,
+            "comment": "If i had a dollar for every pixel in this picture i would have two dollars.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230193310,
+            "author": "JT1984",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3057952,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400972647,
+            "ups": 1,
+            "comment": "When I'm upset w/ my SO, I usually say \"I don't want to talk about it right now.\" Instead of I'm fine.",
+            "deleted": false,
+            "image_id": "1Q98gfW",
+            "parent_id": 0
+        },
+        {
+            "id": 230193064,
+            "author": "Zaapedus",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9141738,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400972605,
+            "ups": 1,
+            "comment": "I see you, my Facebook front page!",
             "deleted": false,
             "image_id": "1Q98gfW",
             "parent_id": 0
@@ -323,7 +2295,7 @@
         },
         {
             "id": 230073559,
-            "author": "ScubaNoodles",
+            "author": "[deleted]",
             "vote": null,
             "album_cover": null,
             "children": [
@@ -335,26 +2307,26 @@
                     "children": [
                         
                     ],
-                    "downs": 1,
+                    "downs": 2,
                     "author_id": 3824280,
                     "points": 0,
                     "on_album": false,
                     "datetime": 1400952537,
-                    "ups": 1,
+                    "ups": 2,
                     "comment": "I meant boobies. .. dick trying to talk to me while I type. Dudes selfish.",
                     "deleted": false,
                     "image_id": "1Q98gfW",
                     "parent_id": 230073559
                 }
             ],
-            "downs": 2,
-            "author_id": 3824280,
-            "points": -1,
+            "downs": 4,
+            "author_id": 0,
+            "points": -3,
             "on_album": false,
             "datetime": 1400952478,
             "ups": 1,
-            "comment": "Didn't we all agree this show sucks and the only reason to watch it is dem boonies O.o",
-            "deleted": false,
+            "comment": "[deleted]",
+            "deleted": true,
             "image_id": "1Q98gfW",
             "parent_id": 0
         }

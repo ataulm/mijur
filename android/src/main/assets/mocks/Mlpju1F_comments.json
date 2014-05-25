@@ -25,15 +25,164 @@
                                     "vote": null,
                                     "album_cover": null,
                                     "children": [
-                                        
+                                        {
+                                            "id": 230227801,
+                                            "author": "Letter13",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230446672,
+                                                    "author": "Comcody336",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 10943878,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1401025736,
+                                                    "ups": 1,
+                                                    "comment": "This is why Dan shouldn't sell stuff.... Fuck you dan",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230227801
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 5757199,
+                                            "points": 15,
+                                            "on_album": false,
+                                            "datetime": 1400978380,
+                                            "ups": 15,
+                                            "comment": "Because of the guy trying to sell the sexy cop uniform.",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230177851
+                                        },
+                                        {
+                                            "id": 230200225,
+                                            "author": "Myfirstnamewaschosen",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230309041,
+                                                    "author": "ReignSilver",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 3544357,
+                                                    "points": 4,
+                                                    "on_album": false,
+                                                    "datetime": 1400990583,
+                                                    "ups": 4,
+                                                    "comment": "Not if she wants to make it to SlutFest 2014",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230200225
+                                                },
+                                                {
+                                                    "id": 230309356,
+                                                    "author": "FreakinSatan",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 3795870,
+                                                    "points": 3,
+                                                    "on_album": false,
+                                                    "datetime": 1400990626,
+                                                    "ups": 3,
+                                                    "comment": "Sneak out and Skank out.",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230200225
+                                                },
+                                                {
+                                                    "id": 230446978,
+                                                    "author": "Comcody336",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 10943878,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1401025799,
+                                                    "ups": 1,
+                                                    "comment": "\"I'm 12, I do what I want\"",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230200225
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 3555820,
+                                            "points": 5,
+                                            "on_album": false,
+                                            "datetime": 1400973833,
+                                            "ups": 5,
+                                            "comment": "She'll sneak out.",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230177851
+                                        },
+                                        {
+                                            "id": 230373415,
+                                            "author": "IateTokyo",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 9855317,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1401001989,
+                                            "ups": 1,
+                                            "comment": "Because of you!",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230177851
+                                        }
                                     ],
                                     "downs": 0,
                                     "author_id": 2957605,
-                                    "points": 7,
+                                    "points": 61,
                                     "on_album": false,
                                     "datetime": 1400970041,
-                                    "ups": 7,
+                                    "ups": 61,
                                     "comment": "for TWO weeks now",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230159986
+                                },
+                                {
+                                    "id": 230374981,
+                                    "author": "TheGillMachine",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 8289552,
+                                    "points": 4,
+                                    "on_album": false,
+                                    "datetime": 1401002359,
+                                    "ups": 4,
+                                    "comment": "Oh, hamburgers.",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
                                     "parent_id": 230159986
@@ -41,22 +190,22 @@
                             ],
                             "downs": 1,
                             "author_id": 4870896,
-                            "points": 21,
+                            "points": 88,
                             "on_album": false,
                             "datetime": 1400967055,
-                            "ups": 22,
+                            "ups": 89,
                             "comment": "Who is grounded.",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230119780
                         }
                     ],
-                    "downs": 0,
+                    "downs": 1,
                     "author_id": 8080555,
-                    "points": 78,
+                    "points": 260,
                     "on_album": false,
                     "datetime": 1400960468,
-                    "ups": 78,
+                    "ups": 261,
                     "comment": "Except Rebecca.",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -69,11 +218,67 @@
                     "album_cover": null,
                     "children": [
                         {
+                            "id": 230160472,
+                            "author": "huggingtonbear",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230196577,
+                                    "author": "ashmenon",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 2758677,
+                                    "points": 7,
+                                    "on_album": false,
+                                    "datetime": 1400973199,
+                                    "ups": 7,
+                                    "comment": "That's the spirit.",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230160472
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 5412990,
+                            "points": 10,
+                            "on_album": false,
+                            "datetime": 1400967133,
+                            "ups": 10,
+                            "comment": "You slut",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230104240
+                        },
+                        {
                             "id": 230161033,
                             "author": "DoYouRealyExpectMeToFindAShorterUsername",
                             "vote": null,
                             "album_cover": null,
                             "children": [
+                                {
+                                    "id": 230295397,
+                                    "author": "ToxicPineapple",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 911978,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400988350,
+                                    "ups": 1,
+                                    "comment": "Son of a bitch. +1",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230161033
+                                },
                                 {
                                     "id": 230185924,
                                     "author": "ScarlettHasTurnips",
@@ -113,32 +318,32 @@
                                     "parent_id": 230161033
                                 }
                             ],
-                            "downs": 0,
+                            "downs": 1,
                             "author_id": 7707311,
-                            "points": 3,
+                            "points": 9,
                             "on_album": false,
                             "datetime": 1400967225,
-                            "ups": 3,
+                            "ups": 10,
                             "comment": "I, for my part, lost the game.",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230104240
                         },
                         {
-                            "id": 230160472,
-                            "author": "huggingtonbear",
+                            "id": 230413387,
+                            "author": "DarkMatt",
                             "vote": null,
                             "album_cover": null,
                             "children": [
                                 
                             ],
                             "downs": 0,
-                            "author_id": 5412990,
-                            "points": 3,
+                            "author_id": 9795717,
+                            "points": 1,
                             "on_album": false,
-                            "datetime": 1400967133,
-                            "ups": 3,
-                            "comment": "You slut",
+                            "datetime": 1401014367,
+                            "ups": 1,
+                            "comment": "did you win two STI's?",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230104240
@@ -146,10 +351,10 @@
                     ],
                     "downs": 0,
                     "author_id": 1244993,
-                    "points": 8,
+                    "points": 35,
                     "on_album": false,
                     "datetime": 1400957766,
-                    "ups": 8,
+                    "ups": 35,
                     "comment": "I won twice!",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -171,11 +376,105 @@
                             ],
                             "downs": 0,
                             "author_id": 6615560,
-                            "points": 2,
+                            "points": 11,
                             "on_album": false,
                             "datetime": 1400966268,
-                            "ups": 2,
+                            "ups": 11,
                             "comment": "Yeah! I got all of my antibiotics in advance this time.",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230103415
+                        },
+                        {
+                            "id": 230190949,
+                            "author": "jaymwest",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 8937789,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1400972274,
+                            "ups": 3,
+                            "comment": "God. I am going to get reamed. Should have bought my hotel room but do I think ahead? NOOO",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230103415
+                        },
+                        {
+                            "id": 230309221,
+                            "author": "ReignSilver",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 3544357,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400990606,
+                            "ups": 2,
+                            "comment": "Rebecca is probably grounded from that too",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230103415
+                        },
+                        {
+                            "id": 230368225,
+                            "author": "BlingerBunny",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230368888,
+                                    "author": "BlingerBunny",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 6919259,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1401000905,
+                                    "ups": 1,
+                                    "comment": "Oh wow.. This is an actual event! It's an abbreviation for Support Local Unsigned Talent",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230368225
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 6919259,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401000757,
+                            "ups": 1,
+                            "comment": "Speaking of, when and where is this convention taking place?",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230103415
+                        },
+                        {
+                            "id": 230295580,
+                            "author": "ToxicPineapple",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 911978,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400988379,
+                            "ups": 1,
+                            "comment": "Tickets are on sale now at ticketmaster.com!",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230103415
@@ -183,11 +482,30 @@
                     ],
                     "downs": 0,
                     "author_id": 9625602,
-                    "points": 4,
+                    "points": 20,
                     "on_album": false,
                     "datetime": 1400957640,
-                    "ups": 4,
+                    "ups": 20,
                     "comment": "SlutFest 2013 won't even compare to SlutFest 2014.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230006443
+                },
+                {
+                    "id": 230172685,
+                    "author": "Hecachire",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 8520959,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400969122,
+                    "ups": 3,
+                    "comment": "The winner was using the term, \"well-seasoned.\" Eek! The thoughts that term caused.",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230006443
@@ -238,22 +556,22 @@
                                             ],
                                             "downs": 0,
                                             "author_id": 1120653,
-                                            "points": 1,
+                                            "points": 2,
                                             "on_album": false,
                                             "datetime": 1400968900,
-                                            "ups": 1,
+                                            "ups": 2,
                                             "comment": "It's about meeting the right people",
                                             "deleted": false,
                                             "image_id": "Mlpju1F",
                                             "parent_id": 230152264
                                         }
                                     ],
-                                    "downs": 1,
+                                    "downs": 2,
                                     "author_id": 1266936,
-                                    "points": 4,
+                                    "points": 8,
                                     "on_album": false,
                                     "datetime": 1400965762,
-                                    "ups": 5,
+                                    "ups": 10,
                                     "comment": "Who knows what it's about anymore? It got so confusing after tumblr joined in.",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
@@ -267,67 +585,216 @@
                                     "children": [
                                         
                                     ],
-                                    "downs": 0,
+                                    "downs": 1,
                                     "author_id": 3777108,
-                                    "points": 1,
+                                    "points": 2,
                                     "on_album": false,
                                     "datetime": 1400971539,
-                                    "ups": 1,
+                                    "ups": 3,
                                     "comment": "Not second wave feminists, those are hardline anti-sexuality. Third wave got confusing and messy though.",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230151223
+                                },
+                                {
+                                    "id": 230374753,
+                                    "author": "Zalophus",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 822596,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1401002303,
+                                    "ups": 1,
+                                    "comment": "Depends what kind of feminism. There's some who want women to dress how they want, others who think it's objectifying to women.",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
                                     "parent_id": 230151223
                                 }
                             ],
-                            "downs": 1,
+                            "downs": 4,
                             "author_id": 5829733,
-                            "points": 4,
+                            "points": 6,
                             "on_album": false,
                             "datetime": 1400965570,
-                            "ups": 5,
+                            "ups": 10,
                             "comment": "I thought feminism was all about empowering women so they'd feel more comfortable having sex without the stigma...",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230013103
                         }
                     ],
-                    "downs": 5,
+                    "downs": 12,
                     "author_id": 943806,
-                    "points": 2,
+                    "points": -2,
                     "on_album": false,
                     "datetime": 1400941794,
-                    "ups": 7,
+                    "ups": 10,
                     "comment": "we need more slut in the world. Damn feminism....",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230006443
                 },
                 {
-                    "id": 230172685,
-                    "author": "Hecachire",
+                    "id": 230282950,
+                    "author": "thefuckwouldiwantacaravanthatsgotnofuckinwheels",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230299774,
+                            "author": "ashmenon",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 2758677,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400989089,
+                            "ups": 2,
+                            "comment": "It's not herpes, it's OURpes. #sharing #equality #noh8",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230282950
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 9309903,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400986469,
+                    "ups": 1,
+                    "comment": "If you consider herpes winning then yes we all won",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230006443
+                },
+                {
+                    "id": 230260585,
+                    "author": "longtimewatcherfirsttimeposter",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230301313,
+                            "author": "SamBoston",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 5690243,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400989339,
+                            "ups": 2,
+                            "comment": "BONER JAMZ 03! That makes Backdoor Sluts 9 look like Crotch Tapers 3!",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230260585
+                        },
+                        {
+                            "id": 230299552,
+                            "author": "ashmenon",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 2758677,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400989049,
+                            "ups": 2,
+                            "comment": "It's the wham, bam, thank you jam!",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230260585
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 1042069,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400983200,
+                    "ups": 1,
+                    "comment": "Boner Jamz 03! http://whiskeywriting.com/wp-content/uploads/2011/09/boner-jams-03_design.png",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230006443
+                },
+                {
+                    "id": 230195581,
+                    "author": "masimone",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230195734,
+                            "author": "masimone",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 843165,
+                            "points": 2,
+                            "on_album": false,
+                            "datetime": 1400973051,
+                            "ups": 2,
+                            "comment": "*accept the sluts. (oops)",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230195581
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 843165,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400973020,
+                    "ups": 1,
+                    "comment": "Except the sluts.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230006443
+                },
+                {
+                    "id": 230251288,
+                    "author": "troublecliff",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
-                    "downs": 0,
-                    "author_id": 8520959,
-                    "points": 1,
+                    "downs": 1,
+                    "author_id": 6440897,
+                    "points": 0,
                     "on_album": false,
-                    "datetime": 1400969122,
+                    "datetime": 1400981804,
                     "ups": 1,
-                    "comment": "The winner was using the term, \"well-seasoned.\" Eek! The thoughts that term caused.",
+                    "comment": "Yes, everybody won an std...",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230006443
                 }
             ],
-            "downs": 7,
+            "downs": 9,
             "author_id": 2758677,
-            "points": 666,
+            "points": 2095,
             "on_album": false,
             "datetime": 1400940322,
-            "ups": 673,
+            "ups": 2104,
             "comment": "There are no winners in this conversation. Unlike in SlutFest 2013, where EVERYBODY won.",
             "deleted": false,
             "image_id": "Mlpju1F",
@@ -361,10 +828,10 @@
                                     ],
                                     "downs": 0,
                                     "author_id": 7713152,
-                                    "points": 3,
+                                    "points": 7,
                                     "on_album": false,
                                     "datetime": 1400965839,
-                                    "ups": 3,
+                                    "ups": 7,
                                     "comment": "casuals, SlutFest 1969 best SlutFest.",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
@@ -373,11 +840,30 @@
                             ],
                             "downs": 0,
                             "author_id": 1049450,
-                            "points": 3,
+                            "points": 12,
                             "on_album": false,
                             "datetime": 1400964842,
-                            "ups": 3,
+                            "ups": 12,
                             "comment": "I remember SlutFest1992.. I shat my pants and threw up on my mom.",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230117671
+                        },
+                        {
+                            "id": 230153689,
+                            "author": "TheOscitator",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 5624972,
+                            "points": 4,
+                            "on_album": false,
+                            "datetime": 1400965980,
+                            "ups": 4,
+                            "comment": "You kids should have seen SlutFest 1922...flapper floozies as far as the eye could see",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230117671
@@ -400,33 +886,14 @@
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230117671
-                        },
-                        {
-                            "id": 230153689,
-                            "author": "TheOscitator",
-                            "vote": null,
-                            "album_cover": null,
-                            "children": [
-                                
-                            ],
-                            "downs": 0,
-                            "author_id": 5624972,
-                            "points": 1,
-                            "on_album": false,
-                            "datetime": 1400965980,
-                            "ups": 1,
-                            "comment": "You kids should have seen SlutFest 1922...flapper floozies as far as the eye could see",
-                            "deleted": false,
-                            "image_id": "Mlpju1F",
-                            "parent_id": 230117671
                         }
                     ],
                     "downs": 0,
                     "author_id": 1487135,
-                    "points": 13,
+                    "points": 39,
                     "on_album": false,
                     "datetime": 1400960127,
-                    "ups": 13,
+                    "ups": 39,
                     "comment": "still not as good as SlutFest 1992....aah memories...",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -448,11 +915,30 @@
                             ],
                             "downs": 1,
                             "author_id": 1965015,
-                            "points": 0,
+                            "points": 3,
                             "on_album": false,
                             "datetime": 1400969180,
-                            "ups": 1,
+                            "ups": 4,
                             "comment": "It's being held at your Mum's house next Saturday. See you there!",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230158174
+                        },
+                        {
+                            "id": 230193937,
+                            "author": "xephus",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 1160209,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400972750,
+                            "ups": 1,
+                            "comment": "between st patties day and halloween.",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230158174
@@ -460,49 +946,11 @@
                     ],
                     "downs": 0,
                     "author_id": 250569,
-                    "points": 2,
+                    "points": 6,
                     "on_album": false,
                     "datetime": 1400966772,
-                    "ups": 2,
+                    "ups": 6,
                     "comment": "so when is slutfest 2014 on ?",
-                    "deleted": false,
-                    "image_id": "Mlpju1F",
-                    "parent_id": 230007172
-                },
-                {
-                    "id": 230167363,
-                    "author": "Meowfia",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 1,
-                    "author_id": 8071717,
-                    "points": 1,
-                    "on_album": false,
-                    "datetime": 1400968239,
-                    "ups": 2,
-                    "comment": "Throwback to SlutFest 1906!",
-                    "deleted": false,
-                    "image_id": "Mlpju1F",
-                    "parent_id": 230007172
-                },
-                {
-                    "id": 230188018,
-                    "author": "goodguyC",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 972919,
-                    "points": 1,
-                    "on_album": false,
-                    "datetime": 1400971776,
-                    "ups": 1,
-                    "comment": "*mammaries",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230007172
@@ -517,11 +965,143 @@
                     ],
                     "downs": 0,
                     "author_id": 5873302,
-                    "points": 1,
+                    "points": 2,
                     "on_album": false,
                     "datetime": 1400966208,
-                    "ups": 1,
+                    "ups": 2,
                     "comment": "No no slutfest 2010 is where it's was at",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230007172
+                },
+                {
+                    "id": 230167363,
+                    "author": "Meowfia",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230316799,
+                            "author": "Hashbrown123",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 9041094,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400991773,
+                            "ups": 1,
+                            "comment": "That was a great one.  I saw so many ankles.",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230167363
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 8071717,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400968239,
+                    "ups": 3,
+                    "comment": "Throwback to SlutFest 1906!",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230007172
+                },
+                {
+                    "id": 230188018,
+                    "author": "goodguyC",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 972919,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400971776,
+                    "ups": 2,
+                    "comment": "*mammaries",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230007172
+                },
+                {
+                    "id": 230447098,
+                    "author": "BernieKropp",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 6732167,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401025822,
+                    "ups": 1,
+                    "comment": "sounds good  to use on t-shirts, just like those \"surfparty1973\" things etc.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230007172
+                },
+                {
+                    "id": 230374669,
+                    "author": "sirlemonsworth",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 8068597,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401002284,
+                    "ups": 1,
+                    "comment": "You mean so many fondled memories  right",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230007172
+                },
+                {
+                    "id": 230300092,
+                    "author": "SamBoston",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 5690243,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400989144,
+                    "ups": 1,
+                    "comment": "That's where they filmed Backdoor Sluts 10",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230007172
+                },
+                {
+                    "id": 230277775,
+                    "author": "MeanBlack",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 10861078,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400985763,
+                    "ups": 1,
+                    "comment": "Are you kidding me? No its SlutFest 2007 the last year of good music.",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230007172
@@ -534,25 +1114,471 @@
                     "children": [
                         
                     ],
-                    "downs": 3,
+                    "downs": 4,
                     "author_id": 1049450,
                     "points": -2,
                     "on_album": false,
                     "datetime": 1400964797,
-                    "ups": 1,
+                    "ups": 2,
                     "comment": "*fondle",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230007172
                 }
             ],
-            "downs": 2,
+            "downs": 3,
             "author_id": 8035066,
-            "points": 186,
+            "points": 600,
             "on_album": false,
             "datetime": 1400940475,
-            "ups": 188,
+            "ups": 603,
             "comment": "Oh SlutFest 2012, so many fond memories.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230153785,
+            "author": "thatazndude",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230215306,
+                    "author": "duckie523",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230289625,
+                            "author": "6footdildo",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 1,
+                            "author_id": 11936716,
+                            "points": 9,
+                            "on_album": false,
+                            "datetime": 1400987443,
+                            "ups": 10,
+                            "comment": "lightly used aluminum foil",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230215306
+                        },
+                        {
+                            "id": 230342599,
+                            "author": "7543",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 8937222,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400996189,
+                            "ups": 1,
+                            "comment": "Ba Dum Tss: https://www.youtube.com/watch?v=6zXDo4dL7SU",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230215306
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 126629,
+                    "points": 68,
+                    "on_album": false,
+                    "datetime": 1400976372,
+                    "ups": 69,
+                    "comment": "\"This is gold.\" More like aluminum foil, amirite?!",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153785
+                },
+                {
+                    "id": 230245354,
+                    "author": "jawsnnn",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 7393157,
+                    "points": 12,
+                    "on_album": false,
+                    "datetime": 1400980967,
+                    "ups": 13,
+                    "comment": "Why do get the feeling that the prankster got kind of owned here?",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153785
+                },
+                {
+                    "id": 230291527,
+                    "author": "mechanimated",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 490519,
+                    "points": 5,
+                    "on_album": false,
+                    "datetime": 1400987727,
+                    "ups": 5,
+                    "comment": "I find it a little disappointing...even in a fake conversation OP imagines two people would turn to calling each others' wives whores...",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153785
+                },
+                {
+                    "id": 230322760,
+                    "author": "fencerman",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 1331311,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400992686,
+                    "ups": 4,
+                    "comment": "If it's fake, it's kind of sad. If it's real, the casual mention of domestic violence is even sadder.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153785
+                },
+                {
+                    "id": 230313136,
+                    "author": "ultravisitor1",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 717825,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400991215,
+                    "ups": 3,
+                    "comment": "This made me laugh more than the post did.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153785
+                }
+            ],
+            "downs": 5,
+            "author_id": 3779454,
+            "points": 371,
+            "on_album": false,
+            "datetime": 1400965994,
+            "ups": 376,
+            "comment": "this aint that funny",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230158036,
+            "author": "WhenBearsReign",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230177647,
+                    "author": "dontdropthesoap",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230277445,
+                            "author": "WestwoodRIP",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 2725417,
+                            "points": 5,
+                            "on_album": false,
+                            "datetime": 1400985714,
+                            "ups": 5,
+                            "comment": "the 2400+ upvotes seem to disagree with you! (i don't, however...).",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230177647
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 10015984,
+                    "points": 29,
+                    "on_album": false,
+                    "datetime": 1400970000,
+                    "ups": 29,
+                    "comment": "They have been overdone, at some point, people stop caring.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230158036
+                },
+                {
+                    "id": 230348269,
+                    "author": "ninjagaidensigma",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230397454,
+                            "author": "PartyMagician",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                
+                            ],
+                            "downs": 0,
+                            "author_id": 6398084,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1401008774,
+                            "ups": 3,
+                            "comment": "But it makes the daughter and the father look stupid, and why would anyone post that. (the green messages are from the \"poster\")",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230348269
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 3689299,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400997212,
+                    "ups": 4,
+                    "comment": "Because this could be passed off as real. Petty arguing and placing blame sounds exactly like this.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230158036
+                },
+                {
+                    "id": 230325766,
+                    "author": "zenandtheartofmadness",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230327890,
+                            "author": "WhenBearsReign",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230329129,
+                                    "author": "zenandtheartofmadness",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230332306,
+                                            "author": "WhenBearsReign",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230335207,
+                                                    "author": "GoJetsGo",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 1,
+                                                    "author_id": 8717615,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1400994799,
+                                                    "ups": 2,
+                                                    "comment": "Who the fuck cares if its fake... stfu",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230332306
+                                                },
+                                                {
+                                                    "id": 230386984,
+                                                    "author": "zenandtheartofmadness",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 982541,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1401005553,
+                                                    "ups": 1,
+                                                    "comment": "i think this is mostly subjective. if i enter into it willing to be deceived, i'm more likely to be amused. everyone wins.",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230332306
+                                                }
+                                            ],
+                                            "downs": 1,
+                                            "author_id": 571000,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400994251,
+                                            "ups": 2,
+                                            "comment": "And that's why I said they did a terrible job making it look real.  My belief was not suspended.",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230329129
+                                        }
+                                    ],
+                                    "downs": 2,
+                                    "author_id": 982541,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400993717,
+                                    "ups": 4,
+                                    "comment": "i understand, but disagree. suspension of disbelief applies equally to fake texts and hollywood.",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230327890
+                                }
+                            ],
+                            "downs": 2,
+                            "author_id": 571000,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1400993521,
+                            "ups": 3,
+                            "comment": "The difference is that this is only amusing assuming it's real.",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230325766
+                        },
+                        {
+                            "id": 230381701,
+                            "author": "Flyndaran",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230386627,
+                                    "author": "zenandtheartofmadness",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 982541,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1401005453,
+                                    "ups": 1,
+                                    "comment": "disagree. if it's funny, i don't care whether it's \"real\" or not.",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230381701
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 2653578,
+                            "points": 1,
+                            "on_album": false,
+                            "datetime": 1401004156,
+                            "ups": 1,
+                            "comment": "If it's amateur, then it better be real, or it's just shitty \"reality television\".",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230325766
+                        }
+                    ],
+                    "downs": 1,
+                    "author_id": 982541,
+                    "points": 4,
+                    "on_album": false,
+                    "datetime": 1400993192,
+                    "ups": 5,
+                    "comment": "i get confused by people who care if it's real. i watch movies and television without worrying that it's not \"real.\" same thing, right?",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230158036
+                },
+                {
+                    "id": 230443483,
+                    "author": "ngthagg",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 1655306,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1401024975,
+                    "ups": 2,
+                    "comment": "I'm assuming it IS real, because if someone made it up they would have made up something funny.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230158036
+                },
+                {
+                    "id": 230390878,
+                    "author": "bullshit",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 186888,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401006611,
+                    "ups": 1,
+                    "comment": "Because it's not unrealistic. I know people who end up in discussions like this; stupidity mixing with morality causes some crazy stuff.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230158036
+                }
+            ],
+            "downs": 6,
+            "author_id": 571000,
+            "points": 316,
+            "on_album": false,
+            "datetime": 1400966749,
+            "ups": 322,
+            "comment": "I don't understand why people don't even try to make these seem real.  Then I get even more confused when people think they ARE real...",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230007001,
+            "author": "researchedfacts",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 7979131,
+            "points": 87,
+            "on_album": false,
+            "datetime": 1400940439,
+            "ups": 89,
+            "comment": "Her pimp sure will be mad when she isn't on the streets for 2 weeks.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -575,14 +1601,50 @@
                             "vote": null,
                             "album_cover": null,
                             "children": [
-                                
+                                {
+                                    "id": 230213392,
+                                    "author": "TheBlindPhotographer",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230404366,
+                                            "author": "ThePundit",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 3030900,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1401011034,
+                                            "ups": 1,
+                                            "comment": "DAD",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230213392
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 8715206,
+                                    "points": 6,
+                                    "on_album": false,
+                                    "datetime": 1400976051,
+                                    "ups": 6,
+                                    "comment": "Lightly fried fish fillets",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230173939
+                                }
                             ],
                             "downs": 0,
                             "author_id": 7729458,
-                            "points": 3,
+                            "points": 17,
                             "on_album": false,
                             "datetime": 1400969323,
-                            "ups": 3,
+                            "ups": 17,
                             "comment": "say lightly fried fish fillets one more time, Dad.",
                             "deleted": false,
                             "image_id": "Mlpju1F",
@@ -595,6 +1657,43 @@
                             "album_cover": null,
                             "children": [
                                 {
+                                    "id": 230214862,
+                                    "author": "duckie523",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230215324,
+                                            "author": "brohanman",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 881220,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400976375,
+                                            "ups": 1,
+                                            "comment": "Oh yeah!",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230214862
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 126629,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400976303,
+                                    "ups": 2,
+                                    "comment": "Previously on imgur http://imgur.com/6v0oXJw",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230167741
+                                },
+                                {
                                     "id": 230171983,
                                     "author": "kossorihana",
                                     "vote": null,
@@ -604,10 +1703,10 @@
                                     ],
                                     "downs": 0,
                                     "author_id": 1591872,
-                                    "points": 1,
+                                    "points": 2,
                                     "on_album": false,
                                     "datetime": 1400969004,
-                                    "ups": 1,
+                                    "ups": 2,
                                     "comment": "Same",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
@@ -616,10 +1715,10 @@
                             ],
                             "downs": 0,
                             "author_id": 881220,
-                            "points": 3,
+                            "points": 6,
                             "on_album": false,
                             "datetime": 1400968300,
-                            "ups": 3,
+                            "ups": 6,
                             "comment": "I don't know why I'm upvoting you, but I am.",
                             "deleted": false,
                             "image_id": "Mlpju1F",
@@ -631,14 +1730,50 @@
                             "vote": null,
                             "album_cover": null,
                             "children": [
-                                
+                                {
+                                    "id": 230206414,
+                                    "author": "icantthinkofacoolusername0123",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        {
+                                            "id": 230214910,
+                                            "author": "duckie523",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 126629,
+                                            "points": 1,
+                                            "on_album": false,
+                                            "datetime": 1400976309,
+                                            "ups": 1,
+                                            "comment": "Previously on imgur http://imgur.com/6v0oXJw",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230206414
+                                        }
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 9985803,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400974901,
+                                    "ups": 2,
+                                    "comment": "Was expecting an explanation lol :(",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230186464
+                                }
                             ],
                             "downs": 0,
                             "author_id": 1867370,
-                            "points": 1,
+                            "points": 4,
                             "on_album": false,
                             "datetime": 1400971526,
-                            "ups": 1,
+                            "ups": 4,
                             "comment": "I got that reference http://img.pandawhale.com/post-11756-I-understood-that-reference-gi-GkxF.gif",
                             "deleted": false,
                             "image_id": "Mlpju1F",
@@ -647,10 +1782,10 @@
                     ],
                     "downs": 0,
                     "author_id": 5599187,
-                    "points": 23,
+                    "points": 76,
                     "on_album": false,
                     "datetime": 1400967705,
-                    "ups": 23,
+                    "ups": 76,
                     "comment": "\"lighlty fried fish filets\"",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -746,14 +1881,70 @@
                                             "deleted": false,
                                             "image_id": "Mlpju1F",
                                             "parent_id": 230103574
+                                        },
+                                        {
+                                            "id": 230195086,
+                                            "author": "TheVirginBorn",
+                                            "vote": null,
+                                            "album_cover": null,
+                                            "children": [
+                                                {
+                                                    "id": 230302708,
+                                                    "author": "kevlar427",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 4153598,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1400989570,
+                                                    "ups": 1,
+                                                    "comment": "this is true, but you can always clean it yourself if you're that scared XD",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230195086
+                                                },
+                                                {
+                                                    "id": 230195185,
+                                                    "author": "TheVirginBorn",
+                                                    "vote": null,
+                                                    "album_cover": null,
+                                                    "children": [
+                                                        
+                                                    ],
+                                                    "downs": 0,
+                                                    "author_id": 364418,
+                                                    "points": 1,
+                                                    "on_album": false,
+                                                    "datetime": 1400972957,
+                                                    "ups": 1,
+                                                    "comment": "you can check with UV light.",
+                                                    "deleted": false,
+                                                    "image_id": "Mlpju1F",
+                                                    "parent_id": 230195086
+                                                }
+                                            ],
+                                            "downs": 0,
+                                            "author_id": 364418,
+                                            "points": 2,
+                                            "on_album": false,
+                                            "datetime": 1400972937,
+                                            "ups": 2,
+                                            "comment": "unless bleach was used, or it was all-synthetic, there's still some there. organics are hard to completely clean.",
+                                            "deleted": false,
+                                            "image_id": "Mlpju1F",
+                                            "parent_id": 230103574
                                         }
                                     ],
-                                    "downs": 1,
+                                    "downs": 2,
                                     "author_id": 4153598,
                                     "points": 4,
                                     "on_album": false,
                                     "datetime": 1400957667,
-                                    "ups": 5,
+                                    "ups": 6,
                                     "comment": "I suppose, lol. However, if it was washed, I highly doubt there is any on there still, and any aversion to wearing it would be in your head",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
@@ -769,10 +1960,10 @@
                                     ],
                                     "downs": 2,
                                     "author_id": 4153598,
-                                    "points": 2,
+                                    "points": 3,
                                     "on_album": false,
                                     "datetime": 1400957707,
-                                    "ups": 4,
+                                    "ups": 5,
                                     "comment": "I /understand/ the fear, but in a physical context, there is no reason that wearing it would cause you to come in contact with semen, lol",
                                     "deleted": false,
                                     "image_id": "Mlpju1F",
@@ -800,22 +1991,22 @@
                             ],
                             "downs": 4,
                             "author_id": 2620974,
-                            "points": 21,
+                            "points": 30,
                             "on_album": false,
                             "datetime": 1400957560,
-                            "ups": 25,
+                            "ups": 34,
                             "comment": "It was the connotation of the term given the context that icked me out. (Hint: I pictured semen).",
                             "deleted": false,
                             "image_id": "Mlpju1F",
                             "parent_id": 230102668
                         }
                     ],
-                    "downs": 2,
+                    "downs": 3,
                     "author_id": 4153598,
-                    "points": 28,
+                    "points": 38,
                     "on_album": false,
                     "datetime": 1400957522,
-                    "ups": 30,
+                    "ups": 41,
                     "comment": "are you serious? people wash their clothes after they wear them, lol. You've never borrowed clothes from a friend?",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -829,9 +2020,9 @@
                     "children": [
                         
                     ],
-                    "downs": 2,
+                    "downs": 3,
                     "author_id": 954398,
-                    "points": 14,
+                    "points": 13,
                     "on_album": false,
                     "datetime": 1400940289,
                     "ups": 16,
@@ -850,79 +2041,80 @@
                     ],
                     "downs": 0,
                     "author_id": 629222,
-                    "points": 1,
+                    "points": 4,
                     "on_album": false,
                     "datetime": 1400971514,
-                    "ups": 1,
+                    "ups": 4,
                     "comment": "\"Lightly crusty\"",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230005288
-                }
-            ],
-            "downs": 8,
-            "author_id": 2620974,
-            "points": 138,
-            "on_album": false,
-            "datetime": 1400940094,
-            "ups": 146,
-            "comment": "\"Lightly used\". Ugh.",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230007001,
-            "author": "researchedfacts",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 7979131,
-            "points": 43,
-            "on_album": false,
-            "datetime": 1400940439,
-            "ups": 44,
-            "comment": "Her pimp sure will be mad when she isn't on the streets for 2 weeks.",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230158036,
-            "author": "WhenBearsReign",
-            "vote": null,
-            "album_cover": null,
-            "children": [
+                },
                 {
-                    "id": 230177647,
-                    "author": "dontdropthesoap",
+                    "id": 230194993,
+                    "author": "Hugsferever",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 6520268,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400972925,
+                    "ups": 2,
+                    "comment": "Would you like to buy a lightly used toothbrush?",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230005288
+                },
+                {
+                    "id": 230245999,
+                    "author": "DitDahDahDahhDitDahhDahDitDahDittDahDahDahhDahDitDitDit",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 10015984,
-                    "points": 4,
+                    "author_id": 5154537,
+                    "points": 1,
                     "on_album": false,
-                    "datetime": 1400970000,
-                    "ups": 4,
-                    "comment": "They have been overdone, at some point, people stop caring.",
+                    "datetime": 1400981060,
+                    "ups": 1,
+                    "comment": "Uuuuuugghhhhh -tina voice",
                     "deleted": false,
                     "image_id": "Mlpju1F",
-                    "parent_id": 230158036
+                    "parent_id": 230005288
                 }
             ],
-            "downs": 1,
-            "author_id": 571000,
-            "points": 33,
+            "downs": 14,
+            "author_id": 2620974,
+            "points": 247,
             "on_album": false,
-            "datetime": 1400966749,
-            "ups": 34,
-            "comment": "I don't understand why people don't even try to make these seem real.  Then I get even more confused when people think they ARE real...",
+            "datetime": 1400940094,
+            "ups": 261,
+            "comment": "\"Lightly used\". Ugh.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230169256,
+            "author": "ALLthebaconandprebirds",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 673682,
+            "points": 67,
+            "on_album": false,
+            "datetime": 1400968559,
+            "ups": 69,
+            "comment": "How is this front page material?",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -943,11 +2135,49 @@
                     ],
                     "downs": 1,
                     "author_id": 8100520,
-                    "points": 27,
+                    "points": 46,
                     "on_album": false,
                     "datetime": 1400966160,
-                    "ups": 28,
+                    "ups": 47,
                     "comment": "*whisper* Should... Should we tell him that it's not real?",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230009911
+                },
+                {
+                    "id": 230195881,
+                    "author": "MewQueen",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 7163369,
+                    "points": 5,
+                    "on_album": false,
+                    "datetime": 1400973077,
+                    "ups": 6,
+                    "comment": "Based on the early \"I didn't text him later that day\" it's the daughter who screenshotted it. probably still fake :/",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230009911
+                },
+                {
+                    "id": 230223025,
+                    "author": "13lackRose",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 6073227,
+                    "points": 3,
+                    "on_album": false,
+                    "datetime": 1400977645,
+                    "ups": 4,
+                    "comment": "Are you guys dense?  The \"father\" and \"daughter\" don't exist.  It was someone trolling a guy selling a costume...",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230009911
@@ -955,30 +2185,11 @@
             ],
             "downs": 5,
             "author_id": 9934232,
-            "points": 49,
+            "points": 74,
             "on_album": false,
             "datetime": 1400941048,
-            "ups": 54,
+            "ups": 79,
             "comment": "If only it weren't the dad that took the screenshot",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230153785,
-            "author": "thatazndude",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 3779454,
-            "points": 13,
-            "on_album": false,
-            "datetime": 1400965994,
-            "ups": 13,
-            "comment": "this aint that funny",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -999,10 +2210,10 @@
                     ],
                     "downs": 0,
                     "author_id": 209078,
-                    "points": 4,
+                    "points": 7,
                     "on_album": false,
                     "datetime": 1400969079,
-                    "ups": 4,
+                    "ups": 7,
                     "comment": "thank you",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -1014,14 +2225,50 @@
                     "vote": null,
                     "album_cover": null,
                     "children": [
-                        
+                        {
+                            "id": 230247424,
+                            "author": "Mauri9001",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230304919,
+                                    "author": "Spymylittleye",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 9936061,
+                                    "points": 2,
+                                    "on_album": false,
+                                    "datetime": 1400989940,
+                                    "ups": 2,
+                                    "comment": "Holy shit, these are gold!",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230247424
+                                }
+                            ],
+                            "downs": 0,
+                            "author_id": 1535757,
+                            "points": 3,
+                            "on_album": false,
+                            "datetime": 1400981269,
+                            "ups": 3,
+                            "comment": "My favorites: http://www.dontevenreply.com/view.php?post=84 http://www.dontevenreply.com/view.php?post=62",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230170912
+                        }
                     ],
                     "downs": 0,
                     "author_id": 3610004,
-                    "points": 4,
+                    "points": 7,
                     "on_album": false,
                     "datetime": 1400968824,
-                    "ups": 4,
+                    "ups": 7,
                     "comment": "That is fucking hilarious",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -1035,12 +2282,12 @@
                     "children": [
                         
                     ],
-                    "downs": 0,
+                    "downs": 3,
                     "author_id": 2926441,
-                    "points": 2,
+                    "points": 4,
                     "on_album": false,
                     "datetime": 1400971541,
-                    "ups": 2,
+                    "ups": 7,
                     "comment": "Didn't really enjoy it. What's the fun about some douchebag trying to make people mad? imo etc.",
                     "deleted": false,
                     "image_id": "Mlpju1F",
@@ -1054,13 +2301,51 @@
                     "children": [
                         
                     ],
-                    "downs": 1,
+                    "downs": 2,
                     "author_id": 8263479,
-                    "points": 0,
+                    "points": 1,
                     "on_album": false,
                     "datetime": 1400970465,
-                    "ups": 1,
+                    "ups": 3,
                     "comment": "So much better than the stupid post above",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153473
+                },
+                {
+                    "id": 230384377,
+                    "author": "SingleNiceFedoraWearingClassyGuycautiondonotfriendzone",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 9230586,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401004852,
+                    "ups": 1,
+                    "comment": "My favorite website ever (sorry imgur). Had me crying laughing for almost every one",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230153473
+                },
+                {
+                    "id": 230332027,
+                    "author": "RGEpicMrT",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 10035699,
+                    "points": 0,
+                    "on_album": false,
+                    "datetime": 1400994201,
+                    "ups": 1,
+                    "comment": "You are God. I worship you",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230153473
@@ -1068,10 +2353,10 @@
             ],
             "downs": 1,
             "author_id": 11755888,
-            "points": 12,
+            "points": 19,
             "on_album": false,
             "datetime": 1400965949,
-            "ups": 13,
+            "ups": 20,
             "comment": "http://www.dontevenreply.com/ Ignore the stupid name, click it, trust me",
             "deleted": false,
             "image_id": "Mlpju1F",
@@ -1083,15 +2368,52 @@
             "vote": null,
             "album_cover": null,
             "children": [
+                {
+                    "id": 230195542,
+                    "author": "TheVirginBorn",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 364418,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400973016,
+                    "ups": 2,
+                    "comment": "it's a troll, not a dad. well, maybe a troll dad.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230159011
+                }
+            ],
+            "downs": 4,
+            "author_id": 3226738,
+            "points": 12,
+            "on_album": false,
+            "datetime": 1400966907,
+            "ups": 16,
+            "comment": "The dad sounds like an asshole",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230214844,
+            "author": "Illokonereum",
+            "vote": null,
+            "album_cover": null,
+            "children": [
                 
             ],
             "downs": 1,
-            "author_id": 3226738,
+            "author_id": 9781447,
             "points": 7,
             "on_album": false,
-            "datetime": 1400966907,
+            "datetime": 1400976299,
             "ups": 8,
-            "comment": "The dad sounds like an asshole",
+            "comment": "I feel like this is some asshole who thinks he's \"trolling\", and the poor guy selling the thing is just reacting the way most would.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1102,15 +2424,89 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230195620,
+                    "author": "TheVirginBorn",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 364418,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1400973028,
+                    "ups": 1,
+                    "comment": "it's a troll. probably already anon.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230037550
+                }
             ],
             "downs": 3,
             "author_id": 11678452,
-            "points": 6,
+            "points": 8,
             "on_album": false,
             "datetime": 1400946309,
-            "ups": 9,
+            "ups": 11,
             "comment": "Anon needs to find said dad and rustle his jimmies",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230167717,
+            "author": "reider10",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230179960,
+                    "author": "LoneJock",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 107227,
+                    "points": 6,
+                    "on_album": false,
+                    "datetime": 1400970417,
+                    "ups": 6,
+                    "comment": "*whispers* It's not real.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230167717
+                }
+            ],
+            "downs": 2,
+            "author_id": 8615675,
+            "points": 7,
+            "on_album": false,
+            "datetime": 1400968296,
+            "ups": 9,
+            "comment": "So green is your message...so the ignorant dad posted his own conversation??",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230151673,
+            "author": "tarataqa",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 155843,
+            "points": 4,
+            "on_album": false,
+            "datetime": 1400965644,
+            "ups": 5,
+            "comment": "I remember 2012. Back when people believed fake text convos were real. *sigh*",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1129,24 +2525,24 @@
                     "children": [
                         
                     ],
-                    "downs": 0,
+                    "downs": 1,
                     "author_id": 155843,
                     "points": 5,
                     "on_album": false,
                     "datetime": 1400965730,
-                    "ups": 5,
+                    "ups": 6,
                     "comment": "It already is...Ask your mom about it.",
                     "deleted": false,
                     "image_id": "Mlpju1F",
                     "parent_id": 230151688
                 }
             ],
-            "downs": 2,
+            "downs": 3,
             "author_id": 10947751,
             "points": 5,
             "on_album": false,
             "datetime": 1400965649,
-            "ups": 7,
+            "ups": 8,
             "comment": "Can we make Slutfest a thing",
             "deleted": false,
             "image_id": "Mlpju1F",
@@ -1158,15 +2554,52 @@
             "vote": null,
             "album_cover": null,
             "children": [
-                
+                {
+                    "id": 230309665,
+                    "author": "jenerik",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 1,
+                    "author_id": 3267733,
+                    "points": 0,
+                    "on_album": false,
+                    "datetime": 1400990675,
+                    "ups": 1,
+                    "comment": "And an objectifying-women fest.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230156269
+                }
             ],
-            "downs": 1,
+            "downs": 5,
             "author_id": 5656682,
             "points": 4,
             "on_album": false,
             "datetime": 1400966420,
-            "ups": 5,
+            "ups": 9,
             "comment": "It all ended up in one big slutshaming fest. I dislike them both.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230212762,
+            "author": "teabag911",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 9830678,
+            "points": 3,
+            "on_album": false,
+            "datetime": 1400975927,
+            "ups": 4,
+            "comment": "Meh",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1209,57 +2642,132 @@
             "parent_id": 0
         },
         {
-            "id": 230169256,
-            "author": "ALLthebaconandprebirds",
+            "id": 230225434,
+            "author": "Bharroth",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 673682,
+            "author_id": 1841514,
             "points": 2,
             "on_album": false,
-            "datetime": 1400968559,
+            "datetime": 1400978008,
             "ups": 2,
-            "comment": "How is this front page material?",
+            "comment": "I'm pretty sure this is just stupid.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
         },
         {
-            "id": 230167717,
-            "author": "reider10",
+            "id": 230191483,
+            "author": "mysteryroach",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 5992477,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400972359,
+            "ups": 2,
+            "comment": ":|",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230186461,
+            "author": "Yourpsychoex",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3207884,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400971525,
+            "ups": 2,
+            "comment": "Who's pumped for Slutfest2014?",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230163574,
+            "author": "Efreeti",
             "vote": null,
             "album_cover": null,
             "children": [
                 {
-                    "id": 230179960,
-                    "author": "LoneJock",
+                    "id": 230348578,
+                    "author": "ninjagaidensigma",
                     "vote": null,
                     "album_cover": null,
                     "children": [
                         
                     ],
                     "downs": 0,
-                    "author_id": 107227,
+                    "author_id": 3689299,
                     "points": 1,
                     "on_album": false,
-                    "datetime": 1400970417,
+                    "datetime": 1400997258,
                     "ups": 1,
-                    "comment": "*whispers* It's not real.",
+                    "comment": "That it is... *salivates*",
                     "deleted": false,
                     "image_id": "Mlpju1F",
-                    "parent_id": 230167717
+                    "parent_id": 230163574
                 }
             ],
             "downs": 0,
-            "author_id": 8615675,
+            "author_id": 1283619,
             "points": 2,
             "on_album": false,
-            "datetime": 1400968296,
+            "datetime": 1400967629,
             "ups": 2,
-            "comment": "So green is your message...so the ignorant dad posted his own conversation??",
+            "comment": "No, this is gold: http://i.imgur.com/FesJhwr.jpg",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230157622,
+            "author": "PenguinChief",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230159524,
+                    "author": "possiblyacumslut",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 54470,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400966986,
+                    "ups": 2,
+                    "comment": "no it's fake",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230157622
+                }
+            ],
+            "downs": 0,
+            "author_id": 5219631,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400966671,
+            "ups": 2,
+            "comment": "So the dad/daughter posted the chat log? That's just weird, i would be too ambarassesd to show it to people.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1302,6 +2810,63 @@
             "parent_id": 0
         },
         {
+            "id": 230250853,
+            "author": "LittlePixy",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 10789414,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400981753,
+            "ups": 3,
+            "comment": "I'm waiting for the funny part..",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230122243,
+            "author": "MayorMcJesus",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 5962189,
+            "points": 2,
+            "on_album": false,
+            "datetime": 1400960845,
+            "ups": 3,
+            "comment": "I'm done with slutfest altogether.  I mean come on, 8 dollars for nachos? Really slutfest?",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230203471,
+            "author": "soyep",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 1031414,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400974400,
+            "ups": 3,
+            "comment": "This wasn't even funny.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
             "id": 230151685,
             "author": "Relyks76",
             "vote": null,
@@ -1327,9 +2892,9 @@
                     "parent_id": 230151685
                 }
             ],
-            "downs": 1,
+            "downs": 2,
             "author_id": 9087498,
-            "points": 2,
+            "points": 1,
             "on_album": false,
             "datetime": 1400965648,
             "ups": 3,
@@ -1339,58 +2904,722 @@
             "parent_id": 0
         },
         {
-            "id": 230151673,
-            "author": "tarataqa",
+            "id": 230387350,
+            "author": "KeithThe1",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 1,
-            "author_id": 155843,
-            "points": 2,
-            "on_album": false,
-            "datetime": 1400965644,
-            "ups": 3,
-            "comment": "I remember 2012. Back when people believed fake text convos were real. *sigh*",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230122243,
-            "author": "MayorMcJesus",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 5962189,
+            "author_id": 1457908,
             "points": 1,
             "on_album": false,
-            "datetime": 1400960845,
+            "datetime": 1401005644,
             "ups": 2,
-            "comment": "I'm done with slutfest altogether.  I mean come on, 8 dollars for nachos? Really slutfest?",
+            "comment": "http://i.imgur.com/dobRNKZ.gif",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
         },
         {
-            "id": 230186461,
-            "author": "Yourpsychoex",
+            "id": 230294191,
+            "author": "BoazbenSalmon",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 7804418,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400988159,
+            "ups": 2,
+            "comment": "I think the word you were looking for was 'stupid', not 'gold'.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230232634,
+            "author": "dbshortwave",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 1128913,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400979088,
+            "ups": 2,
+            "comment": "http://i.imgur.com/6PHOxyy.jpg",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230156077,
+            "author": "vaskal08",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 11231020,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400966389,
+            "ups": 2,
+            "comment": "Why would he care if she got grounded because of him...",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230152993,
+            "author": "boxingstars",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 10214530,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400965880,
+            "ups": 2,
+            "comment": "SlutFest 2014!!!",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230152957,
+            "author": "moxymox",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 5646164,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400965873,
+            "ups": 2,
+            "comment": "Now that's what I call a TEXTASTROPHE! (dot com)",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230101873,
+            "author": "FullMetalloidAlchemist",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 1,
+            "author_id": 3020592,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400957392,
+            "ups": 2,
+            "comment": "Who's ready for Slutfest 2014!",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230456533,
+            "author": "ford1svt",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 0,
-            "author_id": 3207884,
+            "author_id": 454618,
             "points": 1,
             "on_album": false,
-            "datetime": 1400971525,
+            "datetime": 1401027839,
             "ups": 1,
-            "comment": "Who's pumped for Slutfest2014?",
+            "comment": "Literally not even a chuckle...",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230444599,
+            "author": "butters355",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1257863,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401025246,
+            "ups": 1,
+            "comment": "Only 159 more days until SlutFest 2014!!!",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230412577,
+            "author": "keegantennant",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 8844720,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401014030,
+            "ups": 1,
+            "comment": "No OP, this is a post on imgur.com",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230411614,
+            "author": "FunFactGuyThatNoOneCaresAbout",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230411677,
+                    "author": "FunFactGuyThatNoOneCaresAbout",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        
+                    ],
+                    "downs": 0,
+                    "author_id": 11587972,
+                    "points": 1,
+                    "on_album": false,
+                    "datetime": 1401013689,
+                    "ups": 1,
+                    "comment": "HIMYM reference for HIMYM noobs.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230411614
+                }
+            ],
+            "downs": 0,
+            "author_id": 11587972,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401013676,
+            "ups": 1,
+            "comment": "But the best part is the walk of shame",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230406811,
+            "author": "fredwardo",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 6033044,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401011847,
+            "ups": 1,
+            "comment": "Slutfest 2013...broken thumb and low standerds",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230403778,
+            "author": "adventuretimeishappytimeforweedmoneyandsex",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10001904,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401010824,
+            "ups": 1,
+            "comment": "So, she still coming to SlutFest 2014?",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230395180,
+            "author": "edwardelricsnipples",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11956471,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401008001,
+            "ups": 1,
+            "comment": "\"I'M GROUNDING MY DAUGHTER FOR *2* WEEKS NOW!\" ..... oh no, how terrifying for me!",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230389789,
+            "author": "DrBlackburn",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11369383,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401006324,
+            "ups": 1,
+            "comment": "Weather it was real or not its still funny to me.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230383318,
+            "author": "Boycie",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11933398,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401004563,
+            "ups": 1,
+            "comment": "BURN!!!",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230373748,
+            "author": "Babyshanker",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9648717,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401002063,
+            "ups": 1,
+            "comment": "SlutFest 2013. Never forget",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230371771,
+            "author": "LikeSPICYhot",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 261597,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1401001580,
+            "ups": 1,
+            "comment": "tl, dr",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230356048,
+            "author": "LKduck",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7470482,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400998464,
+            "ups": 1,
+            "comment": "What two grown men sit there for that long angrily texting each other.... I can't see this as legit..but funny to think about",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230354110,
+            "author": "jacopopeterman",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3276826,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400998155,
+            "ups": 1,
+            "comment": "booooooooooo",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230352811,
+            "author": "toastergirl1111",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 4338770,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400997937,
+            "ups": 1,
+            "comment": "Bored now...",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230351956,
+            "author": "ThePsychicZombie",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3834837,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400997791,
+            "ups": 1,
+            "comment": "r/thathappened",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230339749,
+            "author": "MauricioGuaura",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 7169447,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400995654,
+            "ups": 1,
+            "comment": "Rebecca...? Chris? Police uniform? ...STARS... ... ...STARS...",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230309476,
+            "author": "stagg572",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11702662,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400990646,
+            "ups": 1,
+            "comment": "I can't be the only one who recognizes that the screenshots show that the \"dad\" is the one whose phone this is...",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230270167,
+            "author": "catsnatcher",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 8014546,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400984681,
+            "ups": 1,
+            "comment": "Did anyone else change the vioce inside their head from a women to a man halfway through?",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230266735,
+            "author": "captaincabbage",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1325030,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400984170,
+            "ups": 1,
+            "comment": "\"What are ya gonna do, stab me?\" -Quote from man who got stabbed.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230239834,
+            "author": "hartshapedbox",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11743399,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400980147,
+            "ups": 1,
+            "comment": "The dad makes himself look like an idiot",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230230858,
+            "author": "Shisushi",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10986838,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400978839,
+            "ups": 1,
+            "comment": "This is all I think of when I hear the name Rebecca; https://www.youtube.com/watch?v=QfojDfarXms (nsfw ... kinda) hahaha",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230228305,
+            "author": "EdgarGrosvenor",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 4328606,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400978458,
+            "ups": 1,
+            "comment": ".....brb selling sexy outfits online....",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230226850,
+            "author": "CanadasxFinestx",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 10286017,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400978226,
+            "ups": 1,
+            "comment": "Submit a comment",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230225059,
+            "author": "Yoshiru",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 3798510,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400977951,
+            "ups": 1,
+            "comment": "\"I'm grounding her because of you\"... don't let this man on 4chan, they'll get her killed within a week",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230224279,
+            "author": "vanella",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1255655,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400977832,
+            "ups": 1,
+            "comment": "Ah if only one knew how to block someones number on a cellphone.....",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230212810,
+            "author": "teabag911",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 9830678,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400975935,
+            "ups": 1,
+            "comment": "Meh",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230209240,
+            "author": "TryingToBeNiceAndFailing",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11918812,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400975358,
+            "ups": 1,
+            "comment": "ooh slutfest.  the first site I got caught for browsing, where I learned about cookies",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230197564,
+            "author": "Abecx",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 11711236,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400973349,
+            "ups": 1,
+            "comment": "Where's the worth it part",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230196490,
+            "author": "splunge",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 6038091,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400973186,
+            "ups": 1,
+            "comment": "At GutFest '89, I kicked it with a real cute Chinese girl.",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230193667,
+            "author": "xephus",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 0,
+            "author_id": 1160209,
+            "points": 1,
+            "on_album": false,
+            "datetime": 1400972712,
+            "ups": 1,
+            "comment": "Dont worry folks. Slutfest 2014 is only a few months away.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1434,6 +3663,98 @@
             "parent_id": 0
         },
         {
+            "id": 230153866,
+            "author": "EwanMe",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 3,
+            "author_id": 7917754,
+            "points": -1,
+            "on_album": false,
+            "datetime": 1400966006,
+            "ups": 2,
+            "comment": "Since the dad took the screenshot aka this was planned, I expected more of a turning point..",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230150758,
+            "author": "Sawnderz",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                {
+                    "id": 230165554,
+                    "author": "coloradostoner",
+                    "vote": null,
+                    "album_cover": null,
+                    "children": [
+                        {
+                            "id": 230169838,
+                            "author": "Sawnderz",
+                            "vote": null,
+                            "album_cover": null,
+                            "children": [
+                                {
+                                    "id": 230205373,
+                                    "author": "coloradostoner",
+                                    "vote": null,
+                                    "album_cover": null,
+                                    "children": [
+                                        
+                                    ],
+                                    "downs": 0,
+                                    "author_id": 3714729,
+                                    "points": 1,
+                                    "on_album": false,
+                                    "datetime": 1400974734,
+                                    "ups": 1,
+                                    "comment": "Can't blame the seller. he was not selling anything illegal.  or even immoral.",
+                                    "deleted": false,
+                                    "image_id": "Mlpju1F",
+                                    "parent_id": 230169838
+                                }
+                            ],
+                            "downs": 2,
+                            "author_id": 1938134,
+                            "points": 0,
+                            "on_album": false,
+                            "datetime": 1400968650,
+                            "ups": 2,
+                            "comment": "Yeah, I get that, but... I dunno. I'd be pissed beyond words if I had a daughter doing this stuff. 'Don't know if I'd blame the seller.",
+                            "deleted": false,
+                            "image_id": "Mlpju1F",
+                            "parent_id": 230165554
+                        }
+                    ],
+                    "downs": 0,
+                    "author_id": 3714729,
+                    "points": 2,
+                    "on_album": false,
+                    "datetime": 1400967939,
+                    "ups": 2,
+                    "comment": "Rebecca / Dad is an act so sure.  Otherwise Rebecca's dad was, if real, a douche.",
+                    "deleted": false,
+                    "image_id": "Mlpju1F",
+                    "parent_id": 230150758
+                }
+            ],
+            "downs": 4,
+            "author_id": 1938134,
+            "points": -2,
+            "on_album": false,
+            "datetime": 1400965487,
+            "ups": 2,
+            "comment": "I... kinda support both these guys. Am I allowed to do that?",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
             "id": 230180047,
             "author": "FuzzyX",
             "vote": null,
@@ -1441,9 +3762,9 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 642667,
-            "points": 1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400970431,
             "ups": 1,
@@ -1460,9 +3781,9 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 10649785,
-            "points": 1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400970398,
             "ups": 1,
@@ -1479,9 +3800,9 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 8472929,
-            "points": 1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400969796,
             "ups": 1,
@@ -1498,51 +3819,13 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 7269614,
-            "points": 1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400968342,
             "ups": 1,
             "comment": "Good fucking god I've fallen in love with a girl called Rebecca and it's not mutual, I keep seeing her name everyfuckingwhere all the time..",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230167855,
-            "author": "TheseAreDots",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 1001154,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400968319,
-            "ups": 1,
-            "comment": "I don't understand... usually someone sounds like a douchebag in these text things...",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230163574,
-            "author": "Efreeti",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 0,
-            "author_id": 1283619,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400967629,
-            "ups": 1,
-            "comment": "No, this is gold: http://i.imgur.com/FesJhwr.jpg",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1555,50 +3838,13 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 5416041,
-            "points": 1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400967208,
             "ups": 1,
             "comment": "And suddenly she ain't a ho, no mo'.",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230157622,
-            "author": "PenguinChief",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                {
-                    "id": 230159524,
-                    "author": "possiblyacumslut",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        
-                    ],
-                    "downs": 0,
-                    "author_id": 54470,
-                    "points": 2,
-                    "on_album": false,
-                    "datetime": 1400966986,
-                    "ups": 2,
-                    "comment": "no it's fake",
-                    "deleted": false,
-                    "image_id": "Mlpju1F",
-                    "parent_id": 230157622
-                }
-            ],
-            "downs": 0,
-            "author_id": 5219631,
-            "points": 1,
-            "on_album": false,
-            "datetime": 1400966671,
-            "ups": 1,
-            "comment": "So the dad/daughter posted the chat log? That's just weird, i would be too ambarassesd to show it to people.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1611,51 +3857,13 @@
             "children": [
                 
             ],
-            "downs": 0,
+            "downs": 1,
             "author_id": 790152,
-            "points": 1,
+            "points": 0,
             "on_album": false,
             "datetime": 1400966438,
             "ups": 1,
             "comment": "Halloween is a perfectly fine excuse to dress up slutty, as long as they don't dress like that at any time in the other 364 days.",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230153866,
-            "author": "EwanMe",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 2,
-            "author_id": 7917754,
-            "points": 0,
-            "on_album": false,
-            "datetime": 1400966006,
-            "ups": 2,
-            "comment": "Since the dad took the screenshot aka this was planned, I expected more of a turning point..",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230156077,
-            "author": "vaskal08",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 11231020,
-            "points": 0,
-            "on_album": false,
-            "datetime": 1400966389,
-            "ups": 1,
-            "comment": "Why would he care if she got grounded because of him...",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1680,39 +3888,58 @@
             "parent_id": 0
         },
         {
-            "id": 230152993,
-            "author": "boxingstars",
+            "id": 230076850,
+            "author": "Orktapus",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 1,
-            "author_id": 10214530,
+            "author_id": 11207701,
             "points": 0,
             "on_album": false,
-            "datetime": 1400965880,
+            "datetime": 1400953022,
             "ups": 1,
-            "comment": "SlutFest 2014!!!",
+            "comment": "I missed out on Slutfest 2013...good thing I got my tickets early this year.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
         },
         {
-            "id": 230152957,
-            "author": "moxymox",
+            "id": 230194378,
+            "author": "bampolampy",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
-            "downs": 1,
-            "author_id": 5646164,
-            "points": 0,
+            "downs": 2,
+            "author_id": 4882002,
+            "points": -1,
             "on_album": false,
-            "datetime": 1400965873,
+            "datetime": 1400972820,
             "ups": 1,
-            "comment": "Now that's what I call a TEXTASTROPHE! (dot com)",
+            "comment": "We're laughing at you, not with you",
+            "deleted": false,
+            "image_id": "Mlpju1F",
+            "parent_id": 0
+        },
+        {
+            "id": 230167855,
+            "author": "TheseAreDots",
+            "vote": null,
+            "album_cover": null,
+            "children": [
+                
+            ],
+            "downs": 2,
+            "author_id": 1001154,
+            "points": -1,
+            "on_album": false,
+            "datetime": 1400968319,
+            "ups": 1,
+            "comment": "I don't understand... usually someone sounds like a douchebag in these text things...",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
@@ -1743,9 +3970,9 @@
                     "parent_id": 230148850
                 }
             ],
-            "downs": 1,
+            "downs": 2,
             "author_id": 7869236,
-            "points": 0,
+            "points": -1,
             "on_album": false,
             "datetime": 1400965143,
             "ups": 1,
@@ -1755,113 +3982,39 @@
             "parent_id": 0
         },
         {
-            "id": 230101873,
-            "author": "FullMetalloidAlchemist",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 3020592,
-            "points": 0,
-            "on_album": false,
-            "datetime": 1400957392,
-            "ups": 1,
-            "comment": "Who's ready for Slutfest 2014!",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230076850,
-            "author": "Orktapus",
-            "vote": null,
-            "album_cover": null,
-            "children": [
-                
-            ],
-            "downs": 1,
-            "author_id": 11207701,
-            "points": 0,
-            "on_album": false,
-            "datetime": 1400953022,
-            "ups": 1,
-            "comment": "I missed out on Slutfest 2013...good thing I got my tickets early this year.",
-            "deleted": false,
-            "image_id": "Mlpju1F",
-            "parent_id": 0
-        },
-        {
-            "id": 230094691,
-            "author": "captain5",
+            "id": 230290051,
+            "author": "6footdildo",
             "vote": null,
             "album_cover": null,
             "children": [
                 
             ],
             "downs": 5,
-            "author_id": 9290610,
-            "points": -3,
+            "author_id": 11936716,
+            "points": -4,
             "on_album": false,
-            "datetime": 1400956117,
-            "ups": 2,
-            "comment": "If this reaches front page, I'll pour milk and cereal on myself.",
+            "datetime": 1400987501,
+            "ups": 1,
+            "comment": "'slut' 'street hooker' 'hussy' uhhh your wife wore this. also, misogynistic.",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
         },
         {
-            "id": 230150758,
-            "author": "Sawnderz",
+            "id": 230263252,
+            "author": "thudrs",
             "vote": null,
             "album_cover": null,
             "children": [
-                {
-                    "id": 230165554,
-                    "author": "coloradostoner",
-                    "vote": null,
-                    "album_cover": null,
-                    "children": [
-                        {
-                            "id": 230169838,
-                            "author": "Sawnderz",
-                            "vote": null,
-                            "album_cover": null,
-                            "children": [
-                                
-                            ],
-                            "downs": 1,
-                            "author_id": 1938134,
-                            "points": 0,
-                            "on_album": false,
-                            "datetime": 1400968650,
-                            "ups": 1,
-                            "comment": "Yeah, I get that, but... I dunno. I'd be pissed beyond words if I had a daughter doing this stuff. 'Don't know if I'd blame the seller.",
-                            "deleted": false,
-                            "image_id": "Mlpju1F",
-                            "parent_id": 230165554
-                        }
-                    ],
-                    "downs": 0,
-                    "author_id": 3714729,
-                    "points": 2,
-                    "on_album": false,
-                    "datetime": 1400967939,
-                    "ups": 2,
-                    "comment": "Rebecca / Dad is an act so sure.  Otherwise Rebecca's dad was, if real, a douche.",
-                    "deleted": false,
-                    "image_id": "Mlpju1F",
-                    "parent_id": 230150758
-                }
+                
             ],
-            "downs": 3,
-            "author_id": 1938134,
-            "points": -2,
+            "downs": 5,
+            "author_id": 9838703,
+            "points": -4,
             "on_album": false,
-            "datetime": 1400965487,
+            "datetime": 1400983646,
             "ups": 1,
-            "comment": "I... kinda support both these guys. Am I allowed to do that?",
+            "comment": "He said he was going to lay a hand on his wife and you didnt call the cops or make a sexual reference what is wrong with you",
             "deleted": false,
             "image_id": "Mlpju1F",
             "parent_id": 0
