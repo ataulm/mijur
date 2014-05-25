@@ -39,7 +39,6 @@ public class AlbumRetriever {
                 InputStream inputStream = assetFileManager.open(pathToAlbumJson);
                 Album album = albumParser.parse(inputStream);
                 subscriber.onNext(album);
-                subscriber.onCompleted();
             }
 
         }).subscribeOn(Schedulers.io());

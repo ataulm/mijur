@@ -37,7 +37,6 @@ public class GalleryRetriever {
                 InputStream inputStream = assetFileManager.open(MOCK_JSON_GALLERY);
                 Gallery gallery = galleryParser.parse(inputStream);
                 subscriber.onNext(gallery);
-                subscriber.onCompleted();
             }
 
         }).subscribeOn(Schedulers.io());

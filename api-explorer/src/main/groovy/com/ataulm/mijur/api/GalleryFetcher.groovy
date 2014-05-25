@@ -38,7 +38,7 @@ public class GalleryFetcher {
     }
 
     private static void fetchAlbum(String id) {
-        HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/album/' + id + '/images')
+        HTTPBuilder http = new HTTPBuilder('https://api.imgur.com/3/album/' + id)
         http.request(Method.GET) {
             headers['Authorization'] = 'Client-ID ' + CLIENT_ID
             response.success = { resp, json ->
