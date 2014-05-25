@@ -1,12 +1,7 @@
 package com.ataulm.mijur.data;
 
-import android.content.res.AssetManager;
-
-import com.ataulm.mijur.base.DeveloperError;
-import com.ataulm.mijur.base.android.MijurApplication;
 import com.ataulm.mijur.data.parser.AlbumParser;
 
-import java.io.IOException;
 import java.io.InputStream;
 
 import rx.Observable;
@@ -42,28 +37,6 @@ public class AlbumRetriever {
             }
 
         }).subscribeOn(Schedulers.io());
-    }
-
-    private static class AssetFileManager {
-
-        private final AssetManager assetManager;
-
-        private AssetFileManager(AssetManager assetManager) {
-            this.assetManager = assetManager;
-        }
-
-        public static AssetFileManager newInstance() {
-            return new AssetFileManager(MijurApplication.context().getAssets());
-        }
-
-        public InputStream open(String file) {
-            try {
-                return assetManager.open(file);
-            } catch (IOException e) {
-                throw DeveloperError.because("Failed to open file from Android Assets", e);
-            }
-        }
-
     }
 
 }
