@@ -27,5 +27,9 @@
       android:name=".gallery.PostActivity"
       android:label="@string/activity_post" />
 
+    <activity
+      android:name=".gallery.ImageActivity"
+      android:label="@string/activity_image" />
+
   </application>
 </manifest>

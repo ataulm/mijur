@@ -3,7 +3,8 @@ package com.ataulm.mijur.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ataulm.mijur.R;
@@ -11,34 +12,33 @@ import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
 import com.squareup.picasso.Picasso;
 
-public class ImageContentView extends LinearLayout {
+public class ImmersiveImageContentView extends RelativeLayout {
 
+    private ImageView imageView;
     private TextView titleView;
-    private MatchParentWidthImageView imageView;
     private TextView descriptionView;
 
-    public ImageContentView(Context context, AttributeSet attrs) {
+    public ImmersiveImageContentView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public ImageContentView(Context context, AttributeSet attrs, int defStyle) {
+    public ImmersiveImageContentView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
     @Override
     protected void onFinishInflate() {
-        setOrientation(VERTICAL);
+        View.inflate(getContext(), R.layout.merge_immersive_image_content, this);
 
-        View.inflate(getContext(), R.layout.merge_image_content, this);
-        titleView = Views.findById(this, R.id.image_title_text);
         imageView = Views.findById(this, R.id.image_content_image);
+        titleView = Views.findById(this, R.id.image_title_text);
         descriptionView = Views.findById(this, R.id.image_description_text);
     }
 
     public void update(final Image image) {
+        Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
         titleView.setText(image.getTitle());
         descriptionView.setText(image.getDescription());
-        Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
     }
 
 }
