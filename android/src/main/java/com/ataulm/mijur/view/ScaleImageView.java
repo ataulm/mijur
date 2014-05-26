@@ -10,13 +10,13 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
-import android.widget.ImageView;
 
 /**
- * https://github.com/matabii/scale-imageview-android
+ * Modified from:
+ * https://github.com/matabii/scale-imageview-android taken 26 May 2014 *
  */
-public class ScaleImageView extends ImageView implements OnTouchListener {
-    private Context mContext;
+public class ScaleImageView extends MatchParentWidthImageView implements OnTouchListener {
+
     private float MAX_SCALE = 2f;
 
     private Matrix mMatrix;
@@ -39,33 +39,35 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
     private int mPrevMoveY;
     private GestureDetector mDetector;
 
-    String TAG = "ScaleImageView";
-
     public ScaleImageView(Context context, AttributeSet attr) {
         super(context, attr);
-        this.mContext = context;
-        initialize();
+        calculateSize();
     }
 
-    public ScaleImageView(Context context) {
-        super(context);
-        this.mContext = context;
-        initialize();
+    public ScaleImageView(Context context, AttributeSet attr, int defStyle) {
+        super(context, attr, defStyle);
+        calculateSize();
     }
 
     @Override
     public void setImageBitmap(Bitmap bm) {
         super.setImageBitmap(bm);
-        this.initialize();
+        calculateSize();
     }
 
     @Override
     public void setImageResource(int resId) {
         super.setImageResource(resId);
-        this.initialize();
+        calculateSize();
     }
 
-    private void initialize() {
+    @Override
+    public void setImageDrawable(Drawable drawable) {
+        super.setImageDrawable(drawable);
+        calculateSize();
+    }
+
+    private void calculateSize() {
         this.setScaleType(ScaleType.MATRIX);
         this.mMatrix = new Matrix();
         Drawable d = getDrawable();
@@ -74,7 +76,7 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
             mIntrinsicHeight = d.getIntrinsicHeight();
             setOnTouchListener(this);
         }
-        mDetector = new GestureDetector(mContext, new GestureDetector.SimpleOnGestureListener() {
+        mDetector = new GestureDetector(getContext(), new GestureDetector.SimpleOnGestureListener() {
             @Override
             public boolean onDoubleTap(MotionEvent e) {
                 maxZoomTo((int) e.getX(), (int) e.getY());
@@ -112,7 +114,6 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
 
         setImageMatrix(mMatrix);
         mMinScale = mScale;
-        zoomTo(mScale, mWidth / 2, mHeight / 2);
         cutting();
         return super.setFrame(l, t, r, b);
     }
@@ -147,9 +148,6 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
 
     public void zoomTo(float scale, int x, int y) {
         if (getScale() * scale < mMinScale) {
-            return;
-        }
-        if (scale >= 1 && getScale() * scale > MAX_SCALE) {
             return;
         }
         mMatrix.postScale(scale, scale);
