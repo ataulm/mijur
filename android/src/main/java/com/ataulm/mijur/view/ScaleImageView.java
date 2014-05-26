@@ -17,8 +17,6 @@ import android.view.View.OnTouchListener;
  */
 public class ScaleImageView extends MatchParentWidthImageView implements OnTouchListener {
 
-    private float MAX_SCALE = 2f;
-
     private Matrix mMatrix;
     private final float[] mMatrixValues = new float[9];
 
@@ -136,14 +134,8 @@ public class ScaleImageView extends MatchParentWidthImageView implements OnTouch
     }
 
     protected void maxZoomTo(int x, int y) {
-        if (mMinScale != getScale() && (getScale() - mMinScale) > 0.1f) {
-            // threshold 0.1f
-            float scale = mMinScale / getScale();
-            zoomTo(scale, x, y);
-        } else {
-            float scale = MAX_SCALE / getScale();
-            zoomTo(scale, x, y);
-        }
+        float scale = mMinScale / getScale();
+        zoomTo(scale, x, y);
     }
 
     public void zoomTo(float scale, int x, int y) {
