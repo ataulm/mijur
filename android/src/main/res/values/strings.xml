@@ -5,5 +5,6 @@
   <string name="activity_gallery">Gallery</string>
   <string name="activity_post">Post</string>
   <string name="activity_image">Fullscreen Image</string>
+  <string name="post_comments_heading">%d comments</string>
 
 </resources>

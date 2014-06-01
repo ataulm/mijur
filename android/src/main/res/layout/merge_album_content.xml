@@ -18,12 +18,6 @@
     android:orientation="vertical" />
 
   <com.ataulm.mijur.view.MijurTextView
-    android:id="@+id/album_content_description"
-    style="@style/Mijur.Post.AlbumDescription"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
-
-  <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/album_content_more"
     style="@style/Mijur.Post.AlbumShowFullButton"
     android:layout_width="match_parent"

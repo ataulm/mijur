@@ -11,8 +11,12 @@
     <item name="android:background">@color/actionbar</item>
   </style>
 
-  <style name="Mijur.ActionBar.Immersive">
+  <style name="Mijur.ActionBar.Overlay">
     <item name="android:background">@color/actionbar_overlay</item>
+  </style>
+
+  <style name="Mijur.TextView">
+    <item name="android:textColor">@color/text_primary</item>
   </style>
 
   <style name="Mijur.Gallery" />
@@ -76,7 +80,7 @@
 
   <style name="Mijur.Fullscreen">
     <item name="android:windowActionBarOverlay">true</item>
-    <item name="android:actionBarStyle">@style/Mijur.ActionBar.Immersive</item>
+    <item name="android:actionBarStyle">@style/Mijur.ActionBar.Overlay</item>
   </style>
 
   <style name="Mijur.Fullscreen.Caption">
@@ -94,5 +98,19 @@
   <style name="Mijur.Fullscreen.CaptionDescription">
     <item name="font">robotoSlabLight</item>
   </style>
+
+  <style name="Mijur.CommentsHeading" parent="Mijur.TextView">
+    <item name="android:gravity">center</item>
+    <item name="font">robotoSlabBold</item>
+  </style>
+
+  <style name="Mijur.Comment">
+    <item name="android:background">@android:color/darker_gray</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:paddingTop">16dp</item>
+    <item name="android:paddingRight">16dp</item>
+    <item name="android:paddingBottom">16dp</item>
+  </style>
+
 
 </resources>

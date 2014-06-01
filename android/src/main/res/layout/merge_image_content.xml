@@ -6,6 +6,7 @@
 
   <TextView
     android:id="@+id/image_title_text"
+    style="@style/Mijur.TextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
@@ -15,8 +16,9 @@
     android:layout_height="wrap_content"
     android:background="@android:color/holo_red_light" />
 
-  <TextView
+  <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/image_description_text"
+    style="@style/Mijur.TextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 

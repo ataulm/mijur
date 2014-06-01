@@ -6,9 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.ataulm.mijur.R;
-import com.ataulm.mijur.data.*;
+import com.ataulm.mijur.data.Album;
+import com.ataulm.mijur.data.Comments;
+import com.ataulm.mijur.data.GalleryItem;
+import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.toast.Toaster;
 
@@ -17,6 +21,7 @@ public class PostView extends FrameLayout {
     private final CommentsAdapter commentsAdapter;
 
     private FrameLayout contentContainerView;
+    private TextView commentsHeadingView;
     private ListView commentsListView;
     private ClickListener listener;
 
@@ -40,7 +45,10 @@ public class PostView extends FrameLayout {
 
         commentsListView = Views.findById(this, R.id.post_comments_list);
         contentContainerView = (FrameLayout) LayoutInflater.from(getContext()).inflate(R.layout.view_post_content_container, commentsListView, false);
+        commentsHeadingView = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.view_post_comments_header, commentsListView, false);
+
         commentsListView.addHeaderView(contentContainerView);
+        commentsListView.addHeaderView(commentsHeadingView);
 
         commentsListView.setAdapter(commentsAdapter);
     }
@@ -56,6 +64,8 @@ public class PostView extends FrameLayout {
 
     public void update(Comments comments) {
         commentsAdapter.update(comments);
+        String commentsHeading = String.format(getContext().getString(R.string.post_comments_heading), comments.size());
+        commentsHeadingView.setText(commentsHeading);
     }
 
     private void showAlbum(final Album album) {

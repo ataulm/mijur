@@ -2,6 +2,7 @@ package com.ataulm.mijur.data.parser;
 
 import com.ataulm.mijur.data.Comment;
 import com.ataulm.mijur.data.Comments;
+import com.ataulm.mijur.data.Time;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
@@ -65,7 +66,8 @@ public class CommentParser {
                 gsonComment.upvotes,
                 gsonComment.downvotes,
                 gsonComment.text,
-                gsonComment.parentId);
+                gsonComment.parentId,
+                new Time(gsonComment.datetime));
     }
 
 }

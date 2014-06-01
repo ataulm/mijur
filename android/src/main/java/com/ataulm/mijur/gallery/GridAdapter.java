@@ -1,6 +1,5 @@
 package com.ataulm.mijur.gallery;
 
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,11 +51,6 @@ class GridAdapter extends BaseAdapter {
         }
         ((GalleryItemView) view).update(getItem(position), listener);
 
-        if (position % 2 == 0) {
-            view.setBackgroundColor(Color.GREEN);
-        } else {
-            view.setBackgroundColor(Color.BLUE);
-        }
         return view;
     }
 

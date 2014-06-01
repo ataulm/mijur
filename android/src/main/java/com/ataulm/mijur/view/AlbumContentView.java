@@ -19,7 +19,6 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
 
     private TextView titleView;
     private LinearLayout imagesView;
-    private TextView descriptionView;
     private TextView moreView;
 
     private Album album;
@@ -44,14 +43,12 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
         View.inflate(getContext(), R.layout.merge_album_content, this);
         titleView = Views.findById(this, R.id.album_content_title);
         imagesView = Views.findById(this, R.id.album_content_images);
-        descriptionView = Views.findById(this, R.id.album_content_description);
         moreView = Views.findById(this, R.id.album_content_more);
     }
 
     public void update(final Album album, final ShowFullListener listener) {
         this.album = album;
         titleView.setText(album.getTitle());
-        descriptionView.setText(album.getDescription());
         updateImages(album.getImages());
 
         moreView.setOnClickListener(new OnClickListener() {

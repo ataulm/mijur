@@ -4,9 +4,30 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <TextView
+  <com.ataulm.mijur.view.MijurTextView
+    android:id="@+id/user_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:ellipsize="end" />
+
+  <com.ataulm.mijur.view.MijurTextView
+    android:id="@+id/time_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/user_text" />
+
+  <com.ataulm.mijur.view.MijurTextView
+    android:id="@+id/score_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/user_text"
+    android:layout_alignParentRight="true"/>
+
+  <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/comment_text"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:layout_below="@id/time_text" />
 
 </merge>

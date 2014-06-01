@@ -24,7 +24,11 @@ class GsonComment {
     @SerializedName("parent_id")
     long parentId;
 
+    @SerializedName("datetime")
+    long datetime;
+
     @SerializedName("children")
     List<GsonComment> children;
+
 
 }
