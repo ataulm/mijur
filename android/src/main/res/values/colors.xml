@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
-  <color name="app_background">#2B2B2B</color>
+  <color name="dark_translucent">#80202020</color>
+  <color name="dark_flat_grey">#2B2B2B</color>
+
+  <color name="app_background">@color/dark_flat_grey</color>
+  <color name="actionbar">@color/dark_flat_grey</color>
+  <color name="actionbar_overlay">@color/dark_translucent</color>
+  <color name="caption_overlay">@color/dark_translucent</color>
 
 </resources>

@@ -30,7 +30,7 @@
     <activity
       android:name=".gallery.ImmersivePostActivity"
       android:label="@string/activity_image"
-      android:theme="@style/Mijur.Immersive" />
+      android:theme="@style/Mijur.Fullscreen" />
 
   </application>
 </manifest>

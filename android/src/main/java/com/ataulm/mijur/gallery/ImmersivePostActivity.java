@@ -17,7 +17,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class ImmersivePostActivity extends MijurActivity {
+public class ImmersivePostActivity extends MijurActivity implements ImmersiveImageContentView.Listener {
 
     public static final String EXTRA_POST_ID = BuildConfig.PACKAGE_NAME + ".EXTRA_POST_ID";
 
@@ -30,7 +30,7 @@ public class ImmersivePostActivity extends MijurActivity {
         setContentView(R.layout.activity_immersive_post);
 
         ImmersiveImageContentView view = Views.findById(this, R.id.immersive_image_content);
-        postContentUpdater = new PostContentUpdater(view);
+        postContentUpdater = new PostContentUpdater(view, this);
     }
 
     @Override
@@ -50,12 +50,23 @@ public class ImmersivePostActivity extends MijurActivity {
         gallerySubscription.unsubscribe();
     }
 
+    @Override
+    public void onImageClick() {
+        if (getActionBar().isShowing()) {
+            getActionBar().hide();
+        } else {
+            getActionBar().show();
+        }
+    }
+
     private static class PostContentUpdater implements Observer<GalleryItem> {
 
         private final ImmersiveImageContentView view;
+        private final ImmersiveImageContentView.Listener listener;
 
-        private PostContentUpdater(ImmersiveImageContentView view) {
+        private PostContentUpdater(ImmersiveImageContentView view, ImmersiveImageContentView.Listener listener) {
             this.view = view;
+            this.listener = listener;
         }
 
         @Override
@@ -69,7 +80,7 @@ public class ImmersivePostActivity extends MijurActivity {
 
         @Override
         public void onNext(GalleryItem galleryItem) {
-            view.update((Image) galleryItem);
+            view.update((Image) galleryItem, listener);
         }
 
     }

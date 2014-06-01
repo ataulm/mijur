@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
   <style name="Mijur" parent="android:Theme.Holo">
     <item name="android:windowBackground">@color/app_background</item>
+    <item name="android:actionBarStyle">@style/Mijur.ActionBar</item>
+  </style>
+
+  <style name="Mijur.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid">
+    <item name="android:background">@color/actionbar</item>
+  </style>
+
+  <style name="Mijur.ActionBar.Immersive">
+    <item name="android:background">@color/actionbar_overlay</item>
   </style>
 
   <style name="Mijur.Gallery" />
@@ -64,8 +74,17 @@
     <item name="font">robotoSlabBold</item>
   </style>
 
-  <style name="Mijur.Immersive">
+  <style name="Mijur.Fullscreen">
     <item name="android:windowActionBarOverlay">true</item>
+    <item name="android:actionBarStyle">@style/Mijur.ActionBar.Immersive</item>
+  </style>
+
+  <style name="Mijur.Fullscreen.Caption">
+    <item name="android:background">@color/caption_overlay</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:paddingTop">16dp</item>
+    <item name="android:paddingRight">16dp</item>
+    <item name="android:paddingBottom">16dp</item>
   </style>
 
 </resources>

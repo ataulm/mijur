@@ -7,25 +7,23 @@
   <com.ataulm.mijur.view.ZoomingImageView
     android:id="@+id/image_content_image"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light" />
+    android:layout_height="match_parent" />
 
   <LinearLayout
+    android:id="@+id/image_caption_container"
+    style="@style/Mijur.Fullscreen.Caption"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
     <com.ataulm.mijur.view.MijurTextView
       android:id="@+id/image_title_text"
       android:layout_width="match_parent"
-      android:layout_weight="1.0"
-      android:layout_height="0dp"
-      android:gravity="bottom" />
+      android:layout_height="wrap_content" />
 
     <com.ataulm.mijur.view.MijurTextView
       android:id="@+id/image_description_text"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="bottom" />
+      android:layout_height="wrap_content" />
   </LinearLayout>
 </merge>

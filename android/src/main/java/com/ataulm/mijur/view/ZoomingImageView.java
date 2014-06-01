@@ -3,6 +3,7 @@ package com.ataulm.mijur.view;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
@@ -25,6 +26,22 @@ public class ZoomingImageView extends ImageView  {
     public void setImageDrawable(Drawable drawable) {
         super.setImageDrawable(drawable);
         attacher.update();
+    }
+
+    @Override
+    public void setOnClickListener(final OnClickListener l) {
+        if (l == null) {
+            attacher.setOnViewTapListener(null);
+        } else {
+            attacher.setOnViewTapListener(new PhotoViewAttacher.OnViewTapListener() {
+
+                @Override
+                public void onViewTap(View view, float v, float v2) {
+                    l.onClick(view);
+                }
+
+            });
+        }
     }
 
 }
