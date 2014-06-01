@@ -4,8 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 
@@ -20,6 +18,7 @@ public class PostView extends FrameLayout {
 
     private FrameLayout contentContainerView;
     private ListView commentsListView;
+    private ClickListener listener;
 
     public PostView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -29,6 +28,10 @@ public class PostView extends FrameLayout {
     public PostView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         commentsAdapter = CommentsAdapter.newInstance();
+    }
+
+    public void setPostViewClickListener(ClickListener listener) {
+        this.listener = listener;
     }
 
     @Override
@@ -58,6 +61,7 @@ public class PostView extends FrameLayout {
     private void showAlbum(final Album album) {
         FrameLayout root = (FrameLayout) View.inflate(getContext(), R.layout.view_album_content, contentContainerView);
         AlbumContentView view = (AlbumContentView) root.getChildAt(0);
+        view.setAlbumClickListener(listener);
         view.update(album, new ShowFullListener() {
 
             @Override
@@ -71,57 +75,11 @@ public class PostView extends FrameLayout {
     private void showImage(Image image) {
         FrameLayout root = (FrameLayout) View.inflate(getContext(), R.layout.view_image_content, contentContainerView);
         ImageContentView view = (ImageContentView) root.getChildAt(0);
+        view.setImageClickListener(listener);
         view.update(image);
     }
 
-    private static class CommentsAdapter extends BaseAdapter {
-
-        private Comments comments;
-
-        private CommentsAdapter(Comments comments) {
-            this.comments = comments;
-        }
-
-        public static CommentsAdapter newInstance() {
-            return new CommentsAdapter(Comments.empty());
-        }
-
-        public void update(Comments comments) {
-            this.comments = comments;
-            notifyDataSetChanged();
-        }
-
-        @Override
-        public int getCount() {
-            return comments.size();
-        }
-
-        @Override
-        public Comment getItem(int position) {
-            return comments.get(position);
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return getItem(position).getId();
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            View commentView = convertView;
-            if (commentView == null) {
-                commentView = createCommentView(parent);
-            }
-            Comment comment = getItem(position);
-            ((CommentView) commentView).update(comment);
-            return commentView;
-        }
-
-        private View createCommentView(ViewGroup parent) {
-            LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-            return inflater.inflate(R.layout.view_post_comment, parent, false);
-        }
-
+    public interface ClickListener extends ImageContentView.ClickListener, AlbumContentView.AlbumClickListener {
     }
 
 }

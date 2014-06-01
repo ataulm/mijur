@@ -28,8 +28,9 @@
       android:label="@string/activity_post" />
 
     <activity
-      android:name=".gallery.ImageActivity"
-      android:label="@string/activity_image" />
+      android:name=".gallery.ImmersivePostActivity"
+      android:label="@string/activity_image"
+      android:theme="@style/Mijur.Immersive" />
 
   </application>
 </manifest>

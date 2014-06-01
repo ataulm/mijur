@@ -12,7 +12,7 @@ import com.ataulm.mijur.data.Image;
 import com.ataulm.mijur.data.Images;
 import com.novoda.notils.caster.Views;
 
-public class AlbumContentView extends LinearLayout {
+public class AlbumContentView extends LinearLayout implements ImageContentView.ClickListener {
 
     private static final int MAX_IMAGES_SHOWN_IN_VIEW = 10;
     private static final String SEE_MORE_PATTERN = "See more (%d remaining)";
@@ -22,12 +22,19 @@ public class AlbumContentView extends LinearLayout {
     private TextView descriptionView;
     private TextView moreView;
 
+    private Album album;
+    private AlbumClickListener listener;
+
     public AlbumContentView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
     public AlbumContentView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+    }
+
+    public void setAlbumClickListener(AlbumClickListener listener) {
+        this.listener = listener;
     }
 
     @Override
@@ -42,6 +49,7 @@ public class AlbumContentView extends LinearLayout {
     }
 
     public void update(final Album album, final ShowFullListener listener) {
+        this.album = album;
         titleView.setText(album.getTitle());
         descriptionView.setText(album.getDescription());
         updateImages(album.getImages());
@@ -62,6 +70,7 @@ public class AlbumContentView extends LinearLayout {
         for (int i = 0; i < Math.min(images.size(), MAX_IMAGES_SHOWN_IN_VIEW); i++) {
             Image image = images.get(i);
             ImageContentView view = getImageContentView(i);
+            view.setImageClickListener(this);
             view.update(image);
             invalidate();
         }
@@ -80,6 +89,17 @@ public class AlbumContentView extends LinearLayout {
         } else {
             moreView.setVisibility(GONE);
         }
+    }
+
+    @Override
+    public void onImageClick(Image image) {
+        listener.onImageAlbumClick(album, image);
+    }
+
+    public interface AlbumClickListener {
+
+        void onImageAlbumClick(Album album, Image image);
+
     }
 
 }

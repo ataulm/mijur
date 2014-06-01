@@ -4,21 +4,28 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <com.ataulm.mijur.view.MatchParentWidthImageView
+  <com.ataulm.mijur.view.ZoomingImageView
     android:id="@+id/image_content_image"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light" />
 
-  <com.ataulm.mijur.view.MijurTextView
-    android:id="@+id/image_title_text"
+  <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_above="@+id/image_description_text"/>
+    android:orientation="vertical">
 
-  <com.ataulm.mijur.view.MijurTextView
-    android:id="@id/image_description_text"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true" />
+    <com.ataulm.mijur.view.MijurTextView
+      android:id="@+id/image_title_text"
+      android:layout_width="match_parent"
+      android:layout_weight="1.0"
+      android:layout_height="0dp"
+      android:gravity="bottom" />
 
+    <com.ataulm.mijur.view.MijurTextView
+      android:id="@+id/image_description_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom" />
+  </LinearLayout>
 </merge>

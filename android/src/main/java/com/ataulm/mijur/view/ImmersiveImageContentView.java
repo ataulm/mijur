@@ -3,8 +3,8 @@ package com.ataulm.mijur.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ataulm.mijur.R;
@@ -12,7 +12,7 @@ import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
 import com.squareup.picasso.Picasso;
 
-public class ImmersiveImageContentView extends RelativeLayout {
+public class ImmersiveImageContentView extends FrameLayout {
 
     private ImageView imageView;
     private TextView titleView;
@@ -38,7 +38,7 @@ public class ImmersiveImageContentView extends RelativeLayout {
     public void update(final Image image) {
         Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
         titleView.setText(image.getTitle());
-        descriptionView.setText(image.getDescription());
+        descriptionView.setText(image.getTitle());
     }
 
 }

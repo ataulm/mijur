@@ -16,6 +16,7 @@ public class ImageContentView extends LinearLayout {
     private TextView titleView;
     private MatchParentWidthImageView imageView;
     private TextView descriptionView;
+    private ClickListener listener;
 
     public ImageContentView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -23,6 +24,10 @@ public class ImageContentView extends LinearLayout {
 
     public ImageContentView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+    }
+
+    public void setImageClickListener(ClickListener listener) {
+        this.listener = listener;
     }
 
     @Override
@@ -39,6 +44,21 @@ public class ImageContentView extends LinearLayout {
         titleView.setText(image.getTitle());
         descriptionView.setText(image.getDescription());
         Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
+
+        imageView.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                listener.onImageClick(image);
+            }
+
+        });
+    }
+
+    public interface ClickListener {
+
+        void onImageClick(Image image);
+
     }
 
 }

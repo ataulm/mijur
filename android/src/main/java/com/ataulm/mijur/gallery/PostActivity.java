@@ -1,24 +1,23 @@
 package com.ataulm.mijur.gallery;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.ataulm.mijur.BuildConfig;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
-import com.ataulm.mijur.data.Comments;
-import com.ataulm.mijur.data.CommentsProvider;
-import com.ataulm.mijur.data.GalleryItem;
-import com.ataulm.mijur.data.GalleryProvider;
+import com.ataulm.mijur.data.*;
 import com.ataulm.mijur.view.PostView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
+import com.novoda.notils.logger.toast.Toaster;
 
 import rx.Observer;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class PostActivity extends MijurActivity {
+public class PostActivity extends MijurActivity implements PostView.ClickListener {
 
     public static final String EXTRA_POST_ID = BuildConfig.PACKAGE_NAME + ".EXTRA_POST_ID";
 
@@ -33,6 +32,7 @@ public class PostActivity extends MijurActivity {
         setContentView(R.layout.activity_post);
 
         PostView post = Views.findById(this, R.id.post);
+        post.setPostViewClickListener(this);
         postContentUpdater = new PostContentUpdater(post);
         postCommentsUpdater = new PostCommentsUpdater(post);
     }
@@ -58,6 +58,18 @@ public class PostActivity extends MijurActivity {
         super.onPause();
         gallerySubscription.unsubscribe();
         commentsSubscription.unsubscribe();
+    }
+
+    @Override
+    public void onImageAlbumClick(Album album, Image image) {
+        new Toaster(this).popToast(album.getId() + ":" + image.getId());
+    }
+
+    @Override
+    public void onImageClick(Image image) {
+        Intent intent = new Intent(this, ImmersivePostActivity.class);
+        intent.putExtra(ImmersivePostActivity.EXTRA_POST_ID, image.getId());
+        startActivity(intent);
     }
 
     private static class PostContentUpdater implements Observer<GalleryItem> {
