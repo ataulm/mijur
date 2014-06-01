@@ -51,8 +51,8 @@ public class ImmersivePostActivity extends MijurActivity implements ImmersiveIma
     }
 
     @Override
-    public void onImageClick() {
-        if (getActionBar().isShowing()) {
+    public void onToggleImmersiveMode(boolean immersiveMode) {
+        if (immersiveMode) {
             getActionBar().hide();
         } else {
             getActionBar().show();

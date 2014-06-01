@@ -69,7 +69,7 @@ public class ImmersiveImageContentView extends FrameLayout {
             @Override
             public void onClick(View v) {
                 captionContainer.setVisibility(captionContainer.getVisibility() == VISIBLE ? GONE : VISIBLE);
-                listener.onImageClick();
+                listener.onToggleImmersiveMode(captionContainer.getVisibility() == GONE);
             }
 
         });
@@ -77,7 +77,7 @@ public class ImmersiveImageContentView extends FrameLayout {
 
     public interface Listener {
 
-        void onImageClick();
+        void onToggleImmersiveMode(boolean immersiveMode);
 
     }
 
