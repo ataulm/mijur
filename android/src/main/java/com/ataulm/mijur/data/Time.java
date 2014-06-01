@@ -53,8 +53,11 @@ public class Time {
 
     @Override
     public String toString() {
-        Date date = new Date(millisSinceEpoch);
-        return FORMATTER.format(date);
+        if (isValid()) {
+            Date date = new Date(millisSinceEpoch);
+            return FORMATTER.format(date);
+        }
+        return "invalid date";
     }
 
     private static class TimeElapsedFormatter extends DateFormat {
@@ -66,13 +69,12 @@ public class Time {
 
         @Override
         public StringBuffer format(Date date, StringBuffer buffer, FieldPosition field) {
-            long deltaMillis = Time.now().millisSinceEpoch - date.getTime();
+            long deltaMillis = Time.now().millisSinceEpoch - date.getTime() * 1000;
             deltaMillis = deltaMillis > 0 ? deltaMillis : 0;
 
             int days = (int) (deltaMillis / ONE_DAY);
             int hours = (int) (deltaMillis % ONE_DAY / ONE_HOUR);
             int mins = (int) (deltaMillis % ONE_HOUR / ONE_MINUTE);
-            int seconds = (int) (deltaMillis % ONE_MINUTE / ONE_SECOND);
 
             if (days > 0) {
                 buffer.append(days + "d ");
@@ -87,10 +89,11 @@ public class Time {
             }
 
             if (buffer.length() == 0) {
-                buffer.append(seconds + "s ");
+                buffer.append("Just now");
+            } else {
+                buffer.append("ago");
             }
 
-            buffer.append("ago");
             return buffer;
         }
 

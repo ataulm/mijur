@@ -6,6 +6,7 @@
 
   <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/user_text"
+    style="@style/Mijur.TextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:singleLine="true"
@@ -13,12 +14,14 @@
 
   <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/time_text"
+    style="@style/Mijur.TextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/user_text" />
 
   <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/score_text"
+    style="@style/Mijur.TextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/user_text"
@@ -26,6 +29,7 @@
 
   <com.ataulm.mijur.view.MijurTextView
     android:id="@+id/comment_text"
+    style="@style/Mijur.TextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@id/time_text" />
