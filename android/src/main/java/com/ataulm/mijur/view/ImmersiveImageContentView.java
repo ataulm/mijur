@@ -62,7 +62,8 @@ public class ImmersiveImageContentView extends FrameLayout {
     public void update(final Image image, final Listener listener) {
         Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
         titleView.setText(image.getTitle());
-        descriptionView.setText(image.getTitle());
+        descriptionView.setText(image.getDescription());
+        descriptionView.setVisibility(image.getDescription().isEmpty() ? GONE : VISIBLE);
 
         imageView.setOnClickListener(new OnClickListener() {
 

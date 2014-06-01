@@ -87,4 +87,12 @@
     <item name="android:paddingBottom">16dp</item>
   </style>
 
+  <style name="Mijur.Fullscreen.CaptionTitle">
+    <item name="font">robotoSlabBold</item>
+  </style>
+
+  <style name="Mijur.Fullscreen.CaptionDescription">
+    <item name="font">robotoSlabLight</item>
+  </style>
+
 </resources>

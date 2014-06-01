@@ -46,24 +46,20 @@ public class GalleryParser {
         GalleryItemCommon core = extractGalleryItemCommonFrom(gsonGalleryItem);
 
         if (gsonGalleryItem.isAlbum) {
-            return parseAlbum(core, gsonGalleryItem);
+            return parseAlbumGalleryItem(core, gsonGalleryItem);
         }
-        return parseImage(core, gsonGalleryItem);
+        return ImageParser.newInstance().parse(gsonGalleryItem);
     }
 
     private GalleryItemCommon extractGalleryItemCommonFrom(GsonGalleryItem gsonGalleryItem) {
         return new GalleryItemCommon(gsonGalleryItem.id,
-                gsonGalleryItem.title,
-                gsonGalleryItem.description,
+                gsonGalleryItem.title == null ? "": gsonGalleryItem.title,
+                gsonGalleryItem.description == null ? "" : gsonGalleryItem.description,
                 new Time(gsonGalleryItem.datetime),
                 gsonGalleryItem.link);
     }
 
-    private Image parseImage(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
-        return new Image(core, gsonGalleryItem.width, gsonGalleryItem.height, gsonGalleryItem.animated);
-    }
-
-    private Album parseAlbum(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
+    private Album parseAlbumGalleryItem(GalleryItemCommon core, GsonGalleryItem gsonGalleryItem) {
         final String coverLink = String.format("http://i.imgur.com/%s.jpg", gsonGalleryItem.cover);
         final Album.Cover cover = new Album.Cover(coverLink, gsonGalleryItem.coverWidth, gsonGalleryItem.coverHeight);
         return Album.newInstance(core, cover);

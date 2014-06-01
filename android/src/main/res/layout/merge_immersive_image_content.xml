@@ -14,15 +14,17 @@
     style="@style/Mijur.Fullscreen.Caption"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <com.ataulm.mijur.view.MijurTextView
       android:id="@+id/image_title_text"
+      style="@style/Mijur.Fullscreen.CaptionTitle"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
 
     <com.ataulm.mijur.view.MijurTextView
       android:id="@+id/image_description_text"
+      style="@style/Mijur.Fullscreen.CaptionDescription"
       android:layout_width="match_parent"
       android:layout_height="wrap_content" />
   </LinearLayout>

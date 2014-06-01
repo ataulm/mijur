@@ -43,7 +43,7 @@ public class AlbumParser {
     private GalleryItemCommon parseGalleryItemCore(GsonAlbum gsonAlbum) {
         return new GalleryItemCommon(gsonAlbum.id,
                 gsonAlbum.title,
-                gsonAlbum.description,
+                gsonAlbum.description == null ? "" : gsonAlbum.description,
                 new Time(gsonAlbum.images.get(0).datetime),
                 "");
     }
