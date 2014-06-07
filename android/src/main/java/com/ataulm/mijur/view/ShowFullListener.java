@@ -1,9 +1,9 @@
 package com.ataulm.mijur.view;
 
-import com.ataulm.mijur.data.GalleryItem;
+import com.ataulm.mijur.data.Album;
 
 public interface ShowFullListener {
 
-    void onClickShowFull(GalleryItem item);
+    void onClickViewEntire(Album album);
 
 }

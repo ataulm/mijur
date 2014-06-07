@@ -14,25 +14,28 @@ import com.novoda.notils.caster.Views;
 
 public class AlbumContentView extends LinearLayout implements ImageContentView.ClickListener {
 
-    private static final int MAX_IMAGES_SHOWN_IN_VIEW = 10;
     private static final String SEE_MORE_PATTERN = "See more (%d remaining)";
+
+    private final int maxImagesShownInView;
 
     private TextView titleView;
     private LinearLayout imagesView;
     private TextView moreView;
 
     private Album album;
-    private AlbumClickListener listener;
+    private Listener listener;
 
     public AlbumContentView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        maxImagesShownInView = context.getResources().getInteger(R.integer.max_images_per_album_preview);
     }
 
     public AlbumContentView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        maxImagesShownInView = context.getResources().getInteger(R.integer.max_images_per_album_preview);
     }
 
-    public void setAlbumClickListener(AlbumClickListener listener) {
+    public void setAlbumClickListener(Listener listener) {
         this.listener = listener;
     }
 
@@ -46,7 +49,7 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
         moreView = Views.findById(this, R.id.album_content_more);
     }
 
-    public void update(final Album album, final ShowFullListener listener) {
+    public void update(final Album album) {
         this.album = album;
         titleView.setText(album.getTitle());
         updateImages(album.getImages());
@@ -55,7 +58,7 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
 
             @Override
             public void onClick(View v) {
-                listener.onClickShowFull(album);
+                listener.onClickViewEntire(album);
             }
 
         });
@@ -64,7 +67,7 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
 
     private void updateImages(Images images) {
         imagesView.removeAllViews();
-        for (int i = 0; i < Math.min(images.size(), MAX_IMAGES_SHOWN_IN_VIEW); i++) {
+        for (int i = 0; i < Math.min(images.size(), maxImagesShownInView); i++) {
             Image image = images.get(i);
             ImageContentView view = getImageContentView(i);
             view.setImageClickListener(this);
@@ -79,7 +82,7 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
     }
 
     private void updateMoreView(Album album) {
-        if (album.size() > MAX_IMAGES_SHOWN_IN_VIEW) {
+        if (album.size() > maxImagesShownInView) {
             moreView.setVisibility(VISIBLE);
             int remaining = album.size() - 10;
             moreView.setText(String.format(SEE_MORE_PATTERN, remaining));
@@ -89,13 +92,13 @@ public class AlbumContentView extends LinearLayout implements ImageContentView.C
     }
 
     @Override
-    public void onImageClick(Image image) {
-        listener.onImageAlbumClick(album, image);
+    public void onClick(Image image) {
+        listener.onClickViewEntire(album, image);
     }
 
-    public interface AlbumClickListener {
+    public interface Listener extends ShowFullListener {
 
-        void onImageAlbumClick(Album album, Image image);
+        void onClickViewEntire(Album album, Image startFromImage);
 
     }
 

@@ -14,7 +14,6 @@ import com.ataulm.mijur.data.Comments;
 import com.ataulm.mijur.data.GalleryItem;
 import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
-import com.novoda.notils.logger.toast.Toaster;
 
 public class PostView extends FrameLayout {
 
@@ -62,7 +61,7 @@ public class PostView extends FrameLayout {
         }
     }
 
-    public void update(Comments comments) {
+    public void update(final Comments comments) {
         commentsAdapter.update(comments);
         String commentsHeading = String.format(getContext().getString(R.string.post_comments_heading), comments.size());
         commentsHeadingView.setText(commentsHeading);
@@ -72,14 +71,7 @@ public class PostView extends FrameLayout {
         FrameLayout root = (FrameLayout) View.inflate(getContext(), R.layout.view_album_content, contentContainerView);
         AlbumContentView view = (AlbumContentView) root.getChildAt(0);
         view.setAlbumClickListener(listener);
-        view.update(album, new ShowFullListener() {
-
-            @Override
-            public void onClickShowFull(GalleryItem item) {
-                new Toaster(getContext()).popToast("I want more of album: " + album.getId());
-            }
-
-        });
+        view.update(album);
     }
 
     private void showImage(Image image) {
@@ -89,7 +81,7 @@ public class PostView extends FrameLayout {
         view.update(image);
     }
 
-    public interface ClickListener extends ImageContentView.ClickListener, AlbumContentView.AlbumClickListener {
+    public interface ClickListener extends ImageContentView.ClickListener, AlbumContentView.Listener {
     }
 
 }

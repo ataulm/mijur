@@ -61,15 +61,21 @@ public class PostActivity extends MijurActivity implements PostView.ClickListene
     }
 
     @Override
-    public void onImageAlbumClick(Album album, Image image) {
-        new Toaster(this).popToast(album.getId() + ":" + image.getId());
-    }
-
-    @Override
-    public void onImageClick(Image image) {
+    public void onClick(Image image) {
         Intent intent = new Intent(this, ImmersivePostActivity.class);
         intent.putExtra(ImmersivePostActivity.EXTRA_POST_ID, image.getId());
         startActivity(intent);
+    }
+
+    @Override
+    public void onClickViewEntire(Album album) {
+        int maxImagesPerAlbumPreview = getResources().getInteger(R.integer.max_images_per_album_preview);
+        new Toaster(this).popToast("See entire album: " + album.getId() + " from image: " + maxImagesPerAlbumPreview);
+    }
+
+    @Override
+    public void onClickViewEntire(Album album, Image startFromImage) {
+        new Toaster(this).popToast("See entire album: " + album.getId() + " from image: " + startFromImage.getId());
     }
 
     private static class PostContentUpdater implements Observer<GalleryItem> {

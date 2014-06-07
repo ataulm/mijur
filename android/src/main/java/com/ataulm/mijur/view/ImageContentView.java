@@ -50,7 +50,7 @@ public class ImageContentView extends LinearLayout {
 
             @Override
             public void onClick(View v) {
-                listener.onImageClick(image);
+                listener.onClick(image);
             }
 
         });
@@ -58,7 +58,7 @@ public class ImageContentView extends LinearLayout {
 
     public interface ClickListener {
 
-        void onImageClick(Image image);
+        void onClick(Image image);
 
     }
 
