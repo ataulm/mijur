@@ -34,6 +34,10 @@
 
   <style name="Mijur.Post" />
 
+  <style name="Mijur.Post.AlbumView">
+    <item name="android:background">#444231</item>
+  </style>
+
   <style name="Mijur.Post.ListView">
     <item name="android:paddingLeft">@dimen/post_list_padding_left</item>
     <item name="android:paddingTop">@dimen/post_list_padding_top</item>
