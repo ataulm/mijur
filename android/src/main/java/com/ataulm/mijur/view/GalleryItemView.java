@@ -5,10 +5,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.ataulm.mijur.ImageLoader;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.data.GalleryItem;
 import com.novoda.notils.caster.Views;
-import com.squareup.picasso.Picasso;
 
 public class GalleryItemView extends FrameLayout {
 
@@ -38,7 +38,7 @@ public class GalleryItemView extends FrameLayout {
 
         });
 
-        Picasso.with(getContext()).load(item.getPreviewImageUrl()).into(imageView);
+        ImageLoader.load(getContext(), item.getPreviewImageUrl(), imageView);
     }
 
     public interface OnClickListener {

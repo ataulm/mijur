@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.ataulm.mijur.ImageLoader;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
-import com.squareup.picasso.Picasso;
 
 public class ImageContentView extends LinearLayout {
 
@@ -44,7 +44,7 @@ public class ImageContentView extends LinearLayout {
         titleView.setText(image.getTitle());
         descriptionView.setText(image.getDescription());
         descriptionView.setVisibility(image.getDescription().isEmpty() ? GONE : VISIBLE);
-        Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
+        ImageLoader.load(getContext(), image.getPreviewImageUrl(), imageView);
 
         imageView.setOnClickListener(new OnClickListener() {
 

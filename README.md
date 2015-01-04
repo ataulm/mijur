@@ -20,9 +20,9 @@ Uses open-source libraries, with thanks:
 - Novoda's [NoTils][link-notils]
 - Netflix's [RxJava (alpha)][link-rxjava]
 - Google's [Gson][link-gson]
-- Square's [Picasso][link-picasso]
+- Sam Judd's [Glide][link-glide]
 
 [link-notils]: https://github.com/novoda/NoTils
 [link-rxjava]: https://github.com/Netflix/RxJava
 [link-gson]: https://code.google.com/p/google-gson/
-[link-picasso]: http://square.github.io/picasso/
+[link-glide]: https://twitter.com/samajudd

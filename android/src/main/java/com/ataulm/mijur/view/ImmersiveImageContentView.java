@@ -8,10 +8,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.ataulm.mijur.ImageLoader;
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.data.Image;
 import com.novoda.notils.caster.Views;
-import com.squareup.picasso.Picasso;
 
 public class ImmersiveImageContentView extends FrameLayout {
 
@@ -60,7 +60,7 @@ public class ImmersiveImageContentView extends FrameLayout {
     }
 
     public void update(final Image image, final Listener listener) {
-        Picasso.with(getContext()).load(image.getPreviewImageUrl()).into(imageView);
+        ImageLoader.load(getContext(), image.getPreviewImageUrl(), imageView);
         titleView.setText(image.getTitle());
         descriptionView.setText(image.getDescription());
         descriptionView.setVisibility(image.getDescription().isEmpty() ? GONE : VISIBLE);
