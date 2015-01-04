@@ -1,7 +1,7 @@
 package com.ataulm.mijur.gallery;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.ataulm.mijur.R;
@@ -29,7 +29,7 @@ public class GalleryActivity extends MijurActivity implements GalleryAdapter.OnG
 
         GalleryAdapter adapter = new GalleryAdapter(getLayoutInflater(), this);
         RecyclerView list = Views.findById(this, R.id.gallery_list);
-        list.setLayoutManager(new LinearLayoutManager(this));
+        list.setLayoutManager(new GridLayoutManager(this, 3));
         list.setAdapter(adapter);
 
         galleryViewUpdater = new GalleryViewUpdater(adapter);
