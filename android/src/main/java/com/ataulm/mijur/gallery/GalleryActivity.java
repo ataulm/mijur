@@ -12,7 +12,6 @@ import com.ataulm.mijur.data.GalleryProvider;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 
-import rx.Observer;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -20,19 +19,21 @@ import rx.schedulers.Schedulers;
 public class GalleryActivity extends MijurActivity implements GalleryAdapter.OnGalleryItemClickListener {
 
     private Subscription feedSubscription;
-    private GalleryViewUpdater galleryViewUpdater;
+    private Observer observer;
+    private GalleryAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        GalleryAdapter adapter = new GalleryAdapter(getLayoutInflater(), this);
+        adapter = new GalleryAdapter(getLayoutInflater(), this);
         RecyclerView list = Views.findById(this, R.id.gallery_list);
-        list.setLayoutManager(new GridLayoutManager(this, 3));
+        int spanCount = getResources().getInteger(R.integer.gallery_num_columns);
+        list.setLayoutManager(new GridLayoutManager(this, spanCount));
         list.setAdapter(adapter);
 
-        galleryViewUpdater = new GalleryViewUpdater(adapter);
+        observer = new Observer();
     }
 
     @Override
@@ -41,7 +42,7 @@ public class GalleryActivity extends MijurActivity implements GalleryAdapter.OnG
         feedSubscription = GalleryProvider.instance().getGallery()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(galleryViewUpdater);
+                .subscribe(observer);
     }
 
     @Override
@@ -55,13 +56,7 @@ public class GalleryActivity extends MijurActivity implements GalleryAdapter.OnG
         navigate().toGalleryPostActivity(item);
     }
 
-    private static class GalleryViewUpdater implements Observer<Gallery> {
-
-        private final GalleryAdapter adapter;
-
-        private GalleryViewUpdater(GalleryAdapter adapter) {
-            this.adapter = adapter;
-        }
+    private class Observer implements rx.Observer<Gallery> {
 
         @Override
         public void onCompleted() {

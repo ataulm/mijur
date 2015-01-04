@@ -2,9 +2,9 @@
 
 <resources>
 
-  <color name="gallery_list_item_foreground_focused_pressed">@color/black_50</color>
-  <color name="gallery_list_item_foreground_pressed">@color/black_25</color>
-  <color name="gallery_list_item_foreground_focused">@color/black_10</color>
-  <color name="gallery_list_item_foreground_normal">@color/transparent</color>
+  <color name="gallery_item_foreground_focused_pressed">@color/black_50</color>
+  <color name="gallery_item_foreground_pressed">@color/black_25</color>
+  <color name="gallery_item_foreground_focused">@color/black_10</color>
+  <color name="gallery_item_foreground_normal">@color/transparent</color>
 
 </resources>
