@@ -2,19 +2,21 @@ apply plugin: 'com.android.application'
 
 dependencies {
     compile project(':core')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.android.support:support-v13:19.0.1'
-
+    compile 'com.android.support:support-v13:21.0.0'
+    compile "com.android.support:appcompat-v7:21.0.2"
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    compile 'io.reactivex:rxandroid:0.23.0'
     compile 'com.novoda:notils:2.2.6'
+    compile 'com.google.code.gson:gson:2.2.4'
 
-    compile 'com.novoda.rx:android:0.0.2-SNAPSHOT',
-            'com.novoda.rx:core:0.0.2-SNAPSHOT',
-            'com.netflix.rxjava:rxjava-android:0.17.1'
+    // ImageLoading! Keeping image-loader here to help beta test
+    compile 'com.novoda:image-loader:2.0-BETA'
+    compile 'com.github.bumptech.glide:glide:3.4.0'
 
     compile 'com.squareup.picasso:picasso:2.2.0'
     compile 'com.github.chrisbanes.photoview:library:1.2.3'
-    compile 'com.google.code.gson:gson:2.2.4'
-
 }
 
 android {

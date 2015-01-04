@@ -22,6 +22,16 @@ subprojects {
         maven {
             url 'https://github.com/novoda/public-mvn-repo/raw/master/releases'
         }
+
+        jcenter()
+
+        maven {
+            credentials {
+                username hasProperty('bintrayUsername') ? bintrayUsername : System.env.bintrayUsername
+                password hasProperty('bintrayPassword') ? bintrayPassword : System.env.bintrayPassword
+            }
+            url 'http://dl.bintray.com/novoda/maven-private'
+        }
         mavenCentral()
     }
 }
