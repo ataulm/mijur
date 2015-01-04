@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Gallery" />
+
+  <style name="Gallery.ListItem" />
+
+  <style name="Gallery.ListItem.View">
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:paddingTop">0dp</item>
+    <item name="android:paddingRight">0dp</item>
+    <item name="android:paddingBottom">0dp</item>
+    <item name="android:foreground">@drawable/gallery_list_item_foreground</item>
+    <item name="android:focusable">true</item>
+  </style>
+
+</resources>

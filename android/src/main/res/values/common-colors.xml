@@ -2,16 +2,20 @@
 
 <resources>
 
+  <color name="transparent">#00000000</color>
+  <color name="black_50">#80000000</color>
+  <color name="black_25">#40000000</color>
+  <color name="black_10">#1A000000</color>
+
+  <!--The rest of these are deprecated-->
   <color name="dark_translucent">#80202020</color>
   <color name="dark_flat_grey">#2B2B2B</color>
   <color name="light_beige">#ece6cb</color>
   <color name="grey">#534f4f</color>
-
   <color name="app_background">@color/light_beige</color>
   <color name="actionbar">@color/dark_flat_grey</color>
   <color name="actionbar_overlay">@color/dark_translucent</color>
   <color name="text_primary">@color/grey</color>
-
   <color name="caption_overlay">@color/dark_translucent</color>
 
 </resources>
