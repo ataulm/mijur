@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 dependencies {
+    compile project(':core')
+
     compile 'com.android.support:support-v13:19.0.1'
 
     compile 'com.novoda:notils:2.2.6'
@@ -37,8 +39,6 @@ android {
     if (project.hasProperty('signingPassword')) {
         password = signingPassword;
     }
-
-
 
     signingConfigs {
         release {
