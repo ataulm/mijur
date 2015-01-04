@@ -8,12 +8,23 @@ import com.ataulm.mijur.view.GalleryItemView;
 
 class GalleryItemViewHolder extends RecyclerView.ViewHolder {
 
-    public GalleryItemViewHolder(View itemView) {
+    private final GalleryAdapter.OnGalleryItemClickListener onClickListener;
+
+    public GalleryItemViewHolder(View itemView, GalleryAdapter.OnGalleryItemClickListener onClickListener) {
         super(itemView);
+        this.onClickListener = onClickListener;
     }
 
-    void bind(GalleryItem item) {
-        ((GalleryItemView) itemView).update(item, null);
+    void bind(final GalleryItem item) {
+        ((GalleryItemView) itemView).update(item);
+        itemView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                onClickListener.onClick(item);
+            }
+
+        });
     }
 
 }

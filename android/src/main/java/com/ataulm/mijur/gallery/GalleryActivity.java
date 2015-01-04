@@ -9,7 +9,6 @@ import com.ataulm.mijur.base.android.MijurActivity;
 import com.ataulm.mijur.data.Gallery;
 import com.ataulm.mijur.data.GalleryItem;
 import com.ataulm.mijur.data.GalleryProvider;
-import com.ataulm.mijur.view.GalleryItemView;
 import com.novoda.notils.caster.Views;
 import com.novoda.notils.logger.simple.Log;
 
@@ -18,7 +17,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class GalleryActivity extends MijurActivity implements GalleryItemView.OnClickListener {
+public class GalleryActivity extends MijurActivity implements GalleryAdapter.OnGalleryItemClickListener {
 
     private Subscription feedSubscription;
     private GalleryViewUpdater galleryViewUpdater;
@@ -28,7 +27,7 @@ public class GalleryActivity extends MijurActivity implements GalleryItemView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        GalleryAdapter adapter = new GalleryAdapter(getLayoutInflater());
+        GalleryAdapter adapter = new GalleryAdapter(getLayoutInflater(), this);
         RecyclerView list = Views.findById(this, R.id.gallery_list);
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);

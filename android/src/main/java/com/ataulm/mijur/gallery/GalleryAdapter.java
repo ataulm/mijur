@@ -12,18 +12,21 @@ import com.ataulm.mijur.data.GalleryItem;
 class GalleryAdapter extends RecyclerView.Adapter<GalleryItemViewHolder> {
 
     private final LayoutInflater layoutInflater;
+    private final OnGalleryItemClickListener onClickListener;
 
     private Gallery gallery;
 
-    GalleryAdapter(LayoutInflater layoutInflater) {
+    GalleryAdapter(LayoutInflater layoutInflater, OnGalleryItemClickListener onClickListener) {
         this.layoutInflater = layoutInflater;
+        this.onClickListener = onClickListener;
+
         this.gallery = Gallery.empty();
     }
 
     @Override
     public GalleryItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = layoutInflater.inflate(R.layout.view_gallery_item, parent, false);
-        return new GalleryItemViewHolder(view);
+        return new GalleryItemViewHolder(view, onClickListener);
     }
 
     @Override
@@ -40,6 +43,12 @@ class GalleryAdapter extends RecyclerView.Adapter<GalleryItemViewHolder> {
     void update(Gallery gallery) {
         this.gallery = gallery;
         notifyDataSetChanged();
+    }
+
+    public interface OnGalleryItemClickListener {
+
+        void onClick(GalleryItem item);
+
     }
 
 }

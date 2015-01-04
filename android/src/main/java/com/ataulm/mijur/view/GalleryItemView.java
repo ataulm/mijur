@@ -28,27 +28,8 @@ public class GalleryItemView extends FrameLayout {
         imageView = Views.findById(this, R.id.gallery_image);
     }
 
-    public void update(final GalleryItem item, final OnClickListener listener) {
+    public void update(final GalleryItem item) {
         ImageLoader.load(getContext(), item.getPreviewImageUrl(), imageView);
-
-        if (listener == null) {
-            return;
-        }
-
-        setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                listener.onClick(item);
-            }
-
-        });
-    }
-
-    public interface OnClickListener {
-
-        void onClick(GalleryItem item);
-
     }
 
 }
