@@ -3,6 +3,7 @@ package com.ataulm.mijur.data;
 import com.ataulm.mijur.base.DeveloperError;
 
 import rx.Observable;
+import rx.functions.Action1;
 import rx.functions.Func1;
 
 public class GalleryProvider {
@@ -62,14 +63,11 @@ public class GalleryProvider {
     }
 
     private Observable<Gallery> refreshGallery() {
-        return retriever.fetch().map(new Func1<Gallery, Gallery>() {
-
+        return retriever.fetch().doOnNext(new Action1<Gallery>() {
             @Override
-            public Gallery call(Gallery gallery) {
-                cachedGallery = gallery;
-                return gallery;
+            public void call(Gallery galleryItems) {
+                cachedGallery = galleryItems;
             }
-
         });
     }
 
