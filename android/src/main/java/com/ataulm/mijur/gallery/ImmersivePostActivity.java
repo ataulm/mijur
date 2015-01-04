@@ -19,7 +19,7 @@ import rx.schedulers.Schedulers;
 
 public class ImmersivePostActivity extends MijurActivity implements ImmersiveImageContentView.Listener {
 
-    public static final String EXTRA_POST_ID = BuildConfig.PACKAGE_NAME + ".EXTRA_POST_ID";
+    public static final String EXTRA_POST_ID = BuildConfig.APPLICATION_ID + ".EXTRA_POST_ID";
 
     private Subscription gallerySubscription;
     private PostContentUpdater postContentUpdater;
