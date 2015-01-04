@@ -15,12 +15,7 @@
 
     <activity
       android:name=".gallery.GalleryActivity"
-      android:label="@string/activity_gallery">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+      android:label="@string/activity_gallery" />
 
     <activity
       android:name=".gallery.PostActivity"
@@ -30,6 +25,18 @@
       android:name=".gallery.ImmersivePostActivity"
       android:label="@string/activity_image"
       android:theme="@style/Mijur.Fullscreen" />
+
+    <activity-alias
+      android:name="launcher.main"
+      android:targetActivity=".gallery.GalleryActivity"
+      android:label="@string/app_name">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity-alias>
+
+
 
   </application>
 </manifest>
