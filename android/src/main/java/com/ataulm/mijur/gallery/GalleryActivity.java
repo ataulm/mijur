@@ -1,7 +1,8 @@
 package com.ataulm.mijur.gallery;
 
 import android.os.Bundle;
-import android.widget.ListView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.ataulm.mijur.R;
 import com.ataulm.mijur.base.android.MijurActivity;
@@ -19,7 +20,6 @@ import rx.schedulers.Schedulers;
 
 public class GalleryActivity extends MijurActivity implements GalleryItemView.OnClickListener {
 
-    private ListView list;
     private Subscription feedSubscription;
     private GalleryViewUpdater galleryViewUpdater;
 
@@ -28,8 +28,9 @@ public class GalleryActivity extends MijurActivity implements GalleryItemView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        final GridAdapter adapter = new GridAdapter(getLayoutInflater(), Gallery.empty(), this);
-        list = Views.findById(this, R.id.gallery_list);
+        GalleryAdapter adapter = new GalleryAdapter(getLayoutInflater());
+        RecyclerView list = Views.findById(this, R.id.gallery_list);
+        list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
 
         galleryViewUpdater = new GalleryViewUpdater(adapter);
@@ -57,9 +58,9 @@ public class GalleryActivity extends MijurActivity implements GalleryItemView.On
 
     private static class GalleryViewUpdater implements Observer<Gallery> {
 
-        private final GridAdapter adapter;
+        private final GalleryAdapter adapter;
 
-        private GalleryViewUpdater(GridAdapter adapter) {
+        private GalleryViewUpdater(GalleryAdapter adapter) {
             this.adapter = adapter;
         }
 

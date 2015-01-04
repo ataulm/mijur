@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Mijur" />
+
+  <style name="Mijur.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@color/app_background</item>
+  </style>
+
+  <style name="Mijur.Toolbar">
+    <item name="navigationIcon">@drawable/ic_launcher</item>
+  </style>
+
+</resources>

@@ -9,7 +9,7 @@
   <application
     android:name="com.ataulm.mijur.base.android.MijurApplication"
     android:label="@string/app_name"
-    android:theme="@style/Mijur"
+    android:theme="@style/Mijur.Base"
     android:icon="@drawable/ic_launcher"
     android:allowBackup="true">
 

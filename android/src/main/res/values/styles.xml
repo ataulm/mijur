@@ -2,15 +2,12 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <style name="Mijur" parent="android:Theme.Holo">
-    <item name="android:windowBackground">@color/app_background</item>
-    <item name="android:actionBarStyle">@style/Mijur.ActionBar</item>
-  </style>
-
+  <!--Deprecated in favour of toolbar, remove soon-as-->
   <style name="Mijur.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid">
     <item name="android:background">@color/actionbar</item>
   </style>
 
+  <!--Deprecated in favour of toolbar, remove soon-as-->
   <style name="Mijur.ActionBar.Overlay">
     <item name="android:background">@color/actionbar_overlay</item>
   </style>

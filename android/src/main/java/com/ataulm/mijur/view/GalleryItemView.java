@@ -29,6 +29,12 @@ public class GalleryItemView extends FrameLayout {
     }
 
     public void update(final GalleryItem item, final OnClickListener listener) {
+        ImageLoader.load(getContext(), item.getPreviewImageUrl(), imageView);
+
+        if (listener == null) {
+            return;
+        }
+
         setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -37,8 +43,6 @@ public class GalleryItemView extends FrameLayout {
             }
 
         });
-
-        ImageLoader.load(getContext(), item.getPreviewImageUrl(), imageView);
     }
 
     public interface OnClickListener {
